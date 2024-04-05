@@ -38,6 +38,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMoTa_YeuCau_QuyenLoi));
             panel3 = new Panel();
             label13 = new Label();
             txtMoTa = new Guna.UI2.WinForms.Guna2TextBox();
@@ -89,7 +90,7 @@
             label13.AllowDrop = true;
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label13.ForeColor = Color.Green;
+            label13.ForeColor = Color.Transparent;
             label13.Location = new Point(466, 18);
             label13.Name = "label13";
             label13.Size = new Size(311, 41);
@@ -200,8 +201,8 @@
             txtCty.AutoSize = true;
             txtCty.BackColor = Color.Transparent;
             txtCty.Font = new Font("Sitka Small", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtCty.ForeColor = Color.Black;
-            txtCty.Location = new Point(109, 129);
+            txtCty.ForeColor = Color.White;
+            txtCty.Location = new Point(101, 129);
             txtCty.Name = "txtCty";
             txtCty.Size = new Size(182, 33);
             txtCty.TabIndex = 108;
@@ -214,8 +215,8 @@
             txtNganh.AutoSize = true;
             txtNganh.BackColor = Color.Transparent;
             txtNganh.Font = new Font("Sitka Small", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtNganh.ForeColor = Color.Black;
-            txtNganh.Location = new Point(542, 122);
+            txtNganh.ForeColor = Color.White;
+            txtNganh.Location = new Point(534, 122);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(121, 33);
             txtNganh.TabIndex = 109;
@@ -443,7 +444,7 @@
             // 
             guna2HtmlLabel11.BackColor = Color.Transparent;
             guna2HtmlLabel11.Font = new Font("Sitka Small", 10.1999989F, FontStyle.Bold);
-            guna2HtmlLabel11.ForeColor = Color.Black;
+            guna2HtmlLabel11.ForeColor = Color.White;
             guna2HtmlLabel11.Location = new Point(129, 235);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             guna2HtmlLabel11.Size = new Size(144, 26);
@@ -454,7 +455,7 @@
             // 
             guna2HtmlLabel12.BackColor = Color.Transparent;
             guna2HtmlLabel12.Font = new Font("Sitka Small", 10.1999989F, FontStyle.Bold);
-            guna2HtmlLabel12.ForeColor = Color.Black;
+            guna2HtmlLabel12.ForeColor = Color.White;
             guna2HtmlLabel12.Location = new Point(510, 235);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             guna2HtmlLabel12.Size = new Size(232, 26);
@@ -465,7 +466,7 @@
             // 
             guna2HtmlLabel13.BackColor = Color.Transparent;
             guna2HtmlLabel13.Font = new Font("Sitka Small", 10.1999989F, FontStyle.Bold);
-            guna2HtmlLabel13.ForeColor = Color.Black;
+            guna2HtmlLabel13.ForeColor = Color.White;
             guna2HtmlLabel13.Location = new Point(930, 235);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             guna2HtmlLabel13.Size = new Size(92, 26);
@@ -499,6 +500,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1207, 721);
             Controls.Add(btnXem);
             Controls.Add(txtCty);

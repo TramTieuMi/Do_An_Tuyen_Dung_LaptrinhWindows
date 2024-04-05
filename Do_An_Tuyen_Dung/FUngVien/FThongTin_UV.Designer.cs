@@ -212,7 +212,7 @@
             txtNgayThangNamSinh.Anchor = AnchorStyles.None;
             txtNgayThangNamSinh.AutoSize = true;
             txtNgayThangNamSinh.BackColor = Color.Transparent;
-            txtNgayThangNamSinh.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
+            txtNgayThangNamSinh.Font = new Font("Segoe UI", 10.2F);
             txtNgayThangNamSinh.ForeColor = Color.White;
             txtNgayThangNamSinh.Location = new Point(277, 20);
             txtNgayThangNamSinh.Name = "txtNgayThangNamSinh";
@@ -226,11 +226,11 @@
             txtNoiSinh.Anchor = AnchorStyles.None;
             txtNoiSinh.AutoSize = true;
             txtNoiSinh.BackColor = Color.Transparent;
-            txtNoiSinh.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
+            txtNoiSinh.Font = new Font("Segoe UI", 10.2F);
             txtNoiSinh.ForeColor = Color.White;
             txtNoiSinh.Location = new Point(277, 61);
             txtNoiSinh.Name = "txtNoiSinh";
-            txtNoiSinh.Size = new Size(135, 23);
+            txtNoiSinh.Size = new Size(137, 23);
             txtNoiSinh.TabIndex = 110;
             txtNoiSinh.Text = "Quận 2, TP HCM";
             // 
@@ -240,11 +240,11 @@
             txtTinh_TP.Anchor = AnchorStyles.None;
             txtTinh_TP.AutoSize = true;
             txtTinh_TP.BackColor = Color.Transparent;
-            txtTinh_TP.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
+            txtTinh_TP.Font = new Font("Segoe UI", 10.2F);
             txtTinh_TP.ForeColor = Color.White;
             txtTinh_TP.Location = new Point(277, 102);
             txtTinh_TP.Name = "txtTinh_TP";
-            txtTinh_TP.Size = new Size(71, 23);
+            txtTinh_TP.Size = new Size(72, 23);
             txtTinh_TP.TabIndex = 112;
             txtTinh_TP.Text = "TP HCM";
             // 
@@ -254,11 +254,11 @@
             txtXa_Phuong.Anchor = AnchorStyles.None;
             txtXa_Phuong.AutoSize = true;
             txtXa_Phuong.BackColor = Color.Transparent;
-            txtXa_Phuong.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
+            txtXa_Phuong.Font = new Font("Segoe UI", 10.2F);
             txtXa_Phuong.ForeColor = Color.White;
             txtXa_Phuong.Location = new Point(277, 146);
             txtXa_Phuong.Name = "txtXa_Phuong";
-            txtXa_Phuong.Size = new Size(81, 23);
+            txtXa_Phuong.Size = new Size(84, 23);
             txtXa_Phuong.TabIndex = 113;
             txtXa_Phuong.Text = "Phường 3";
             // 
@@ -268,11 +268,11 @@
             txtQuan_Huyen.Anchor = AnchorStyles.None;
             txtQuan_Huyen.AutoSize = true;
             txtQuan_Huyen.BackColor = Color.Transparent;
-            txtQuan_Huyen.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
+            txtQuan_Huyen.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtQuan_Huyen.ForeColor = Color.White;
             txtQuan_Huyen.Location = new Point(277, 193);
             txtQuan_Huyen.Name = "txtQuan_Huyen";
-            txtQuan_Huyen.Size = new Size(65, 23);
+            txtQuan_Huyen.Size = new Size(66, 23);
             txtQuan_Huyen.TabIndex = 114;
             txtQuan_Huyen.Text = "Quận 2";
             // 
@@ -282,11 +282,11 @@
             txtSoNha.Anchor = AnchorStyles.None;
             txtSoNha.AutoSize = true;
             txtSoNha.BackColor = Color.Transparent;
-            txtSoNha.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
+            txtSoNha.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSoNha.ForeColor = Color.White;
             txtSoNha.Location = new Point(277, 242);
             txtSoNha.Name = "txtSoNha";
-            txtSoNha.Size = new Size(124, 23);
+            txtSoNha.Size = new Size(136, 25);
             txtSoNha.TabIndex = 115;
             txtSoNha.Text = "231,Hẻm 21/63";
             // 
