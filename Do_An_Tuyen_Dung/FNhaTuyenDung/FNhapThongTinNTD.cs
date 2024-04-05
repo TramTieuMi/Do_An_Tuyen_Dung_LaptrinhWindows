@@ -13,6 +13,7 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
 {
     public partial class FNhapThongTinNTD : Form
     {
+        private string connectionString = @"Data Source=KHANG\TEST1;Initial Catalog=backUp2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public FNhapThongTinNTD()
         {
             InitializeComponent();
@@ -44,6 +45,17 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
             string tenHR = txtTenHR.Text;
             string emailHR = txtEmailHR.Text;
             string sDTHR = txtSDTHR.Text;
+            string query = "INSERT INTO ThongTinCTy_Chinh VALUES (N'" + tenCty + "', N'" + tinh_TP + "', N'" + quan_Huyen + "', N'" + xa_Phuong + "', N'" + sonha + "', N'" + fileGiayPhep + "', N'" + tenHR + "', N'" + emailHR + "', N'" + sDTHR + "' )";
+            try
+            {
+
+                MessageBox.Show("Nhập Thành Công");
+                modify.Command(query);
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi Khi Nhập");
+            }
             nhapThongTin = new NhapThongTinNTD(tenCty, tinh_TP, quan_Huyen, xa_Phuong, sonha, fileGiayPhep, tenHR, emailHR, sDTHR);
         }
         public string TenCTY()

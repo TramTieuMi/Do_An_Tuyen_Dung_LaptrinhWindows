@@ -16,5 +16,10 @@ namespace Do_An_Tuyen_Dung
         {
             InitializeComponent();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

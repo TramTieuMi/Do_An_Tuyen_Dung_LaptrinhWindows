@@ -52,10 +52,12 @@
             guna2ShadowPanel1.Controls.Add(guna2HtmlLabel1);
             guna2ShadowPanel1.FillColor = Color.White;
             guna2ShadowPanel1.Location = new Point(2, 1);
+            guna2ShadowPanel1.Margin = new Padding(3, 2, 3, 2);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             guna2ShadowPanel1.ShadowColor = Color.Black;
-            guna2ShadowPanel1.Size = new Size(258, 403);
+            guna2ShadowPanel1.Size = new Size(226, 302);
             guna2ShadowPanel1.TabIndex = 0;
+            
             // 
             // pictureBox2
             // 
@@ -91,9 +93,10 @@
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel2.Location = new Point(59, 274);
+            guna2HtmlLabel2.Location = new Point(52, 206);
+            guna2HtmlLabel2.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(146, 27);
+            guna2HtmlLabel2.Size = new Size(113, 21);
             guna2HtmlLabel2.TabIndex = 2;
             guna2HtmlLabel2.Text = "TEEN COONG TY";
             // 
@@ -116,11 +119,12 @@
             // 
             // ucYeuThich
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(guna2ShadowPanel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ucYeuThich";
-            Size = new Size(261, 407);
+            Size = new Size(228, 305);
             guna2ShadowPanel1.ResumeLayout(false);
             guna2ShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
