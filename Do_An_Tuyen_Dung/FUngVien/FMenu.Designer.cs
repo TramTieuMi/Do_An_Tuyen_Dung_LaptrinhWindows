@@ -86,7 +86,7 @@
             // panel9
             // 
             panel9.Controls.Add(txtTenTK);
-            panel9.Location = new Point(877, 3);
+            panel9.Location = new Point(949, 3);
             panel9.Name = "panel9";
             panel9.Size = new Size(197, 66);
             panel9.TabIndex = 2;
@@ -112,7 +112,7 @@
             // panel8
             // 
             panel8.Controls.Add(guna2CircleButton1);
-            panel8.Location = new Point(1080, 3);
+            panel8.Location = new Point(1152, 3);
             panel8.Name = "panel8";
             panel8.Size = new Size(62, 60);
             panel8.TabIndex = 1;
@@ -126,7 +126,7 @@
             flowLayoutPanel1.FlowDirection = FlowDirection.RightToLeft;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1145, 69);
+            flowLayoutPanel1.Size = new Size(1217, 69);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -217,7 +217,7 @@
             panel1.ForeColor = Color.FromArgb(0, 74, 173);
             panel1.Location = new Point(-6, -2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(190, 725);
+            panel1.Size = new Size(190, 815);
             panel1.TabIndex = 2;
             // 
             // panel4
@@ -236,7 +236,7 @@
             panel2.Controls.Add(flowLayoutPanel1);
             panel2.Location = new Point(182, -2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1148, 725);
+            panel2.Size = new Size(1220, 815);
             panel2.TabIndex = 3;
             // 
             // pan_ThongTin
@@ -246,7 +246,7 @@
             pan_ThongTin.Location = new Point(3, 69);
             pan_ThongTin.Name = "pan_ThongTin";
             pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            pan_ThongTin.Size = new Size(1136, 653);
+            pan_ThongTin.Size = new Size(1208, 743);
             pan_ThongTin.TabIndex = 1;
             pan_ThongTin.Paint += pan_ThongTin_Paint;
             // 
@@ -254,7 +254,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1323, 721);
+            ClientSize = new Size(1395, 811);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "FMenu";

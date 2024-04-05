@@ -135,5 +135,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
+
+        private void txtCty_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

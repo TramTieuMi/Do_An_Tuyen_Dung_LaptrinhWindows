@@ -200,7 +200,7 @@
             txtHoTen.BackColor = Color.Transparent;
             txtHoTen.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtHoTen.ForeColor = Color.White;
-            txtHoTen.Location = new Point(368, 63);
+            txtHoTen.Location = new Point(471, 108);
             txtHoTen.Name = "txtHoTen";
             txtHoTen.Size = new Size(258, 60);
             txtHoTen.TabIndex = 108;
@@ -315,10 +315,10 @@
             guna2Panel2.Controls.Add(guna2GradientPanel1);
             guna2Panel2.Controls.Add(btnTroLai);
             guna2Panel2.CustomizableEdges = customizableEdges5;
-            guna2Panel2.Location = new Point(0, 3);
+            guna2Panel2.Location = new Point(0, -7);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Panel2.Size = new Size(1002, 836);
+            guna2Panel2.Size = new Size(1365, 846);
             guna2Panel2.TabIndex = 118;
             guna2Panel2.Paint += guna2Panel2_Paint;
             // 
@@ -326,7 +326,7 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 464);
+            pictureBox2.Location = new Point(0, 593);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(151, 156);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -337,7 +337,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(839, 471);
+            pictureBox1.Location = new Point(1057, 599);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(147, 149);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -364,7 +364,7 @@
             guna2GradientPanel1.Controls.Add(label9);
             guna2GradientPanel1.Controls.Add(txtSoNha);
             guna2GradientPanel1.CustomizableEdges = customizableEdges3;
-            guna2GradientPanel1.Location = new Point(242, 146);
+            guna2GradientPanel1.Location = new Point(345, 218);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2GradientPanel1.Size = new Size(558, 415);
@@ -374,7 +374,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(998, 624);
+            ClientSize = new Size(1205, 742);
             Controls.Add(guna2Panel2);
             Controls.Add(label10);
             Name = "FThongTin_UV";
