@@ -40,6 +40,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FTinhTrang));
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             fpnHT = new FlowLayoutPanel();
             label5 = new Label();
@@ -58,6 +59,7 @@
             // 
             // guna2Panel1
             // 
+            guna2Panel1.BackColor = Color.Transparent;
             guna2Panel1.Controls.Add(fpnHT);
             guna2Panel1.Controls.Add(label5);
             guna2Panel1.Controls.Add(guna2Panel11);
@@ -89,7 +91,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            label5.ForeColor = Color.Black;
+            label5.ForeColor = Color.White;
             label5.Location = new Point(668, 118);
             label5.Name = "label5";
             label5.Size = new Size(89, 23);
@@ -111,8 +113,8 @@
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.ForeColor = Color.Green;
-            label22.Location = new Point(423, 18);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(57, 18);
             label22.Name = "label22";
             label22.Size = new Size(255, 41);
             label22.TabIndex = 0;
@@ -123,7 +125,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            label4.ForeColor = Color.Black;
+            label4.ForeColor = Color.White;
             label4.Location = new Point(57, 182);
             label4.Name = "label4";
             label4.Size = new Size(79, 23);
@@ -135,7 +137,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            label3.ForeColor = Color.Black;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(57, 118);
             label3.Name = "label3";
             label3.Size = new Size(60, 23);
@@ -147,8 +149,8 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(686, 182);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(686, 175);
             label2.Name = "label2";
             label2.Size = new Size(71, 23);
             label2.TabIndex = 86;
@@ -244,6 +246,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1181, 650);
             Controls.Add(guna2Panel1);
             Name = "FTinhTrang";
