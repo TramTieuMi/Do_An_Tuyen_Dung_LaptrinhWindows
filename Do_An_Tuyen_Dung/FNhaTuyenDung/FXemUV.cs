@@ -20,24 +20,32 @@ namespace Do_An_Ung_Dung_Tim_Viec
         public FXemUV()
         {
             InitializeComponent();
-            LoadDanhSach();
         }
-
-        public void LoadDanhSach()
+        public FXemUV(string tenCTy, string tenCV)
+        {
+            InitializeComponent();
+            txtNganh.Text = tenCV;
+            LoadDanhSach(tenCTy, tenCV);
+        }
+        public void LoadDanhSach(string tenCTy, string tenCV)
         {
             List<XemUV> list = new List<XemUV>();
             try
             {
-                string query = "SELECT HoTenUV FROM NhapThongTinUV ";
+                string query = "SELECT * FROM TinhTrangCV ";
                 SqlCommand command = new SqlCommand(query, connStr);
                 connStr.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    string hoten = reader["HoTenUV"].ToString();
-                    XemUV xem = new XemUV(hoten);
+                    if (tenCTy == reader["TenCTy"].ToString() && tenCV == reader["TenCongViec"].ToString())
+                    {
+                        string hoten = reader["TenUV"].ToString();
+                        string email = reader["EmailUV"].ToString();
+                        XemUV xem = new XemUV(hoten, email);
 
-                    list.Add(xem);
+                        list.Add(xem);
+                    }
                 }
             }
             catch (Exception ex)

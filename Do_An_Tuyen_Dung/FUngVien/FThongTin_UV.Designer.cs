@@ -320,6 +320,7 @@
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Panel2.Size = new Size(1002, 836);
             guna2Panel2.TabIndex = 118;
+            guna2Panel2.Paint += guna2Panel2_Paint;
             // 
             // pictureBox2
             // 

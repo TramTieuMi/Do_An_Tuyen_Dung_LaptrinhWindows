@@ -18,6 +18,7 @@ namespace Do_An_Tuyen_Dung
     {
         LichSuNTD lichSuNTD;
         SqlConnection connStr = Connection.GetSqlConnection();
+        string tenCTy;
         public UCLichSuNTD()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace Do_An_Tuyen_Dung
             this.lichSuNTD = lichSuNTD;
             txtNganh1.Text = lichSuNTD.Nganh;
             txtDiaDiem1.Text = lichSuNTD.DiaDiem;
-
+            tenCTy = lichSuNTD.TenCTy;
         }
 
         public void Xoa()
@@ -72,7 +73,7 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            FXemUV fXemUV = new FXemUV();
+            FXemUV fXemUV = new FXemUV(tenCTy,txtNganh1.Text);
             fXemUV.ShowDialog();
         }
     }

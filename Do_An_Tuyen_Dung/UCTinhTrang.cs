@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Do_An_Tuyen_Dung.FUngVien;
+using Do_An_Ung_Dung_Tim_Viec;
+using Do_An_Ung_Dung_Tim_Viec.FORM_NTD;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,12 +10,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Do_An_Tuyen_Dung
 {
     public partial class UCTinhTrang : UserControl
     {
         TinhTrang tinhTrang;
+        SqlConnection connStr = Connection.GetSqlConnection();
         public UCTinhTrang()
         {
             InitializeComponent();
@@ -28,6 +33,35 @@ namespace Do_An_Tuyen_Dung
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void Xoa()
+        {
+            try
+            {
+                string query = string.Format("DELETE FROM TinhTrangCV WHERE TenCongViec = '{0}' AND TenCTy = '{1}'", txtNganh.Text, txtCTy.Text );
+                SqlCommand command = new SqlCommand(query, connStr);
+
+                connStr.Open();
+                if (command.ExecuteNonQuery() > 0)
+                    MessageBox.Show("Xóa thành công");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi : " + ex.Message);
+            }
+            finally
+            {
+                connStr.Close();
+            }
+        }
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            Xoa();
         }
     }
 }

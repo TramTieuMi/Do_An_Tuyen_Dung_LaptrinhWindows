@@ -20,7 +20,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
     public partial class FThongTin_NTD : Form
     {
         Modify modify = new Modify();
-        string tenTaiKhoan ;
+        string tenTaiKhoan;
         public FThongTin_NTD()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
         public FThongTin_NTD(string chuoi)
         {
             tenTaiKhoan = chuoi;
-            InitializeComponent(); 
+            InitializeComponent();
             ThucThi(tenTaiKhoan);
         }
         public void ThucThi(string tenTaiKhoan)
@@ -41,7 +41,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
 
             DataTable dataTable1 = new DataTable();
             string sqlQuery1 = "SELECT TenTaiKhoan,Email FROM TaoTaiKhoan WHERE TenTaiKhoan = @TenTaiKhoan";
-            modify.TaiDuLieu(dataTable1, sqlQuery1, "@TenTaiKhoan", tenTaiKhoan);            
+            modify.TaiDuLieu(dataTable1, sqlQuery1, "@TenTaiKhoan", tenTaiKhoan);
             if (dataTable1.Rows.Count > 0)
             {
                 foreach (DataRow row1 in dataTable1.Rows)

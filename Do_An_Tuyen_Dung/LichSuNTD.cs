@@ -10,21 +10,21 @@ namespace Do_An_Tuyen_Dung
     {
         string nganh;
         string diaDiem;
-        //string soNguoi;
+        string tenCTy;
 
         public LichSuNTD()
         {
         }
 
-        public LichSuNTD(string nganh, string diaDiem)
+        public LichSuNTD(string nganh, string diaDiem, string tenCTy)
         {
             this.nganh = nganh;
             this.diaDiem = diaDiem;
-            //this.soNguoi = soNguoi;
+            this.tenCTy = tenCTy;
         }
 
         public string Nganh { get => nganh; set => nganh = value; }
         public string DiaDiem { get => diaDiem; set => diaDiem = value; }
-        //public string SoNguoi { get => soNguoi; set => soNguoi = value; }
+        public string TenCTy { get => tenCTy; set => tenCTy = value; }
     }
 }

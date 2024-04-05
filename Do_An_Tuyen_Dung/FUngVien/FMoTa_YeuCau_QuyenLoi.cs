@@ -73,7 +73,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
                 DataTable dataTable1 = new DataTable();
                 string query1 = "SELECT TenCTy,EmailHR FROM ThongTinCTy_Chinh WHERE EmailHR =@EmailHR";
-                string em1 = txtEmailHR.Text;              
+                string em1 = txtEmailHR.Text;
                 modify.TaiDuLieu(dataTable1, query1, "@EmailHR", em1);
                 if (dataTable1.Rows.Count > 0)
                 {
