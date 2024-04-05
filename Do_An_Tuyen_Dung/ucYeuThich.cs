@@ -16,5 +16,10 @@ namespace Do_An_Tuyen_Dung
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

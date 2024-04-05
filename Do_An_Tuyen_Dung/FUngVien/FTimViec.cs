@@ -35,7 +35,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 connStr.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 fpnHT.Controls.Clear();
-                if (chuoi == null)
+                if (chuoi == null || chuoi == string.Empty)
                 {
                     while (reader.Read())
                     {
@@ -52,7 +52,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 {
                     while (reader.Read())
                     {
-                        if (chuoi == reader["TenCongViec"].ToString())
+                        if (chuoi == reader["TenCongViec"].ToString() || chuoi == reader["Tinh_TP"].ToString() || chuoi == reader["Luong"].ToString() || chuoi == reader["KinhNghiem"].ToString())
                         {
                             string nganh = reader["TenCongViec"].ToString();
                             string diaDiem = reader["Tinh_TP"].ToString();
@@ -60,33 +60,6 @@ namespace Do_An_Tuyen_Dung.FUngVien
                             string kinhNghiem = reader["KinhNghiem"].ToString();
                             TimKiem tim = new TimKiem(nganh, diaDiem, luong, kinhNghiem);
 
-                            list.Add(tim);
-                        }
-                        else if (chuoi == reader["Tinh_TP"].ToString())
-                        {
-                            string nganh = reader["TenCongViec"].ToString();
-                            string diaDiem = reader["Tinh_TP"].ToString();
-                            string luong = reader["Luong"].ToString();
-                            string kinhNghiem = reader["KinhNghiem"].ToString();
-                            TimKiem tim = new TimKiem(nganh, diaDiem, luong, kinhNghiem);
-                            list.Add(tim);
-                        }
-                        else if (chuoi == reader["Luong"].ToString())
-                        {
-                            string nganh = reader["TenCongViec"].ToString();
-                            string diaDiem = reader["Tinh_TP"].ToString();
-                            string luong = reader["Luong"].ToString();
-                            string kinhNghiem = reader["KinhNghiem"].ToString();
-                            TimKiem tim = new TimKiem(nganh, diaDiem, luong, kinhNghiem);
-                            list.Add(tim);
-                        }
-                        else if (chuoi == reader["KinhNghiem"].ToString())
-                        {
-                            string nganh = reader["TenCongViec"].ToString();
-                            string diaDiem = reader["Tinh_TP"].ToString();
-                            string luong = reader["Luong"].ToString();
-                            string kinhNghiem = reader["KinhNghiem"].ToString();
-                            TimKiem tim = new TimKiem(nganh, diaDiem, luong, kinhNghiem);
                             list.Add(tim);
                         }
                     }

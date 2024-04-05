@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucYeuThich));
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            panel1 = new Panel();
-            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            panel1 = new Panel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -57,41 +57,16 @@
             guna2ShadowPanel1.Size = new Size(258, 403);
             guna2ShadowPanel1.TabIndex = 0;
             // 
-            // guna2HtmlLabel1
+            // pictureBox2
             // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel1.Location = new Point(47, 35);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(167, 30);
-            guna2HtmlLabel1.TabIndex = 0;
-            guna2HtmlLabel1.Text = "DATA ENGINNER";
-            // 
-            // panel1
-            // 
-            panel1.Location = new Point(47, 81);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(167, 174);
-            panel1.TabIndex = 1;
-            // 
-            // guna2HtmlLabel2
-            // 
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel2.Location = new Point(59, 274);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(146, 27);
-            guna2HtmlLabel2.TabIndex = 2;
-            guna2HtmlLabel2.Text = "TEEN COONG TY";
-            // 
-            // guna2HtmlLabel3
-            // 
-            guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(42, 331);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(146, 22);
-            guna2HtmlLabel3.TabIndex = 3;
-            guna2HtmlLabel3.Text = "Thời Hạn: 20/12/2033";
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(194, 324);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(44, 41);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
@@ -103,15 +78,41 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // guna2HtmlLabel3
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(194, 324);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(44, 41);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
+            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.Location = new Point(42, 331);
+            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            guna2HtmlLabel3.Size = new Size(146, 22);
+            guna2HtmlLabel3.TabIndex = 3;
+            guna2HtmlLabel3.Text = "Thời Hạn: 20/12/2033";
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel2.Location = new Point(59, 274);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(146, 27);
+            guna2HtmlLabel2.TabIndex = 2;
+            guna2HtmlLabel2.Text = "TEEN COONG TY";
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(47, 81);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(167, 174);
+            panel1.TabIndex = 1;
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel1.Location = new Point(47, 35);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(167, 30);
+            guna2HtmlLabel1.TabIndex = 0;
+            guna2HtmlLabel1.Text = "DATA ENGINNER";
             // 
             // ucYeuThich
             // 
@@ -122,8 +123,8 @@
             Size = new Size(261, 407);
             guna2ShadowPanel1.ResumeLayout(false);
             guna2ShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 

@@ -7,24 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FThongTin_UV : Form
     {
         Modify modify = new Modify();
-        string ten = FLogin.TenTaiKhoan;
+        SqlConnection connStr = Connection.GetSqlConnection();
         public FThongTin_UV()
         {
             InitializeComponent();
-            if (ten != null)
-            {
-                ThucThi();
-                btnTroLai.Visible = false;
-            }
+            ThucThi(FLogin.TenTaiKhoan);
+        }
+        public FThongTin_UV(string tenUV, string email)
+        {
+            InitializeComponent();
+            string tenTK = KiemTK(email);
+            ThucThi(tenTK);
         }
 
-        public void ThucThi()
+        public string KiemTK(string email)
+        {
+            string tk = string.Empty;
+            string query = "SELECT TenTaiKhoan,Email FROM TaoTaiKhoan";
+            SqlCommand command = new SqlCommand(query, connStr);
+            connStr.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader["Email"].ToString() == email)
+                {
+                    tk = reader["TenTaiKhoan"].ToString();
+                    break;
+                }
+            }
+            return tk;
+        }
+
+        public void ThucThi(string tenTK)
         {
             FLogin fLogin = new FLogin();
             string em = "VanKien@gmail.com";
@@ -34,13 +55,13 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
             DataTable dataTable1 = new DataTable();
             string sqlQuery1 = "SELECT TenTaiKhoan,Email FROM TaoTaiKhoan WHERE TenTaiKhoan = @TenTaiKhoan";
-            modify.TaiDuLieu(dataTable1, sqlQuery1, "@TenTaiKhoan", ten);
+            modify.TaiDuLieu(dataTable1, sqlQuery1, "@TenTaiKhoan", tenTK);
             if (dataTable1.Rows.Count > 0)
             {
                 foreach (DataRow row1 in dataTable1.Rows)
                 {
                     string TenTK = row1["TenTaiKhoan"].ToString();
-                    if (TenTK == ten)
+                    if (TenTK == tenTK)
                     {
                         em = row1["Email"].ToString();
                     }
@@ -81,6 +102,11 @@ namespace Do_An_Tuyen_Dung.FUngVien
         private void btnTroLai_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
