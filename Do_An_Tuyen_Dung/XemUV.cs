@@ -9,16 +9,19 @@ namespace Do_An_Tuyen_Dung
     public class XemUV
     {
         string ten;
+        string email;
 
         public XemUV()
         {
         }
 
-        public XemUV(string ten)
+        public XemUV(string ten, string email)
         {
             this.ten = ten;
+            this.email = email;
         }
 
         public string Ten { get => ten; set => ten = value; }
+        public string Email { get => email; set => email = value; }
     }
 }

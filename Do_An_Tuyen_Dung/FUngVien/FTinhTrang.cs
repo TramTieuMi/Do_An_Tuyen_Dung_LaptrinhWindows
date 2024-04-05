@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FTinhTrang : Form
@@ -18,63 +19,70 @@ namespace Do_An_Tuyen_Dung.FUngVien
         public FTinhTrang()
         {
             InitializeComponent();
-            LoadDanhSach(null);
+            string em = KiemEmail();
+            LoadDanhSach(null, em);
         }
 
-        public void LoadDanhSach(string chuoi)
+        public string KiemEmail()
+        {
+            string em = string.Empty;
+            string query = "SELECT TenTaiKhoan,Email FROM TaoTaiKhoan";
+            SqlCommand command = new SqlCommand(query, connStr);
+            connStr.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader["TenTaiKhoan"].ToString() == FLogin.TenTaiKhoan)
+                {
+                    em = reader["Email"].ToString();
+                    break;
+                }
+            }
+            connStr.Close();
+            return em;
+        }
+
+        public void LoadDanhSach(string chuoi, string email)
         {
             List<TinhTrang> list = new List<TinhTrang>();
             try
             {
-                string query = "SELECT TenCongViec,Tinh_TP,TenCTy FROM DangBaiNTD INNER JOIN ThongTinCTy_Chinh on DangBaiNTD.EmailHR = ThongTinCTy_Chinh.EmailHR ";
+                string query = "SELECT TenCongViec,TenCTy,EmailUV,DiaDiem FROM TinhTrangCV";
                 SqlCommand command = new SqlCommand(query, connStr);
                 connStr.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 fpnHT.Controls.Clear();
+
+
                 if (chuoi == null)
                 {
                     while (reader.Read())
                     {
-                        string nganh = reader["TenCongViec"].ToString();
-                        string diaDiem = reader["Tinh_TP"].ToString();
-                        string cty = reader["TenCTy"].ToString();
-                        TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty);
-
-                        list.Add(tinh);
+                        if (email == reader["EmailUV"].ToString())
+                        {
+                            string nganh = reader["TenCongViec"].ToString();
+                            string diaDiem = reader["DiaDiem"].ToString();
+                            string cty = reader["TenCTy"].ToString();
+                            TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty);
+                            list.Add(tinh);
+                        }
                     }
                 }
                 else
                 {
                     while (reader.Read())
                     {
-                        if (chuoi == reader["TenCongViec"].ToString())
+                        if (chuoi == reader["TenCongViec"].ToString() || chuoi == reader["DiaDiem"].ToString() || chuoi == reader["TenCTy"].ToString())
                         {
-                            string nganh = reader["TenCongViec"].ToString();
-                            string diaDiem = reader["Tinh_TP"].ToString();
-                            string cty = reader["TenCTy"].ToString();
-                            TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty);
-
-                            list.Add(tinh);
+                            if (email == reader["EmailUV"].ToString())
+                            {
+                                string nganh = reader["TenCongViec"].ToString();
+                                string diaDiem = reader["DiaDiem"].ToString();
+                                string cty = reader["TenCTy"].ToString();
+                                TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty);
+                                list.Add(tinh);
+                            }
                         }
-                        else if (chuoi == reader["Tinh_TP"].ToString())
-                        {
-                            string nganh = reader["TenCongViec"].ToString();
-                            string diaDiem = reader["Tinh_TP"].ToString();
-                            string cty = reader["TenCTy"].ToString();
-                            TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty);
-
-                            list.Add(tinh);
-                        }
-                        else if (chuoi == reader["TenCTy"].ToString())
-                        {
-                            string nganh = reader["TenCongViec"].ToString();
-                            string diaDiem = reader["Tinh_TP"].ToString();
-                            string cty = reader["TenCTy"].ToString();
-                            TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty);
-
-                            list.Add(tinh);
-                        }
-
                     }
                 }
 
@@ -108,7 +116,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void Combobox_Nganh_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadDanhSach(Combobox_Nganh.Text);
+            LoadDanhSach(Combobox_Nganh.Text, KiemEmail());
         }
 
         private void pan_HTTT_Paint(object sender, PaintEventArgs e)
@@ -122,12 +130,12 @@ namespace Do_An_Tuyen_Dung.FUngVien
         }
         private void Combobox_DiaDiem_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            LoadDanhSach(Combobox_DiaDiem.Text);
+            LoadDanhSach(Combobox_DiaDiem.Text, KiemEmail());
         }
 
         private void Combobox_CTy_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadDanhSach(Combobox_CTy.Text);
+            LoadDanhSach(Combobox_CTy.Text, KiemEmail());
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Do_An_Tuyen_Dung
     public partial class UCXemUV : UserControl
     {
         XemUV xemUV = new XemUV();
+        string em;
         public UCXemUV()
         {
             InitializeComponent();
@@ -23,8 +24,7 @@ namespace Do_An_Tuyen_Dung
             InitializeComponent();
             this.xemUV = xemUV;
             txtTen.Text = xemUV.Ten;
-
-
+            em = xemUV.Email;
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
@@ -34,7 +34,7 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            FThongTin_UV fThongTin_UV = new FThongTin_UV();
+            FThongTin_UV fThongTin_UV = new FThongTin_UV(txtTen.Text,em);
             fThongTin_UV.ShowDialog();
         }
     }

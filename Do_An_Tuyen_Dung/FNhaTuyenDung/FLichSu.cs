@@ -16,8 +16,6 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
     public partial class FLichSu : Form
     {
         SqlConnection connStr = Connection.GetSqlConnection();
-        string ss = FLogin.TenTaiKhoan;
-
         public FLichSu()
         {
             InitializeComponent();
@@ -26,7 +24,7 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
 
         public bool KTTenCTy(string chuoi)
         {
-            if(chuoi == ss)
+            if (chuoi == FLogin.TenTaiKhoan)
             {
                 return true;
             }
@@ -38,7 +36,7 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
             List<LichSuNTD> list = new List<LichSuNTD>();
             try
             {
-                string query = "SELECT TenCongViec,Tinh_TP,TenTaiKhoan FROM DangBaiNTD " +
+                string query = "SELECT TenCongViec,Tinh_TP,TenTaiKhoan,TenCTy FROM DangBaiNTD " +
                     "JOIN ThongTinCTy_Chinh on DangBaiNTD.EmailHR = ThongTinCTy_Chinh.EmailHR " +
                     "JOIN TaoTaiKhoan on TaoTaiKhoan.Email = ThongTinCTy_Chinh.EmailHR";
                 SqlCommand command = new SqlCommand(query, connStr);
@@ -46,21 +44,22 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
                 SqlDataReader reader = command.ExecuteReader();
                 fpn_HienThi.Controls.Clear();
 
-                
+
 
                 if (chuoi == null)
                 {
                     while (reader.Read())
                     {
-                        if(KTTenCTy(reader["TenTaiKhoan"].ToString()) == true)
+                        if (KTTenCTy(reader["TenTaiKhoan"].ToString()) == true)
                         {
                             string nganh = reader["TenCongViec"].ToString();
+                            string tenCTy = reader["TenCTy"].ToString();
                             string diaDiem = reader["Tinh_TP"].ToString();
-                            LichSuNTD lich = new LichSuNTD(nganh, diaDiem);
+                            LichSuNTD lich = new LichSuNTD(nganh, diaDiem, tenCTy);
 
                             list.Add(lich);
                         }
-                        
+
                     }
                 }
                 else
@@ -69,23 +68,16 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
                     {
                         if (KTTenCTy(reader["TenTaiKhoan"].ToString()) == true)
                         {
-                            if (chuoi == reader["TenCongViec"].ToString())
+                            if (chuoi == reader["TenCongViec"].ToString() || chuoi == reader["Tinh_TP"].ToString())
                             {
                                 string nganh = reader["TenCongViec"].ToString();
+                                string tenCTy = reader["TenCTy"].ToString();
                                 string diaDiem = reader["Tinh_TP"].ToString();
-                                LichSuNTD lich = new LichSuNTD(nganh, diaDiem);
+                                LichSuNTD lich = new LichSuNTD(nganh, diaDiem, tenCTy);
 
                                 list.Add(lich);
                             }
-                            else if (chuoi == reader["Tinh_TP"].ToString())
-                            {
-                                string nganh = reader["TenCongViec"].ToString();
-                                string diaDiem = reader["Tinh_TP"].ToString();
-                                LichSuNTD lich = new LichSuNTD(nganh, diaDiem);
-
-                                list.Add(lich);
-                            }
-                        }                       
+                        }
                     }
                 }
 

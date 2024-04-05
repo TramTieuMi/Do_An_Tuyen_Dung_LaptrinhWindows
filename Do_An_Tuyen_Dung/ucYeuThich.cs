@@ -17,7 +17,7 @@ namespace Do_An_Tuyen_Dung
             InitializeComponent();
         }
 
-        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

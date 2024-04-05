@@ -62,21 +62,20 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(170, 243);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(194, 324);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(38, 31);
+            pictureBox2.Size = new Size(44, 41);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(170, 243);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(194, 324);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(38, 31);
+            pictureBox1.Size = new Size(44, 41);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -84,10 +83,9 @@
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(37, 248);
-            guna2HtmlLabel3.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel3.Location = new Point(42, 331);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(115, 17);
+            guna2HtmlLabel3.Size = new Size(146, 22);
             guna2HtmlLabel3.TabIndex = 3;
             guna2HtmlLabel3.Text = "Thời Hạn: 20/12/2033";
             // 
@@ -104,20 +102,18 @@
             // 
             // panel1
             // 
-            panel1.Location = new Point(41, 61);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(47, 81);
             panel1.Name = "panel1";
-            panel1.Size = new Size(146, 130);
+            panel1.Size = new Size(167, 174);
             panel1.TabIndex = 1;
             // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel1.Location = new Point(41, 26);
-            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel1.Location = new Point(47, 35);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(133, 23);
+            guna2HtmlLabel1.Size = new Size(167, 30);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "DATA ENGINNER";
             // 

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FXemUV));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel7 = new Panel();
             button3 = new Button();
             panel6 = new Panel();
@@ -53,7 +53,7 @@
             panel8 = new Panel();
             fpn_HienThi = new FlowLayoutPanel();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            label3 = new Label();
+            txtNganh = new Label();
             Combobox_KinhNghiem = new Guna.UI2.WinForms.Guna2ComboBox();
             Combobox_TrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
             label5 = new Label();
@@ -239,24 +239,24 @@
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.Transparent;
-            guna2Panel1.Controls.Add(label3);
-            guna2Panel1.CustomizableEdges = customizableEdges1;
+            guna2Panel1.Controls.Add(txtNganh);
+            guna2Panel1.CustomizableEdges = customizableEdges7;
             guna2Panel1.Location = new Point(-2, 0);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Panel1.Size = new Size(1184, 80);
             guna2Panel1.TabIndex = 71;
             // 
-            // label3
+            // txtNganh
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Green;
-            label3.Location = new Point(484, 16);
-            label3.Name = "label3";
-            label3.Size = new Size(128, 38);
-            label3.TabIndex = 0;
-            label3.Text = "BackEnd";
+            txtNganh.AutoSize = true;
+            txtNganh.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtNganh.ForeColor = Color.Green;
+            txtNganh.Location = new Point(484, 16);
+            txtNganh.Name = "txtNganh";
+            txtNganh.Size = new Size(128, 38);
+            txtNganh.TabIndex = 0;
+            txtNganh.Text = "BackEnd";
             // 
             // Combobox_KinhNghiem
             // 
@@ -264,7 +264,7 @@
             Combobox_KinhNghiem.BorderColor = Color.Black;
             Combobox_KinhNghiem.BorderRadius = 10;
             Combobox_KinhNghiem.BorderThickness = 2;
-            Combobox_KinhNghiem.CustomizableEdges = customizableEdges3;
+            Combobox_KinhNghiem.CustomizableEdges = customizableEdges9;
             Combobox_KinhNghiem.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_KinhNghiem.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_KinhNghiem.FillColor = SystemColors.Control;
@@ -276,7 +276,7 @@
             Combobox_KinhNghiem.Items.AddRange(new object[] { "1 năm", "2 năm", "3 năm", "4 năm", "5 năm", "6 năm" });
             Combobox_KinhNghiem.Location = new Point(727, 84);
             Combobox_KinhNghiem.Name = "Combobox_KinhNghiem";
-            Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges10;
             Combobox_KinhNghiem.Size = new Size(269, 36);
             Combobox_KinhNghiem.TabIndex = 74;
             // 
@@ -286,7 +286,7 @@
             Combobox_TrangThai.BorderColor = Color.Black;
             Combobox_TrangThai.BorderRadius = 10;
             Combobox_TrangThai.BorderThickness = 2;
-            Combobox_TrangThai.CustomizableEdges = customizableEdges5;
+            Combobox_TrangThai.CustomizableEdges = customizableEdges11;
             Combobox_TrangThai.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_TrangThai.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_TrangThai.FillColor = SystemColors.Control;
@@ -298,7 +298,7 @@
             Combobox_TrangThai.Items.AddRange(new object[] { "Đã Xem", "Chưa Xem" });
             Combobox_TrangThai.Location = new Point(215, 84);
             Combobox_TrangThai.Name = "Combobox_TrangThai";
-            Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges12;
             Combobox_TrangThai.Size = new Size(269, 36);
             Combobox_TrangThai.TabIndex = 73;
             Combobox_TrangThai.SelectedIndexChanged += Combobox_TrangThai_SelectedIndexChanged;
@@ -374,7 +374,7 @@
         private Label label12;
         private Panel panel8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Label label3;
+        private Label txtNganh;
         private Guna.UI2.WinForms.Guna2ComboBox Combobox_KinhNghiem;
         private Guna.UI2.WinForms.Guna2ComboBox Combobox_TrangThai;
         private Label label5;
