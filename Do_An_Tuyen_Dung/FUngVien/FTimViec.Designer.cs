@@ -93,7 +93,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(49, 102);
+            label1.Location = new Point(58, 104);
             label1.Name = "label1";
             label1.Size = new Size(121, 23);
             label1.TabIndex = 32;
@@ -181,7 +181,7 @@
             Combobox_DiaDiem.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_DiaDiem.ItemHeight = 30;
             Combobox_DiaDiem.Items.AddRange(new object[] { "Kom Tum", "TP HCM", "Đà Nẵng", "Hà Nội" });
-            Combobox_DiaDiem.Location = new Point(143, 166);
+            Combobox_DiaDiem.Location = new Point(144, 166);
             Combobox_DiaDiem.Name = "Combobox_DiaDiem";
             Combobox_DiaDiem.ShadowDecoration.CustomizableEdges = customizableEdges10;
             Combobox_DiaDiem.Size = new Size(225, 36);
