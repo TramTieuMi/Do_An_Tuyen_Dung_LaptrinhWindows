@@ -111,5 +111,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
             LoadDanhSach(Combobox_KinhNghiem.Text);
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
