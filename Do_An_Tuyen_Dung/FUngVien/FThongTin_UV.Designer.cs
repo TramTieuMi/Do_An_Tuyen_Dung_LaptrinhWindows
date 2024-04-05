@@ -296,12 +296,14 @@
             txtlinkFileCV.BackColor = Color.Transparent;
             txtlinkFileCV.BorderStyle = BorderStyle.Fixed3D;
             txtlinkFileCV.ForeColor = Color.White;
+            txtlinkFileCV.LinkColor = Color.White;
             txtlinkFileCV.Location = new Point(277, 281);
             txtlinkFileCV.Name = "txtlinkFileCV";
             txtlinkFileCV.Size = new Size(78, 22);
             txtlinkFileCV.TabIndex = 117;
             txtlinkFileCV.TabStop = true;
             txtlinkFileCV.Text = "linkLabel1";
+            txtlinkFileCV.VisitedLinkColor = Color.WhiteSmoke;
             // 
             // guna2Panel2
             // 

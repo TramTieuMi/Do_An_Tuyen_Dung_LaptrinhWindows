@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FNhapThongTin_UV));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -44,13 +47,11 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FNhapThongTin_UV));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel3 = new Panel();
             label13 = new Label();
+            btn_TroLai = new Guna.UI2.WinForms.Guna2Button();
             label2 = new Label();
             label1 = new Label();
             label3 = new Label();
@@ -68,7 +69,6 @@
             label4 = new Label();
             txtFileCV = new Guna.UI2.WinForms.Guna2TextBox();
             label10 = new Label();
-            btn_TroLai = new Guna.UI2.WinForms.Guna2Button();
             btn_Luu = new Guna.UI2.WinForms.Guna2Button();
             pictureBox1 = new PictureBox();
             panel3.SuspendLayout();
@@ -99,6 +99,29 @@
             label13.TabIndex = 0;
             label13.Text = "Nhập Thông Tin Cá Nhân";
             // 
+            // btn_TroLai
+            // 
+            btn_TroLai.AllowDrop = true;
+            btn_TroLai.BackColor = Color.Transparent;
+            btn_TroLai.BorderColor = Color.Transparent;
+            btn_TroLai.BorderRadius = 10;
+            btn_TroLai.BorderThickness = 2;
+            btn_TroLai.CustomizableEdges = customizableEdges1;
+            btn_TroLai.DisabledState.BorderColor = Color.DarkGray;
+            btn_TroLai.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_TroLai.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_TroLai.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_TroLai.FillColor = Color.Transparent;
+            btn_TroLai.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_TroLai.ForeColor = Color.White;
+            btn_TroLai.Image = (Image)resources.GetObject("btn_TroLai.Image");
+            btn_TroLai.Location = new Point(-20, 22);
+            btn_TroLai.Name = "btn_TroLai";
+            btn_TroLai.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_TroLai.Size = new Size(130, 40);
+            btn_TroLai.TabIndex = 83;
+            btn_TroLai.Click += btn_TroLai_Click;
+            // 
             // label2
             // 
             label2.AllowDrop = true;
@@ -107,7 +130,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(185, 157);
+            label2.Location = new Point(182, 206);
             label2.Name = "label2";
             label2.Size = new Size(89, 23);
             label2.TabIndex = 46;
@@ -121,7 +144,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(182, 218);
+            label1.Location = new Point(179, 267);
             label1.Name = "label1";
             label1.Size = new Size(92, 23);
             label1.TabIndex = 47;
@@ -135,7 +158,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(649, 157);
+            label3.Location = new Point(646, 206);
             label3.Name = "label3";
             label3.Size = new Size(79, 23);
             label3.TabIndex = 48;
@@ -156,7 +179,7 @@
             Combobox_Quan_Huyen.Font = new Font("Segoe UI", 10F);
             Combobox_Quan_Huyen.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Quan_Huyen.ItemHeight = 30;
-            Combobox_Quan_Huyen.Location = new Point(746, 283);
+            Combobox_Quan_Huyen.Location = new Point(743, 332);
             Combobox_Quan_Huyen.Name = "Combobox_Quan_Huyen";
             Combobox_Quan_Huyen.ShadowDecoration.CustomizableEdges = customizableEdges4;
             Combobox_Quan_Huyen.Size = new Size(270, 36);
@@ -177,7 +200,7 @@
             Combobox_Xa_Phuong.Font = new Font("Segoe UI", 10F);
             Combobox_Xa_Phuong.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Xa_Phuong.ItemHeight = 30;
-            Combobox_Xa_Phuong.Location = new Point(295, 356);
+            Combobox_Xa_Phuong.Location = new Point(292, 405);
             Combobox_Xa_Phuong.Name = "Combobox_Xa_Phuong";
             Combobox_Xa_Phuong.ShadowDecoration.CustomizableEdges = customizableEdges6;
             Combobox_Xa_Phuong.Size = new Size(247, 36);
@@ -198,7 +221,7 @@
             Combobox_Tinh_TP.Font = new Font("Segoe UI", 10F);
             Combobox_Tinh_TP.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Tinh_TP.ItemHeight = 30;
-            Combobox_Tinh_TP.Location = new Point(295, 283);
+            Combobox_Tinh_TP.Location = new Point(292, 332);
             Combobox_Tinh_TP.Name = "Combobox_Tinh_TP";
             Combobox_Tinh_TP.ShadowDecoration.CustomizableEdges = customizableEdges8;
             Combobox_Tinh_TP.Size = new Size(247, 36);
@@ -220,7 +243,7 @@
             txtSoNha.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSoNha.Font = new Font("Segoe UI", 9F);
             txtSoNha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSoNha.Location = new Point(746, 356);
+            txtSoNha.Location = new Point(743, 405);
             txtSoNha.Margin = new Padding(3, 4, 3, 4);
             txtSoNha.Name = "txtSoNha";
             txtSoNha.PasswordChar = '\0';
@@ -238,7 +261,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(659, 364);
+            label6.Location = new Point(656, 413);
             label6.Name = "label6";
             label6.Size = new Size(69, 23);
             label6.TabIndex = 67;
@@ -252,7 +275,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(136, 296);
+            label9.Location = new Point(133, 345);
             label9.Name = "label9";
             label9.Size = new Size(138, 23);
             label9.TabIndex = 66;
@@ -266,7 +289,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(173, 364);
+            label5.Location = new Point(170, 413);
             label5.Name = "label5";
             label5.Size = new Size(101, 23);
             label5.TabIndex = 65;
@@ -280,7 +303,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(617, 296);
+            label7.Location = new Point(614, 345);
             label7.Name = "label7";
             label7.Size = new Size(111, 23);
             label7.TabIndex = 64;
@@ -303,7 +326,7 @@
             txtHoTen.Font = new Font("Segoe UI", 9F);
             txtHoTen.ForeColor = Color.Transparent;
             txtHoTen.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtHoTen.Location = new Point(297, 148);
+            txtHoTen.Location = new Point(294, 197);
             txtHoTen.Margin = new Padding(3, 4, 3, 4);
             txtHoTen.Name = "txtHoTen";
             txtHoTen.PasswordChar = '\0';
@@ -330,7 +353,7 @@
             txtNoiSinh.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNoiSinh.Font = new Font("Segoe UI", 9F);
             txtNoiSinh.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNoiSinh.Location = new Point(746, 144);
+            txtNoiSinh.Location = new Point(743, 193);
             txtNoiSinh.Margin = new Padding(3, 4, 3, 4);
             txtNoiSinh.Name = "txtNoiSinh";
             txtNoiSinh.PasswordChar = '\0';
@@ -349,7 +372,7 @@
             dateNgayThangNamSinh.Font = new Font("Segoe UI", 9F);
             dateNgayThangNamSinh.ForeColor = SystemColors.ButtonHighlight;
             dateNgayThangNamSinh.Format = DateTimePickerFormat.Long;
-            dateNgayThangNamSinh.Location = new Point(297, 218);
+            dateNgayThangNamSinh.Location = new Point(294, 267);
             dateNgayThangNamSinh.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dateNgayThangNamSinh.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dateNgayThangNamSinh.Name = "dateNgayThangNamSinh";
@@ -366,7 +389,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(663, 231);
+            label4.Location = new Point(660, 280);
             label4.Name = "label4";
             label4.Size = new Size(65, 23);
             label4.TabIndex = 75;
@@ -388,7 +411,7 @@
             txtFileCV.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtFileCV.Font = new Font("Segoe UI", 9F);
             txtFileCV.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtFileCV.Location = new Point(746, 218);
+            txtFileCV.Location = new Point(743, 267);
             txtFileCV.Margin = new Padding(3, 4, 3, 4);
             txtFileCV.Name = "txtFileCV";
             txtFileCV.PasswordChar = '\0';
@@ -408,29 +431,6 @@
             label10.Size = new Size(0, 25);
             label10.TabIndex = 79;
             // 
-            // btn_TroLai
-            // 
-            btn_TroLai.AllowDrop = true;
-            btn_TroLai.BackColor = Color.Transparent;
-            btn_TroLai.BorderColor = Color.Transparent;
-            btn_TroLai.BorderRadius = 10;
-            btn_TroLai.BorderThickness = 2;
-            btn_TroLai.CustomizableEdges = customizableEdges1;
-            btn_TroLai.DisabledState.BorderColor = Color.DarkGray;
-            btn_TroLai.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_TroLai.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_TroLai.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_TroLai.FillColor = Color.Transparent;
-            btn_TroLai.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_TroLai.ForeColor = Color.White;
-            btn_TroLai.Image = (Image)resources.GetObject("btn_TroLai.Image");
-            btn_TroLai.Location = new Point(-20, 22);
-            btn_TroLai.Name = "btn_TroLai";
-            btn_TroLai.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btn_TroLai.Size = new Size(130, 40);
-            btn_TroLai.TabIndex = 83;
-            btn_TroLai.Click += btn_TroLai_Click;
-            // 
             // btn_Luu
             // 
             btn_Luu.AllowDrop = true;
@@ -446,7 +446,7 @@
             btn_Luu.FillColor = Color.FromArgb(42, 54, 78);
             btn_Luu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_Luu.ForeColor = Color.White;
-            btn_Luu.Location = new Point(515, 440);
+            btn_Luu.Location = new Point(512, 489);
             btn_Luu.Name = "btn_Luu";
             btn_Luu.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btn_Luu.Size = new Size(130, 40);

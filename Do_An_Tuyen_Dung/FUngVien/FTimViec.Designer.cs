@@ -62,6 +62,7 @@
             // 
             txtTimCongViec.AutoCompleteCustomSource.AddRange(new string[] { "Dev OP", "xem", "BackEnd" });
             txtTimCongViec.AutoCompleteMode = AutoCompleteMode.Append;
+            txtTimCongViec.BackColor = Color.Transparent;
             txtTimCongViec.BorderColor = Color.White;
             txtTimCongViec.BorderRadius = 15;
             txtTimCongViec.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -259,6 +260,7 @@
             // fpnHT
             // 
             fpnHT.AutoScroll = true;
+            fpnHT.BorderStyle = BorderStyle.Fixed3D;
             fpnHT.Location = new Point(42, 235);
             fpnHT.Name = "fpnHT";
             fpnHT.Size = new Size(1108, 368);
