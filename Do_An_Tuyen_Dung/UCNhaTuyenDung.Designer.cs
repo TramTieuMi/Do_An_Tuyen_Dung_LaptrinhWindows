@@ -77,7 +77,8 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.ForeColor = SystemColors.ButtonHighlight;
-            guna2HtmlLabel1.Location = new Point(13, 9);
+            guna2HtmlLabel1.Location = new Point(11, 7);
+            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(3, 2);
             guna2HtmlLabel1.TabIndex = 1;
@@ -86,17 +87,19 @@
             // panel9
             // 
             panel9.Controls.Add(guna2HtmlLabel1);
-            panel9.Location = new Point(542, 3);
+            panel9.Location = new Point(474, 2);
+            panel9.Margin = new Padding(3, 2, 3, 2);
             panel9.Name = "panel9";
-            panel9.Size = new Size(197, 66);
+            panel9.Size = new Size(172, 50);
             panel9.TabIndex = 2;
             // 
             // panel8
             // 
             panel8.Controls.Add(guna2ImageButton1);
-            panel8.Location = new Point(745, 3);
+            panel8.Location = new Point(652, 2);
+            panel8.Margin = new Padding(3, 2, 3, 2);
             panel8.Name = "panel8";
-            panel8.Size = new Size(62, 60);
+            panel8.Size = new Size(54, 45);
             panel8.TabIndex = 1;
             // 
             // guna2ImageButton1
@@ -106,11 +109,12 @@
             guna2ImageButton1.Image = (Image)resources.GetObject("guna2ImageButton1.Image");
             guna2ImageButton1.ImageOffset = new Point(0, 0);
             guna2ImageButton1.ImageRotate = 0F;
-            guna2ImageButton1.Location = new Point(3, 6);
+            guna2ImageButton1.Location = new Point(3, 4);
+            guna2ImageButton1.Margin = new Padding(3, 2, 3, 2);
             guna2ImageButton1.Name = "guna2ImageButton1";
             guna2ImageButton1.PressedState.ImageSize = new Size(64, 64);
             guna2ImageButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
-            guna2ImageButton1.Size = new Size(56, 51);
+            guna2ImageButton1.Size = new Size(49, 38);
             guna2ImageButton1.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -120,17 +124,19 @@
             flowLayoutPanel1.Controls.Add(panel8);
             flowLayoutPanel1.Controls.Add(panel9);
             flowLayoutPanel1.FlowDirection = FlowDirection.RightToLeft;
-            flowLayoutPanel1.Location = new Point(-188, 0);
+            flowLayoutPanel1.Location = new Point(-164, 0);
+            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(810, 69);
+            flowLayoutPanel1.Size = new Size(709, 52);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Thiết_kế_chưa_có_tên1;
-            pictureBox1.Location = new Point(-5, -3);
+            pictureBox1.Location = new Point(-4, -2);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(199, 133);
+            pictureBox1.Size = new Size(174, 100);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -138,9 +144,10 @@
             // panel3
             // 
             panel3.Controls.Add(pictureBox1);
-            panel3.Location = new Point(8, 36);
+            panel3.Location = new Point(7, 27);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(174, 113);
+            panel3.Size = new Size(152, 85);
             panel3.TabIndex = 0;
             // 
             // openFileDialog1
@@ -152,9 +159,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(3, 3);
+            button1.Location = new Point(3, 2);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(168, 49);
+            button1.Size = new Size(147, 37);
             button1.TabIndex = 0;
             button1.Text = "Đăng Bài";
             button1.UseVisualStyleBackColor = true;
@@ -165,8 +173,9 @@
             button2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.ButtonFace;
             button2.Location = new Point(3, 0);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(168, 49);
+            button2.Size = new Size(147, 37);
             button2.TabIndex = 0;
             button2.Text = "Ứng Viên";
             button2.UseVisualStyleBackColor = true;
@@ -174,9 +183,10 @@
             // panel5
             // 
             panel5.Controls.Add(button2);
-            panel5.Location = new Point(8, 230);
+            panel5.Location = new Point(7, 172);
+            panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(174, 52);
+            panel5.Size = new Size(152, 39);
             panel5.TabIndex = 2;
             // 
             // button3
@@ -185,8 +195,9 @@
             button3.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = SystemColors.ButtonFace;
             button3.Location = new Point(3, 0);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(168, 49);
+            button3.Size = new Size(147, 37);
             button3.TabIndex = 1;
             button3.Text = "Lịch Sử";
             button3.UseVisualStyleBackColor = true;
@@ -194,9 +205,10 @@
             // panel6
             // 
             panel6.Controls.Add(button3);
-            panel6.Location = new Point(8, 288);
+            panel6.Location = new Point(7, 216);
+            panel6.Margin = new Padding(3, 2, 3, 2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(174, 52);
+            panel6.Size = new Size(152, 39);
             panel6.TabIndex = 3;
             // 
             // button4
@@ -205,8 +217,9 @@
             button4.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = SystemColors.ButtonFace;
             button4.Location = new Point(3, 0);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(168, 49);
+            button4.Size = new Size(147, 37);
             button4.TabIndex = 2;
             button4.Text = "Tài Khoản";
             button4.UseVisualStyleBackColor = true;
@@ -214,9 +227,10 @@
             // panel7
             // 
             panel7.Controls.Add(button4);
-            panel7.Location = new Point(8, 346);
+            panel7.Location = new Point(7, 260);
+            panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(174, 52);
+            panel7.Size = new Size(152, 39);
             panel7.TabIndex = 4;
             // 
             // panel1
@@ -229,36 +243,41 @@
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel3);
             panel1.ForeColor = Color.FromArgb(0, 74, 173);
-            panel1.Location = new Point(112, 71);
+            panel1.Location = new Point(98, 53);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(190, 454);
+            panel1.Size = new Size(166, 340);
             panel1.TabIndex = 2;
             // 
             // panel4
             // 
             panel4.Controls.Add(button1);
-            panel4.Location = new Point(8, 172);
+            panel4.Location = new Point(7, 129);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(174, 52);
+            panel4.Size = new Size(152, 39);
             panel4.TabIndex = 1;
             // 
             // panel2
             // 
             panel2.BackColor = Color.White;
             panel2.Controls.Add(flowLayoutPanel1);
-            panel2.Location = new Point(300, 71);
+            panel2.Location = new Point(262, 53);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(625, 454);
+            panel2.Size = new Size(547, 340);
             panel2.TabIndex = 3;
+            panel2.Paint += panel2_Paint;
             // 
             // UCNhaTuyenDung
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Controls.Add(panel2);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UCNhaTuyenDung";
-            Size = new Size(1036, 597);
+            Size = new Size(906, 448);
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
             panel8.ResumeLayout(false);

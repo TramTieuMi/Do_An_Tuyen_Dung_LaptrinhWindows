@@ -43,7 +43,7 @@ namespace Do_An_Tuyen_Dung
         public static string TenTaiKhoan { get; private set; }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            //Hide();
+           
             
             string tentk = txtBoxUser.Text;
             TenTaiKhoan = tentk;
@@ -58,6 +58,7 @@ namespace Do_An_Tuyen_Dung
                 modify.TaiDuLieu(dt, query1, "@TenTaiKhoan", txtBoxUser.Text);
                 if (modify.taiKhoans(query).Count != 0)
                 {
+                    this.Hide();
                     MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     foreach (DataRow row in dt.Rows)
                     {
@@ -69,14 +70,14 @@ namespace Do_An_Tuyen_Dung
                             string role = row["role"].ToString();
                             if (role == "Nhà Tuyển Dụng")
                             {
-                                //FLogin flogin = new FLogin();
+                                FLogin flogin = new FLogin();
                                 FDangBai_NTD dangbai = new FDangBai_NTD();
                                 dangbai.ShowDialog();
                                 break;
                             }
                             else
                             {
-                                //FLogin flogin = new FLogin();
+                                FLogin flogin = new FLogin();
                                 FUngVien.FMenu UVMenu = new FUngVien.FMenu();
                                 UVMenu.ShowDialog();
                                 
@@ -84,6 +85,7 @@ namespace Do_An_Tuyen_Dung
                             }
                         }
                     }
+                    this.Close();
                 }
                 else
                 {
@@ -102,5 +104,11 @@ namespace Do_An_Tuyen_Dung
         {
 
         }
+        private void btnForgotPassword_Click(object sender, EventArgs e)
+        {
+            FForgotPassword forgotAcc = new FForgotPassword();
+            forgotAcc.ShowDialog();
+        }
     }
 }
+//alo
