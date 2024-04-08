@@ -72,20 +72,18 @@
             guna2Panel1.Controls.Add(Combobox_Nganh);
             guna2Panel1.CustomizableEdges = customizableEdges11;
             guna2Panel1.Location = new Point(0, 0);
-            guna2Panel1.Margin = new Padding(3, 2, 3, 2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel1.Size = new Size(1033, 485);
+            guna2Panel1.Size = new Size(1181, 647);
             guna2Panel1.TabIndex = 0;
             guna2Panel1.Paint += guna2Panel1_Paint_1;
             // 
             // fpnHT
             // 
             fpnHT.AutoScroll = true;
-            fpnHT.Location = new Point(50, 178);
-            fpnHT.Margin = new Padding(3, 2, 3, 2);
+            fpnHT.Location = new Point(57, 237);
             fpnHT.Name = "fpnHT";
-            fpnHT.Size = new Size(907, 290);
+            fpnHT.Size = new Size(1037, 386);
             fpnHT.TabIndex = 88;
             // 
             // label5
@@ -94,9 +92,9 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(584, 88);
+            label5.Location = new Point(668, 118);
             label5.Name = "label5";
-            label5.Size = new Size(76, 19);
+            label5.Size = new Size(89, 23);
             label5.TabIndex = 80;
             label5.Text = "Trạng Thái";
             // 
@@ -105,22 +103,20 @@
             guna2Panel11.BackColor = Color.Transparent;
             guna2Panel11.Controls.Add(label22);
             guna2Panel11.CustomizableEdges = customizableEdges1;
-            guna2Panel11.Location = new Point(0, 2);
-            guna2Panel11.Margin = new Padding(3, 2, 3, 2);
+            guna2Panel11.Location = new Point(0, 3);
             guna2Panel11.Name = "guna2Panel11";
             guna2Panel11.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel11.Size = new Size(1032, 60);
+            guna2Panel11.Size = new Size(1180, 80);
             guna2Panel11.TabIndex = 81;
-            guna2Panel11.Paint += guna2Panel11_Paint;
             // 
             // label22
             // 
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label22.ForeColor = Color.White;
-            label22.Location = new Point(50, 14);
+            label22.Location = new Point(57, 18);
             label22.Name = "label22";
-            label22.Size = new Size(206, 32);
+            label22.Size = new Size(255, 41);
             label22.TabIndex = 0;
             label22.Text = "Lịch Sử Nộp Đơn";
             // 
@@ -130,9 +126,9 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(50, 136);
+            label4.Location = new Point(57, 182);
             label4.Name = "label4";
-            label4.Size = new Size(68, 19);
+            label4.Size = new Size(79, 23);
             label4.TabIndex = 79;
             label4.Text = "Địa Điểm";
             // 
@@ -142,9 +138,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(50, 88);
+            label3.Location = new Point(57, 118);
             label3.Name = "label3";
-            label3.Size = new Size(52, 19);
+            label3.Size = new Size(60, 23);
             label3.TabIndex = 78;
             label3.Text = "Ngành";
             // 
@@ -154,9 +150,9 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(600, 131);
+            label2.Location = new Point(686, 175);
             label2.Name = "label2";
-            label2.Size = new Size(60, 19);
+            label2.Size = new Size(71, 23);
             label2.TabIndex = 86;
             label2.Text = "Công Ty";
             // 
@@ -175,11 +171,10 @@
             Combobox_CTy.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_CTy.ItemHeight = 30;
             Combobox_CTy.Items.AddRange(new object[] { "ATM", "FPT", "HKT", "UFM" });
-            Combobox_CTy.Location = new Point(676, 127);
-            Combobox_CTy.Margin = new Padding(3, 2, 3, 2);
+            Combobox_CTy.Location = new Point(772, 169);
             Combobox_CTy.Name = "Combobox_CTy";
             Combobox_CTy.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            Combobox_CTy.Size = new Size(282, 36);
+            Combobox_CTy.Size = new Size(322, 36);
             Combobox_CTy.TabIndex = 87;
             Combobox_CTy.SelectedIndexChanged += Combobox_CTy_SelectedIndexChanged;
             // 
@@ -197,11 +192,10 @@
             Combobox_TrangThai.Font = new Font("Segoe UI", 10F);
             Combobox_TrangThai.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_TrangThai.ItemHeight = 30;
-            Combobox_TrangThai.Location = new Point(676, 79);
-            Combobox_TrangThai.Margin = new Padding(3, 2, 3, 2);
+            Combobox_TrangThai.Location = new Point(772, 105);
             Combobox_TrangThai.Name = "Combobox_TrangThai";
             Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Combobox_TrangThai.Size = new Size(282, 36);
+            Combobox_TrangThai.Size = new Size(322, 36);
             Combobox_TrangThai.TabIndex = 84;
             // 
             // Combobox_DiaDiem
@@ -219,11 +213,10 @@
             Combobox_DiaDiem.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_DiaDiem.ItemHeight = 30;
             Combobox_DiaDiem.Items.AddRange(new object[] { "Kom Tum", "TP HCM", "Đà Nẵng", "Hà Nội" });
-            Combobox_DiaDiem.Location = new Point(133, 127);
-            Combobox_DiaDiem.Margin = new Padding(3, 2, 3, 2);
+            Combobox_DiaDiem.Location = new Point(152, 169);
             Combobox_DiaDiem.Name = "Combobox_DiaDiem";
             Combobox_DiaDiem.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            Combobox_DiaDiem.Size = new Size(282, 36);
+            Combobox_DiaDiem.Size = new Size(322, 36);
             Combobox_DiaDiem.TabIndex = 83;
             Combobox_DiaDiem.SelectedIndexChanged += Combobox_DiaDiem_SelectedIndexChanged_1;
             // 
@@ -242,22 +235,20 @@
             Combobox_Nganh.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Nganh.ItemHeight = 30;
             Combobox_Nganh.Items.AddRange(new object[] { "BackEnd", "Dev OP", "UI", "xem" });
-            Combobox_Nganh.Location = new Point(133, 79);
-            Combobox_Nganh.Margin = new Padding(3, 2, 3, 2);
+            Combobox_Nganh.Location = new Point(152, 105);
             Combobox_Nganh.Name = "Combobox_Nganh";
             Combobox_Nganh.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            Combobox_Nganh.Size = new Size(282, 36);
+            Combobox_Nganh.Size = new Size(322, 36);
             Combobox_Nganh.TabIndex = 82;
             Combobox_Nganh.SelectedIndexChanged += Combobox_Nganh_SelectedIndexChanged;
             // 
             // FTinhTrang
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1033, 488);
+            ClientSize = new Size(1181, 650);
             Controls.Add(guna2Panel1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FTinhTrang";
             Text = "FTinhTrang";
             Load += FTinhTrang_Load;
