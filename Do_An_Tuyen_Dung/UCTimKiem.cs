@@ -38,9 +38,14 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button13_Click(object sender, EventArgs e)
         {
-            string nganhDuocChon = txtNganh1.Text; 
+            string nganhDuocChon = txtNganh1.Text;
             FMoTa_YeuCau_QuyenLoi fMoTa_YeuCau_QuyenLoi = new FMoTa_YeuCau_QuyenLoi(nganhDuocChon);
             fMoTa_YeuCau_QuyenLoi.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

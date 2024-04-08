@@ -30,20 +30,20 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTimKiem));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTimKiem));
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             txtKinhNghiem1 = new Label();
             guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
             txtLuong1 = new Label();
             txtDiaDiem1 = new Label();
             txtNganh1 = new Label();
             guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
             guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -71,6 +71,27 @@
             guna2Panel3.Size = new Size(1006, 100);
             guna2Panel3.TabIndex = 2;
             guna2Panel3.Paint += guna2Panel3_Paint;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(929, 26);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(44, 41);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 69;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(929, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(44, 41);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 68;
+            pictureBox1.TabStop = false;
             // 
             // txtKinhNghiem1
             // 
@@ -149,26 +170,6 @@
             guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel7.Size = new Size(94, 94);
             guna2Panel7.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(929, 26);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(44, 41);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 69;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(929, 26);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(44, 41);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 68;
-            pictureBox1.TabStop = false;
             // 
             // UCTimKiem
             // 
