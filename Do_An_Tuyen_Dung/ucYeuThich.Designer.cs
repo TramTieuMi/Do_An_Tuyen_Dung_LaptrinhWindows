@@ -57,7 +57,7 @@
             guna2ShadowPanel1.ShadowColor = Color.Black;
             guna2ShadowPanel1.Size = new Size(226, 302);
             guna2ShadowPanel1.TabIndex = 0;
-            guna2ShadowPanel1.Paint += guna2ShadowPanel1_Paint;
+            
             // 
             // pictureBox2
             // 
