@@ -137,10 +137,5 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
             LoadDanhSach(Combobox_CTy.Text, KiemEmail());
         }
-
-        private void guna2Panel11_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
