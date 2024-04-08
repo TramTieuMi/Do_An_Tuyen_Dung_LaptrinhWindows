@@ -76,13 +76,14 @@
             txtTimCongViec.Font = new Font("Segoe UI", 9F);
             txtTimCongViec.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTimCongViec.IconRight = (Image)resources.GetObject("txtTimCongViec.IconRight");
-            txtTimCongViec.Location = new Point(164, 73);
+            txtTimCongViec.Location = new Point(187, 97);
+            txtTimCongViec.Margin = new Padding(3, 4, 3, 4);
             txtTimCongViec.Name = "txtTimCongViec";
             txtTimCongViec.PasswordChar = '\0';
             txtTimCongViec.PlaceholderText = "";
             txtTimCongViec.SelectedText = "";
             txtTimCongViec.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtTimCongViec.Size = new Size(621, 27);
+            txtTimCongViec.Size = new Size(710, 36);
             txtTimCongViec.TabIndex = 31;
             txtTimCongViec.TextChanged += txtTimCongViec_TextChanged;
             // 
@@ -92,9 +93,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(51, 78);
+            label1.Location = new Point(58, 104);
             label1.Name = "label1";
-            label1.Size = new Size(101, 19);
+            label1.Size = new Size(121, 23);
             label1.TabIndex = 32;
             label1.Text = "Tìm Công Việc";
             // 
@@ -113,11 +114,10 @@
             btn_TimKiem.FillColor = Color.FromArgb(42, 54, 78);
             btn_TimKiem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_TimKiem.ForeColor = Color.White;
-            btn_TimKiem.Location = new Point(811, 72);
-            btn_TimKiem.Margin = new Padding(3, 2, 3, 2);
+            btn_TimKiem.Location = new Point(927, 96);
             btn_TimKiem.Name = "btn_TimKiem";
             btn_TimKiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btn_TimKiem.Size = new Size(113, 27);
+            btn_TimKiem.Size = new Size(129, 36);
             btn_TimKiem.TabIndex = 75;
             btn_TimKiem.Text = "Tìm Kiếm";
             btn_TimKiem.Click += btn_TimKiem_Click;
@@ -137,11 +137,10 @@
             Combobox_KinhNghiem.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_KinhNghiem.ItemHeight = 30;
             Combobox_KinhNghiem.Items.AddRange(new object[] { "1-3  năm", "5 năm trở lên", "2-4  năm", "4-5  năm", "1-2 năm" });
-            Combobox_KinhNghiem.Location = new Point(745, 124);
-            Combobox_KinhNghiem.Margin = new Padding(3, 2, 3, 2);
+            Combobox_KinhNghiem.Location = new Point(851, 166);
             Combobox_KinhNghiem.Name = "Combobox_KinhNghiem";
             Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Combobox_KinhNghiem.Size = new Size(180, 36);
+            Combobox_KinhNghiem.Size = new Size(205, 36);
             Combobox_KinhNghiem.TabIndex = 81;
             Combobox_KinhNghiem.SelectedIndexChanged += Combobox_KinhNghiem_SelectedIndexChanged_1;
             // 
@@ -160,11 +159,10 @@
             Combobox_Luong.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Luong.ItemHeight = 30;
             Combobox_Luong.Items.AddRange(new object[] { "10 - 15 triệu", "20 - 25 triệu", "10 - 20 triệu", "5 - 7 triệu" });
-            Combobox_Luong.Location = new Point(413, 124);
-            Combobox_Luong.Margin = new Padding(3, 2, 3, 2);
+            Combobox_Luong.Location = new Point(472, 166);
             Combobox_Luong.Name = "Combobox_Luong";
             Combobox_Luong.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            Combobox_Luong.Size = new Size(197, 36);
+            Combobox_Luong.Size = new Size(225, 36);
             Combobox_Luong.TabIndex = 80;
             Combobox_Luong.SelectedIndexChanged += Combobox_Luong_SelectedIndexChanged_1;
             // 
@@ -183,11 +181,10 @@
             Combobox_DiaDiem.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_DiaDiem.ItemHeight = 30;
             Combobox_DiaDiem.Items.AddRange(new object[] { "Kom Tum", "TP HCM", "Đà Nẵng", "Hà Nội" });
-            Combobox_DiaDiem.Location = new Point(126, 124);
-            Combobox_DiaDiem.Margin = new Padding(3, 2, 3, 2);
+            Combobox_DiaDiem.Location = new Point(144, 166);
             Combobox_DiaDiem.Name = "Combobox_DiaDiem";
             Combobox_DiaDiem.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            Combobox_DiaDiem.Size = new Size(197, 36);
+            Combobox_DiaDiem.Size = new Size(225, 36);
             Combobox_DiaDiem.TabIndex = 79;
             Combobox_DiaDiem.SelectedIndexChanged += Combobox_DiaDiem_SelectedIndexChanged_1;
             // 
@@ -197,9 +194,9 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(640, 130);
+            label5.Location = new Point(731, 173);
             label5.Name = "label5";
-            label5.Size = new Size(92, 19);
+            label5.Size = new Size(110, 23);
             label5.TabIndex = 78;
             label5.Text = "Kinh Nghiệm";
             // 
@@ -209,9 +206,9 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(356, 128);
+            label4.Location = new Point(407, 170);
             label4.Name = "label4";
-            label4.Size = new Size(50, 19);
+            label4.Size = new Size(59, 23);
             label4.TabIndex = 77;
             label4.Text = "Lương";
             // 
@@ -221,9 +218,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(51, 128);
+            label3.Location = new Point(58, 170);
             label3.Name = "label3";
-            label3.Size = new Size(67, 19);
+            label3.Size = new Size(80, 23);
             label3.TabIndex = 76;
             label3.Text = "Địa Điểm";
             // 
@@ -233,21 +230,18 @@
             guna2Panel1.Controls.Add(pictureBox1);
             guna2Panel1.Controls.Add(label2);
             guna2Panel1.CustomizableEdges = customizableEdges11;
-            guna2Panel1.Location = new Point(4, 3);
-            guna2Panel1.Margin = new Padding(3, 2, 3, 2);
+            guna2Panel1.Location = new Point(4, 4);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel1.Size = new Size(1032, 64);
+            guna2Panel1.Size = new Size(1180, 86);
             guna2Panel1.TabIndex = 82;
-            guna2Panel1.Paint += guna2Panel1_Paint;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(956, 2);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(1092, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(69, 63);
+            pictureBox1.Size = new Size(79, 84);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -257,9 +251,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(66, 14);
+            label2.Location = new Point(75, 19);
             label2.Name = "label2";
-            label2.Size = new Size(231, 32);
+            label2.Size = new Size(284, 41);
             label2.TabIndex = 0;
             label2.Text = "Tìm Kiếm Việc Làm";
             // 
@@ -267,18 +261,17 @@
             // 
             fpnHT.AutoScroll = true;
             fpnHT.BorderStyle = BorderStyle.Fixed3D;
-            fpnHT.Location = new Point(37, 176);
-            fpnHT.Margin = new Padding(3, 2, 3, 2);
+            fpnHT.Location = new Point(42, 235);
             fpnHT.Name = "fpnHT";
-            fpnHT.Size = new Size(970, 277);
+            fpnHT.Size = new Size(1108, 368);
             fpnHT.TabIndex = 83;
             // 
             // FTimViec
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1039, 477);
+            ClientSize = new Size(1187, 636);
             Controls.Add(fpnHT);
             Controls.Add(guna2Panel1);
             Controls.Add(Combobox_KinhNghiem);
@@ -290,7 +283,6 @@
             Controls.Add(btn_TimKiem);
             Controls.Add(label1);
             Controls.Add(txtTimCongViec);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FTimViec";
             Text = "FTimViec";
             Load += FTimViec_Load;
