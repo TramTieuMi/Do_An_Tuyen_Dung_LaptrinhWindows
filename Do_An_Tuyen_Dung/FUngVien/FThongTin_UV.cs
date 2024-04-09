@@ -108,5 +108,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
+
+        private void txtHoTen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

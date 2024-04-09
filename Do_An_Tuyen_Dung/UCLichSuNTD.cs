@@ -19,6 +19,7 @@ namespace Do_An_Tuyen_Dung
         LichSuNTD lichSuNTD;
         SqlConnection connStr = Connection.GetSqlConnection();
         string tenCTy;
+        string nganh;
         public UCLichSuNTD()
         {
             InitializeComponent();
@@ -27,9 +28,11 @@ namespace Do_An_Tuyen_Dung
         {
             InitializeComponent();
             this.lichSuNTD = lichSuNTD;
-            txtNganh1.Text = lichSuNTD.Nganh;
-            txtDiaDiem1.Text = lichSuNTD.DiaDiem;
+            nganh = lichSuNTD.Nganh;
+            txtNganh1.Text = "Ngành : " + lichSuNTD.Nganh;
+            txtDiaDiem1.Text = "Địa điểm : " + lichSuNTD.DiaDiem;
             tenCTy = lichSuNTD.TenCTy;
+            txtSoNguoi1.Text = "Số người đã ứng tuyển : " + lichSuNTD.SoNguoi.ToString();
         }
 
         public void Xoa()
@@ -65,15 +68,15 @@ namespace Do_An_Tuyen_Dung
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Xoa();
+        {            
             FDangViec fDangViec = new FDangViec();
             fDangViec.ShowDialog();
+            Xoa();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            FXemUV fXemUV = new FXemUV(tenCTy,txtNganh1.Text);
+            FXemUV fXemUV = new FXemUV(tenCTy,nganh);
             fXemUV.ShowDialog();
         }
     }
