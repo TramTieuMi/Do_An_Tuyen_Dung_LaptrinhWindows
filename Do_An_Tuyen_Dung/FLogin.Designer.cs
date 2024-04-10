@@ -56,9 +56,9 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.ForeColor = Color.FromArgb(42, 54, 78);
-            label2.Location = new Point(123, 298);
+            label2.Location = new Point(108, 224);
             label2.Name = "label2";
-            label2.Size = new Size(41, 20);
+            label2.Size = new Size(33, 15);
             label2.TabIndex = 1;
             label2.Text = "User:";
             // 
@@ -67,9 +67,9 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.ForeColor = Color.FromArgb(42, 54, 78);
-            label3.Location = new Point(123, 371);
+            label3.Location = new Point(108, 278);
             label3.Name = "label3";
-            label3.Size = new Size(77, 20);
+            label3.Size = new Size(63, 15);
             label3.TabIndex = 2;
             label3.Text = "Password: ";
             // 
@@ -87,14 +87,13 @@
             txtBoxUser.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtBoxUser.Font = new Font("Segoe UI", 9F);
             txtBoxUser.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtBoxUser.Location = new Point(123, 322);
-            txtBoxUser.Margin = new Padding(3, 4, 3, 4);
+            txtBoxUser.Location = new Point(108, 242);
             txtBoxUser.Name = "txtBoxUser";
             txtBoxUser.PasswordChar = '\0';
             txtBoxUser.PlaceholderText = "";
             txtBoxUser.SelectedText = "";
             txtBoxUser.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtBoxUser.Size = new Size(199, 39);
+            txtBoxUser.Size = new Size(174, 29);
             txtBoxUser.TabIndex = 6;
             // 
             // txtBoxPassword
@@ -111,14 +110,13 @@
             txtBoxPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtBoxPassword.Font = new Font("Segoe UI", 9F);
             txtBoxPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtBoxPassword.Location = new Point(123, 395);
-            txtBoxPassword.Margin = new Padding(3, 4, 3, 4);
+            txtBoxPassword.Location = new Point(108, 296);
             txtBoxPassword.Name = "txtBoxPassword";
             txtBoxPassword.PasswordChar = '*';
             txtBoxPassword.PlaceholderText = "";
             txtBoxPassword.SelectedText = "";
             txtBoxPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtBoxPassword.Size = new Size(199, 39);
+            txtBoxPassword.Size = new Size(174, 29);
             txtBoxPassword.TabIndex = 7;
             txtBoxPassword.TextChanged += guna2TextBox2_TextChanged;
             // 
@@ -135,10 +133,11 @@
             btnLogin.FillColor = Color.FromArgb(42, 54, 78);
             btnLogin.Font = new Font("Segoe UI", 9F);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(123, 518);
+            btnLogin.Location = new Point(108, 388);
+            btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
             btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnLogin.Size = new Size(199, 56);
+            btnLogin.Size = new Size(174, 42);
             btnLogin.TabIndex = 9;
             btnLogin.Text = "LOGIN";
             btnLogin.Click += guna2Button1_Click;
@@ -149,9 +148,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(42, 54, 78);
-            label1.Location = new Point(215, 438);
+            label1.Location = new Point(188, 328);
             label1.Name = "label1";
-            label1.Size = new Size(107, 17);
+            label1.Size = new Size(94, 13);
             label1.TabIndex = 10;
             label1.Text = "Forgot Password";
             // 
@@ -174,10 +173,11 @@
             btnCreateAccount.FillColor = Color.FromArgb(42, 54, 78);
             btnCreateAccount.Font = new Font("Segoe UI", 9F);
             btnCreateAccount.ForeColor = Color.White;
-            btnCreateAccount.Location = new Point(123, 589);
+            btnCreateAccount.Location = new Point(108, 442);
+            btnCreateAccount.Margin = new Padding(3, 2, 3, 2);
             btnCreateAccount.Name = "btnCreateAccount";
             btnCreateAccount.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnCreateAccount.Size = new Size(199, 56);
+            btnCreateAccount.Size = new Size(174, 42);
             btnCreateAccount.TabIndex = 11;
             btnCreateAccount.Text = "CREATE ACCOUNT";
             btnCreateAccount.Click += guna2Button2_Click;
@@ -191,9 +191,10 @@
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox1.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2CheckBox1.Location = new Point(168, 470);
+            guna2CheckBox1.Location = new Point(147, 352);
+            guna2CheckBox1.Margin = new Padding(3, 2, 3, 2);
             guna2CheckBox1.Name = "guna2CheckBox1";
-            guna2CheckBox1.Size = new Size(121, 21);
+            guna2CheckBox1.Size = new Size(107, 17);
             guna2CheckBox1.TabIndex = 14;
             guna2CheckBox1.Text = "Show Password";
             guna2CheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
@@ -205,11 +206,11 @@
             // FLogin
             // 
             AcceptButton = btnLogin;
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(420, 667);
+            ClientSize = new Size(368, 500);
             ControlBox = false;
             Controls.Add(guna2CheckBox1);
             Controls.Add(btnCreateAccount);
@@ -220,7 +221,9 @@
             Controls.Add(label3);
             Controls.Add(label2);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "login";
             Load += FLogin_Load;
             ResumeLayout(false);
