@@ -259,6 +259,7 @@
             Controls.Add(guna2Panel1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FTinhTrang";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FTinhTrang";
             Load += FTinhTrang_Load;
             guna2Panel1.ResumeLayout(false);

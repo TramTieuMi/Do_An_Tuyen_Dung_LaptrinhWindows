@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FXemUV));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel7 = new Panel();
             button3 = new Button();
             panel6 = new Panel();
@@ -73,18 +73,20 @@
             // panel7
             // 
             panel7.Controls.Add(button3);
-            panel7.Location = new Point(6, 305);
+            panel7.Location = new Point(5, 229);
+            panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(192, 59);
+            panel7.Size = new Size(168, 44);
             panel7.TabIndex = 3;
             // 
             // button3
             // 
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(3, 3);
+            button3.Location = new Point(3, 2);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(181, 53);
+            button3.Size = new Size(158, 40);
             button3.TabIndex = 1;
             button3.Text = "LỊCH SỬ";
             button3.UseVisualStyleBackColor = true;
@@ -92,18 +94,20 @@
             // panel6
             // 
             panel6.Controls.Add(button2);
-            panel6.Location = new Point(6, 241);
+            panel6.Location = new Point(5, 181);
+            panel6.Margin = new Padding(3, 2, 3, 2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(192, 59);
+            panel6.Size = new Size(168, 44);
             panel6.TabIndex = 3;
             // 
             // button2
             // 
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(3, 3);
+            button2.Location = new Point(3, 2);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(181, 53);
+            button2.Size = new Size(158, 40);
             button2.TabIndex = 1;
             button2.Text = "HỒ SƠ";
             button2.UseVisualStyleBackColor = true;
@@ -111,43 +115,48 @@
             // panel5
             // 
             panel5.Controls.Add(button1);
-            panel5.Location = new Point(6, 177);
+            panel5.Location = new Point(5, 133);
+            panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(192, 59);
+            panel5.Size = new Size(168, 44);
             panel5.TabIndex = 3;
             // 
             // button1
             // 
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(3, 3);
+            button1.Location = new Point(3, 2);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(181, 53);
+            button1.Size = new Size(158, 40);
             button1.TabIndex = 0;
             button1.Text = "TRANG CHỦ";
             button1.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
-            panel4.Location = new Point(3, 136);
+            panel4.Location = new Point(3, 102);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(192, 35);
+            panel4.Size = new Size(168, 26);
             panel4.TabIndex = 2;
             // 
             // panel3
             // 
             panel3.Controls.Add(pictureBox6);
-            panel3.Location = new Point(3, 3);
+            panel3.Location = new Point(3, 2);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(192, 127);
+            panel3.Size = new Size(168, 95);
             panel3.TabIndex = 2;
             // 
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(43, 11);
+            pictureBox6.Location = new Point(38, 8);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(106, 105);
+            pictureBox6.Size = new Size(93, 79);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 1;
             pictureBox6.TabStop = false;
@@ -160,18 +169,19 @@
             panel2.Controls.Add(panel5);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel3);
-            panel2.Location = new Point(0, 47);
+            panel2.Location = new Point(0, 35);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(198, 493);
+            panel2.Size = new Size(173, 370);
             panel2.TabIndex = 40;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(428, 9);
+            label1.Location = new Point(374, 7);
             label1.Name = "label1";
-            label1.Size = new Size(175, 25);
+            label1.Size = new Size(145, 20);
             label1.TabIndex = 2;
             label1.Text = "NHÀ TUYỂN DỤNG";
             // 
@@ -182,32 +192,35 @@
             panel1.Controls.Add(panel13);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1064, 49);
+            panel1.Size = new Size(931, 37);
             panel1.TabIndex = 39;
             // 
             // panel14
             // 
-            panel14.Location = new Point(858, 3);
+            panel14.Location = new Point(751, 2);
+            panel14.Margin = new Padding(3, 2, 3, 2);
             panel14.Name = "panel14";
-            panel14.Size = new Size(79, 46);
+            panel14.Size = new Size(69, 34);
             panel14.TabIndex = 4;
             // 
             // panel13
             // 
             panel13.Controls.Add(label12);
-            panel13.Location = new Point(858, 3);
+            panel13.Location = new Point(751, 2);
+            panel13.Margin = new Padding(3, 2, 3, 2);
             panel13.Name = "panel13";
-            panel13.Size = new Size(206, 46);
+            panel13.Size = new Size(180, 34);
             panel13.TabIndex = 3;
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(85, 11);
+            label12.Location = new Point(74, 8);
             label12.Name = "label12";
-            label12.Size = new Size(107, 23);
+            label12.Size = new Size(90, 19);
             label12.TabIndex = 0;
             label12.Text = "Tên Công Ty";
             // 
@@ -222,17 +235,19 @@
             panel8.Controls.Add(label5);
             panel8.Controls.Add(label18);
             panel8.Location = new Point(0, 0);
+            panel8.Margin = new Padding(3, 2, 3, 2);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1182, 630);
+            panel8.Size = new Size(1034, 472);
             panel8.TabIndex = 41;
             panel8.Paint += panel8_Paint;
             // 
             // fpn_HienThi
             // 
             fpn_HienThi.AutoScroll = true;
-            fpn_HienThi.Location = new Point(28, 140);
+            fpn_HienThi.Location = new Point(24, 105);
+            fpn_HienThi.Margin = new Padding(3, 2, 3, 2);
             fpn_HienThi.Name = "fpn_HienThi";
-            fpn_HienThi.Size = new Size(1116, 453);
+            fpn_HienThi.Size = new Size(976, 340);
             fpn_HienThi.TabIndex = 75;
             fpn_HienThi.Paint += fpn_HienThi_Paint;
             // 
@@ -240,11 +255,12 @@
             // 
             guna2Panel1.BackColor = Color.Transparent;
             guna2Panel1.Controls.Add(txtNganh);
-            guna2Panel1.CustomizableEdges = customizableEdges7;
+            guna2Panel1.CustomizableEdges = customizableEdges1;
             guna2Panel1.Location = new Point(-2, 0);
+            guna2Panel1.Margin = new Padding(3, 2, 3, 2);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Panel1.Size = new Size(1184, 80);
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Panel1.Size = new Size(1036, 60);
             guna2Panel1.TabIndex = 71;
             // 
             // txtNganh
@@ -252,9 +268,9 @@
             txtNganh.AutoSize = true;
             txtNganh.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtNganh.ForeColor = Color.Green;
-            txtNganh.Location = new Point(484, 16);
+            txtNganh.Location = new Point(424, 12);
             txtNganh.Name = "txtNganh";
-            txtNganh.Size = new Size(128, 38);
+            txtNganh.Size = new Size(101, 30);
             txtNganh.TabIndex = 0;
             txtNganh.Text = "BackEnd";
             // 
@@ -264,7 +280,7 @@
             Combobox_KinhNghiem.BorderColor = Color.Black;
             Combobox_KinhNghiem.BorderRadius = 10;
             Combobox_KinhNghiem.BorderThickness = 2;
-            Combobox_KinhNghiem.CustomizableEdges = customizableEdges9;
+            Combobox_KinhNghiem.CustomizableEdges = customizableEdges3;
             Combobox_KinhNghiem.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_KinhNghiem.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_KinhNghiem.FillColor = SystemColors.Control;
@@ -274,10 +290,11 @@
             Combobox_KinhNghiem.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_KinhNghiem.ItemHeight = 30;
             Combobox_KinhNghiem.Items.AddRange(new object[] { "1 năm", "2 năm", "3 năm", "4 năm", "5 năm", "6 năm" });
-            Combobox_KinhNghiem.Location = new Point(727, 84);
+            Combobox_KinhNghiem.Location = new Point(636, 63);
+            Combobox_KinhNghiem.Margin = new Padding(3, 2, 3, 2);
             Combobox_KinhNghiem.Name = "Combobox_KinhNghiem";
-            Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            Combobox_KinhNghiem.Size = new Size(269, 36);
+            Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            Combobox_KinhNghiem.Size = new Size(236, 36);
             Combobox_KinhNghiem.TabIndex = 74;
             // 
             // Combobox_TrangThai
@@ -286,7 +303,7 @@
             Combobox_TrangThai.BorderColor = Color.Black;
             Combobox_TrangThai.BorderRadius = 10;
             Combobox_TrangThai.BorderThickness = 2;
-            Combobox_TrangThai.CustomizableEdges = customizableEdges11;
+            Combobox_TrangThai.CustomizableEdges = customizableEdges5;
             Combobox_TrangThai.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_TrangThai.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_TrangThai.FillColor = SystemColors.Control;
@@ -296,10 +313,11 @@
             Combobox_TrangThai.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_TrangThai.ItemHeight = 30;
             Combobox_TrangThai.Items.AddRange(new object[] { "Đã Xem", "Chưa Xem" });
-            Combobox_TrangThai.Location = new Point(215, 84);
+            Combobox_TrangThai.Location = new Point(188, 63);
+            Combobox_TrangThai.Margin = new Padding(3, 2, 3, 2);
             Combobox_TrangThai.Name = "Combobox_TrangThai";
-            Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            Combobox_TrangThai.Size = new Size(269, 36);
+            Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            Combobox_TrangThai.Size = new Size(236, 36);
             Combobox_TrangThai.TabIndex = 73;
             Combobox_TrangThai.SelectedIndexChanged += Combobox_TrangThai_SelectedIndexChanged;
             // 
@@ -309,9 +327,9 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(615, 88);
+            label5.Location = new Point(538, 66);
             label5.Name = "label5";
-            label5.Size = new Size(106, 23);
+            label5.Size = new Size(91, 19);
             label5.TabIndex = 70;
             label5.Text = "Kinh Nghiệm";
             // 
@@ -321,22 +339,24 @@
             label18.BackColor = Color.Transparent;
             label18.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
             label18.ForeColor = Color.Black;
-            label18.Location = new Point(117, 88);
+            label18.Location = new Point(102, 66);
             label18.Name = "label18";
-            label18.Size = new Size(89, 23);
+            label18.Size = new Size(76, 19);
             label18.TabIndex = 69;
             label18.Text = "Trạng Thái";
             label18.Click += label18_Click;
             // 
             // FXemUV
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1183, 635);
+            ClientSize = new Size(1035, 476);
             Controls.Add(panel8);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FXemUV";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FXetDuyetNTD";
             Load += FXemUV_Load;
             panel7.ResumeLayout(false);

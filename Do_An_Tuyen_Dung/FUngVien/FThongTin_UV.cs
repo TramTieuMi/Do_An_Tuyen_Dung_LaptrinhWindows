@@ -113,5 +113,12 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
+
+        private void txtlinkFileCV_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FCV cv = new FCV();
+            cv.ShowDialog();
+
+        }
     }
 }
