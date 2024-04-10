@@ -23,7 +23,7 @@ namespace Do_An_Tuyen_Dung
         {
             InitializeComponent();
             this.xemUV = xemUV;
-            txtTen.Text = xemUV.Ten;
+            txtTen.Text = "Họ và Tên : " + xemUV.Ten;
             em = xemUV.Email;
         }
 

@@ -14,6 +14,7 @@ namespace Do_An_Tuyen_Dung
     public partial class UCTimKiem : UserControl
     {
         TimKiem timKiem;
+        string nganh;
         public UCTimKiem()
         {
             InitializeComponent();
@@ -22,10 +23,11 @@ namespace Do_An_Tuyen_Dung
         {
             InitializeComponent();
             this.timKiem = timKiem;
-            txtNganh1.Text = timKiem.Nganh;
-            txtDiaDiem1.Text = timKiem.Diadiem;
-            txtLuong1.Text = timKiem.Luong;
-            txtKinhNghiem1.Text = timKiem.KinhNghiem;
+            nganh = timKiem.Nganh;
+            txtNganh1.Text = "Ngành : " + timKiem.Nganh;
+            txtDiaDiem1.Text = "Địa Điểm : " + timKiem.Diadiem;
+            txtLuong1.Text = "Lương : " + timKiem.Luong;
+            txtKinhNghiem1.Text = "Kinh Nghiệm : " + timKiem.KinhNghiem;
         }
         public string UCTimKiem1()
         {
@@ -38,7 +40,7 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button13_Click(object sender, EventArgs e)
         {
-            string nganhDuocChon = txtNganh1.Text;
+            string nganhDuocChon = nganh;
             FMoTa_YeuCau_QuyenLoi fMoTa_YeuCau_QuyenLoi = new FMoTa_YeuCau_QuyenLoi(nganhDuocChon);
             fMoTa_YeuCau_QuyenLoi.Show();
         }

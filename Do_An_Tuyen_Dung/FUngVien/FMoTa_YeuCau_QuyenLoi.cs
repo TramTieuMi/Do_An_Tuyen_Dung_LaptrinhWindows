@@ -36,7 +36,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         public void LoadDuLieu(string chuoi)
         {
-            txtNganh.Text = "Ngành: " + chuoi;
+            txtNganh.Text = "Ngành : " + chuoi;
             MoTaYeuCau moTaYeuCau = new MoTaYeuCau();
             try
             {

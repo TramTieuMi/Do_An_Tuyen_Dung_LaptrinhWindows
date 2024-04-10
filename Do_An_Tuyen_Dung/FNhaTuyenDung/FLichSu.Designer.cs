@@ -95,6 +95,7 @@
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel1.Size = new Size(1202, 80);
             guna2Panel1.TabIndex = 50;
+            guna2Panel1.Paint += guna2Panel1_Paint;
             // 
             // label1
             // 

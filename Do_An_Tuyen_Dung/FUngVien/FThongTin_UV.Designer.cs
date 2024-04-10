@@ -200,11 +200,12 @@
             txtHoTen.BackColor = Color.Transparent;
             txtHoTen.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtHoTen.ForeColor = Color.White;
-            txtHoTen.Location = new Point(471, 108);
+            txtHoTen.Location = new Point(452, 111);
             txtHoTen.Name = "txtHoTen";
-            txtHoTen.Size = new Size(258, 60);
+            txtHoTen.Size = new Size(535, 60);
             txtHoTen.TabIndex = 108;
             txtHoTen.Text = "Nguyễn Thị B";
+            txtHoTen.Click += txtHoTen_Click;
             // 
             // txtNgayThangNamSinh
             // 

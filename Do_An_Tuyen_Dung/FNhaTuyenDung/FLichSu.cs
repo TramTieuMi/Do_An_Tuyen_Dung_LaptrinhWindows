@@ -43,8 +43,7 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
                 connStr.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 fpn_HienThi.Controls.Clear();
-
-
+                int soNguoi = 0;
 
                 if (chuoi == null)
                 {
@@ -55,12 +54,14 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
                             string nganh = reader["TenCongViec"].ToString();
                             string tenCTy = reader["TenCTy"].ToString();
                             string diaDiem = reader["Tinh_TP"].ToString();
-                            LichSuNTD lich = new LichSuNTD(nganh, diaDiem, tenCTy);
+                            soNguoi = soNguoi + 1;
+                            LichSuNTD lich = new LichSuNTD(nganh, diaDiem, tenCTy,soNguoi);
 
                             list.Add(lich);
                         }
 
                     }
+                    soNguoi = 0;
                 }
                 else
                 {
@@ -73,12 +74,14 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
                                 string nganh = reader["TenCongViec"].ToString();
                                 string tenCTy = reader["TenCTy"].ToString();
                                 string diaDiem = reader["Tinh_TP"].ToString();
-                                LichSuNTD lich = new LichSuNTD(nganh, diaDiem, tenCTy);
+                                soNguoi = soNguoi + 1;
+                                LichSuNTD lich = new LichSuNTD(nganh, diaDiem, tenCTy, soNguoi);
 
                                 list.Add(lich);
                             }
                         }
                     }
+                    soNguoi=0;
                 }
 
             }
@@ -148,6 +151,11 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
         private void Combobox_DiaDiem_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             LoadDanhSach(Combobox_DiaDiem.Text);
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
