@@ -78,10 +78,11 @@
             btnTroLai.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnTroLai.ForeColor = Color.White;
             btnTroLai.Image = (Image)resources.GetObject("btnTroLai.Image");
-            btnTroLai.Location = new Point(21, 21);
+            btnTroLai.Location = new Point(18, 16);
+            btnTroLai.Margin = new Padding(3, 2, 3, 2);
             btnTroLai.Name = "btnTroLai";
             btnTroLai.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnTroLai.Size = new Size(76, 51);
+            btnTroLai.Size = new Size(66, 38);
             btnTroLai.TabIndex = 107;
             btnTroLai.Click += btnTroLai_Click;
             // 
@@ -90,9 +91,9 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Navy;
-            label10.Location = new Point(40, 450);
+            label10.Location = new Point(35, 338);
             label10.Name = "label10";
-            label10.Size = new Size(0, 25);
+            label10.Size = new Size(0, 20);
             label10.TabIndex = 103;
             // 
             // label4
@@ -103,9 +104,9 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(153, 281);
+            label4.Location = new Point(134, 211);
             label4.Name = "label4";
-            label4.Size = new Size(65, 23);
+            label4.Size = new Size(54, 19);
             label4.TabIndex = 99;
             label4.Text = "File CV";
             // 
@@ -117,9 +118,9 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(61, 242);
+            label6.Location = new Point(53, 182);
             label6.Name = "label6";
-            label6.Size = new Size(157, 23);
+            label6.Size = new Size(131, 19);
             label6.TabIndex = 91;
             label6.Text = "Số nhà,Thôn,Hẻm ";
             // 
@@ -131,9 +132,9 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(80, 102);
+            label9.Location = new Point(70, 76);
             label9.Name = "label9";
-            label9.Size = new Size(138, 23);
+            label9.Size = new Size(113, 19);
             label9.TabIndex = 90;
             label9.Text = "Tỉnh/Thành phố";
             // 
@@ -145,9 +146,9 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(117, 146);
+            label5.Location = new Point(102, 110);
             label5.Name = "label5";
-            label5.Size = new Size(101, 23);
+            label5.Size = new Size(84, 19);
             label5.TabIndex = 89;
             label5.Text = "Xã/Phường";
             // 
@@ -159,9 +160,9 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(107, 193);
+            label7.Location = new Point(94, 145);
             label7.Name = "label7";
-            label7.Size = new Size(111, 23);
+            label7.Size = new Size(93, 19);
             label7.TabIndex = 88;
             label7.Text = "Quận/Huyện";
             // 
@@ -173,9 +174,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(126, 20);
+            label1.Location = new Point(110, 15);
             label1.Name = "label1";
-            label1.Size = new Size(92, 23);
+            label1.Size = new Size(77, 19);
             label1.TabIndex = 86;
             label1.Text = "Ngày Sinh";
             // 
@@ -187,9 +188,9 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(139, 61);
+            label3.Location = new Point(122, 46);
             label3.Name = "label3";
-            label3.Size = new Size(79, 23);
+            label3.Size = new Size(65, 19);
             label3.TabIndex = 87;
             label3.Text = "Nơi Sinh";
             // 
@@ -200,9 +201,9 @@
             txtHoTen.BackColor = Color.Transparent;
             txtHoTen.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtHoTen.ForeColor = Color.White;
-            txtHoTen.Location = new Point(452, 111);
+            txtHoTen.Location = new Point(396, 83);
             txtHoTen.Name = "txtHoTen";
-            txtHoTen.Size = new Size(535, 60);
+            txtHoTen.Size = new Size(468, 45);
             txtHoTen.TabIndex = 108;
             txtHoTen.Text = "Nguyễn Thị B";
             txtHoTen.Click += txtHoTen_Click;
@@ -215,9 +216,9 @@
             txtNgayThangNamSinh.BackColor = Color.Transparent;
             txtNgayThangNamSinh.Font = new Font("Segoe UI", 10.2F);
             txtNgayThangNamSinh.ForeColor = Color.White;
-            txtNgayThangNamSinh.Location = new Point(277, 20);
+            txtNgayThangNamSinh.Location = new Point(242, 15);
             txtNgayThangNamSinh.Name = "txtNgayThangNamSinh";
-            txtNgayThangNamSinh.Size = new Size(96, 23);
+            txtNgayThangNamSinh.Size = new Size(83, 19);
             txtNgayThangNamSinh.TabIndex = 109;
             txtNgayThangNamSinh.Text = "01/01/2000";
             // 
@@ -229,9 +230,9 @@
             txtNoiSinh.BackColor = Color.Transparent;
             txtNoiSinh.Font = new Font("Segoe UI", 10.2F);
             txtNoiSinh.ForeColor = Color.White;
-            txtNoiSinh.Location = new Point(277, 61);
+            txtNoiSinh.Location = new Point(242, 46);
             txtNoiSinh.Name = "txtNoiSinh";
-            txtNoiSinh.Size = new Size(137, 23);
+            txtNoiSinh.Size = new Size(113, 19);
             txtNoiSinh.TabIndex = 110;
             txtNoiSinh.Text = "Quận 2, TP HCM";
             // 
@@ -243,9 +244,9 @@
             txtTinh_TP.BackColor = Color.Transparent;
             txtTinh_TP.Font = new Font("Segoe UI", 10.2F);
             txtTinh_TP.ForeColor = Color.White;
-            txtTinh_TP.Location = new Point(277, 102);
+            txtTinh_TP.Location = new Point(242, 76);
             txtTinh_TP.Name = "txtTinh_TP";
-            txtTinh_TP.Size = new Size(72, 23);
+            txtTinh_TP.Size = new Size(60, 19);
             txtTinh_TP.TabIndex = 112;
             txtTinh_TP.Text = "TP HCM";
             // 
@@ -257,9 +258,9 @@
             txtXa_Phuong.BackColor = Color.Transparent;
             txtXa_Phuong.Font = new Font("Segoe UI", 10.2F);
             txtXa_Phuong.ForeColor = Color.White;
-            txtXa_Phuong.Location = new Point(277, 146);
+            txtXa_Phuong.Location = new Point(242, 110);
             txtXa_Phuong.Name = "txtXa_Phuong";
-            txtXa_Phuong.Size = new Size(84, 23);
+            txtXa_Phuong.Size = new Size(69, 19);
             txtXa_Phuong.TabIndex = 113;
             txtXa_Phuong.Text = "Phường 3";
             // 
@@ -271,9 +272,9 @@
             txtQuan_Huyen.BackColor = Color.Transparent;
             txtQuan_Huyen.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtQuan_Huyen.ForeColor = Color.White;
-            txtQuan_Huyen.Location = new Point(277, 193);
+            txtQuan_Huyen.Location = new Point(242, 145);
             txtQuan_Huyen.Name = "txtQuan_Huyen";
-            txtQuan_Huyen.Size = new Size(66, 23);
+            txtQuan_Huyen.Size = new Size(55, 19);
             txtQuan_Huyen.TabIndex = 114;
             txtQuan_Huyen.Text = "Quận 2";
             // 
@@ -285,9 +286,9 @@
             txtSoNha.BackColor = Color.Transparent;
             txtSoNha.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSoNha.ForeColor = Color.White;
-            txtSoNha.Location = new Point(277, 242);
+            txtSoNha.Location = new Point(242, 182);
             txtSoNha.Name = "txtSoNha";
-            txtSoNha.Size = new Size(136, 25);
+            txtSoNha.Size = new Size(110, 20);
             txtSoNha.TabIndex = 115;
             txtSoNha.Text = "231,Hẻm 21/63";
             // 
@@ -298,13 +299,14 @@
             txtlinkFileCV.BorderStyle = BorderStyle.Fixed3D;
             txtlinkFileCV.ForeColor = Color.White;
             txtlinkFileCV.LinkColor = Color.White;
-            txtlinkFileCV.Location = new Point(277, 281);
+            txtlinkFileCV.Location = new Point(242, 211);
             txtlinkFileCV.Name = "txtlinkFileCV";
-            txtlinkFileCV.Size = new Size(78, 22);
+            txtlinkFileCV.Size = new Size(62, 17);
             txtlinkFileCV.TabIndex = 117;
             txtlinkFileCV.TabStop = true;
             txtlinkFileCV.Text = "linkLabel1";
             txtlinkFileCV.VisitedLinkColor = Color.WhiteSmoke;
+            txtlinkFileCV.LinkClicked += txtlinkFileCV_LinkClicked;
             // 
             // guna2Panel2
             // 
@@ -316,10 +318,11 @@
             guna2Panel2.Controls.Add(guna2GradientPanel1);
             guna2Panel2.Controls.Add(btnTroLai);
             guna2Panel2.CustomizableEdges = customizableEdges5;
-            guna2Panel2.Location = new Point(0, -7);
+            guna2Panel2.Location = new Point(0, -5);
+            guna2Panel2.Margin = new Padding(3, 2, 3, 2);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Panel2.Size = new Size(1365, 846);
+            guna2Panel2.Size = new Size(1194, 634);
             guna2Panel2.TabIndex = 118;
             guna2Panel2.Paint += guna2Panel2_Paint;
             // 
@@ -327,9 +330,10 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 593);
+            pictureBox2.Location = new Point(0, 445);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(151, 156);
+            pictureBox2.Size = new Size(132, 117);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 120;
             pictureBox2.TabStop = false;
@@ -338,9 +342,10 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1057, 599);
+            pictureBox1.Location = new Point(925, 449);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(147, 149);
+            pictureBox1.Size = new Size(129, 112);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 119;
             pictureBox1.TabStop = false;
@@ -365,20 +370,23 @@
             guna2GradientPanel1.Controls.Add(label9);
             guna2GradientPanel1.Controls.Add(txtSoNha);
             guna2GradientPanel1.CustomizableEdges = customizableEdges3;
-            guna2GradientPanel1.Location = new Point(345, 218);
+            guna2GradientPanel1.Location = new Point(302, 164);
+            guna2GradientPanel1.Margin = new Padding(3, 2, 3, 2);
             guna2GradientPanel1.Name = "guna2GradientPanel1";
             guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2GradientPanel1.Size = new Size(558, 415);
+            guna2GradientPanel1.Size = new Size(488, 311);
             guna2GradientPanel1.TabIndex = 118;
             // 
             // FThongTin_UV
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1205, 742);
+            ClientSize = new Size(1054, 526);
             Controls.Add(guna2Panel2);
             Controls.Add(label10);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FThongTin_UV";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FThongTin_UV";
             Load += FThongTin_UV_Load;
             guna2Panel2.ResumeLayout(false);

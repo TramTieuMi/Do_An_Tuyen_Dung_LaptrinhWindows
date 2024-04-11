@@ -40,9 +40,9 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label13.ForeColor = Color.Green;
-            label13.Location = new Point(367, 15);
+            label13.Location = new Point(321, 11);
             label13.Name = "label13";
-            label13.Size = new Size(472, 41);
+            label13.Size = new Size(385, 32);
             label13.TabIndex = 0;
             label13.Text = "Các Công Việc Mà Bạn Yêu Thích";
             // 
@@ -52,26 +52,30 @@
             panel3.BackColor = Color.Transparent;
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(label13);
-            panel3.Location = new Point(1, 3);
+            panel3.Location = new Point(1, 2);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1180, 80);
+            panel3.Size = new Size(1033, 60);
             panel3.TabIndex = 46;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Location = new Point(1, 76);
+            flowLayoutPanel1.Location = new Point(1, 57);
+            flowLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1180, 643);
+            flowLayoutPanel1.Size = new Size(1032, 482);
             flowLayoutPanel1.TabIndex = 47;
             // 
             // FYeuThich
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1183, 721);
+            ClientSize = new Size(1035, 526);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel3);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FYeuThich";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FYeuThich";
             Load += FYeuThich_Load;
             panel3.ResumeLayout(false);

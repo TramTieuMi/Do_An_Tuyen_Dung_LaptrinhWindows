@@ -292,6 +292,7 @@
             Controls.Add(txtTimCongViec);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FTimViec";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FTimViec";
             Load += FTimViec_Load;
             guna2Panel1.ResumeLayout(false);

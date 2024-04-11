@@ -499,6 +499,7 @@
             Controls.Add(panel3);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FNhapThongTin_UV";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FNhapThongTin_UV";
             Load += FNhapThongTin_UV_Load;
             panel3.ResumeLayout(false);
