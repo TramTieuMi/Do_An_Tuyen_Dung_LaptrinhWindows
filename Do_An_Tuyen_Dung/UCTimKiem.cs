@@ -31,7 +31,7 @@ namespace Do_An_Tuyen_Dung
         }
         public string UCTimKiem1()
         {
-            return this.txtNganh1.Text;
+            return this.nganh;
         }
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
         {

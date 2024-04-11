@@ -51,6 +51,8 @@
             panel4 = new Panel();
             panel2 = new Panel();
             pan_ThongTin = new Guna.UI2.WinForms.Guna2GradientPanel();
+            panel5 = new Panel();
+            btn_TB = new Button();
             panel9.SuspendLayout();
             panel8.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -61,6 +63,7 @@
             panel1.SuspendLayout();
             panel4.SuspendLayout();
             panel2.SuspendLayout();
+            panel5.SuspendLayout();
             SuspendLayout();
             // 
             // guna2ColorTransition1
@@ -210,6 +213,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel1.BackColor = Color.FromArgb(0, 74, 173);
+            panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel7);
             panel1.Controls.Add(panel6);
             panel1.Controls.Add(panel4);
@@ -250,6 +254,27 @@
             pan_ThongTin.TabIndex = 1;
             pan_ThongTin.Paint += pan_ThongTin_Paint;
             // 
+            // panel5
+            // 
+            panel5.Controls.Add(btn_TB);
+            panel5.Location = new Point(11, 368);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(174, 52);
+            panel5.TabIndex = 5;
+            // 
+            // btn_TB
+            // 
+            btn_TB.FlatStyle = FlatStyle.Flat;
+            btn_TB.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_TB.ForeColor = SystemColors.ButtonFace;
+            btn_TB.Location = new Point(3, 0);
+            btn_TB.Name = "btn_TB";
+            btn_TB.Size = new Size(168, 49);
+            btn_TB.TabIndex = 2;
+            btn_TB.Text = "Thông Báo";
+            btn_TB.UseVisualStyleBackColor = true;
+            btn_TB.Click += btn_TB_Click;
+            // 
             // FMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -271,6 +296,7 @@
             panel1.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            panel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -294,5 +320,7 @@
         private Panel panel4;
         private Panel panel2;
         private Guna.UI2.WinForms.Guna2GradientPanel pan_ThongTin;
+        private Panel panel5;
+        private Button btn_TB;
     }
 }
