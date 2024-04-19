@@ -198,13 +198,13 @@
             txtHoTen.AllowDrop = true;
             txtHoTen.Anchor = AnchorStyles.None;
             txtHoTen.BackColor = Color.Transparent;
-            txtHoTen.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtHoTen.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtHoTen.ForeColor = Color.White;
-            txtHoTen.Location = new Point(334, 88);
+            txtHoTen.Location = new Point(318, 65);
             txtHoTen.Name = "txtHoTen";
-            txtHoTen.Size = new Size(717, 60);
+            txtHoTen.Size = new Size(717, 128);
             txtHoTen.TabIndex = 108;
-            txtHoTen.Text = "Nguyễn Thị BBBBBBBBBBBB";
+            txtHoTen.Text = "Nguyễn Thị BA";
             txtHoTen.Click += txtHoTen_Click;
             // 
             // txtNgayThangNamSinh
