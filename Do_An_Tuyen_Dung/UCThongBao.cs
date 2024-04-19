@@ -30,5 +30,10 @@ namespace Do_An_Tuyen_Dung
         {
 
         }
+
+        private void btn_TB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
