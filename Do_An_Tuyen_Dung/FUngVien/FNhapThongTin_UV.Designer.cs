@@ -49,6 +49,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel3 = new Panel();
             label13 = new Label();
             btn_TroLai = new Guna.UI2.WinForms.Guna2Button();
@@ -71,6 +73,7 @@
             label10 = new Label();
             btn_Luu = new Guna.UI2.WinForms.Guna2Button();
             pictureBox1 = new PictureBox();
+            btUploadFile = new Guna.UI2.WinForms.Guna2Button();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -467,12 +470,33 @@
             pictureBox1.TabIndex = 84;
             pictureBox1.TabStop = false;
             // 
+            // btUploadFile
+            // 
+            btUploadFile.BackColor = Color.Transparent;
+            btUploadFile.CustomizableEdges = customizableEdges21;
+            btUploadFile.DisabledState.BorderColor = Color.DarkGray;
+            btUploadFile.DisabledState.CustomBorderColor = Color.DarkGray;
+            btUploadFile.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btUploadFile.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btUploadFile.FillColor = Color.LightGray;
+            btUploadFile.Font = new Font("Segoe UI", 9F);
+            btUploadFile.ForeColor = Color.Black;
+            btUploadFile.Image = (Image)resources.GetObject("btUploadFile.Image");
+            btUploadFile.Location = new Point(1044, 267);
+            btUploadFile.Name = "btUploadFile";
+            btUploadFile.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btUploadFile.Size = new Size(115, 37);
+            btUploadFile.TabIndex = 85;
+            btUploadFile.Text = "Chọn File";
+            btUploadFile.Click += btUploadFile_Click;
+            // 
             // FNhapThongTin_UV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1205, 701);
+            Controls.Add(btUploadFile);
             Controls.Add(pictureBox1);
             Controls.Add(btn_Luu);
             Controls.Add(label10);
@@ -528,5 +552,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_TroLai;
         private Guna.UI2.WinForms.Guna2Button btn_Luu;
         private PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btUploadFile;
     }
 }

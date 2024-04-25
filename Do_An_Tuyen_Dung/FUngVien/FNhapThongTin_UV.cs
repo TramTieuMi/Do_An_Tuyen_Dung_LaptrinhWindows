@@ -100,5 +100,20 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
+        
+        void uploadFile()
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "File anh|*.jpg; *.pdf; *png; |All File|*.*";
+            //var dialogResult = dialog.ShowDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                txtFileCV.Text = dialog.SafeFileName;
+            }
+        }
+        private void btUploadFile_Click(object sender, EventArgs e)
+        {
+            uploadFile();
+        }
     }
 }
