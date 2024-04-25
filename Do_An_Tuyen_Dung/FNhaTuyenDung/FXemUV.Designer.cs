@@ -214,7 +214,7 @@
             // panel8
             // 
             panel8.AutoScroll = true;
-            panel8.BackColor = SystemColors.Control;
+            panel8.BackColor = Color.Transparent;
             panel8.Controls.Add(fpn_HienThi);
             panel8.Controls.Add(guna2Panel1);
             panel8.Controls.Add(Combobox_KinhNghiem);
@@ -230,6 +230,7 @@
             // fpn_HienThi
             // 
             fpn_HienThi.AutoScroll = true;
+            fpn_HienThi.BackColor = Color.Transparent;
             fpn_HienThi.Location = new Point(27, 140);
             fpn_HienThi.Name = "fpn_HienThi";
             fpn_HienThi.Size = new Size(1115, 453);
@@ -244,7 +245,7 @@
             guna2Panel1.Location = new Point(-2, 0);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel1.Size = new Size(1184, 80);
+            guna2Panel1.Size = new Size(1202, 80);
             guna2Panel1.TabIndex = 71;
             guna2Panel1.Paint += guna2Panel1_Paint;
             // 
@@ -252,8 +253,8 @@
             // 
             txtNganh.AutoSize = true;
             txtNganh.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtNganh.ForeColor = Color.Green;
-            txtNganh.Location = new Point(485, 16);
+            txtNganh.ForeColor = Color.White;
+            txtNganh.Location = new Point(519, 24);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(128, 38);
             txtNganh.TabIndex = 0;
@@ -262,13 +263,12 @@
             // Combobox_KinhNghiem
             // 
             Combobox_KinhNghiem.BackColor = Color.Transparent;
-            Combobox_KinhNghiem.BorderColor = Color.Black;
+            Combobox_KinhNghiem.BorderColor = Color.White;
             Combobox_KinhNghiem.BorderRadius = 10;
             Combobox_KinhNghiem.BorderThickness = 2;
             Combobox_KinhNghiem.CustomizableEdges = customizableEdges3;
             Combobox_KinhNghiem.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_KinhNghiem.DropDownStyle = ComboBoxStyle.DropDownList;
-            Combobox_KinhNghiem.FillColor = SystemColors.Control;
             Combobox_KinhNghiem.FocusedColor = Color.FromArgb(94, 148, 255);
             Combobox_KinhNghiem.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             Combobox_KinhNghiem.Font = new Font("Segoe UI", 10F);
@@ -284,13 +284,12 @@
             // Combobox_TrangThai
             // 
             Combobox_TrangThai.BackColor = Color.Transparent;
-            Combobox_TrangThai.BorderColor = Color.Black;
+            Combobox_TrangThai.BorderColor = Color.White;
             Combobox_TrangThai.BorderRadius = 10;
             Combobox_TrangThai.BorderThickness = 2;
             Combobox_TrangThai.CustomizableEdges = customizableEdges5;
             Combobox_TrangThai.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_TrangThai.DropDownStyle = ComboBoxStyle.DropDownList;
-            Combobox_TrangThai.FillColor = SystemColors.Control;
             Combobox_TrangThai.FocusedColor = Color.FromArgb(94, 148, 255);
             Combobox_TrangThai.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             Combobox_TrangThai.Font = new Font("Segoe UI", 10F);
@@ -308,11 +307,11 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            label5.ForeColor = Color.Black;
-            label5.Location = new Point(615, 88);
+            label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(612, 91);
             label5.Name = "label5";
-            label5.Size = new Size(106, 23);
+            label5.Size = new Size(110, 23);
             label5.TabIndex = 70;
             label5.Text = "Kinh Nghiệm";
             // 
@@ -320,11 +319,11 @@
             // 
             label18.AutoSize = true;
             label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            label18.ForeColor = Color.Black;
-            label18.Location = new Point(117, 88);
+            label18.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(115, 91);
             label18.Name = "label18";
-            label18.Size = new Size(89, 23);
+            label18.Size = new Size(90, 23);
             label18.TabIndex = 69;
             label18.Text = "Trạng Thái";
             label18.Click += label18_Click;
@@ -333,6 +332,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1183, 635);
             Controls.Add(panel8);
             Controls.Add(panel2);

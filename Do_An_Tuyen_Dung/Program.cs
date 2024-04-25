@@ -16,7 +16,7 @@ namespace Do_An_Tuyen_Dung
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FDangViec());
+            Application.Run(new FXemUV());
         }
     }
 }
