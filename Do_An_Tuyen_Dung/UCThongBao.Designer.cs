@@ -94,7 +94,7 @@
             txtTB.AutoSize = true;
             txtTB.Font = new Font("Segoe UI", 10.2F);
             txtTB.ForeColor = SystemColors.ActiveCaptionText;
-            txtTB.Location = new Point(382, 38);
+            txtTB.Location = new Point(387, 38);
             txtTB.Name = "txtTB";
             txtTB.Size = new Size(337, 23);
             txtTB.TabIndex = 70;

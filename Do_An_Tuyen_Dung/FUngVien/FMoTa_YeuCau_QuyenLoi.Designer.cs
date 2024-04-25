@@ -112,7 +112,7 @@
             txtMoTa.Font = new Font("Segoe UI", 9F);
             txtMoTa.ForeColor = Color.Black;
             txtMoTa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMoTa.Location = new Point(11, 289);
+            txtMoTa.Location = new Point(29, 289);
             txtMoTa.Margin = new Padding(3, 5, 3, 5);
             txtMoTa.Name = "txtMoTa";
             txtMoTa.PasswordChar = '\0';
@@ -137,7 +137,7 @@
             txtYeuCau.Font = new Font("Segoe UI", 9F);
             txtYeuCau.ForeColor = Color.Black;
             txtYeuCau.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtYeuCau.Location = new Point(414, 289);
+            txtYeuCau.Location = new Point(423, 289);
             txtYeuCau.Margin = new Padding(3, 5, 3, 5);
             txtYeuCau.Name = "txtYeuCau";
             txtYeuCau.PasswordChar = '\0';
@@ -162,14 +162,14 @@
             txtQuyenLoi.Font = new Font("Segoe UI", 9F);
             txtQuyenLoi.ForeColor = Color.Black;
             txtQuyenLoi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtQuyenLoi.Location = new Point(816, 289);
+            txtQuyenLoi.Location = new Point(827, 289);
             txtQuyenLoi.Margin = new Padding(3, 5, 3, 5);
             txtQuyenLoi.Name = "txtQuyenLoi";
             txtQuyenLoi.PasswordChar = '\0';
             txtQuyenLoi.PlaceholderText = "";
             txtQuyenLoi.SelectedText = "";
             txtQuyenLoi.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtQuyenLoi.Size = new Size(363, 243);
+            txtQuyenLoi.Size = new Size(337, 243);
             txtQuyenLoi.TabIndex = 91;
             // 
             // btn_NopDon
@@ -203,7 +203,7 @@
             txtCty.BackColor = Color.Transparent;
             txtCty.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtCty.ForeColor = Color.White;
-            txtCty.Location = new Point(1005, 101);
+            txtCty.Location = new Point(998, 101);
             txtCty.Name = "txtCty";
             txtCty.Size = new Size(70, 41);
             txtCty.TabIndex = 108;
@@ -218,7 +218,7 @@
             txtNganh.BackColor = Color.Transparent;
             txtNganh.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtNganh.ForeColor = Color.White;
-            txtNganh.Location = new Point(497, 123);
+            txtNganh.Location = new Point(496, 101);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(170, 50);
             txtNganh.TabIndex = 109;
@@ -445,33 +445,33 @@
             // guna2HtmlLabel11
             // 
             guna2HtmlLabel11.BackColor = Color.Transparent;
-            guna2HtmlLabel11.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            guna2HtmlLabel11.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             guna2HtmlLabel11.ForeColor = Color.White;
-            guna2HtmlLabel11.Location = new Point(129, 235);
+            guna2HtmlLabel11.Location = new Point(138, 230);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            guna2HtmlLabel11.Size = new Size(130, 25);
+            guna2HtmlLabel11.Size = new Size(155, 30);
             guna2HtmlLabel11.TabIndex = 138;
             guna2HtmlLabel11.Text = "Mô tả công việc";
             // 
             // guna2HtmlLabel12
             // 
             guna2HtmlLabel12.BackColor = Color.Transparent;
-            guna2HtmlLabel12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel12.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             guna2HtmlLabel12.ForeColor = Color.White;
-            guna2HtmlLabel12.Location = new Point(510, 235);
+            guna2HtmlLabel12.Location = new Point(496, 243);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            guna2HtmlLabel12.Size = new Size(274, 33);
+            guna2HtmlLabel12.Size = new Size(246, 30);
             guna2HtmlLabel12.TabIndex = 139;
             guna2HtmlLabel12.Text = "Yêu cầu đối với công việc";
             // 
             // guna2HtmlLabel13
             // 
             guna2HtmlLabel13.BackColor = Color.Transparent;
-            guna2HtmlLabel13.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            guna2HtmlLabel13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             guna2HtmlLabel13.ForeColor = Color.White;
-            guna2HtmlLabel13.Location = new Point(965, 235);
+            guna2HtmlLabel13.Location = new Point(937, 243);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            guna2HtmlLabel13.Size = new Size(80, 25);
+            guna2HtmlLabel13.Size = new Size(95, 30);
             guna2HtmlLabel13.TabIndex = 140;
             guna2HtmlLabel13.Text = "Quyền lợi";
             // 
@@ -490,7 +490,7 @@
             btnXem.FillColor = Color.FromArgb(42, 54, 78);
             btnXem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnXem.ForeColor = Color.White;
-            btnXem.Location = new Point(965, 145);
+            btnXem.Location = new Point(937, 145);
             btnXem.Name = "btnXem";
             btnXem.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnXem.Size = new Size(199, 40);
