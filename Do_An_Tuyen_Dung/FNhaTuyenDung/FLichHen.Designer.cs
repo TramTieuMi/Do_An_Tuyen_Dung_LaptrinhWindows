@@ -141,7 +141,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             dateTimePicker1.Font = new Font("Segoe UI", 10.8F);
             dateTimePicker1.Location = new Point(188, 288);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 31);
+            dateTimePicker1.Size = new Size(408, 31);
             dateTimePicker1.TabIndex = 8;
             // 
             // btnLuu
@@ -160,6 +160,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             btnLuu.ForeColor = Color.White;
             btnLuu.Location = new Point(822, 353);
             btnLuu.Name = "btnLuu";
+            btnLuu.PressedColor = Color.Transparent;
             btnLuu.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnLuu.Size = new Size(130, 40);
             btnLuu.TabIndex = 76;

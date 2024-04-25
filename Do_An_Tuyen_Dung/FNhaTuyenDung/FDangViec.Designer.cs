@@ -177,7 +177,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Combobox_HinhThuc.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_HinhThuc.ItemHeight = 30;
             Combobox_HinhThuc.Items.AddRange(new object[] { "Remote", "Local", "Online" });
-            Combobox_HinhThuc.Location = new Point(103, 397);
+            Combobox_HinhThuc.Location = new Point(103, 406);
             Combobox_HinhThuc.Name = "Combobox_HinhThuc";
             Combobox_HinhThuc.ShadowDecoration.CustomizableEdges = customizableEdges2;
             Combobox_HinhThuc.Size = new Size(394, 36);
@@ -197,7 +197,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtGhiChu.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtGhiChu.Font = new Font("Segoe UI", 9F);
             txtGhiChu.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGhiChu.Location = new Point(70, 1568);
+            txtGhiChu.Location = new Point(110, 1559);
             txtGhiChu.Margin = new Padding(3, 5, 3, 5);
             txtGhiChu.Name = "txtGhiChu";
             txtGhiChu.PasswordChar = '\0';
@@ -212,11 +212,11 @@ namespace Do_An_Ung_Dung_Tim_Viec
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             guna2HtmlLabel5.ForeColor = Color.White;
-            guna2HtmlLabel5.Location = new Point(75, 1535);
+            guna2HtmlLabel5.Location = new Point(115, 1526);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(78, 25);
+            guna2HtmlLabel5.Size = new Size(65, 25);
             guna2HtmlLabel5.TabIndex = 65;
-            guna2HtmlLabel5.Text = "GHI CHÚ:";
+            guna2HtmlLabel5.Text = "Ghi Chú";
             // 
             // txtSDTHR
             // 
@@ -232,7 +232,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtSDTHR.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSDTHR.Font = new Font("Segoe UI", 9F);
             txtSDTHR.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSDTHR.Location = new Point(70, 1487);
+            txtSDTHR.Location = new Point(110, 1478);
             txtSDTHR.Margin = new Padding(3, 5, 3, 5);
             txtSDTHR.Name = "txtSDTHR";
             txtSDTHR.PasswordChar = '\0';
@@ -256,7 +256,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtEmailHR.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEmailHR.Font = new Font("Segoe UI", 9F);
             txtEmailHR.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmailHR.Location = new Point(70, 1422);
+            txtEmailHR.Location = new Point(110, 1413);
             txtEmailHR.Margin = new Padding(3, 5, 3, 5);
             txtEmailHR.Name = "txtEmailHR";
             txtEmailHR.PasswordChar = '\0';
@@ -280,14 +280,14 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtTenHR.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenHR.Font = new Font("Segoe UI", 9F);
             txtTenHR.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenHR.Location = new Point(72, 1354);
+            txtTenHR.Location = new Point(112, 1345);
             txtTenHR.Margin = new Padding(3, 5, 3, 5);
             txtTenHR.Name = "txtTenHR";
             txtTenHR.PasswordChar = '\0';
             txtTenHR.PlaceholderText = "";
             txtTenHR.SelectedText = "";
             txtTenHR.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtTenHR.Size = new Size(309, 36);
+            txtTenHR.Size = new Size(303, 36);
             txtTenHR.TabIndex = 62;
             // 
             // guna2HtmlLabel4
@@ -295,7 +295,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             guna2HtmlLabel4.ForeColor = Color.White;
-            guna2HtmlLabel4.Location = new Point(75, 1462);
+            guna2HtmlLabel4.Location = new Point(115, 1453);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(33, 25);
             guna2HtmlLabel4.TabIndex = 61;
@@ -306,7 +306,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             guna2HtmlLabel3.ForeColor = Color.White;
-            guna2HtmlLabel3.Location = new Point(75, 1398);
+            guna2HtmlLabel3.Location = new Point(115, 1389);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(44, 25);
             guna2HtmlLabel3.TabIndex = 60;
@@ -317,7 +317,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(75, 1328);
+            guna2HtmlLabel2.Location = new Point(115, 1319);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(152, 25);
             guna2HtmlLabel2.TabIndex = 59;
@@ -326,11 +326,11 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // label12
             // 
             label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
             label12.Location = new Point(70, 1274);
             label12.Name = "label12";
-            label12.Size = new Size(187, 25);
+            label12.Size = new Size(205, 28);
             label12.TabIndex = 58;
             label12.Text = "THÔNG TIN LIÊN HỆ";
             // 
@@ -381,11 +381,11 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.ForeColor = Color.White;
             guna2HtmlLabel1.Location = new Point(70, 103);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(206, 27);
+            guna2HtmlLabel1.Size = new Size(226, 30);
             guna2HtmlLabel1.TabIndex = 52;
             guna2HtmlLabel1.Text = "THÔNG TIN CÔNG VIỆC ";
             // 
@@ -424,10 +424,10 @@ namespace Do_An_Ung_Dung_Tim_Viec
             btn_Dang.FillColor = Color.FromArgb(42, 54, 78);
             btn_Dang.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_Dang.ForeColor = Color.White;
-            btn_Dang.Location = new Point(929, 1638);
+            btn_Dang.Location = new Point(967, 1648);
             btn_Dang.Name = "btn_Dang";
             btn_Dang.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btn_Dang.Size = new Size(225, 56);
+            btn_Dang.Size = new Size(187, 46);
             btn_Dang.TabIndex = 40;
             btn_Dang.Text = "Đăng Công Việc";
             btn_Dang.Click += btn_Dang_Click;
@@ -544,7 +544,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Combobox_KinhNghiem.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_KinhNghiem.ItemHeight = 30;
             Combobox_KinhNghiem.Items.AddRange(new object[] { "1-3  năm", "3-5 năm", "5 năm trở lên" });
-            Combobox_KinhNghiem.Location = new Point(103, 323);
+            Combobox_KinhNghiem.Location = new Point(103, 332);
             Combobox_KinhNghiem.Name = "Combobox_KinhNghiem";
             Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges26;
             Combobox_KinhNghiem.Size = new Size(394, 36);
@@ -565,7 +565,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Combobox_Luong.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Luong.ItemHeight = 30;
             Combobox_Luong.Items.AddRange(new object[] { "10 - 20 triệu VND/tháng", "20 - 25 triệu VND/tháng", "6 - 12 triệu VND/tháng" });
-            Combobox_Luong.Location = new Point(103, 248);
+            Combobox_Luong.Location = new Point(103, 257);
             Combobox_Luong.Name = "Combobox_Luong";
             Combobox_Luong.ShadowDecoration.CustomizableEdges = customizableEdges28;
             Combobox_Luong.Size = new Size(394, 36);
@@ -585,7 +585,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtTenCongViec.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenCongViec.Font = new Font("Segoe UI", 9F);
             txtTenCongViec.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenCongViec.Location = new Point(103, 171);
+            txtTenCongViec.Location = new Point(103, 180);
             txtTenCongViec.Margin = new Padding(3, 5, 3, 5);
             txtTenCongViec.Name = "txtTenCongViec";
             txtTenCongViec.PasswordChar = '\0';
@@ -624,7 +624,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label17.ForeColor = Color.White;
-            label17.Location = new Point(103, 372);
+            label17.Location = new Point(103, 381);
             label17.Name = "label17";
             label17.Size = new Size(155, 23);
             label17.TabIndex = 23;
@@ -636,7 +636,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(103, 296);
+            label16.Location = new Point(103, 305);
             label16.Name = "label16";
             label16.Size = new Size(110, 23);
             label16.TabIndex = 21;
@@ -647,7 +647,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label15.ForeColor = Color.White;
-            label15.Location = new Point(103, 219);
+            label15.Location = new Point(103, 228);
             label15.Name = "label15";
             label15.Size = new Size(59, 23);
             label15.TabIndex = 19;
@@ -659,7 +659,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(103, 141);
+            label14.Location = new Point(103, 150);
             label14.Name = "label14";
             label14.Size = new Size(114, 23);
             label14.TabIndex = 17;
@@ -769,11 +769,11 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
             label3.Location = new Point(70, 479);
             label3.Name = "label3";
-            label3.Size = new Size(215, 25);
+            label3.Size = new Size(237, 28);
             label3.TabIndex = 2;
             label3.Text = "QUYỀN LỢI NHÂN VIÊN";
             // 
