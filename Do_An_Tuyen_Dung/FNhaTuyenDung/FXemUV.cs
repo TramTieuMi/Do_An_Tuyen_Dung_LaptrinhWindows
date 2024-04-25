@@ -42,7 +42,8 @@ namespace Do_An_Ung_Dung_Tim_Viec
                     {
                         string hoten = reader["TenUV"].ToString();
                         string email = reader["EmailUV"].ToString();
-                        XemUV xem = new XemUV(hoten, email);
+                        string emailHR = reader["EmailHR"].ToString();
+                        XemUV xem = new XemUV(hoten, email,emailHR);
 
                         list.Add(xem);
                     }
@@ -75,7 +76,6 @@ namespace Do_An_Ung_Dung_Tim_Viec
         {
 
         }
-        Form curentForm;
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
 
@@ -92,6 +92,11 @@ namespace Do_An_Ung_Dung_Tim_Viec
         }
 
         private void fpn_HienThi_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

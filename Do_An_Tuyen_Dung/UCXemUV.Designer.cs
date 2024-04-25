@@ -86,6 +86,7 @@
             guna2Button1.Size = new Size(144, 37);
             guna2Button1.TabIndex = 65;
             guna2Button1.Text = "Loại";
+            guna2Button1.Click += guna2Button1_Click;
             // 
             // guna2Button3
             // 
@@ -106,6 +107,7 @@
             guna2Button3.Size = new Size(144, 37);
             guna2Button3.TabIndex = 67;
             guna2Button3.Text = "Chấp Nhận";
+            guna2Button3.Click += guna2Button3_Click;
             // 
             // guna2Button2
             // 

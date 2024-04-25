@@ -1,4 +1,5 @@
-﻿using Do_An_Tuyen_Dung.FUngVien;
+﻿using Do_An_Tuyen_Dung.FNhaTuyenDung;
+using Do_An_Tuyen_Dung.FUngVien;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace Do_An_Tuyen_Dung
     {
         XemUV xemUV = new XemUV();
         string em;
+        string emHR;
         public UCXemUV()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace Do_An_Tuyen_Dung
             this.xemUV = xemUV;
             txtTen.Text = "Họ và Tên : " + xemUV.Ten;
             em = xemUV.Email;
+            emHR = xemUV.EmailHR;
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
@@ -34,8 +37,18 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            FThongTin_UV fThongTin_UV = new FThongTin_UV(txtTen.Text,em);
+            FThongTin_UV fThongTin_UV = new FThongTin_UV(txtTen.Text, em);
             fThongTin_UV.ShowDialog();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            FLichHen fLichHen = new FLichHen(emHR,em);
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

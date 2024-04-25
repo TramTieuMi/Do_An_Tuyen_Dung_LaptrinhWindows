@@ -41,6 +41,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1039, 90);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // label1
             // 
@@ -48,9 +49,9 @@
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(279, 27);
             label1.Name = "label1";
-            label1.Size = new Size(495, 38);
+            label1.Size = new Size(494, 38);
             label1.TabIndex = 0;
-            label1.Text = "Thông Báo Về Đơn XIn Việc Của Bạn";
+            label1.Text = "Thông Báo Về Đơn Xin Việc Của Bạn";
             // 
             // fpnHT
             // 

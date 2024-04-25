@@ -1,4 +1,5 @@
-﻿using Do_An_Tuyen_Dung.FUngVien;
+﻿using Do_An_Tuyen_Dung.FNhaTuyenDung;
+using Do_An_Tuyen_Dung.FUngVien;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,8 @@ namespace Do_An_Tuyen_Dung
     public partial class UCThongBao : UserControl
     {
         ThongBao thongBao;
+        string emUV1;
+        string emHR1;
         public UCThongBao()
         {
             InitializeComponent();
@@ -25,10 +28,17 @@ namespace Do_An_Tuyen_Dung
             txtNganh.Text = "Ngành : " + thongBao.Tencv;
             txtTenCTy.Text = "Công Ty : " + thongBao.Tencty;
             txtTB.Text = "Đơn Xin Việc Của Bạn " + thongBao.TrangThai;
+            emHR1 = thongBao.EmHR;
+            emUV1 = thongBao.EmUV;
         }
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_TB_Click(object sender, EventArgs e)
+        {
+            FLichHen fLichHen = new FLichHen(emHR1,emUV1);
         }
     }
 }

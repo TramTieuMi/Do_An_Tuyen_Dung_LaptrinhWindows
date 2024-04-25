@@ -34,7 +34,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
             List<ThongBao> list = new List<ThongBao>();
             try
             {
-                string query = "SELECT TenCongViec,TenCTy,TenTaiKhoan,TrangThai FROM TinhTrangCV JOIN TaoTaiKhoan ON TinhTrangCV.EmailUV = TaoTaiKhoan.Email ";
+                string query = "SELECT TenCongViec,TenCTy,TenTaiKhoan,TrangThai,EmailHR,EmailUV FROM TinhTrangCV JOIN TaoTaiKhoan ON TinhTrangCV.EmailUV = TaoTaiKhoan.Email ";
                 SqlCommand command = new SqlCommand(query, connStr);
                 connStr.Open();
                 SqlDataReader reader = command.ExecuteReader();
@@ -49,13 +49,15 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         if (reader["TrangThai"].ToString() != "NULL")
                         {
                             trangthai = reader["TrangThai"].ToString();
-                            
+
                         }
                         else
                         {
                             trangthai = "Đang Được Xem Xét";
                         }
-                        ThongBao TB = new ThongBao(tencty, nganh, trangthai);
+                        string emUV = reader["EmailUV"].ToString();
+                        string emHR = reader["EmailHR"].ToString();
+                        ThongBao TB = new ThongBao(tencty, nganh, trangthai, emUV,emHR);
 
                         list.Add(TB);
                     }
@@ -78,6 +80,11 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 ucTB.Margin = new Padding(0, dis, 0, 0);
                 fpnHT.Controls.Add(ucTB);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
