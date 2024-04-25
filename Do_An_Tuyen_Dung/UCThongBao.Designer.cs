@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             btn_TB = new Guna.UI2.WinForms.Guna2Button();
             txtNganh = new Label();
@@ -51,7 +51,7 @@
             btn_TB.BorderColor = Color.Transparent;
             btn_TB.BorderRadius = 10;
             btn_TB.BorderThickness = 2;
-            btn_TB.CustomizableEdges = customizableEdges3;
+            btn_TB.CustomizableEdges = customizableEdges1;
             btn_TB.DisabledState.BorderColor = Color.DarkGray;
             btn_TB.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_TB.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -61,10 +61,11 @@
             btn_TB.ForeColor = Color.White;
             btn_TB.Location = new Point(789, 24);
             btn_TB.Name = "btn_TB";
-            btn_TB.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_TB.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btn_TB.Size = new Size(190, 37);
             btn_TB.TabIndex = 67;
             btn_TB.Text = "Xem Lịch Hẹn";
+            btn_TB.Click += btn_TB_Click;
             // 
             // txtNganh
             // 
