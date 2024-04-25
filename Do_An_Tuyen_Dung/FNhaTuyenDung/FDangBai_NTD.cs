@@ -77,5 +77,12 @@ namespace Do_An_Tuyen_Dung
         {
 
         }
+
+        private void btnDangXuatNTD_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FLogin login = new FLogin();
+            login.ShowDialog();
+        }
     }
 }

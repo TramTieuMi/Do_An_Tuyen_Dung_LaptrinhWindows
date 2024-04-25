@@ -61,5 +61,13 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
             modify.OpenChildForm(currentFormChild, new FThongBao(), pan_ThongTin);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FLogin login = new FLogin();
+            login.ShowDialog();
+
+        }
     }
 }
