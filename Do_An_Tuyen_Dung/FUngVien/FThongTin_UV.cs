@@ -120,5 +120,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
             cv.ShowDialog();
 
         }
+
+        private void txtNgayThangNamSinh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

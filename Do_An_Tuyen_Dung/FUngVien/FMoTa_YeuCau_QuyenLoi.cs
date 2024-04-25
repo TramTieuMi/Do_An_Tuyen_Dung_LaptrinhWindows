@@ -14,15 +14,18 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FMoTa_YeuCau_QuyenLoi : Form
     {
-
+        private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (2)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         SqlConnection connStr = Connection.GetSqlConnection();
         Modify modify = new Modify();
         string tenCV;
+        string DiaDiem = string.Empty;
         public FMoTa_YeuCau_QuyenLoi()
         {
             InitializeComponent();
@@ -72,7 +75,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 }
 
                 DataTable dataTable1 = new DataTable();
-                string query1 = "SELECT TenCTy,EmailHR FROM ThongTinCTy_Chinh WHERE EmailHR =@EmailHR";
+                string query1 = "SELECT TenCTy,EmailHR,Tinh_TP, FROM ThongTinCTy_Chinh WHERE EmailHR =@EmailHR";
                 string em1 = txtEmailHR.Text;
                 modify.TaiDuLieu(dataTable1, query1, "@EmailHR", em1);
                 if (dataTable1.Rows.Count > 0)
@@ -82,7 +85,8 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         string em = row1["EmailHR"].ToString();
                         if (em == em1)
                         {
-                            txtCty.Text = "Công ty: " + row1["TenCTy"].ToString();
+                            txtCty.Text = row1["TenCTy"].ToString();
+                            DiaDiem = row1["Tinh_TP"].ToString();
                         }
                     }
                 }
@@ -128,8 +132,80 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void btn_NopDon_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
+            string TenCongViec = txtNganh.Text;
+            string TenCTy = txtCty.Text; // Set a default value if empty
+            string EmailHR = txtEmailHR.Text;
+            string TenUV = string.Empty;
+            string EmailUV = string.Empty;
+            DataTable dataTable1 = new DataTable();
+            string query1 = "SELECT TenTaiKhoan,Email FROM TaoTaiKhoan Where TenTaiKhoan = @TenTaiKhoan";
+            modify.TaiDuLieu(dataTable1, query1, "@TenTaiKhoan", FLogin.TenTaiKhoan);
+            
+            if (dataTable1.Rows.Count > 0)
+            {
+                foreach (DataRow row in dataTable1.Rows)
+                {
+                    string tk = row["TenTaiKhoan"].ToString();
+                    if (tk == FLogin.TenTaiKhoan)
+                    {
+                        EmailUV = row["Email"].ToString();
+                    }
+                }
+            }
+
+            DataTable dataTable = new DataTable();
+            string query = "SELECT HoTenUV,Email FROM NhapThongTinUV Where Email = @Email";
+            modify.TaiDuLieu(dataTable, query, "@Email", EmailUV);
+            if (dataTable.Rows.Count > 0)
+            {
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    string em1 = row["Email"].ToString();
+                    if (em1 == EmailUV)
+                    {
+                        TenUV = row["HoTenUV"].ToString();
+                       
+                    };
+                }
+            }
+            try
+            {
+                // Use parameterized query for security and clarity
+                string query2 = "INSERT INTO TinhTrangCV (TenCongViec,TenCTy,EmailHR,EmailUV,TenUV,DiaDiem) VALUES (@TenCongViec,@TenCTy,@EmailHR,@emailUV,@TenUV,@DiaDiem)";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand command = new SqlCommand(query2, connection))
+                    {
+                        // Add parameters for security
+                        command.Parameters.AddWithValue("@TenCongViec", TenCongViec);
+                        command.Parameters.AddWithValue("@TenCTy", TenCTy);
+                        command.Parameters.AddWithValue("@EmailHR", EmailHR);
+                        command.Parameters.AddWithValue("@EmailUV", EmailUV);
+                        command.Parameters.AddWithValue("@TenUV", TenUV);
+                        command.Parameters.AddWithValue("@DiaDiem", DiaDiem);
+                        
+
+                        connection.Open();
+                        command.ExecuteNonQuery(); // Use ExecuteNonQuery for INSERT
+
+                        MessageBox.Show("Nộp đơn thành công!");
+                        this.Close();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Nộp đơn thất bại do lỗi SQL: " + ex.Message);
+            }
+            catch (Exception ex) // Catch any other exceptions
+            {
+                MessageBox.Show("Nộp đơn thất bại do lỗi không xác định: " + ex.Message);
+            }
+
         }
+    
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
@@ -137,6 +213,11 @@ namespace Do_An_Tuyen_Dung.FUngVien
         }
 
         private void txtCty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMoTa_TextChanged(object sender, EventArgs e)
         {
 
         }
