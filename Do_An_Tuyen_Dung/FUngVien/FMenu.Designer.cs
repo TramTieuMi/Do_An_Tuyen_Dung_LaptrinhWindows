@@ -30,9 +30,9 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMenu));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(components);
             txtTenTK = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel9 = new Panel();
@@ -53,6 +53,7 @@
             panel4 = new Panel();
             panel2 = new Panel();
             pan_ThongTin = new Guna.UI2.WinForms.Guna2GradientPanel();
+            btnDangXuat = new Button();
             panel9.SuspendLayout();
             panel8.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -110,7 +111,7 @@
             guna2CircleButton1.Location = new Point(0, 4);
             guna2CircleButton1.Margin = new Padding(3, 2, 3, 2);
             guna2CircleButton1.Name = "guna2CircleButton1";
-            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton1.Size = new Size(49, 41);
             guna2CircleButton1.TabIndex = 1;
@@ -225,6 +226,7 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel1.BackColor = Color.FromArgb(0, 74, 173);
+            panel1.Controls.Add(btnDangXuat);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel7);
             panel1.Controls.Add(panel6);
@@ -282,14 +284,27 @@
             // pan_ThongTin
             // 
             pan_ThongTin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pan_ThongTin.CustomizableEdges = customizableEdges2;
+            pan_ThongTin.CustomizableEdges = customizableEdges5;
             pan_ThongTin.Location = new Point(3, 52);
             pan_ThongTin.Margin = new Padding(3, 2, 3, 2);
             pan_ThongTin.Name = "pan_ThongTin";
-            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges6;
             pan_ThongTin.Size = new Size(1057, 557);
             pan_ThongTin.TabIndex = 1;
             pan_ThongTin.Paint += pan_ThongTin_Paint;
+            // 
+            // btnDangXuat
+            // 
+            btnDangXuat.FlatStyle = FlatStyle.Flat;
+            btnDangXuat.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDangXuat.ForeColor = SystemColors.ButtonFace;
+            btnDangXuat.Location = new Point(10, 319);
+            btnDangXuat.Name = "btnDangXuat";
+            btnDangXuat.Size = new Size(147, 37);
+            btnDangXuat.TabIndex = 6;
+            btnDangXuat.Text = "Đăng Xuất";
+            btnDangXuat.UseVisualStyleBackColor = true;
+            btnDangXuat.Click += button1_Click;
             // 
             // FMenu
             // 
@@ -340,5 +355,6 @@
         private Guna.UI2.WinForms.Guna2GradientPanel pan_ThongTin;
         private Panel panel5;
         private Button btn_TB;
+        private Button btnDangXuat;
     }
 }

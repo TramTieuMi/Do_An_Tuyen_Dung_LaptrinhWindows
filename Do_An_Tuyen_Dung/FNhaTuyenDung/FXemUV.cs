@@ -43,7 +43,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
                         string hoten = reader["TenUV"].ToString();
                         string email = reader["EmailUV"].ToString();
                         string emailHR = reader["EmailHR"].ToString();
-                        XemUV xem = new XemUV(hoten, email,emailHR);
+                        XemUV xem = new XemUV(hoten, email, emailHR);
 
                         list.Add(xem);
                     }
@@ -99,6 +99,22 @@ namespace Do_An_Ung_Dung_Tim_Viec
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        bool liked = false;
+        //like
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.pictureBox1.Hide();
+            pictureBox2.Show();
+
+        }
+
+        //unlike
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.pictureBox2.Hide();
+            pictureBox1.Show();
         }
     }
 }

@@ -19,7 +19,14 @@ namespace Do_An_Tuyen_Dung
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            this.pictureBox2.Hide();
+            pictureBox3.Show();
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.pictureBox3.Hide();
+            pictureBox2.Show();
         }
     }
 }

@@ -43,12 +43,24 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            FLichHen fLichHen = new FLichHen(emHR,em);
+            FLichHen fLichHen = new FLichHen(emHR, em);
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pictureBox2.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pictureBox1.Show(); 
         }
     }
 }

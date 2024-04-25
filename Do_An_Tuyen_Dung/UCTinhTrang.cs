@@ -43,7 +43,7 @@ namespace Do_An_Tuyen_Dung
         {
             try
             {
-                string query = string.Format("DELETE FROM TinhTrangCV WHERE TenCongViec = '{0}' AND TenCTy = '{1}'", txtNganh.Text, txtCTy.Text );
+                string query = string.Format("DELETE FROM TinhTrangCV WHERE TenCongViec = '{0}' AND TenCTy = '{1}'", txtNganh.Text, txtCTy.Text);
                 SqlCommand command = new SqlCommand(query, connStr);
 
                 connStr.Open();
@@ -62,6 +62,18 @@ namespace Do_An_Tuyen_Dung
         private void guna2Button7_Click(object sender, EventArgs e)
         {
             Xoa();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.pictureBox1.Hide();
+            pictureBox2.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.pictureBox2.Hide();
+            pictureBox1.Show();
         }
     }
 }
