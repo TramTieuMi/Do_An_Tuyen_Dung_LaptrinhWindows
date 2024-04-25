@@ -55,7 +55,6 @@
             guna2Panel3.BorderColor = Color.Black;
             guna2Panel3.BorderRadius = 10;
             guna2Panel3.BorderThickness = 2;
-            guna2Panel3.Controls.Add(pictureBox2);
             guna2Panel3.Controls.Add(pictureBox1);
             guna2Panel3.Controls.Add(txtKinhNghiem1);
             guna2Panel3.Controls.Add(guna2Button13);
@@ -63,6 +62,7 @@
             guna2Panel3.Controls.Add(txtDiaDiem1);
             guna2Panel3.Controls.Add(txtNganh1);
             guna2Panel3.Controls.Add(guna2Panel7);
+            guna2Panel3.Controls.Add(pictureBox2);
             guna2Panel3.CustomizableEdges = customizableEdges5;
             guna2Panel3.ForeColor = Color.FromArgb(128, 255, 128);
             guna2Panel3.Location = new Point(0, 0);
@@ -92,6 +92,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 68;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // txtKinhNghiem1
             // 

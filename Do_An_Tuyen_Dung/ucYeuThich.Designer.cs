@@ -30,38 +30,59 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucYeuThich));
             guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel1 = new Panel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
             guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // guna2ShadowPanel1
             // 
             guna2ShadowPanel1.BackColor = Color.Transparent;
-            guna2ShadowPanel1.Controls.Add(pictureBox3);
-            guna2ShadowPanel1.Controls.Add(pictureBox4);
             guna2ShadowPanel1.Controls.Add(pictureBox2);
             guna2ShadowPanel1.Controls.Add(pictureBox1);
             guna2ShadowPanel1.Controls.Add(guna2HtmlLabel3);
             guna2ShadowPanel1.Controls.Add(guna2HtmlLabel2);
             guna2ShadowPanel1.Controls.Add(panel1);
             guna2ShadowPanel1.Controls.Add(guna2HtmlLabel1);
+            guna2ShadowPanel1.Controls.Add(pictureBox3);
+            guna2ShadowPanel1.Controls.Add(pictureBox4);
             guna2ShadowPanel1.FillColor = Color.White;
             guna2ShadowPanel1.Location = new Point(2, 1);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             guna2ShadowPanel1.ShadowColor = Color.Black;
             guna2ShadowPanel1.Size = new Size(258, 403);
             guna2ShadowPanel1.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(178, 349);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(44, 41);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 74;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(177, 349);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(44, 41);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 75;
+            pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -125,26 +146,6 @@
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "DATA ENGINNER";
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(178, 349);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(44, 41);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 74;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(177, 349);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(44, 41);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 75;
-            pictureBox4.TabStop = false;
-            // 
             // ucYeuThich
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -154,10 +155,10 @@
             Size = new Size(261, 407);
             guna2ShadowPanel1.ResumeLayout(false);
             guna2ShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 

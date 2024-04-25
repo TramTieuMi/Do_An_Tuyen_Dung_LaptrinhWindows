@@ -30,15 +30,14 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTinhTrang));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTinhTrang));
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            pictureBox1 = new PictureBox();
             guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             txtCTy = new Label();
@@ -46,6 +45,7 @@
             txtDiaDiem = new Label();
             txtNganh = new Label();
             guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -65,8 +65,8 @@
             guna2Panel3.Controls.Add(txtDiaDiem);
             guna2Panel3.Controls.Add(txtNganh);
             guna2Panel3.Controls.Add(guna2Panel7);
-            guna2Panel3.Controls.Add(pictureBox1);
             guna2Panel3.Controls.Add(pictureBox2);
+            guna2Panel3.Controls.Add(pictureBox1);
             guna2Panel3.CustomizableEdges = customizableEdges7;
             guna2Panel3.ForeColor = Color.FromArgb(128, 255, 128);
             guna2Panel3.Location = new Point(0, 0);
@@ -75,16 +75,6 @@
             guna2Panel3.Size = new Size(1007, 100);
             guna2Panel3.TabIndex = 2;
             guna2Panel3.Paint += guna2Panel3_Paint;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(941, 26);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(44, 41);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 72;
-            pictureBox1.TabStop = false;
             // 
             // guna2Button7
             // 
@@ -184,6 +174,17 @@
             guna2Panel7.Size = new Size(94, 94);
             guna2Panel7.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(941, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(44, 41);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 72;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
@@ -193,6 +194,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 73;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // UCTinhTrang
             // 
