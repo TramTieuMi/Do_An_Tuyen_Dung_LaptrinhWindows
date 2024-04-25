@@ -17,6 +17,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
 {
     public partial class FLichHen : Form
     {
+        Modify modify = new Modify();
         SqlConnection connStr = Connection.GetSqlConnection();
         public FLichHen()
         {

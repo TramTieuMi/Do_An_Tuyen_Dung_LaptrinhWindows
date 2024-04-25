@@ -60,6 +60,8 @@
             label18 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            fpnHT = new FlowLayoutPanel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             panel7.SuspendLayout();
             panel6.SuspendLayout();
             panel5.SuspendLayout();
@@ -69,9 +71,11 @@
             panel1.SuspendLayout();
             panel13.SuspendLayout();
             panel8.SuspendLayout();
+            fpn_HienThi.SuspendLayout();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            fpnHT.SuspendLayout();
             SuspendLayout();
             // 
             // panel7
@@ -237,6 +241,7 @@
             // 
             fpn_HienThi.AutoScroll = true;
             fpn_HienThi.BackColor = Color.Transparent;
+            fpn_HienThi.Controls.Add(fpnHT);
             fpn_HienThi.Location = new Point(27, 140);
             fpn_HienThi.Name = "fpn_HienThi";
             fpn_HienThi.Size = new Size(1115, 453);
@@ -356,6 +361,23 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // fpnHT
+            // 
+            fpnHT.BackColor = Color.Transparent;
+            fpnHT.Controls.Add(flowLayoutPanel1);
+            fpnHT.Location = new Point(3, 3);
+            fpnHT.Name = "fpnHT";
+            fpnHT.Size = new Size(1223, 650);
+            fpnHT.TabIndex = 2;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = Color.Transparent;
+            flowLayoutPanel1.Location = new Point(3, 3);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1223, 650);
+            flowLayoutPanel1.TabIndex = 2;
+            // 
             // FXemUV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -381,10 +403,12 @@
             panel13.PerformLayout();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
+            fpn_HienThi.ResumeLayout(false);
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            fpnHT.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -414,5 +438,7 @@
         private FlowLayoutPanel fpn_HienThi;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private FlowLayoutPanel fpnHT;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
