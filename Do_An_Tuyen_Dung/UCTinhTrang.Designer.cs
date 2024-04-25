@@ -58,7 +58,6 @@
             guna2Panel3.BorderColor = Color.Black;
             guna2Panel3.BorderRadius = 10;
             guna2Panel3.BorderThickness = 2;
-            guna2Panel3.Controls.Add(pictureBox1);
             guna2Panel3.Controls.Add(guna2Button7);
             guna2Panel3.Controls.Add(guna2Button8);
             guna2Panel3.Controls.Add(txtCTy);
@@ -66,6 +65,7 @@
             guna2Panel3.Controls.Add(txtDiaDiem);
             guna2Panel3.Controls.Add(txtNganh);
             guna2Panel3.Controls.Add(guna2Panel7);
+            guna2Panel3.Controls.Add(pictureBox1);
             guna2Panel3.Controls.Add(pictureBox2);
             guna2Panel3.CustomizableEdges = customizableEdges7;
             guna2Panel3.ForeColor = Color.FromArgb(128, 255, 128);

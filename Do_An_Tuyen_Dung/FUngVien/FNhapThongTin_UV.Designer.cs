@@ -181,7 +181,7 @@
             Combobox_Quan_Huyen.FocusedColor = Color.FromArgb(94, 148, 255);
             Combobox_Quan_Huyen.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             Combobox_Quan_Huyen.Font = new Font("Segoe UI", 10F);
-            Combobox_Quan_Huyen.ForeColor = Color.FromArgb(68, 88, 112);
+            Combobox_Quan_Huyen.ForeColor = Color.Black;
             Combobox_Quan_Huyen.ItemHeight = 30;
             Combobox_Quan_Huyen.Location = new Point(768, 331);
             Combobox_Quan_Huyen.Name = "Combobox_Quan_Huyen";
@@ -203,7 +203,7 @@
             Combobox_Xa_Phuong.FocusedColor = Color.FromArgb(94, 148, 255);
             Combobox_Xa_Phuong.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             Combobox_Xa_Phuong.Font = new Font("Segoe UI", 10F);
-            Combobox_Xa_Phuong.ForeColor = Color.FromArgb(68, 88, 112);
+            Combobox_Xa_Phuong.ForeColor = Color.Black;
             Combobox_Xa_Phuong.ItemHeight = 30;
             Combobox_Xa_Phuong.Location = new Point(317, 404);
             Combobox_Xa_Phuong.Name = "Combobox_Xa_Phuong";
@@ -214,6 +214,8 @@
             // Combobox_Tinh_TP
             // 
             Combobox_Tinh_TP.AllowDrop = true;
+            Combobox_Tinh_TP.AutoCompleteCustomSource.AddRange(new string[] { "Ho Chi Minh", "Ha Noi" });
+            Combobox_Tinh_TP.AutoCompleteSource = AutoCompleteSource.HistoryList;
             Combobox_Tinh_TP.BackColor = Color.Transparent;
             Combobox_Tinh_TP.BorderColor = Color.White;
             Combobox_Tinh_TP.BorderRadius = 15;
@@ -224,13 +226,15 @@
             Combobox_Tinh_TP.FocusedColor = Color.FromArgb(94, 148, 255);
             Combobox_Tinh_TP.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             Combobox_Tinh_TP.Font = new Font("Segoe UI", 10F);
-            Combobox_Tinh_TP.ForeColor = Color.FromArgb(68, 88, 112);
+            Combobox_Tinh_TP.ForeColor = Color.Black;
             Combobox_Tinh_TP.ItemHeight = 30;
+            Combobox_Tinh_TP.Items.AddRange(new object[] { "Ho Chi Minh", "Ha Noi", "Da Nang", "Tra Vinh" });
             Combobox_Tinh_TP.Location = new Point(317, 331);
             Combobox_Tinh_TP.Name = "Combobox_Tinh_TP";
             Combobox_Tinh_TP.ShadowDecoration.CustomizableEdges = customizableEdges8;
             Combobox_Tinh_TP.Size = new Size(247, 36);
             Combobox_Tinh_TP.TabIndex = 69;
+            Combobox_Tinh_TP.SelectedIndexChanged += Combobox_Tinh_TP_SelectedIndexChanged;
             // 
             // txtSoNha
             // 
@@ -247,6 +251,7 @@
             txtSoNha.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtSoNha.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSoNha.Font = new Font("Segoe UI", 9F);
+            txtSoNha.ForeColor = Color.Black;
             txtSoNha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSoNha.Location = new Point(768, 404);
             txtSoNha.Margin = new Padding(3, 5, 3, 5);
@@ -329,7 +334,7 @@
             txtHoTen.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtHoTen.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHoTen.Font = new Font("Segoe UI", 9F);
-            txtHoTen.ForeColor = Color.Transparent;
+            txtHoTen.ForeColor = Color.Black;
             txtHoTen.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHoTen.Location = new Point(319, 196);
             txtHoTen.Margin = new Padding(3, 5, 3, 5);
@@ -357,6 +362,7 @@
             txtNoiSinh.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtNoiSinh.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNoiSinh.Font = new Font("Segoe UI", 9F);
+            txtNoiSinh.ForeColor = Color.Black;
             txtNoiSinh.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNoiSinh.Location = new Point(768, 192);
             txtNoiSinh.Margin = new Padding(3, 5, 3, 5);
@@ -415,6 +421,7 @@
             txtFileCV.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtFileCV.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtFileCV.Font = new Font("Segoe UI", 9F);
+            txtFileCV.ForeColor = Color.Black;
             txtFileCV.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtFileCV.Location = new Point(768, 267);
             txtFileCV.Margin = new Padding(3, 5, 3, 5);

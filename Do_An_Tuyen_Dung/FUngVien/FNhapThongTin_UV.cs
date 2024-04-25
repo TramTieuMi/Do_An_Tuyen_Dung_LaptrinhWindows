@@ -11,6 +11,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using System.Data.SqlClient;
 using System.Configuration;
+using Guna.UI2.WinForms;
 
 namespace Do_An_Tuyen_Dung.FUngVien
 {
@@ -20,6 +21,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
         public FNhapThongTin_UV()
         {
             InitializeComponent();
+
         }
         Modify modify = new Modify();
 
@@ -100,7 +102,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
-        
+
         void uploadFile()
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -114,6 +116,11 @@ namespace Do_An_Tuyen_Dung.FUngVien
         private void btUploadFile_Click(object sender, EventArgs e)
         {
             uploadFile();
+        }
+
+        private void Combobox_Tinh_TP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
