@@ -10,10 +10,10 @@ namespace Do_An_Tuyen_Dung.DAO
     {
 
 
-        public YeuThichDAO(FYeuThich formYeuThich)
-        {
+        //public YeuThichDAO(FYeuThich formYeuThich)
+        //{
 
-        }
+        //}
         public void Like()
         {
         }
