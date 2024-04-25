@@ -61,8 +61,8 @@
             label9 = new Label();
             label10 = new Label();
             panel3 = new Panel();
-            btn_TroLai = new Guna.UI2.WinForms.Guna2Button();
             label13 = new Label();
+            btn_TroLai = new Guna.UI2.WinForms.Guna2Button();
             label8 = new Label();
             label4 = new Label();
             label6 = new Label();
@@ -115,13 +115,13 @@
             label5.AllowDrop = true;
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Underline);
+            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             label5.ForeColor = Color.White;
             label5.Location = new Point(54, 97);
             label5.Name = "label5";
-            label5.Size = new Size(243, 31);
+            label5.Size = new Size(215, 31);
             label5.TabIndex = 24;
-            label5.Text = "THÔNG TIN CÔNG TY";
+            label5.Text = "Thông Tin Công Ty";
             // 
             // label7
             // 
@@ -188,6 +188,18 @@
             panel3.Size = new Size(1180, 70);
             panel3.TabIndex = 44;
             // 
+            // label13
+            // 
+            label13.AllowDrop = true;
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label13.ForeColor = Color.White;
+            label13.Location = new Point(48, 19);
+            label13.Name = "label13";
+            label13.Size = new Size(555, 41);
+            label13.TabIndex = 0;
+            label13.Text = "Nhập Thông Tin Cho Công Ty Của Bạn";
+            // 
             // btn_TroLai
             // 
             btn_TroLai.AllowDrop = true;
@@ -209,18 +221,6 @@
             btn_TroLai.Size = new Size(97, 40);
             btn_TroLai.TabIndex = 65;
             btn_TroLai.Click += btn_TroLai_Click;
-            // 
-            // label13
-            // 
-            label13.AllowDrop = true;
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label13.ForeColor = Color.White;
-            label13.Location = new Point(48, 19);
-            label13.Name = "label13";
-            label13.Size = new Size(555, 41);
-            label13.TabIndex = 0;
-            label13.Text = "Nhập Thông Tin Cho Công Ty Của Bạn";
             // 
             // label8
             // 
@@ -266,13 +266,13 @@
             label11.AllowDrop = true;
             label11.Anchor = AnchorStyles.None;
             label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Underline);
+            label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             label11.ForeColor = Color.White;
             label11.Location = new Point(50, 447);
             label11.Name = "label11";
-            label11.Size = new Size(231, 31);
+            label11.Size = new Size(210, 31);
             label11.TabIndex = 51;
-            label11.Text = "THÔNG TIN LIÊN HỆ";
+            label11.Text = "Thông Tin Liên Hệ";
             // 
             // label12
             // 
