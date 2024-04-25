@@ -10,7 +10,7 @@ namespace Do_An_Tuyen_Dung
 {
     internal class Connection
     {
-        private static readonly string stringConnection = @"Data Source=DESKTOP-UR1R776\SQLEXPRESS;Initial Catalog=DoAnNhom254;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private static readonly string stringConnection = @"Data Source=KHANG\TEST1;Initial Catalog=""DoAnNhom (2)"";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringConnection);
