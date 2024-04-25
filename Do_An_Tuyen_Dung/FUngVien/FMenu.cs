@@ -27,17 +27,17 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void btn_TimViec_Click(object sender, EventArgs e)
         {
-            modify.OpenChildForm(currentFormChild,new FTimViec(), pan_ThongTin);
+            modify.OpenChildForm(currentFormChild, new FTimViec(), pan_ThongTin);
         }
 
         private void btn_LichSu_TinhTrang_Click(object sender, EventArgs e)
         {
-            modify.OpenChildForm(currentFormChild,new FTinhTrang(), pan_ThongTin);
+            modify.OpenChildForm(currentFormChild, new FTinhTrang(), pan_ThongTin);
         }
 
         private void btn_TK_Click(object sender, EventArgs e)
         {
-            modify.OpenChildForm(currentFormChild,new FThongTin_UV(), pan_ThongTin);
+            modify.OpenChildForm(currentFormChild, new FThongTin_UV(), pan_ThongTin);
         }
 
         private void pan_ThongTin_Paint(object sender, PaintEventArgs e)
@@ -57,6 +57,9 @@ namespace Do_An_Tuyen_Dung.FUngVien
             childForm.Show();
         }
 
-
+        private void btn_TB_Click(object sender, EventArgs e)
+        {
+            modify.OpenChildForm(currentFormChild, new FThongBao(), pan_ThongTin);
+        }
     }
 }
