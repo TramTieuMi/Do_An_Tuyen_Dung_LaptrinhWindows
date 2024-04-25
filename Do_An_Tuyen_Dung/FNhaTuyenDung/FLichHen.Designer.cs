@@ -1,4 +1,5 @@
-﻿namespace Do_An_Tuyen_Dung.FNhaTuyenDung
+﻿
+namespace Do_An_Tuyen_Dung.FNhaTuyenDung
 {
     partial class FLichHen
     {
@@ -29,15 +30,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FLichHen));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
-            label2 = new Label();
+            txtTenUV = new Label();
             label3 = new Label();
-            label4 = new Label();
+            txtCVvaVItri = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             textBox1 = new TextBox();
             dateTimePicker1 = new DateTimePicker();
+            btnLuu = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // label1
@@ -52,17 +56,17 @@
             label1.TabIndex = 0;
             label1.Text = "Xin chào Anh/Chị";
             // 
-            // label2
+            // txtTenUV
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 10.8F);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(205, 40);
-            label2.Name = "label2";
-            label2.Size = new Size(126, 25);
-            label2.TabIndex = 1;
-            label2.Text = "[Tên ứng viên],";
+            txtTenUV.AutoSize = true;
+            txtTenUV.BackColor = Color.Transparent;
+            txtTenUV.Font = new Font("Segoe UI", 10.8F);
+            txtTenUV.ForeColor = Color.White;
+            txtTenUV.Location = new Point(205, 40);
+            txtTenUV.Name = "txtTenUV";
+            txtTenUV.Size = new Size(126, 25);
+            txtTenUV.TabIndex = 1;
+            txtTenUV.Text = "[Tên ứng viên],";
             // 
             // label3
             // 
@@ -76,17 +80,17 @@
             label3.TabIndex = 2;
             label3.Text = "Chúc mừng Anh/Chị đã vượt qua vòng xét tuyển hồ sơ của công ty";
             // 
-            // label4
+            // txtCVvaVItri
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 10.8F);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(600, 139);
-            label4.Name = "label4";
-            label4.Size = new Size(352, 25);
-            label4.TabIndex = 3;
-            label4.Text = "[Tên công ty] cho vị trí [Tên vị trí ứng tuyển]";
+            txtCVvaVItri.AutoSize = true;
+            txtCVvaVItri.BackColor = Color.Transparent;
+            txtCVvaVItri.Font = new Font("Segoe UI", 10.8F);
+            txtCVvaVItri.ForeColor = Color.White;
+            txtCVvaVItri.Location = new Point(600, 139);
+            txtCVvaVItri.Name = "txtCVvaVItri";
+            txtCVvaVItri.Size = new Size(352, 25);
+            txtCVvaVItri.TabIndex = 3;
+            txtCVvaVItri.Text = "[Tên công ty] cho vị trí [Tên vị trí ứng tuyển]";
             // 
             // label5
             // 
@@ -140,37 +144,67 @@
             dateTimePicker1.Size = new Size(250, 31);
             dateTimePicker1.TabIndex = 8;
             // 
+            // btnLuu
+            // 
+            btnLuu.AllowDrop = true;
+            btnLuu.BorderColor = Color.Transparent;
+            btnLuu.BorderRadius = 10;
+            btnLuu.BorderThickness = 2;
+            btnLuu.CustomizableEdges = customizableEdges1;
+            btnLuu.DisabledState.BorderColor = Color.DarkGray;
+            btnLuu.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLuu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnLuu.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnLuu.FillColor = Color.FromArgb(42, 54, 78);
+            btnLuu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLuu.ForeColor = Color.White;
+            btnLuu.Location = new Point(822, 353);
+            btnLuu.Name = "btnLuu";
+            btnLuu.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnLuu.Size = new Size(130, 40);
+            btnLuu.TabIndex = 76;
+            btnLuu.Text = "Lưu";
+            btnLuu.Click += btnLuu_Click;
+            // 
             // FLichHen
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1061, 459);
+            Controls.Add(btnLuu);
             Controls.Add(dateTimePicker1);
             Controls.Add(textBox1);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(label4);
+            Controls.Add(txtCVvaVItri);
             Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(txtTenUV);
             Controls.Add(label1);
             Name = "FLichHen";
             Text = "FLichHen";
+            Load += FLichHen_Load_1;
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void FLichHen_Load_1(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
 
         private Label label1;
-        private Label label2;
+        private Label txtTenUV;
         private Label label3;
-        private Label label4;
+        private Label txtCVvaVItri;
         private Label label5;
         private Label label6;
         private Label label7;
         private TextBox textBox1;
         private DateTimePicker dateTimePicker1;
+        private Guna.UI2.WinForms.Guna2Button btnLuu;
     }
 }
