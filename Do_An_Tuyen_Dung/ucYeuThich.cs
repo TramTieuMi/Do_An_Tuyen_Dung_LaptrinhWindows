@@ -12,9 +12,17 @@ namespace Do_An_Tuyen_Dung
 {
     public partial class ucYeuThich : UserControl
     {
+        YeuThich yeuThich;
         public ucYeuThich()
         {
             InitializeComponent();
+        }
+        public ucYeuThich(YeuThich yeuThich)
+        {
+            InitializeComponent ();
+            this.yeuThich = yeuThich;
+            txtcty.Text = yeuThich.Tencty;
+            txtcv.Text = yeuThich.Tencv;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -27,6 +35,11 @@ namespace Do_An_Tuyen_Dung
         {
             this.pictureBox3.Hide();
             pictureBox2.Show();
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

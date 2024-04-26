@@ -21,7 +21,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FMoTa_YeuCau_QuyenLoi : Form
     {
-        private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (2)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        //private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (2)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         SqlConnection connStr = Connection.GetSqlConnection();
         Modify modify = new Modify();
         string tenCV;
@@ -39,7 +39,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         public void LoadDuLieu(string chuoi)
         {
-            txtNganh.Text = "Ngành : " + chuoi;
+            txtNganh.Text =  chuoi;
             MoTaYeuCau moTaYeuCau = new MoTaYeuCau();
             try
             {
@@ -132,7 +132,6 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void btn_NopDon_Click(object sender, EventArgs e)
         {
-            
             string TenCongViec = txtNganh.Text;
             string TenCTy = txtCty.Text; // Set a default value if empty
             string EmailHR = txtEmailHR.Text;
@@ -174,7 +173,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 // Use parameterized query for security and clarity
                 string query2 = "INSERT INTO TinhTrangCV (TenCongViec,TenCTy,EmailHR,EmailUV,TenUV,DiaDiem) VALUES (@TenCongViec,@TenCTy,@EmailHR,@emailUV,@TenUV,@DiaDiem)";
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = Connection.GetSqlConnection())
                 {
                     using (SqlCommand command = new SqlCommand(query2, connection))
                     {
@@ -185,13 +184,13 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         command.Parameters.AddWithValue("@EmailUV", EmailUV);
                         command.Parameters.AddWithValue("@TenUV", TenUV);
                         command.Parameters.AddWithValue("@DiaDiem", DiaDiem);
-                        
+                        label1.Text = DiaDiem;
 
                         connection.Open();
                         command.ExecuteNonQuery(); // Use ExecuteNonQuery for INSERT
 
                         MessageBox.Show("Nộp đơn thành công!");
-                        this.Close();
+                        //this.Close();
                     }
                 }
             }
@@ -203,7 +202,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
             {
                 MessageBox.Show("Nộp đơn thất bại do lỗi không xác định: " + ex.Message);
             }
-
+            
         }
     
 

@@ -38,7 +38,8 @@ namespace Do_An_Tuyen_Dung
 
         private void btn_TB_Click(object sender, EventArgs e)
         {
-            FLichHen fLichHen = new FLichHen(emHR1,emUV1);
+            FLichHenUV fLichHenUV = new FLichHenUV(emHR1,emUV1);
+            fLichHenUV.ShowDialog();
         }
     }
 }

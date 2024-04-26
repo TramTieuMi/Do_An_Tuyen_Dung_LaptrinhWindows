@@ -69,5 +69,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
             login.ShowDialog();
 
         }
+
+        private void btnYT_Click(object sender, EventArgs e)
+        {
+            modify.OpenChildForm(currentFormChild, new FYeuThich(), pan_ThongTin);
+        }
     }
 }
