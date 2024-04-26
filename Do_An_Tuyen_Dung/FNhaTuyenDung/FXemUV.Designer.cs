@@ -225,8 +225,8 @@
             panel8.Controls.Add(Combobox_TrangThai);
             panel8.Controls.Add(label5);
             panel8.Controls.Add(label18);
-            panel8.Controls.Add(pictureBox2);
             panel8.Controls.Add(pictureBox1);
+            panel8.Controls.Add(pictureBox2);
             panel8.Location = new Point(0, 0);
             panel8.Name = "panel8";
             panel8.Size = new Size(1182, 629);
