@@ -36,7 +36,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             txtKinhNghiem1 = new Label();
             guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
@@ -44,9 +43,10 @@
             txtDiaDiem1 = new Label();
             txtNganh1 = new Label();
             guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            pictureBox2 = new PictureBox();
             guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel3
@@ -72,17 +72,6 @@
             guna2Panel3.TabIndex = 2;
             guna2Panel3.Paint += guna2Panel3_Paint;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(929, 26);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(44, 41);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 69;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
@@ -98,7 +87,7 @@
             // 
             txtKinhNghiem1.AutoSize = true;
             txtKinhNghiem1.Font = new Font("Segoe UI", 10.2F);
-            txtKinhNghiem1.ForeColor = SystemColors.ActiveCaptionText;
+            txtKinhNghiem1.ForeColor = Color.White;
             txtKinhNghiem1.Location = new Point(384, 54);
             txtKinhNghiem1.Name = "txtKinhNghiem1";
             txtKinhNghiem1.Size = new Size(188, 23);
@@ -130,7 +119,7 @@
             // 
             txtLuong1.AutoSize = true;
             txtLuong1.Font = new Font("Segoe UI", 10.2F);
-            txtLuong1.ForeColor = SystemColors.ActiveCaptionText;
+            txtLuong1.ForeColor = Color.White;
             txtLuong1.Location = new Point(384, 17);
             txtLuong1.Name = "txtLuong1";
             txtLuong1.Size = new Size(149, 23);
@@ -141,7 +130,7 @@
             // 
             txtDiaDiem1.AutoSize = true;
             txtDiaDiem1.Font = new Font("Segoe UI", 10.2F);
-            txtDiaDiem1.ForeColor = SystemColors.ActiveCaptionText;
+            txtDiaDiem1.ForeColor = Color.White;
             txtDiaDiem1.Location = new Point(136, 54);
             txtDiaDiem1.Name = "txtDiaDiem1";
             txtDiaDiem1.Size = new Size(156, 23);
@@ -152,7 +141,7 @@
             // 
             txtNganh1.AutoSize = true;
             txtNganh1.Font = new Font("Segoe UI", 10.2F);
-            txtNganh1.ForeColor = SystemColors.ActiveCaptionText;
+            txtNganh1.ForeColor = Color.White;
             txtNganh1.Location = new Point(136, 17);
             txtNganh1.Name = "txtNganh1";
             txtNganh1.Size = new Size(179, 23);
@@ -172,6 +161,17 @@
             guna2Panel7.Size = new Size(94, 94);
             guna2Panel7.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(929, 26);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(44, 41);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 69;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
             // UCTimKiem
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -181,8 +181,8 @@
             Size = new Size(1006, 100);
             guna2Panel3.ResumeLayout(false);
             guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 

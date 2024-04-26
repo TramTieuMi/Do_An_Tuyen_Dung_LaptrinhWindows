@@ -28,8 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FYeuThich));
             label1 = new Label();
             fpnHT = new FlowLayoutPanel();
+            panel1 = new Panel();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            dateTimePicker1 = new DateTimePicker();
+            fpnHT.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -46,21 +52,54 @@
             // fpnHT
             // 
             fpnHT.BackColor = Color.Transparent;
-            fpnHT.Location = new Point(1, 90);
+            fpnHT.Controls.Add(dateTimePicker1);
+            fpnHT.Location = new Point(0, 89);
             fpnHT.Name = "fpnHT";
-            fpnHT.Size = new Size(963, 463);
+            fpnHT.Size = new Size(1181, 558);
             fpnHT.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(guna2HtmlLabel1);
+            panel1.Location = new Point(0, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1179, 80);
+            panel1.TabIndex = 0;
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            guna2HtmlLabel1.ForeColor = Color.White;
+            guna2HtmlLabel1.Location = new Point(57, 19);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(518, 43);
+            guna2HtmlLabel1.TabIndex = 0;
+            guna2HtmlLabel1.Text = "Những Công Việc Yêu Thích Của Bạn";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(3, 3);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 0;
             // 
             // FYeuThich
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(968, 565);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1181, 651);
+            Controls.Add(panel1);
             Controls.Add(fpnHT);
             Controls.Add(label1);
             Name = "FYeuThich";
             Text = "FYeuThich";
             Load += FYeuThich_Load;
+            fpnHT.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -69,5 +108,8 @@
 
         private Label label1;
         private FlowLayoutPanel fpnHT;
+        private Panel panel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private DateTimePicker dateTimePicker1;
     }
 }

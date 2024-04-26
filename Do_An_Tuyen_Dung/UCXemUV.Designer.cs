@@ -46,11 +46,11 @@
             label7 = new Label();
             txtTen = new Label();
             guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel3
@@ -141,7 +141,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            label7.ForeColor = Color.Black;
+            label7.ForeColor = Color.White;
             label7.Location = new Point(136, 54);
             label7.Name = "label7";
             label7.Size = new Size(193, 23);
@@ -152,7 +152,7 @@
             // 
             txtTen.AutoSize = true;
             txtTen.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtTen.ForeColor = Color.Black;
+            txtTen.ForeColor = Color.White;
             txtTen.Location = new Point(136, 17);
             txtTen.Name = "txtTen";
             txtTen.Size = new Size(185, 23);
@@ -161,7 +161,7 @@
             // 
             // guna2Panel7
             // 
-            guna2Panel7.BorderColor = Color.FromArgb(128, 128, 255);
+            guna2Panel7.BorderColor = Color.Black;
             guna2Panel7.BorderRadius = 10;
             guna2Panel7.BorderThickness = 2;
             guna2Panel7.CustomizableEdges = customizableEdges7;
@@ -170,17 +170,6 @@
             guna2Panel7.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Panel7.Size = new Size(94, 94);
             guna2Panel7.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1057, 33);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(44, 41);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 75;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
@@ -193,6 +182,17 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1057, 33);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(44, 41);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 75;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
             // UCXemUV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -202,8 +202,8 @@
             Size = new Size(1130, 100);
             guna2Panel3.ResumeLayout(false);
             guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 

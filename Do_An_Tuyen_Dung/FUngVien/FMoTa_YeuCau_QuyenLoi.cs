@@ -184,7 +184,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         command.Parameters.AddWithValue("@EmailUV", EmailUV);
                         command.Parameters.AddWithValue("@TenUV", TenUV);
                         command.Parameters.AddWithValue("@DiaDiem", DiaDiem);
-                        label1.Text = DiaDiem;
+                        //label1.Text = DiaDiem;
 
                         connection.Open();
                         command.ExecuteNonQuery(); // Use ExecuteNonQuery for INSERT
