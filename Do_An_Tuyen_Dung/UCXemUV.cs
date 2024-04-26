@@ -44,6 +44,7 @@ namespace Do_An_Tuyen_Dung
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             FLichHen fLichHen = new FLichHen(emHR, em);
+            fLichHen.ShowDialog();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

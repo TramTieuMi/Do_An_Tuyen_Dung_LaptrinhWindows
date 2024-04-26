@@ -190,10 +190,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             PerformLayout();
         }
 
-        private void FLichHen_Load_1(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         #endregion
 
