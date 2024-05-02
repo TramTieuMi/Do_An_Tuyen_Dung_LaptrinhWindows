@@ -77,7 +77,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 }
 
                 DataTable dataTable1 = new DataTable();
-                string query1 = "SELECT TenCTy,EmailHR,Tinh_TP, FROM ThongTinCTy_Chinh WHERE EmailHR =@EmailHR";
+                string query1 = "SELECT TenCTy,EmailHR,Tinh_TP FROM ThongTinCTy_Chinh WHERE EmailHR =@EmailHR";
                 
                 modify.TaiDuLieu(dataTable1, query1, "@EmailHR", em1);
                 if (dataTable1.Rows.Count > 0)
@@ -89,7 +89,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         {
                             txtCty.Text = row1["TenCTy"].ToString();
                             DiaDiem = row1["Tinh_TP"].ToString();
-                            label1.Text = DiaDiem;
+                            
                         }
                     }
                 }
