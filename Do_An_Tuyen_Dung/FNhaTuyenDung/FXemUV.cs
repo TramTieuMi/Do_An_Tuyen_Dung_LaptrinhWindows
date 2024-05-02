@@ -116,5 +116,15 @@ namespace Do_An_Ung_Dung_Tim_Viec
             this.pictureBox2.Hide();
             pictureBox1.Show();
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fpnHT_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

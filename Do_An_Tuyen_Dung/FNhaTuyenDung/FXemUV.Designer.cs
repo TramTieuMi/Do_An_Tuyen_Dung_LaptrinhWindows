@@ -50,18 +50,16 @@
             panel14 = new Panel();
             panel13 = new Panel();
             label12 = new Label();
-            panel8 = new Panel();
-            fpn_HienThi = new FlowLayoutPanel();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            txtNganh = new Label();
-            Combobox_KinhNghiem = new Guna.UI2.WinForms.Guna2ComboBox();
-            Combobox_TrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
-            label5 = new Label();
-            label18 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            fpnHT = new FlowLayoutPanel();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            label18 = new Label();
+            label5 = new Label();
+            Combobox_TrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
+            Combobox_KinhNghiem = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            txtNganh = new Label();
+            fpn_HienThi = new FlowLayoutPanel();
+            panel8 = new Panel();
             panel7.SuspendLayout();
             panel6.SuspendLayout();
             panel5.SuspendLayout();
@@ -70,12 +68,10 @@
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             panel13.SuspendLayout();
-            panel8.SuspendLayout();
-            fpn_HienThi.SuspendLayout();
-            guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            fpnHT.SuspendLayout();
+            guna2Panel1.SuspendLayout();
+            panel8.SuspendLayout();
             SuspendLayout();
             // 
             // panel7
@@ -219,126 +215,6 @@
             label12.TabIndex = 0;
             label12.Text = "Tên Công Ty";
             // 
-            // panel8
-            // 
-            panel8.AutoScroll = true;
-            panel8.BackColor = Color.Transparent;
-            panel8.Controls.Add(fpn_HienThi);
-            panel8.Controls.Add(guna2Panel1);
-            panel8.Controls.Add(Combobox_KinhNghiem);
-            panel8.Controls.Add(Combobox_TrangThai);
-            panel8.Controls.Add(label5);
-            panel8.Controls.Add(label18);
-            panel8.Controls.Add(pictureBox1);
-            panel8.Controls.Add(pictureBox2);
-            panel8.Location = new Point(0, 0);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(1182, 629);
-            panel8.TabIndex = 41;
-            panel8.Paint += panel8_Paint;
-            // 
-            // fpn_HienThi
-            // 
-            fpn_HienThi.AutoScroll = true;
-            fpn_HienThi.BackColor = Color.Transparent;
-            fpn_HienThi.Controls.Add(fpnHT);
-            fpn_HienThi.Location = new Point(27, 140);
-            fpn_HienThi.Name = "fpn_HienThi";
-            fpn_HienThi.Size = new Size(1115, 453);
-            fpn_HienThi.TabIndex = 75;
-            fpn_HienThi.Paint += fpn_HienThi_Paint;
-            // 
-            // guna2Panel1
-            // 
-            guna2Panel1.BackColor = Color.Transparent;
-            guna2Panel1.Controls.Add(txtNganh);
-            guna2Panel1.CustomizableEdges = customizableEdges1;
-            guna2Panel1.Location = new Point(-2, 0);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel1.Size = new Size(1202, 80);
-            guna2Panel1.TabIndex = 71;
-            guna2Panel1.Paint += guna2Panel1_Paint;
-            // 
-            // txtNganh
-            // 
-            txtNganh.AutoSize = true;
-            txtNganh.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtNganh.ForeColor = Color.White;
-            txtNganh.Location = new Point(519, 24);
-            txtNganh.Name = "txtNganh";
-            txtNganh.Size = new Size(128, 38);
-            txtNganh.TabIndex = 0;
-            txtNganh.Text = "BackEnd";
-            // 
-            // Combobox_KinhNghiem
-            // 
-            Combobox_KinhNghiem.BackColor = Color.Transparent;
-            Combobox_KinhNghiem.BorderColor = Color.White;
-            Combobox_KinhNghiem.BorderRadius = 10;
-            Combobox_KinhNghiem.BorderThickness = 2;
-            Combobox_KinhNghiem.CustomizableEdges = customizableEdges3;
-            Combobox_KinhNghiem.DrawMode = DrawMode.OwnerDrawFixed;
-            Combobox_KinhNghiem.DropDownStyle = ComboBoxStyle.DropDownList;
-            Combobox_KinhNghiem.FocusedColor = Color.FromArgb(94, 148, 255);
-            Combobox_KinhNghiem.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Combobox_KinhNghiem.Font = new Font("Segoe UI", 10F);
-            Combobox_KinhNghiem.ForeColor = Color.FromArgb(68, 88, 112);
-            Combobox_KinhNghiem.ItemHeight = 30;
-            Combobox_KinhNghiem.Items.AddRange(new object[] { "1 năm", "2 năm", "3 năm", "4 năm", "5 năm", "6 năm" });
-            Combobox_KinhNghiem.Location = new Point(727, 84);
-            Combobox_KinhNghiem.Name = "Combobox_KinhNghiem";
-            Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            Combobox_KinhNghiem.Size = new Size(269, 36);
-            Combobox_KinhNghiem.TabIndex = 74;
-            // 
-            // Combobox_TrangThai
-            // 
-            Combobox_TrangThai.BackColor = Color.Transparent;
-            Combobox_TrangThai.BorderColor = Color.White;
-            Combobox_TrangThai.BorderRadius = 10;
-            Combobox_TrangThai.BorderThickness = 2;
-            Combobox_TrangThai.CustomizableEdges = customizableEdges5;
-            Combobox_TrangThai.DrawMode = DrawMode.OwnerDrawFixed;
-            Combobox_TrangThai.DropDownStyle = ComboBoxStyle.DropDownList;
-            Combobox_TrangThai.FocusedColor = Color.FromArgb(94, 148, 255);
-            Combobox_TrangThai.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Combobox_TrangThai.Font = new Font("Segoe UI", 10F);
-            Combobox_TrangThai.ForeColor = Color.FromArgb(68, 88, 112);
-            Combobox_TrangThai.ItemHeight = 30;
-            Combobox_TrangThai.Items.AddRange(new object[] { "Đã Xem", "Chưa Xem" });
-            Combobox_TrangThai.Location = new Point(215, 84);
-            Combobox_TrangThai.Name = "Combobox_TrangThai";
-            Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Combobox_TrangThai.Size = new Size(269, 36);
-            Combobox_TrangThai.TabIndex = 73;
-            Combobox_TrangThai.SelectedIndexChanged += Combobox_TrangThai_SelectedIndexChanged;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(612, 91);
-            label5.Name = "label5";
-            label5.Size = new Size(110, 23);
-            label5.TabIndex = 70;
-            label5.Text = "Kinh Nghiệm";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(115, 91);
-            label18.Name = "label18";
-            label18.Size = new Size(90, 23);
-            label18.TabIndex = 69;
-            label18.Text = "Trạng Thái";
-            label18.Click += label18_Click;
-            // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
@@ -361,22 +237,125 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // fpnHT
+            // label18
             // 
-            fpnHT.BackColor = Color.Transparent;
-            fpnHT.Controls.Add(flowLayoutPanel1);
-            fpnHT.Location = new Point(3, 3);
-            fpnHT.Name = "fpnHT";
-            fpnHT.Size = new Size(1223, 650);
-            fpnHT.TabIndex = 2;
+            label18.AutoSize = true;
+            label18.BackColor = Color.Transparent;
+            label18.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(115, 91);
+            label18.Name = "label18";
+            label18.Size = new Size(90, 23);
+            label18.TabIndex = 69;
+            label18.Text = "Trạng Thái";
+            label18.Click += label18_Click;
             // 
-            // flowLayoutPanel1
+            // label5
             // 
-            flowLayoutPanel1.BackColor = Color.Transparent;
-            flowLayoutPanel1.Location = new Point(3, 3);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1223, 650);
-            flowLayoutPanel1.TabIndex = 2;
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(612, 91);
+            label5.Name = "label5";
+            label5.Size = new Size(110, 23);
+            label5.TabIndex = 70;
+            label5.Text = "Kinh Nghiệm";
+            // 
+            // Combobox_TrangThai
+            // 
+            Combobox_TrangThai.BackColor = Color.Transparent;
+            Combobox_TrangThai.BorderColor = Color.White;
+            Combobox_TrangThai.BorderRadius = 10;
+            Combobox_TrangThai.BorderThickness = 2;
+            Combobox_TrangThai.CustomizableEdges = customizableEdges1;
+            Combobox_TrangThai.DrawMode = DrawMode.OwnerDrawFixed;
+            Combobox_TrangThai.DropDownStyle = ComboBoxStyle.DropDownList;
+            Combobox_TrangThai.FocusedColor = Color.FromArgb(94, 148, 255);
+            Combobox_TrangThai.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Combobox_TrangThai.Font = new Font("Segoe UI", 10F);
+            Combobox_TrangThai.ForeColor = Color.FromArgb(68, 88, 112);
+            Combobox_TrangThai.ItemHeight = 30;
+            Combobox_TrangThai.Items.AddRange(new object[] { "Đã Xem", "Chưa Xem" });
+            Combobox_TrangThai.Location = new Point(215, 84);
+            Combobox_TrangThai.Name = "Combobox_TrangThai";
+            Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            Combobox_TrangThai.Size = new Size(269, 36);
+            Combobox_TrangThai.TabIndex = 73;
+            Combobox_TrangThai.SelectedIndexChanged += Combobox_TrangThai_SelectedIndexChanged;
+            // 
+            // Combobox_KinhNghiem
+            // 
+            Combobox_KinhNghiem.BackColor = Color.Transparent;
+            Combobox_KinhNghiem.BorderColor = Color.White;
+            Combobox_KinhNghiem.BorderRadius = 10;
+            Combobox_KinhNghiem.BorderThickness = 2;
+            Combobox_KinhNghiem.CustomizableEdges = customizableEdges3;
+            Combobox_KinhNghiem.DrawMode = DrawMode.OwnerDrawFixed;
+            Combobox_KinhNghiem.DropDownStyle = ComboBoxStyle.DropDownList;
+            Combobox_KinhNghiem.FocusedColor = Color.FromArgb(94, 148, 255);
+            Combobox_KinhNghiem.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Combobox_KinhNghiem.Font = new Font("Segoe UI", 10F);
+            Combobox_KinhNghiem.ForeColor = Color.FromArgb(68, 88, 112);
+            Combobox_KinhNghiem.ItemHeight = 30;
+            Combobox_KinhNghiem.Items.AddRange(new object[] { "1 năm", "2 năm", "3 năm", "4 năm", "5 năm", "6 năm" });
+            Combobox_KinhNghiem.Location = new Point(727, 84);
+            Combobox_KinhNghiem.Name = "Combobox_KinhNghiem";
+            Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            Combobox_KinhNghiem.Size = new Size(269, 36);
+            Combobox_KinhNghiem.TabIndex = 74;
+            // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.Controls.Add(txtNganh);
+            guna2Panel1.CustomizableEdges = customizableEdges5;
+            guna2Panel1.Location = new Point(-2, 0);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Panel1.Size = new Size(1202, 80);
+            guna2Panel1.TabIndex = 71;
+            guna2Panel1.Paint += guna2Panel1_Paint;
+            // 
+            // txtNganh
+            // 
+            txtNganh.AutoSize = true;
+            txtNganh.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtNganh.ForeColor = Color.White;
+            txtNganh.Location = new Point(519, 24);
+            txtNganh.Name = "txtNganh";
+            txtNganh.Size = new Size(128, 38);
+            txtNganh.TabIndex = 0;
+            txtNganh.Text = "BackEnd";
+            // 
+            // fpn_HienThi
+            // 
+            fpn_HienThi.AutoScroll = true;
+            fpn_HienThi.BackColor = Color.Transparent;
+            fpn_HienThi.FlowDirection = FlowDirection.TopDown;
+            fpn_HienThi.Location = new Point(27, 140);
+            fpn_HienThi.Name = "fpn_HienThi";
+            fpn_HienThi.Size = new Size(1123, 450);
+            fpn_HienThi.TabIndex = 75;
+            fpn_HienThi.Paint += fpn_HienThi_Paint;
+            // 
+            // panel8
+            // 
+            panel8.AutoScroll = true;
+            panel8.BackColor = Color.Transparent;
+            panel8.Controls.Add(guna2Panel1);
+            panel8.Controls.Add(Combobox_KinhNghiem);
+            panel8.Controls.Add(Combobox_TrangThai);
+            panel8.Controls.Add(label5);
+            panel8.Controls.Add(label18);
+            panel8.Controls.Add(pictureBox1);
+            panel8.Controls.Add(pictureBox2);
+            panel8.Controls.Add(fpn_HienThi);
+            panel8.Location = new Point(0, 0);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(1188, 639);
+            panel8.TabIndex = 41;
+            panel8.Paint += panel8_Paint;
             // 
             // FXemUV
             // 
@@ -401,14 +380,12 @@
             panel1.PerformLayout();
             panel13.ResumeLayout(false);
             panel13.PerformLayout();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
-            fpn_HienThi.ResumeLayout(false);
-            guna2Panel1.ResumeLayout(false);
-            guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            fpnHT.ResumeLayout(false);
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -428,17 +405,15 @@
         private Panel panel14;
         private Panel panel13;
         private Label label12;
-        private Panel panel8;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private Label label18;
+        private Label label5;
+        private Guna.UI2.WinForms.Guna2ComboBox Combobox_TrangThai;
+        private Guna.UI2.WinForms.Guna2ComboBox Combobox_KinhNghiem;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Label txtNganh;
-        private Guna.UI2.WinForms.Guna2ComboBox Combobox_KinhNghiem;
-        private Guna.UI2.WinForms.Guna2ComboBox Combobox_TrangThai;
-        private Label label5;
-        private Label label18;
         private FlowLayoutPanel fpn_HienThi;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private FlowLayoutPanel fpnHT;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel8;
     }
 }

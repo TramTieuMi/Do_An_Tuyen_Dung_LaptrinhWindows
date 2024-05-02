@@ -69,6 +69,7 @@
             guna2Panel3.CustomizableEdges = customizableEdges9;
             guna2Panel3.Location = new Point(0, 0);
             guna2Panel3.Name = "guna2Panel3";
+            guna2Panel3.RightToLeft = RightToLeft.No;
             guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges10;
             guna2Panel3.Size = new Size(1130, 100);
             guna2Panel3.TabIndex = 2;
