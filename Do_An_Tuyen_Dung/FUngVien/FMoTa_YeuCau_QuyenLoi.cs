@@ -46,6 +46,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 DataTable dataTable = new DataTable();
                 string query = "SELECT TenCongViec,Luong,KinhNghiem,HinhThuc,BHXH,BHYT,CoHoiThangTien,Luong13,MoTa,YeuCau,TenHR,EmailHR,SDTHR,ThoiGianBD,ThoiGianKT,GhiChu,QuyenLoiKhac FROM DangBaiNTD WHERE TenCongViec = @TenCongViec";
                 modify.TaiDuLieu(dataTable, query, "@TenCongViec", chuoi);
+                string em1 = string.Empty;
                 if (dataTable.Rows.Count > 0)
                 {
                     foreach (DataRow row in dataTable.Rows)
@@ -66,6 +67,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                             txtYeuCau.Text = row["YeuCau"].ToString();
                             txtTenHR.Text = row["TenHR"].ToString();
                             txtEmailHR.Text = row["EmailHR"].ToString();
+                            em1 = txtEmailHR.Text;
                             txtSDTHR.Text = row["SDTHR"].ToString();
                             txtNgayBD.Text = row["ThoiGianBD"].ToString();
                             txtNgayKT.Text = row["ThoiGianKT"].ToString();
@@ -76,7 +78,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
                 DataTable dataTable1 = new DataTable();
                 string query1 = "SELECT TenCTy,EmailHR,Tinh_TP, FROM ThongTinCTy_Chinh WHERE EmailHR =@EmailHR";
-                string em1 = txtEmailHR.Text;
+                
                 modify.TaiDuLieu(dataTable1, query1, "@EmailHR", em1);
                 if (dataTable1.Rows.Count > 0)
                 {
@@ -87,9 +89,11 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         {
                             txtCty.Text = row1["TenCTy"].ToString();
                             DiaDiem = row1["Tinh_TP"].ToString();
+                            label1.Text = DiaDiem;
                         }
                     }
                 }
+
             }
             catch (Exception ex)
             {
