@@ -44,11 +44,11 @@ namespace Do_An_Tuyen_Dung.FUngVien
             string xa = this.Combobox_Xa_Phuong.Text;
             string soNha = this.txtSoNha.Text;
             string fileCV = this.txtFileCV.Text;
-            //string gioiTinh = this.txtGioiTinh.Text;
+           // string gioiTinh = this.Combobox_GioiTinh.Text;
             try
             {
                 // Use parameterized query for security and clarity
-                string query = "INSERT INTO NhapThongTinUV (HoTenUV, NgayThangNamSinh, NoiSinh, FileCV, Tinh_TP, Quan_Huyen, Xa_Phuong, GioiTinh, SoNha) VALUES (@HoTenUV, @NgayThangNamSinh, @NoiSinh, @FileCV, @Tinh_TP, @Quan_Huyen, @Xa_Phuong, @GioiTinh, @SoNha)";
+                string query = "INSERT INTO NhapThongTinUV (HoTenUV, NgayThangNamSinh, NoiSinh, FileCV, Tinh_TP, Quan_Huyen, Xa_Phuong, SoNha) VALUES (@HoTenUV, @NgayThangNamSinh, @NoiSinh, @FileCV, @Tinh_TP, @Quan_Huyen, @Xa_Phuong, @SoNha)";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
