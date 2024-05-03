@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using AxAcroPDFLib;
 
 namespace Do_An_Tuyen_Dung.FUngVien
 {
@@ -50,7 +51,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
             FLogin fLogin = new FLogin();
             string em = "VanKien@gmail.com";
             DataTable dataTable = new DataTable();
-            string sqlQuery = "SELECT HoTenUV, NgayThangNamSinh, NoiSinh, FileCV, Tinh_TP, Quan_Huyen, Xa_Phuong, GioiTinh, SoNha,Email FROM NhapThongTinUV WHERE Email = @Email";
+            string sqlQuery = "SELECT HoTenUV, NgayThangNamSinh, NoiSinh, FileCV, Tinh_TP, Quan_Huyen, Xa_Phuong, SoNha,Email FROM NhapThongTinUV WHERE Email = @Email";
 
 
             DataTable dataTable1 = new DataTable();
@@ -82,6 +83,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         txtTinh_TP.Text = row["Tinh_TP"].ToString();
                         txtQuan_Huyen.Text = row["Quan_Huyen"].ToString();
                         txtXa_Phuong.Text = row["Xa_Phuong"].ToString();
+                       // txtGioiTinh.Text = row["GioiTinh"].ToString();
                         txtSoNha.Text = row["SoNha"].ToString();
                         txtlinkFileCV.Text = row["FileCV"].ToString();
                     }
@@ -124,6 +126,17 @@ namespace Do_An_Tuyen_Dung.FUngVien
         private void txtNgayThangNamSinh_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+        
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "PDF |*.pdf";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                axAcropdf1.src = ofd.FileName;
+            }
         }
     }
 }
