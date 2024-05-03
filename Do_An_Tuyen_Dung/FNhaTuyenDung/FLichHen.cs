@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 
 namespace Do_An_Tuyen_Dung.FNhaTuyenDung
@@ -27,11 +28,11 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
         public FLichHen(string emHR, string em)
         {
             InitializeComponent();
-            LoadData(emHR,em);
+            LoadData(emHR, em);
         }
         private void FLichHen_Load_1(object sender, EventArgs e)
         {
-            
+
         }
         public void LoadData(string emHR, string em)
         {
@@ -63,9 +64,47 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
 
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
+      
+
+        private void btn_Luu_Click(object sender, EventArgs e)
         {
+            DateTime ThoiGian = dtpThoiGian.Value;  // Assuming dateNgayKT is a DateTimePicker control
+            string DiaDiemGap = txtDiaDiemGap.Text;
+          
+         
+            try
+            {
+                // Use parameterized query for security and clarity
+                string query = "INSERT INTO TinhTrangCV (ThoiGian,DiaDiemGap) VALUES (@ThoiGian, @DiaDiemGap)";
+                using (SqlCommand command = new SqlCommand(query, connection))
+              
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Add parameters for security
+                        command.Parameters.AddWithValue("@ThoiGian", ThoiGian);
+                        command.Parameters.AddWithValue("@DiaDiemGap", DiaDiemGap);
+                        
+                        // ... (add parameters for other fields)
+
+                        connection.Open();
+                        command.ExecuteNonQuery(); // Use ExecuteNonQuery for INSERT
+
+                        MessageBox.Show("Lưu thành công!");
+                        this.Close();
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Lưu thất bại do lỗi SQL: " + ex.Message);
+            }
+            catch (Exception ex) // Catch any other exceptions
+            {
+                MessageBox.Show("Lưu thất bại do lỗi không xác định: " + ex.Message);
+            }
 
         }
+    }
     }
 }
