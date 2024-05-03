@@ -89,5 +89,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
             }
             return em;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

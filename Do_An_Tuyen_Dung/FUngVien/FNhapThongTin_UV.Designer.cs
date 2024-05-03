@@ -74,6 +74,7 @@
             btn_Luu = new Guna.UI2.WinForms.Guna2Button();
             pictureBox1 = new PictureBox();
             btUploadFile = new Guna.UI2.WinForms.Guna2Button();
+            openFileDialog1 = new OpenFileDialog();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -497,6 +498,11 @@
             btUploadFile.Text = "Chọn File";
             btUploadFile.Click += btUploadFile_Click;
             // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileOk += openFileDialog1_FileOk;
+            // 
             // FNhapThongTin_UV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -560,5 +566,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_Luu;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btUploadFile;
+        private OpenFileDialog openFileDialog1;
     }
 }

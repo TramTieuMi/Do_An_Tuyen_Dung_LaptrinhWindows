@@ -138,7 +138,7 @@
             // 
             txtSoNguoi1.AutoSize = true;
             txtSoNguoi1.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtSoNguoi1.ForeColor = Color.Black;
+            txtSoNguoi1.ForeColor = Color.White;
             txtSoNguoi1.Location = new Point(421, 38);
             txtSoNguoi1.Name = "txtSoNguoi1";
             txtSoNguoi1.Size = new Size(211, 23);
@@ -149,7 +149,7 @@
             // 
             txtDiaDiem1.AutoSize = true;
             txtDiaDiem1.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtDiaDiem1.ForeColor = Color.Black;
+            txtDiaDiem1.ForeColor = Color.White;
             txtDiaDiem1.Location = new Point(136, 54);
             txtDiaDiem1.Name = "txtDiaDiem1";
             txtDiaDiem1.Size = new Size(165, 23);
@@ -160,7 +160,7 @@
             // 
             txtNganh1.AutoSize = true;
             txtNganh1.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtNganh1.ForeColor = Color.Black;
+            txtNganh1.ForeColor = Color.White;
             txtNganh1.Location = new Point(136, 17);
             txtNganh1.Name = "txtNganh1";
             txtNganh1.Size = new Size(168, 23);
@@ -169,7 +169,7 @@
             // 
             // guna2Panel7
             // 
-            guna2Panel7.BorderColor = Color.FromArgb(128, 128, 255);
+            guna2Panel7.BorderColor = Color.Black;
             guna2Panel7.BorderRadius = 10;
             guna2Panel7.BorderThickness = 2;
             guna2Panel7.CustomizableEdges = customizableEdges7;

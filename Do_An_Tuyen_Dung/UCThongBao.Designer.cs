@@ -43,7 +43,7 @@
             // 
             panel1.Location = new Point(5, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(90, 90);
+            panel1.Size = new Size(93, 90);
             panel1.TabIndex = 0;
             // 
             // btn_TB
@@ -71,7 +71,7 @@
             // 
             txtNganh.AutoSize = true;
             txtNganh.Font = new Font("Segoe UI", 10.2F);
-            txtNganh.ForeColor = SystemColors.ActiveCaptionText;
+            txtNganh.ForeColor = Color.White;
             txtNganh.Location = new Point(127, 60);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(179, 23);
@@ -82,7 +82,7 @@
             // 
             txtTenCTy.AutoSize = true;
             txtTenCTy.Font = new Font("Segoe UI", 10.2F);
-            txtTenCTy.ForeColor = SystemColors.ActiveCaptionText;
+            txtTenCTy.ForeColor = Color.White;
             txtTenCTy.Location = new Point(127, 15);
             txtTenCTy.Name = "txtTenCTy";
             txtTenCTy.Size = new Size(148, 23);
@@ -93,7 +93,7 @@
             // 
             txtTB.AutoSize = true;
             txtTB.Font = new Font("Segoe UI", 10.2F);
-            txtTB.ForeColor = SystemColors.ActiveCaptionText;
+            txtTB.ForeColor = Color.White;
             txtTB.Location = new Point(387, 38);
             txtTB.Name = "txtTB";
             txtTB.Size = new Size(337, 23);
@@ -102,6 +102,7 @@
             // 
             // panel2
             // 
+            panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(btn_TB);
             panel2.Controls.Add(txtTB);
             panel2.Controls.Add(panel1);
