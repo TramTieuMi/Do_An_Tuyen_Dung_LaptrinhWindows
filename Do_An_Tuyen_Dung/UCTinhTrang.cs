@@ -27,7 +27,7 @@ namespace Do_An_Tuyen_Dung
             InitializeComponent();
             this.tinhTrang = tinhTrang;
             txtNganh.Text = "Ngành : " + tinhTrang.Nganh;
-            txtDiaDiem.Text = "Đại Điểm : " + tinhTrang.DiaDiem;
+            txtDiaDiem.Text = "Địa Điểm : " + tinhTrang.DiaDiem;
             txtCTy.Text = "Tên Công Ty : " + tinhTrang.Cty;
         }
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)

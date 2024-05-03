@@ -122,5 +122,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

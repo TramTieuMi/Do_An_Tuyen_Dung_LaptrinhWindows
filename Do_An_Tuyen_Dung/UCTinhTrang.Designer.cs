@@ -45,11 +45,11 @@
             txtDiaDiem = new Label();
             txtNganh = new Label();
             guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // guna2Panel3
@@ -122,7 +122,7 @@
             // 
             txtCTy.AutoSize = true;
             txtCTy.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtCTy.ForeColor = Color.Black;
+            txtCTy.ForeColor = Color.White;
             txtCTy.Location = new Point(381, 54);
             txtCTy.Name = "txtCTy";
             txtCTy.Size = new Size(103, 23);
@@ -133,7 +133,7 @@
             // 
             txtTrangThai.AutoSize = true;
             txtTrangThai.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtTrangThai.ForeColor = Color.Black;
+            txtTrangThai.ForeColor = Color.White;
             txtTrangThai.Location = new Point(381, 17);
             txtTrangThai.Name = "txtTrangThai";
             txtTrangThai.Size = new Size(116, 23);
@@ -144,7 +144,7 @@
             // 
             txtDiaDiem.AutoSize = true;
             txtDiaDiem.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtDiaDiem.ForeColor = Color.Black;
+            txtDiaDiem.ForeColor = Color.White;
             txtDiaDiem.Location = new Point(136, 54);
             txtDiaDiem.Name = "txtDiaDiem";
             txtDiaDiem.Size = new Size(154, 23);
@@ -155,7 +155,7 @@
             // 
             txtNganh.AutoSize = true;
             txtNganh.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtNganh.ForeColor = Color.Black;
+            txtNganh.ForeColor = Color.White;
             txtNganh.Location = new Point(136, 17);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(168, 23);
@@ -174,17 +174,6 @@
             guna2Panel7.Size = new Size(94, 94);
             guna2Panel7.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(941, 26);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(44, 41);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 72;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
@@ -196,6 +185,17 @@
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(941, 26);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(44, 41);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 72;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // UCTinhTrang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -205,8 +205,8 @@
             Size = new Size(1007, 100);
             guna2Panel3.ResumeLayout(false);
             guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 

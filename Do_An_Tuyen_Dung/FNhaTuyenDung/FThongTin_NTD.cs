@@ -54,6 +54,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
                 }
             }
 
+
             modify.TaiDuLieu(dataTable, sqlQuery, "@EmailHR", em);
             if (dataTable.Rows.Count > 0)
             {
