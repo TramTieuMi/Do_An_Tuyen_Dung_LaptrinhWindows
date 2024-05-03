@@ -60,10 +60,13 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            axAcropdf1 = new AxAcroPDFLib.AxAcroPDF();
             guna2Panel2.SuspendLayout();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)axAcropdf1).BeginInit();
             SuspendLayout();
             // 
             // btnTroLai
@@ -356,6 +359,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(axAcropdf1);
             panel1.Location = new Point(747, 171);
             panel1.Name = "panel1";
             panel1.Size = new Size(368, 415);
@@ -409,6 +413,15 @@
             guna2GradientPanel1.Size = new Size(529, 415);
             guna2GradientPanel1.TabIndex = 118;
             // 
+            // axAcropdf1
+            // 
+            axAcropdf1.Enabled = true;
+            axAcropdf1.Location = new Point(3, 3);
+            axAcropdf1.Name = "axAcropdf1";
+            axAcropdf1.OcxState = (AxHost.State)resources.GetObject("axAcropdf1.OcxState");
+            axAcropdf1.Size = new Size(362, 409);
+            axAcropdf1.TabIndex = 0;
+            // 
             // FThongTin_UV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -421,10 +434,12 @@
             Text = "FThongTin_UV";
             Load += FThongTin_UV_Load;
             guna2Panel2.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             guna2GradientPanel1.ResumeLayout(false);
             guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)axAcropdf1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
