@@ -184,6 +184,7 @@
             Combobox_Quan_Huyen.Font = new Font("Segoe UI", 10F);
             Combobox_Quan_Huyen.ForeColor = Color.Black;
             Combobox_Quan_Huyen.ItemHeight = 30;
+            Combobox_Quan_Huyen.Items.AddRange(new object[] { "Quận 7", "Quận 1", "Quận 9" });
             Combobox_Quan_Huyen.Location = new Point(768, 331);
             Combobox_Quan_Huyen.Name = "Combobox_Quan_Huyen";
             Combobox_Quan_Huyen.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -459,7 +460,7 @@
             btn_Luu.FillColor = Color.FromArgb(42, 54, 78);
             btn_Luu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_Luu.ForeColor = Color.White;
-            btn_Luu.Location = new Point(565, 485);
+            btn_Luu.Location = new Point(595, 483);
             btn_Luu.Name = "btn_Luu";
             btn_Luu.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btn_Luu.Size = new Size(130, 40);
