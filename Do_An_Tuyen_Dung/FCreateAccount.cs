@@ -75,15 +75,15 @@ namespace Do_An_Tuyen_Dung
                     this.Close();
                 }*/
                 Hide();
-                if (role == ComboBox_Role.Text)
+                if (role == "Nhà Tuyển Dụng")
                 {
                     F_DangKiTaiKhoanNTD f_DangKiTaiKhoanNTD = new F_DangKiTaiKhoanNTD();
                     f_DangKiTaiKhoanNTD.ShowDialog();
                 }
                 else
                 {
-                    FMenu fMenu = new FMenu();
-                    fMenu.ShowDialog();
+                    FNhapThongTin_UV fNhapThongTinUV = new FNhapThongTin_UV();
+                    fNhapThongTinUV.ShowDialog();
                 }
                 
             }
