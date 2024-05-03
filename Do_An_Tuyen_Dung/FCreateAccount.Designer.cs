@@ -68,13 +68,14 @@
             textBox_Email.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             textBox_Email.Font = new Font("Segoe UI", 9F);
             textBox_Email.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            textBox_Email.Location = new Point(102, 242);
+            textBox_Email.Location = new Point(117, 323);
+            textBox_Email.Margin = new Padding(3, 5, 3, 5);
             textBox_Email.Name = "textBox_Email";
             textBox_Email.PasswordChar = '\0';
             textBox_Email.PlaceholderText = "";
             textBox_Email.SelectedText = "";
             textBox_Email.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            textBox_Email.Size = new Size(188, 29);
+            textBox_Email.Size = new Size(215, 39);
             textBox_Email.TabIndex = 11;
             textBox_Email.TextChanged += guna2TextBox2_TextChanged;
             // 
@@ -92,13 +93,14 @@
             textBox_TenTaiKhoan.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             textBox_TenTaiKhoan.Font = new Font("Segoe UI", 9F);
             textBox_TenTaiKhoan.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            textBox_TenTaiKhoan.Location = new Point(102, 192);
+            textBox_TenTaiKhoan.Location = new Point(117, 256);
+            textBox_TenTaiKhoan.Margin = new Padding(3, 5, 3, 5);
             textBox_TenTaiKhoan.Name = "textBox_TenTaiKhoan";
             textBox_TenTaiKhoan.PasswordChar = '\0';
             textBox_TenTaiKhoan.PlaceholderText = "";
             textBox_TenTaiKhoan.SelectedText = "";
             textBox_TenTaiKhoan.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            textBox_TenTaiKhoan.Size = new Size(188, 29);
+            textBox_TenTaiKhoan.Size = new Size(215, 39);
             textBox_TenTaiKhoan.TabIndex = 10;
             textBox_TenTaiKhoan.TextChanged += guna2TextBox1_TextChanged;
             // 
@@ -107,9 +109,9 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.ForeColor = Color.FromArgb(42, 54, 78);
-            label3.Location = new Point(102, 224);
+            label3.Location = new Point(117, 299);
             label3.Name = "label3";
-            label3.Size = new Size(42, 15);
+            label3.Size = new Size(53, 20);
             label3.TabIndex = 9;
             label3.Text = "Email: ";
             label3.Click += label3_Click;
@@ -119,9 +121,9 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.ForeColor = Color.FromArgb(42, 54, 78);
-            label2.Location = new Point(102, 174);
+            label2.Location = new Point(117, 232);
             label2.Name = "label2";
-            label2.Size = new Size(42, 15);
+            label2.Size = new Size(52, 20);
             label2.TabIndex = 8;
             label2.Text = "Name:";
             label2.Click += label2_Click;
@@ -140,13 +142,14 @@
             textBox_MatKhau.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             textBox_MatKhau.Font = new Font("Segoe UI", 9F);
             textBox_MatKhau.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            textBox_MatKhau.Location = new Point(102, 292);
+            textBox_MatKhau.Location = new Point(117, 389);
+            textBox_MatKhau.Margin = new Padding(3, 5, 3, 5);
             textBox_MatKhau.Name = "textBox_MatKhau";
             textBox_MatKhau.PasswordChar = '\0';
             textBox_MatKhau.PlaceholderText = "";
             textBox_MatKhau.SelectedText = "";
             textBox_MatKhau.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            textBox_MatKhau.Size = new Size(188, 29);
+            textBox_MatKhau.Size = new Size(215, 39);
             textBox_MatKhau.TabIndex = 13;
             textBox_MatKhau.TextChanged += guna2TextBox3_TextChanged;
             // 
@@ -155,9 +158,9 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.ForeColor = Color.FromArgb(42, 54, 78);
-            label1.Location = new Point(102, 274);
+            label1.Location = new Point(117, 365);
             label1.Name = "label1";
-            label1.Size = new Size(60, 15);
+            label1.Size = new Size(73, 20);
             label1.TabIndex = 12;
             label1.Text = "Password:";
             label1.Click += label1_Click;
@@ -167,9 +170,9 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.ForeColor = Color.FromArgb(42, 54, 78);
-            label4.Location = new Point(102, 325);
+            label4.Location = new Point(117, 433);
             label4.Name = "label4";
-            label4.Size = new Size(37, 15);
+            label4.Size = new Size(47, 20);
             label4.TabIndex = 14;
             label4.Text = "DOB: ";
             // 
@@ -183,13 +186,12 @@
             DateTimePicker.FillColor = Color.Transparent;
             DateTimePicker.Font = new Font("Segoe UI", 9F);
             DateTimePicker.Format = DateTimePickerFormat.Long;
-            DateTimePicker.Location = new Point(102, 342);
-            DateTimePicker.Margin = new Padding(3, 2, 3, 2);
+            DateTimePicker.Location = new Point(117, 456);
             DateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             DateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             DateTimePicker.Name = "DateTimePicker";
             DateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            DateTimePicker.Size = new Size(188, 34);
+            DateTimePicker.Size = new Size(215, 45);
             DateTimePicker.TabIndex = 15;
             DateTimePicker.Value = new DateTime(2024, 3, 12, 11, 26, 32, 746);
             // 
@@ -206,11 +208,10 @@
             btn_SignUp.FillColor = Color.FromArgb(42, 54, 78);
             btn_SignUp.Font = new Font("Segoe UI", 9F);
             btn_SignUp.ForeColor = Color.White;
-            btn_SignUp.Location = new Point(102, 445);
-            btn_SignUp.Margin = new Padding(3, 2, 3, 2);
+            btn_SignUp.Location = new Point(117, 593);
             btn_SignUp.Name = "btn_SignUp";
             btn_SignUp.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btn_SignUp.Size = new Size(188, 42);
+            btn_SignUp.Size = new Size(215, 56);
             btn_SignUp.TabIndex = 16;
             btn_SignUp.Text = "SIGN UP";
             btn_SignUp.Click += guna2Button1_Click;
@@ -220,9 +221,9 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.ForeColor = Color.FromArgb(42, 54, 78);
-            label5.Location = new Point(102, 376);
+            label5.Location = new Point(117, 501);
             label5.Name = "label5";
-            label5.Size = new Size(51, 15);
+            label5.Size = new Size(63, 20);
             label5.TabIndex = 17;
             label5.Text = "You Are:";
             // 
@@ -240,21 +241,20 @@
             ComboBox_Role.ForeColor = Color.FromArgb(68, 88, 112);
             ComboBox_Role.ItemHeight = 30;
             ComboBox_Role.Items.AddRange(new object[] { "Nhà Tuyển Dụng", "Ứng Viên" });
-            ComboBox_Role.Location = new Point(102, 394);
-            ComboBox_Role.Margin = new Padding(3, 2, 3, 2);
+            ComboBox_Role.Location = new Point(117, 525);
             ComboBox_Role.Name = "ComboBox_Role";
             ComboBox_Role.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            ComboBox_Role.Size = new Size(189, 36);
+            ComboBox_Role.Size = new Size(215, 36);
             ComboBox_Role.Sorted = true;
             ComboBox_Role.TabIndex = 19;
             ComboBox_Role.SelectedIndexChanged += ComboBox_Role_SelectedIndexChanged;
             // 
             // FCreateAccount
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(416, 526);
+            ClientSize = new Size(475, 701);
             Controls.Add(ComboBox_Role);
             Controls.Add(label5);
             Controls.Add(btn_SignUp);
@@ -266,7 +266,6 @@
             Controls.Add(textBox_TenTaiKhoan);
             Controls.Add(label3);
             Controls.Add(label2);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FCreateAccount";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FCreateAccount";
