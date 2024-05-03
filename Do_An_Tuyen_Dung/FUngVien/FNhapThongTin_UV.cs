@@ -17,7 +17,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FNhapThongTin_UV : Form
     {
-        private string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=backUp4;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = @"Data Source=KHANG\TEST1;Initial Catalog=""DoAnNhom (3)"";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public FNhapThongTin_UV()
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
             string xa = this.Combobox_Xa_Phuong.Text;
             string soNha = this.txtSoNha.Text;
             string fileCV = this.txtFileCV.Text;
-           // string gioiTinh = this.Combobox_GioiTinh.Text;
+          
             try
             {
                 // Use parameterized query for security and clarity
@@ -61,15 +61,14 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         command.Parameters.AddWithValue("@FileCV", fileCV);
                         command.Parameters.AddWithValue("@Tinh_TP", thanhPho);
                         command.Parameters.AddWithValue("@Quan_Huyen", huyen);
-                        command.Parameters.AddWithValue("@Xa_Phuong", xa);
-                        //command.Parameters.AddWithValue("@GioiTinh", gioiTinh);
+                        command.Parameters.AddWithValue("@Xa_Phuong", xa);                 
                         command.Parameters.AddWithValue("@SoNha", soNha);
                         // ... (add parameters for other fields)
 
                         connection.Open();
                         command.ExecuteNonQuery(); // Use ExecuteNonQuery for INSERT
 
-                        MessageBox.Show("Đăng ungvien thành công!");
+                        MessageBox.Show("Đăng Thông tin thành công!");
                         this.Close();
                     }
                 }
@@ -82,7 +81,8 @@ namespace Do_An_Tuyen_Dung.FUngVien
             {
                 MessageBox.Show("Đăng việc thất bại do lỗi không xác định: " + ex.Message);
             }
-
+            FLogin fLogin = new FLogin();
+            fLogin.ShowDialog();
 
         }
 

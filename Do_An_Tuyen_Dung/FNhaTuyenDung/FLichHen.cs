@@ -20,6 +20,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
     {
         Modify modify = new Modify();
         SqlConnection connStr = Connection.GetSqlConnection();
+
         public FLichHen()
         {
             InitializeComponent();
@@ -64,18 +65,11 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
 
         }
 
-      
+
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            DateTime ThoiGian = dtpThoiGian.Value;  // Assuming dateNgayKT is a DateTimePicker control
-            string DiaDiemGap = txtDiaDiemGap.Text;
-          
-         
-            
 
         }
     }
-    }
-
-
+}
