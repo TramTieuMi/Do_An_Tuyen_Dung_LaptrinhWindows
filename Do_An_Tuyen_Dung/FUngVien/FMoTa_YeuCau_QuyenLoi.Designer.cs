@@ -70,7 +70,6 @@
             guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnXem = new Guna.UI2.WinForms.Guna2Button();
-            label1 = new Label();
             panel3.SuspendLayout();
             SuspendLayout();
             // 
@@ -205,7 +204,7 @@
             txtCty.BackColor = Color.Transparent;
             txtCty.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtCty.ForeColor = Color.White;
-            txtCty.Location = new Point(970, 101);
+            txtCty.Location = new Point(963, 101);
             txtCty.Name = "txtCty";
             txtCty.Size = new Size(70, 41);
             txtCty.TabIndex = 108;
@@ -220,7 +219,7 @@
             txtNganh.BackColor = Color.Transparent;
             txtNganh.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtNganh.ForeColor = Color.White;
-            txtNganh.Location = new Point(468, 101);
+            txtNganh.Location = new Point(461, 101);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(170, 50);
             txtNganh.TabIndex = 109;
@@ -500,15 +499,6 @@
             btnXem.Text = "Chi Tiết Công Ty";
             btnXem.Click += btnXem_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(164, 132);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 142;
-            label1.Text = "label1";
-            // 
             // FMoTa_YeuCau_QuyenLoi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -516,7 +506,6 @@
             AutoScroll = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1205, 701);
-            Controls.Add(label1);
             Controls.Add(btnXem);
             Controls.Add(txtCty);
             Controls.Add(txtNganh);
@@ -590,6 +579,5 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2Button btnXem;
-        private Label label1;
     }
 }
