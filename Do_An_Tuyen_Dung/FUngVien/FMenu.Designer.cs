@@ -30,9 +30,9 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMenu));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(components);
             txtTenTK = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel9 = new Panel();
@@ -48,14 +48,14 @@
             btn_TK = new Button();
             panel7 = new Panel();
             panel1 = new Panel();
+            panel10 = new Panel();
+            btnYT = new Button();
             btnDangXuat = new Button();
             panel5 = new Panel();
             btn_TB = new Button();
             panel4 = new Panel();
             panel2 = new Panel();
             pan_ThongTin = new Guna.UI2.WinForms.Guna2GradientPanel();
-            panel10 = new Panel();
-            btnYT = new Button();
             panel9.SuspendLayout();
             panel8.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -64,10 +64,10 @@
             panel6.SuspendLayout();
             panel7.SuspendLayout();
             panel1.SuspendLayout();
+            panel10.SuspendLayout();
             panel5.SuspendLayout();
             panel4.SuspendLayout();
             panel2.SuspendLayout();
-            panel10.SuspendLayout();
             SuspendLayout();
             // 
             // guna2ColorTransition1
@@ -111,7 +111,7 @@
             guna2CircleButton1.ImageSize = new Size(66, 62);
             guna2CircleButton1.Location = new Point(0, 5);
             guna2CircleButton1.Name = "guna2CircleButton1";
-            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
             guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton1.Size = new Size(56, 55);
             guna2CircleButton1.TabIndex = 1;
@@ -135,6 +135,7 @@
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(1217, 69);
             flowLayoutPanel1.TabIndex = 0;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
             // pictureBox1
             // 
@@ -230,6 +231,27 @@
             panel1.Size = new Size(190, 815);
             panel1.TabIndex = 2;
             // 
+            // panel10
+            // 
+            panel10.Controls.Add(btnYT);
+            panel10.Location = new Point(8, 481);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(174, 52);
+            panel10.TabIndex = 7;
+            // 
+            // btnYT
+            // 
+            btnYT.FlatStyle = FlatStyle.Flat;
+            btnYT.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnYT.ForeColor = SystemColors.ButtonFace;
+            btnYT.Location = new Point(3, 3);
+            btnYT.Name = "btnYT";
+            btnYT.Size = new Size(168, 49);
+            btnYT.TabIndex = 0;
+            btnYT.Text = "Yêu Thích";
+            btnYT.UseVisualStyleBackColor = true;
+            btnYT.Click += btnYT_Click;
+            // 
             // btnDangXuat
             // 
             btnDangXuat.FlatStyle = FlatStyle.Flat;
@@ -289,34 +311,13 @@
             // pan_ThongTin
             // 
             pan_ThongTin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pan_ThongTin.CustomizableEdges = customizableEdges5;
+            pan_ThongTin.CustomizableEdges = customizableEdges2;
             pan_ThongTin.Location = new Point(3, 69);
             pan_ThongTin.Name = "pan_ThongTin";
-            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges3;
             pan_ThongTin.Size = new Size(1208, 743);
             pan_ThongTin.TabIndex = 1;
             pan_ThongTin.Paint += pan_ThongTin_Paint;
-            // 
-            // panel10
-            // 
-            panel10.Controls.Add(btnYT);
-            panel10.Location = new Point(8, 481);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(174, 52);
-            panel10.TabIndex = 7;
-            // 
-            // btnYT
-            // 
-            btnYT.FlatStyle = FlatStyle.Flat;
-            btnYT.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnYT.ForeColor = SystemColors.ButtonFace;
-            btnYT.Location = new Point(3, 3);
-            btnYT.Name = "btnYT";
-            btnYT.Size = new Size(168, 49);
-            btnYT.TabIndex = 0;
-            btnYT.Text = "Yêu Thích";
-            btnYT.UseVisualStyleBackColor = true;
-            btnYT.Click += btnYT_Click;
             // 
             // FMenu
             // 
@@ -338,10 +339,10 @@
             panel6.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel1.ResumeLayout(false);
+            panel10.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel2.ResumeLayout(false);
-            panel10.ResumeLayout(false);
             ResumeLayout(false);
         }
 

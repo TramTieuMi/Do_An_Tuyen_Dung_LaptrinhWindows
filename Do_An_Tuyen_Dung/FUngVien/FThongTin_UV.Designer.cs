@@ -33,10 +33,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnTroLai = new Guna.UI2.WinForms.Guna2Button();
             label10 = new Label();
             label4 = new Label();
@@ -55,18 +55,20 @@
             txtSoNha = new Label();
             txtlinkFileCV = new LinkLabel();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             panel1 = new Panel();
+            axAcropdf1 = new AxAcroPDFLib.AxAcroPDF();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            axAcropdf1 = new AxAcroPDFLib.AxAcroPDF();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            panel2 = new Panel();
             guna2Panel2.SuspendLayout();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)axAcropdf1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)axAcropdf1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // btnTroLai
@@ -207,7 +209,7 @@
             txtHoTen.BackColor = Color.Transparent;
             txtHoTen.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtHoTen.ForeColor = Color.White;
-            txtHoTen.Location = new Point(462, 86);
+            txtHoTen.Location = new Point(76, 16);
             txtHoTen.Name = "txtHoTen";
             txtHoTen.Size = new Size(400, 83);
             txtHoTen.TabIndex = 108;
@@ -317,22 +319,89 @@
             // 
             // guna2Panel2
             // 
+            guna2Panel2.AutoScroll = true;
             guna2Panel2.BackColor = Color.White;
             guna2Panel2.BackgroundImage = (Image)resources.GetObject("guna2Panel2.BackgroundImage");
-            guna2Panel2.Controls.Add(guna2Button1);
+            guna2Panel2.Controls.Add(panel2);
             guna2Panel2.Controls.Add(panel1);
             guna2Panel2.Controls.Add(pictureBox2);
             guna2Panel2.Controls.Add(pictureBox1);
-            guna2Panel2.Controls.Add(txtHoTen);
             guna2Panel2.Controls.Add(guna2GradientPanel1);
             guna2Panel2.Controls.Add(btnTroLai);
             guna2Panel2.CustomizableEdges = customizableEdges7;
-            guna2Panel2.Location = new Point(0, -7);
+            guna2Panel2.Location = new Point(0, -2);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Panel2.Size = new Size(1365, 845);
+            guna2Panel2.Size = new Size(1206, 741);
             guna2Panel2.TabIndex = 118;
             guna2Panel2.Paint += guna2Panel2_Paint;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(axAcropdf1);
+            panel1.Location = new Point(371, 569);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(529, 560);
+            panel1.TabIndex = 124;
+            // 
+            // axAcropdf1
+            // 
+            axAcropdf1.Enabled = true;
+            axAcropdf1.Location = new Point(3, 42);
+            axAcropdf1.Name = "axAcropdf1";
+            axAcropdf1.OcxState = (AxHost.State)resources.GetObject("axAcropdf1.OcxState");
+            axAcropdf1.Size = new Size(523, 468);
+            axAcropdf1.TabIndex = 123;
+            axAcropdf1.Enter += axAcropdf1_Enter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(26, 930);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(151, 156);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 120;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1025, 937);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(147, 149);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 119;
+            pictureBox1.TabStop = false;
+            // 
+            // guna2GradientPanel1
+            // 
+            guna2GradientPanel1.BackColor = Color.Transparent;
+            guna2GradientPanel1.BorderRadius = 15;
+            guna2GradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            guna2GradientPanel1.Controls.Add(txtNgayThangNamSinh);
+            guna2GradientPanel1.Controls.Add(guna2Button1);
+            guna2GradientPanel1.Controls.Add(txtXa_Phuong);
+            guna2GradientPanel1.Controls.Add(label4);
+            guna2GradientPanel1.Controls.Add(label1);
+            guna2GradientPanel1.Controls.Add(txtTinh_TP);
+            guna2GradientPanel1.Controls.Add(label6);
+            guna2GradientPanel1.Controls.Add(txtQuan_Huyen);
+            guna2GradientPanel1.Controls.Add(txtNoiSinh);
+            guna2GradientPanel1.Controls.Add(txtlinkFileCV);
+            guna2GradientPanel1.Controls.Add(label7);
+            guna2GradientPanel1.Controls.Add(label3);
+            guna2GradientPanel1.Controls.Add(label5);
+            guna2GradientPanel1.Controls.Add(label9);
+            guna2GradientPanel1.Controls.Add(txtSoNha);
+            guna2GradientPanel1.CustomizableEdges = customizableEdges5;
+            guna2GradientPanel1.Location = new Point(348, 130);
+            guna2GradientPanel1.Name = "guna2GradientPanel1";
+            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2GradientPanel1.Size = new Size(529, 415);
+            guna2GradientPanel1.TabIndex = 118;
             // 
             // guna2Button1
             // 
@@ -348,7 +417,7 @@
             guna2Button1.FillColor = Color.FromArgb(42, 54, 78);
             guna2Button1.Font = new Font("Segoe UI", 9F);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(855, 593);
+            guna2Button1.Location = new Point(211, 375);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button1.Size = new Size(144, 37);
@@ -356,71 +425,14 @@
             guna2Button1.Text = "Xem Chi Tiết CV";
             guna2Button1.Click += guna2Button1_Click;
             // 
-            // panel1
+            // panel2
             // 
-            panel1.BackColor = Color.Transparent;
-            panel1.Controls.Add(axAcropdf1);
-            panel1.Location = new Point(747, 171);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(368, 415);
-            panel1.TabIndex = 121;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 593);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(151, 156);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 120;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1057, 599);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(147, 149);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 119;
-            pictureBox1.TabStop = false;
-            // 
-            // guna2GradientPanel1
-            // 
-            guna2GradientPanel1.BackColor = Color.Transparent;
-            guna2GradientPanel1.BorderRadius = 15;
-            guna2GradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            guna2GradientPanel1.Controls.Add(txtNgayThangNamSinh);
-            guna2GradientPanel1.Controls.Add(txtXa_Phuong);
-            guna2GradientPanel1.Controls.Add(label4);
-            guna2GradientPanel1.Controls.Add(label1);
-            guna2GradientPanel1.Controls.Add(txtTinh_TP);
-            guna2GradientPanel1.Controls.Add(label6);
-            guna2GradientPanel1.Controls.Add(txtQuan_Huyen);
-            guna2GradientPanel1.Controls.Add(txtNoiSinh);
-            guna2GradientPanel1.Controls.Add(txtlinkFileCV);
-            guna2GradientPanel1.Controls.Add(label7);
-            guna2GradientPanel1.Controls.Add(label3);
-            guna2GradientPanel1.Controls.Add(label5);
-            guna2GradientPanel1.Controls.Add(label9);
-            guna2GradientPanel1.Controls.Add(txtSoNha);
-            guna2GradientPanel1.CustomizableEdges = customizableEdges5;
-            guna2GradientPanel1.Location = new Point(212, 171);
-            guna2GradientPanel1.Name = "guna2GradientPanel1";
-            guna2GradientPanel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2GradientPanel1.Size = new Size(529, 415);
-            guna2GradientPanel1.TabIndex = 118;
-            // 
-            // axAcropdf1
-            // 
-            axAcropdf1.Enabled = true;
-            axAcropdf1.Location = new Point(3, 3);
-            axAcropdf1.Name = "axAcropdf1";
-            axAcropdf1.OcxState = (AxHost.State)resources.GetObject("axAcropdf1.OcxState");
-            axAcropdf1.Size = new Size(362, 409);
-            axAcropdf1.TabIndex = 0;
+            panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(txtHoTen);
+            panel2.Location = new Point(348, 14);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(529, 110);
+            panel2.TabIndex = 125;
             // 
             // FThongTin_UV
             // 
@@ -435,11 +447,12 @@
             Load += FThongTin_UV_Load;
             guna2Panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)axAcropdf1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             guna2GradientPanel1.ResumeLayout(false);
             guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)axAcropdf1).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -467,9 +480,10 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         public Label txtHoTen;
-        private Panel panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private AxAcroPDFLib.AxAcroPDF axAcropdf1;
+        private Panel panel1;
+        private Panel panel2;
         //  private AxAcroPDFLib.AxAcroPDF axAcropdf1;
     }
 }
