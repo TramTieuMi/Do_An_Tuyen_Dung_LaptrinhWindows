@@ -57,7 +57,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         }
                         string emUV = reader["EmailUV"].ToString();
                         string emHR = reader["EmailHR"].ToString();
-                        ThongBao TB = new ThongBao(tencty, nganh, trangthai, emUV,emHR);
+                        ThongBao TB = new ThongBao(tencty, nganh, trangthai, emUV, emHR);
 
                         list.Add(TB);
                     }
@@ -83,6 +83,11 @@ namespace Do_An_Tuyen_Dung.FUngVien
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fpnHT_Paint(object sender, PaintEventArgs e)
         {
 
         }

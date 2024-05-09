@@ -38,8 +38,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCreateAccount));
             textBox_Email = new Guna.UI2.WinForms.Guna2TextBox();
             textBox_TenTaiKhoan = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,8 +45,6 @@
             label2 = new Label();
             textBox_MatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             label1 = new Label();
-            label4 = new Label();
-            DateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             btn_SignUp = new Guna.UI2.WinForms.Guna2Button();
             label5 = new Label();
             ComboBox_Role = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -162,43 +158,12 @@
             label1.Text = "Password:";
             label1.Click += label1_Click;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.ForeColor = Color.FromArgb(42, 54, 78);
-            label4.Location = new Point(102, 325);
-            label4.Name = "label4";
-            label4.Size = new Size(37, 15);
-            label4.TabIndex = 14;
-            label4.Text = "DOB: ";
-            // 
-            // DateTimePicker
-            // 
-            DateTimePicker.BackColor = Color.Transparent;
-            DateTimePicker.BorderRadius = 18;
-            DateTimePicker.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            DateTimePicker.Checked = true;
-            DateTimePicker.CustomizableEdges = customizableEdges7;
-            DateTimePicker.FillColor = Color.Transparent;
-            DateTimePicker.Font = new Font("Segoe UI", 9F);
-            DateTimePicker.Format = DateTimePickerFormat.Long;
-            DateTimePicker.Location = new Point(102, 342);
-            DateTimePicker.Margin = new Padding(3, 2, 3, 2);
-            DateTimePicker.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
-            DateTimePicker.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
-            DateTimePicker.Name = "DateTimePicker";
-            DateTimePicker.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            DateTimePicker.Size = new Size(188, 34);
-            DateTimePicker.TabIndex = 15;
-            DateTimePicker.Value = new DateTime(2024, 3, 12, 11, 26, 32, 746);
-            // 
             // btn_SignUp
             // 
             btn_SignUp.BackColor = Color.Transparent;
             btn_SignUp.BorderRadius = 22;
             btn_SignUp.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            btn_SignUp.CustomizableEdges = customizableEdges9;
+            btn_SignUp.CustomizableEdges = customizableEdges7;
             btn_SignUp.DisabledState.BorderColor = Color.DarkGray;
             btn_SignUp.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_SignUp.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -209,7 +174,7 @@
             btn_SignUp.Location = new Point(102, 445);
             btn_SignUp.Margin = new Padding(3, 2, 3, 2);
             btn_SignUp.Name = "btn_SignUp";
-            btn_SignUp.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btn_SignUp.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btn_SignUp.Size = new Size(188, 42);
             btn_SignUp.TabIndex = 16;
             btn_SignUp.Text = "SIGN UP";
@@ -231,7 +196,7 @@
             ComboBox_Role.BackColor = Color.Transparent;
             ComboBox_Role.BorderRadius = 18;
             ComboBox_Role.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            ComboBox_Role.CustomizableEdges = customizableEdges11;
+            ComboBox_Role.CustomizableEdges = customizableEdges9;
             ComboBox_Role.DrawMode = DrawMode.OwnerDrawFixed;
             ComboBox_Role.DropDownStyle = ComboBoxStyle.DropDownList;
             ComboBox_Role.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -243,7 +208,7 @@
             ComboBox_Role.Location = new Point(102, 394);
             ComboBox_Role.Margin = new Padding(3, 2, 3, 2);
             ComboBox_Role.Name = "ComboBox_Role";
-            ComboBox_Role.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            ComboBox_Role.ShadowDecoration.CustomizableEdges = customizableEdges10;
             ComboBox_Role.Size = new Size(189, 36);
             ComboBox_Role.Sorted = true;
             ComboBox_Role.TabIndex = 19;
@@ -258,8 +223,6 @@
             Controls.Add(ComboBox_Role);
             Controls.Add(label5);
             Controls.Add(btn_SignUp);
-            Controls.Add(DateTimePicker);
-            Controls.Add(label4);
             Controls.Add(textBox_MatKhau);
             Controls.Add(label1);
             Controls.Add(textBox_Email);
@@ -303,8 +266,6 @@
         private Label label2;
         private Guna.UI2.WinForms.Guna2TextBox textBox_MatKhau;
         private Label label1;
-        private Label label4;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePicker;
         private Guna.UI2.WinForms.Guna2Button btn_SignUp;
         private Label label5;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox_Role;

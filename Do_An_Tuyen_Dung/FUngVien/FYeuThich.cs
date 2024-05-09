@@ -94,5 +94,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
