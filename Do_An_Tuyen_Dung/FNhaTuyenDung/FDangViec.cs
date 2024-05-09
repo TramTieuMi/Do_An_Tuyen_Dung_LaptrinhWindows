@@ -18,7 +18,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
 {
     public partial class FDangViec : Form
     {
-        private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (2)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (3)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public FDangViec()
         {
             InitializeComponent();

@@ -29,9 +29,9 @@ namespace Do_An_Tuyen_Dung
 
         // TenCV,tencty,emhr,emuv
         string TenCV;
-        string tencty;
-        string emhr;
-        string emuv;
+        string TenCTy;
+        string EmailHR;
+        string EmailUV;
 
 
 
@@ -85,8 +85,8 @@ namespace Do_An_Tuyen_Dung
                 string kinhNghiem = reader["KinhNghiem"].ToString();
                 if (nganh == TenCV && dd == diaDiem && luong == luong2 && kn == kinhNghiem)
                 {
-                    tencty = reader["TenCTy"].ToString();
-                    emhr = reader["EmailHR"].ToString();
+                    TenCTy = reader["TenCTy"].ToString();
+                    EmailHR = reader["EmailHR"].ToString();
                 }
             }
             connStr.Close();
@@ -104,33 +104,50 @@ namespace Do_An_Tuyen_Dung
                 if (tk == FLogin.TenTaiKhoan)
                 {
                     tenuv = reader["HoTenUV"].ToString();
-                    emuv = reader["Email"].ToString();
+                    EmailUV = reader["Email"].ToString();
                 }
             }
             connStr.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e) // hủy yêu thích
+        private void pictureBox2_Click(object sender, EventArgs e) // huy yeu thich
         {
+            // Hide unfavorite button and show favorite button
             this.pictureBox2.Hide();
             pictureBox1.Show();
 
+
+
             try
             {
-                string query = string.Format("DELETE FROM YeuThich WHERE TenCV = '{0}', EmailHR = '{1}' )", TenCV, emhr);
-                SqlCommand command = new SqlCommand(query, connStr);
+                // Use parameterized query for security
+                string query = "DELETE FROM YeuThich WHERE TenCV = @TenCV AND EmailHR = @EmailHR";
+                using (SqlConnection connection = Connection.GetSqlConnection())
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@TenCV", TenCV);
+                        command.Parameters.AddWithValue("@EmailHR", EmailHR);
 
-                connStr.Open();
-                if (command.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Xóa thành công");
+                        connection.Open();
+                        if (command.ExecuteNonQuery() > 0)
+                        {
+                            MessageBox.Show("Xóa thành công (Delete successful)");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy mục yêu thích (Favorite not found)");
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Yêu thích thất bại do lỗi SQL: " + ex.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Lỗi : " + ex.Message);
-            }
-            finally
-            {
-                connStr.Close();
+                MessageBox.Show("Yêu thích thất bại do lỗi không xác định: " + ex.Message);
             }
         }
 
@@ -139,18 +156,11 @@ namespace Do_An_Tuyen_Dung
             this.pictureBox1.Hide();
             pictureBox2.Show();
             //code
-         
-      
-       
-          
-
-         
-
-           
+        
             try
             {
                 // Use parameterized query for security and clarityVALUES (@TenCV,@TenCTy,@EmailHR,@email
-                string query2 = "INSERT INTO YeuThich (TenCV,TenCTy,EmailHR,EmailUV) UV)";
+                string query2 = "INSERT INTO YeuThich (TenCV, TenCTy, EmailHR, EmailUV) VALUES (@TenCV, @TenCTy, @EmailHR, @EmailUV)";
 
                 using (SqlConnection connection = Connection.GetSqlConnection())
                 {
@@ -158,9 +168,9 @@ namespace Do_An_Tuyen_Dung
                     {
                         // Add parameters for security
                         command.Parameters.AddWithValue("@TenCV", TenCV);
-                        command.Parameters.AddWithValue("@TenCTy", tencty);
-                        command.Parameters.AddWithValue("@EmailHR", emhr);
-                        command.Parameters.AddWithValue("@EmailUV", emuv);
+                        command.Parameters.AddWithValue("@TenCTy", TenCTy);
+                        command.Parameters.AddWithValue("@EmailHR", EmailHR);
+                        command.Parameters.AddWithValue("@EmailUV", EmailUV);
                         
                         //label1.Text = DiaDiem;
 

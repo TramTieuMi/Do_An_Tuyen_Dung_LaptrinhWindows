@@ -30,8 +30,8 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FLichHen));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             txtTenUV = new Label();
             label3 = new Label();
@@ -50,9 +50,9 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.8F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(52, 30);
+            label1.Location = new Point(59, 40);
             label1.Name = "label1";
-            label1.Size = new Size(123, 20);
+            label1.Size = new Size(149, 25);
             label1.TabIndex = 0;
             label1.Text = "Xin chào Anh/Chị";
             // 
@@ -62,9 +62,9 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             txtTenUV.BackColor = Color.Transparent;
             txtTenUV.Font = new Font("Segoe UI", 10.8F);
             txtTenUV.ForeColor = Color.White;
-            txtTenUV.Location = new Point(179, 30);
+            txtTenUV.Location = new Point(205, 40);
             txtTenUV.Name = "txtTenUV";
-            txtTenUV.Size = new Size(106, 20);
+            txtTenUV.Size = new Size(126, 25);
             txtTenUV.TabIndex = 1;
             txtTenUV.Text = "[Tên ứng viên],";
             // 
@@ -74,9 +74,9 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.8F);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(52, 104);
+            label3.Location = new Point(59, 139);
             label3.Name = "label3";
-            label3.Size = new Size(446, 20);
+            label3.Size = new Size(545, 25);
             label3.TabIndex = 2;
             label3.Text = "Chúc mừng Anh/Chị đã vượt qua vòng xét tuyển hồ sơ của công ty";
             // 
@@ -86,11 +86,12 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             txtCVvaVItri.BackColor = Color.Transparent;
             txtCVvaVItri.Font = new Font("Segoe UI", 10.8F);
             txtCVvaVItri.ForeColor = Color.White;
-            txtCVvaVItri.Location = new Point(525, 104);
+            txtCVvaVItri.Location = new Point(600, 139);
             txtCVvaVItri.Name = "txtCVvaVItri";
-            txtCVvaVItri.Size = new Size(296, 20);
+            txtCVvaVItri.Size = new Size(352, 25);
             txtCVvaVItri.TabIndex = 3;
             txtCVvaVItri.Text = "[Tên công ty] cho vị trí [Tên vị trí ứng tuyển]";
+            txtCVvaVItri.Click += txtCVvaVItri_Click;
             // 
             // label5
             // 
@@ -98,9 +99,9 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.8F);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(52, 146);
+            label5.Location = new Point(59, 195);
             label5.Name = "label5";
-            label5.Size = new Size(750, 40);
+            label5.Size = new Size(915, 50);
             label5.TabIndex = 4;
             label5.Text = resources.GetString("label5.Text");
             // 
@@ -110,9 +111,9 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 10.8F);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(69, 220);
+            label6.Location = new Point(79, 293);
             label6.Name = "label6";
-            label6.Size = new Size(83, 20);
+            label6.Size = new Size(100, 25);
             label6.TabIndex = 5;
             label6.Text = "Thời Gian : ";
             // 
@@ -122,28 +123,26 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 10.8F);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(69, 265);
+            label7.Location = new Point(79, 353);
             label7.Name = "label7";
-            label7.Size = new Size(79, 20);
+            label7.Size = new Size(94, 25);
             label7.TabIndex = 6;
             label7.Text = "Địa Điểm :";
             // 
             // txtDiaDiemGap
             // 
             txtDiaDiemGap.Font = new Font("Segoe UI", 10.8F);
-            txtDiaDiemGap.Location = new Point(164, 262);
-            txtDiaDiemGap.Margin = new Padding(3, 2, 3, 2);
+            txtDiaDiemGap.Location = new Point(187, 349);
             txtDiaDiemGap.Name = "txtDiaDiemGap";
-            txtDiaDiemGap.Size = new Size(358, 27);
+            txtDiaDiemGap.Size = new Size(409, 31);
             txtDiaDiemGap.TabIndex = 7;
             // 
             // dtpThoiGian
             // 
             dtpThoiGian.Font = new Font("Segoe UI", 10.8F);
-            dtpThoiGian.Location = new Point(164, 216);
-            dtpThoiGian.Margin = new Padding(3, 2, 3, 2);
+            dtpThoiGian.Location = new Point(187, 288);
             dtpThoiGian.Name = "dtpThoiGian";
-            dtpThoiGian.Size = new Size(358, 27);
+            dtpThoiGian.Size = new Size(409, 31);
             dtpThoiGian.TabIndex = 8;
             // 
             // btn_Luu
@@ -153,7 +152,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             btn_Luu.BorderColor = Color.Transparent;
             btn_Luu.BorderRadius = 10;
             btn_Luu.BorderThickness = 2;
-            btn_Luu.CustomizableEdges = customizableEdges3;
+            btn_Luu.CustomizableEdges = customizableEdges1;
             btn_Luu.DisabledState.BorderColor = Color.DarkGray;
             btn_Luu.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_Luu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -161,21 +160,20 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             btn_Luu.FillColor = Color.FromArgb(42, 54, 78);
             btn_Luu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_Luu.ForeColor = Color.White;
-            btn_Luu.Location = new Point(458, 312);
-            btn_Luu.Margin = new Padding(3, 2, 3, 2);
+            btn_Luu.Location = new Point(523, 416);
             btn_Luu.Name = "btn_Luu";
-            btn_Luu.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btn_Luu.Size = new Size(114, 30);
+            btn_Luu.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_Luu.Size = new Size(130, 40);
             btn_Luu.TabIndex = 83;
             btn_Luu.Text = "Lưu";
             btn_Luu.Click += btn_Luu_Click;
             // 
             // FLichHen
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(928, 344);
+            ClientSize = new Size(1061, 459);
             Controls.Add(btn_Luu);
             Controls.Add(dtpThoiGian);
             Controls.Add(txtDiaDiemGap);
@@ -186,7 +184,6 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
             Controls.Add(label3);
             Controls.Add(txtTenUV);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FLichHen";
             Text = "FLichHen";
             Load += FLichHen_Load_1;

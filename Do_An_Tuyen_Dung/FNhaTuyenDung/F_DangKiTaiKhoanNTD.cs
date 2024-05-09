@@ -15,7 +15,7 @@ namespace Do_An_Tuyen_Dung
 {
     public partial class F_DangKiTaiKhoanNTD : Form
     {
-        private string connectionString = @"Data Source=KHANG\TEST1;Initial Catalog=backUp2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = @"Data Source=KHANG\TEST1;Initial Catalog=""DoAnNhom (3)"";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public F_DangKiTaiKhoanNTD()
         {
             InitializeComponent();

@@ -22,14 +22,16 @@ namespace Do_An_Tuyen_Dung
             InitializeComponent();
         }
         public UCThongBao(ThongBao thongBao)
-        {
-            InitializeComponent();
+        {           
             this.thongBao = thongBao;
             txtNganh.Text = "Ngành : " + thongBao.Tencv;
-            txtTenCTy.Text = "Công Ty : " + thongBao.Tencty;
+            txtTenCTy.Text = "Công Ty : " + thongBao.Tencty;          
             txtTB.Text = "Đơn Xin Việc Của Bạn " + thongBao.TrangThai;
+            if (thongBao.TrangThai != "Được Chấp Nhận") 
+                btn_TB.Visible = false;
             emHR1 = thongBao.EmHR;
             emUV1 = thongBao.EmUV;
+            InitializeComponent();
         }
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
