@@ -25,6 +25,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
         SqlConnection connStr = Connection.GetSqlConnection();
         Modify modify = new Modify();
         string tenCV;
+        string tencty;
         string DiaDiem = string.Empty;
         public FMoTa_YeuCau_QuyenLoi()
         {
@@ -32,9 +33,27 @@ namespace Do_An_Tuyen_Dung.FUngVien
         }
         public FMoTa_YeuCau_QuyenLoi(string nganhDuocChon)
         {
+
             InitializeComponent();
             tenCV = nganhDuocChon;
             LoadDuLieu(tenCV);
+            AnNutNopDon(tenCV);
+        }
+
+        public void AnNutNopDon(string chuoi)
+        {
+            string query = "SELECT * FROM TinhTrangCV";
+            SqlCommand command = new SqlCommand(query, connStr);
+            connStr.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader["TenCongViec"].ToString() == chuoi && reader["TenCTy"].ToString() == tencty)
+                {
+                    btn_NopDon.Visible = false;
+                }
+            }
+            connStr.Close();
         }
 
         public void LoadDuLieu(string chuoi)
@@ -88,6 +107,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         if (em == em1)
                         {
                             txtCty.Text = row1["TenCTy"].ToString();
+                            tencty = txtCty.Text;
                             DiaDiem = row1["Tinh_TP"].ToString();
                             
                         }
@@ -188,7 +208,6 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         command.Parameters.AddWithValue("@EmailUV", EmailUV);
                         command.Parameters.AddWithValue("@TenUV", TenUV);
                         command.Parameters.AddWithValue("@DiaDiem", DiaDiem);
-                        //label1.Text = DiaDiem;
 
                         connection.Open();
                         command.ExecuteNonQuery(); // Use ExecuteNonQuery for INSERT

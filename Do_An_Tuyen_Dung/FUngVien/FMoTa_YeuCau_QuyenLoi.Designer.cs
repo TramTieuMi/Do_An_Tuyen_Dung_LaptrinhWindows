@@ -73,14 +73,14 @@
             guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnXem = new Guna.UI2.WinForms.Guna2Button();
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             panel3.SuspendLayout();
             guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel3
@@ -218,7 +218,7 @@
             txtCty.BackColor = Color.Transparent;
             txtCty.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtCty.ForeColor = Color.White;
-            txtCty.Location = new Point(1006, 101);
+            txtCty.Location = new Point(999, 101);
             txtCty.Name = "txtCty";
             txtCty.Size = new Size(70, 41);
             txtCty.TabIndex = 108;
@@ -233,7 +233,7 @@
             txtNganh.BackColor = Color.Transparent;
             txtNganh.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtNganh.ForeColor = Color.White;
-            txtNganh.Location = new Point(514, 101);
+            txtNganh.Location = new Point(507, 101);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(170, 50);
             txtNganh.TabIndex = 109;
@@ -535,15 +535,15 @@
             guna2Panel1.Size = new Size(1066, 104);
             guna2Panel1.TabIndex = 142;
             // 
-            // pictureBox1
+            // pictureBox3
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(38, 23);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(69, 53);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 120;
-            pictureBox1.TabStop = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(731, 23);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(69, 53);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 122;
+            pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -555,15 +555,15 @@
             pictureBox2.TabIndex = 121;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBox1
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(731, 23);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(69, 53);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 122;
-            pictureBox3.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(38, 23);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(69, 53);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 120;
+            pictureBox1.TabStop = false;
             // 
             // FMoTa_YeuCau_QuyenLoi
             // 
@@ -571,7 +571,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1205, 701);
+            ClientSize = new Size(1205, 772);
             Controls.Add(guna2Panel1);
             Controls.Add(btnXem);
             Controls.Add(txtCty);
@@ -605,9 +605,9 @@
             panel3.PerformLayout();
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
