@@ -17,7 +17,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FNhapThongTin_UV : Form
     {
-        private string connectionString = @"Data Source=KHANG\TEST1;Initial Catalog=""DoAnNhom (3)"";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = @"Data Source=DESKTOP-UR1R776\SQLEXPRESS;Initial Catalog=DoAnNhom264;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public FNhapThongTin_UV()
         {
             InitializeComponent();
@@ -44,11 +44,12 @@ namespace Do_An_Tuyen_Dung.FUngVien
             string xa = this.Combobox_Xa_Phuong.Text;
             string soNha = this.txtSoNha.Text;
             string fileCV = this.txtFileCV.Text;
-          
+            string Email = this.txtEmail.Text;
+
             try
             {
                 // Use parameterized query for security and clarity
-                string query = "INSERT INTO NhapThongTinUV (HoTenUV, NgayThangNamSinh, NoiSinh, FileCV, Tinh_TP, Quan_Huyen, Xa_Phuong, SoNha) VALUES (@HoTenUV, @NgayThangNamSinh, @NoiSinh, @FileCV, @Tinh_TP, @Quan_Huyen, @Xa_Phuong, @SoNha)";
+                string query = "INSERT INTO NhapThongTinUV (HoTenUV, NgayThangNamSinh, NoiSinh, FileCV, Tinh_TP, Quan_Huyen, Xa_Phuong, SoNha, Email) VALUES (@HoTenUV, @NgayThangNamSinh, @NoiSinh, @FileCV, @Tinh_TP, @Quan_Huyen, @Xa_Phuong, @SoNha, @Email)";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -63,6 +64,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         command.Parameters.AddWithValue("@Quan_Huyen", huyen);
                         command.Parameters.AddWithValue("@Xa_Phuong", xa);                 
                         command.Parameters.AddWithValue("@SoNha", soNha);
+                        command.Parameters.AddWithValue("@Emai;", Email);
                         // ... (add parameters for other fields)
 
                         connection.Open();
@@ -112,6 +114,27 @@ namespace Do_An_Tuyen_Dung.FUngVien
             {
                 txtFileCV.Text = dialog.SafeFileName;
             }
+
+            //using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            //{
+            //    openFileDialog.Filter = "File anh|*.jpg; *.pdf; *png; |All File|*.*";
+
+            //    if (openFileDialog.ShowDialog() == DialogResult.OK)
+            //    {
+            //        try
+            //        {
+            //            string filePath = openFileDialog.FileName;
+            //            // Code to upload the file to server or database
+            //            // For example, if you're storing in a server directory:
+            //            File.Copy(filePath, Path.Combine("D:\\cv", Path.GetFileName(filePath)));
+            //            MessageBox.Show("File uploaded successfully!");
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            MessageBox.Show("Error: " + ex.Message);
+            //        }
+            //    }
+            //}
         }
         private void btUploadFile_Click(object sender, EventArgs e)
         {
