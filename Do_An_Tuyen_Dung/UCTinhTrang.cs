@@ -68,16 +68,16 @@ namespace Do_An_Tuyen_Dung
             Xoa();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.pictureBox1.Hide();
-            pictureBox2.Show();
-        }
+        //private void pictureBox1_Click(object sender, EventArgs e)
+        //{
+        //    this.pictureBox1.Hide();
+        //    pictureBox2.Show();
+        //}
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            this.pictureBox2.Hide();
-            pictureBox1.Show();
-        }
+        //private void pictureBox2_Click(object sender, EventArgs e)
+        //{
+        //    this.pictureBox2.Hide();
+        //    pictureBox1.Show();
+        //}
     }
 }

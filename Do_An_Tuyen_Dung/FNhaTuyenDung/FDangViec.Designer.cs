@@ -105,8 +105,10 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label3 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
+            pictureBox1 = new PictureBox();
             panel9.SuspendLayout();
             guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel9
@@ -392,6 +394,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.Controls.Add(pictureBox1);
             guna2Panel1.Controls.Add(label1);
             guna2Panel1.CustomizableEdges = customizableEdges13;
             guna2Panel1.Location = new Point(0, 3);
@@ -794,6 +797,16 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label2.TabIndex = 0;
             label2.Text = "Tên công việc";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1036, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(103, 82);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // FDangViec
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -809,6 +822,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             panel9.PerformLayout();
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -873,6 +887,6 @@ namespace Do_An_Ung_Dung_Tim_Viec
         private Guna.UI2.WinForms.Guna2TextBox txtEmailHR;
         private Guna.UI2.WinForms.Guna2TextBox txtTenHR;
         private Guna.UI2.WinForms.Guna2ComboBox Combobox_HinhThuc;
-
+        private PictureBox pictureBox1;
     }
 }

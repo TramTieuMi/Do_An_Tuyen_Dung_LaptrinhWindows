@@ -29,17 +29,13 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDangBai_NTD));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             btnDangXuatNTD = new Button();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            btDangXuat = new Guna.UI2.WinForms.Guna2Button();
             pan_ThongTin = new Guna.UI2.WinForms.Guna2GradientPanel();
             panel7 = new Panel();
             btn_TK = new Button();
@@ -57,8 +53,8 @@
             txtTenTK = new Guna.UI2.WinForms.Guna2HtmlLabel();
             openFileDialog1 = new OpenFileDialog();
             guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(components);
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             panel1.SuspendLayout();
-            guna2Panel1.SuspendLayout();
             panel7.SuspendLayout();
             panel6.SuspendLayout();
             panel4.SuspendLayout();
@@ -68,13 +64,13 @@
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel9.SuspendLayout();
+            guna2Panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel1.BackColor = Color.FromArgb(0, 74, 173);
-            panel1.Controls.Add(btnDangXuatNTD);
             panel1.Controls.Add(guna2Panel1);
             panel1.Controls.Add(pan_ThongTin);
             panel1.Controls.Add(panel7);
@@ -92,7 +88,7 @@
             btnDangXuatNTD.FlatStyle = FlatStyle.Flat;
             btnDangXuatNTD.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDangXuatNTD.ForeColor = SystemColors.ButtonFace;
-            btnDangXuatNTD.Location = new Point(11, 597);
+            btnDangXuatNTD.Location = new Point(5, 0);
             btnDangXuatNTD.Name = "btnDangXuatNTD";
             btnDangXuatNTD.Size = new Size(168, 49);
             btnDangXuatNTD.TabIndex = 6;
@@ -100,47 +96,13 @@
             btnDangXuatNTD.UseVisualStyleBackColor = true;
             btnDangXuatNTD.Click += btnDangXuatNTD_Click;
             // 
-            // guna2Panel1
-            // 
-            guna2Panel1.Controls.Add(btDangXuat);
-            guna2Panel1.CustomizableEdges = customizableEdges15;
-            guna2Panel1.Location = new Point(3, 652);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2Panel1.Size = new Size(184, 57);
-            guna2Panel1.TabIndex = 5;
-            // 
-            // btDangXuat
-            // 
-            btDangXuat.BorderColor = Color.Transparent;
-            btDangXuat.CustomizableEdges = customizableEdges13;
-            btDangXuat.DisabledState.BorderColor = Color.DarkGray;
-            btDangXuat.DisabledState.CustomBorderColor = Color.DarkGray;
-            btDangXuat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btDangXuat.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btDangXuat.FillColor = Color.Transparent;
-            btDangXuat.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold);
-            btDangXuat.ForeColor = Color.White;
-            btDangXuat.Image = (Image)resources.GetObject("btDangXuat.Image");
-            btDangXuat.ImageAlign = HorizontalAlignment.Left;
-            btDangXuat.ImageSize = new Size(35, 35);
-            btDangXuat.Location = new Point(14, 5);
-            btDangXuat.Name = "btDangXuat";
-            btDangXuat.PressedColor = Color.Transparent;
-            btDangXuat.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btDangXuat.Size = new Size(157, 49);
-            btDangXuat.TabIndex = 0;
-            btDangXuat.Text = "Đăng Xuất";
-            btDangXuat.TextAlign = HorizontalAlignment.Right;
-            btDangXuat.Click += btDangXuat_Click;
-            // 
             // pan_ThongTin
             // 
             pan_ThongTin.Anchor = AnchorStyles.None;
-            pan_ThongTin.CustomizableEdges = customizableEdges17;
+            pan_ThongTin.CustomizableEdges = customizableEdges3;
             pan_ThongTin.Location = new Point(187, 145);
             pan_ThongTin.Name = "pan_ThongTin";
-            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges4;
             pan_ThongTin.Size = new Size(962, 500);
             pan_ThongTin.TabIndex = 1;
             pan_ThongTin.Paint += pan_ThongTin_Paint;
@@ -301,6 +263,16 @@
     Color.Orange
     };
             // 
+            // guna2Panel1
+            // 
+            guna2Panel1.Controls.Add(btnDangXuatNTD);
+            guna2Panel1.CustomizableEdges = customizableEdges1;
+            guna2Panel1.Location = new Point(6, 651);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Panel1.Size = new Size(184, 57);
+            guna2Panel1.TabIndex = 5;
+            // 
             // FDangBai_NTD
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -314,7 +286,6 @@
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
-            guna2Panel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel4.ResumeLayout(false);
@@ -325,6 +296,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            guna2Panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -350,9 +322,8 @@
         private Panel panel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtTenTK;
         private Guna.UI2.WinForms.Guna2GradientPanel pan_ThongTin;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button btDangXuat;
         private PictureBox pictureBox2;
         private Button btnDangXuatNTD;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
