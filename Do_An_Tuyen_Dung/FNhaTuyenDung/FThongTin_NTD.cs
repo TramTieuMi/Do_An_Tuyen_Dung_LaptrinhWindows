@@ -14,6 +14,8 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Image = System.Drawing.Image;
 
 namespace Do_An_Tuyen_Dung.FNhaTuyenDung
 {
@@ -107,6 +109,32 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
         {
             this.Close();
         }
+
+        private void txtlinkFileCV_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // 1. Choose the picture file
+            string picturePath = "C:\\Users\\nguye\\Source\\Repos\\Do_An_Tuyen_Dung_44\\Do_An_Tuyen_Dung\\Resources\\mau-giay-phep-dang-ky-kinh-doanh-ho-gia-dinh-744x1030.jpg"; // Replace with the actual path to your picture
+
+            // 2. Check if the file exists
+            if (!File.Exists(picturePath))
+            {
+                MessageBox.Show("Error: The picture file does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // 3. Create a new Form to display the picture
+            Form pictureForm = new Form();
+            pictureForm.Text = "Picture";
+            pictureForm.Size = new Size(744, 1030); // Adjust the size as needed
+
+            // 4. Add a PictureBox to the Form
+            PictureBox pictureBox = new PictureBox();
+            pictureBox.Dock = DockStyle.Fill;
+            pictureBox.Image = Image.FromFile(picturePath);
+            pictureForm.Controls.Add(pictureBox);
+
+            // 5. Show the Form
+            pictureForm.ShowDialog();
+        }
     }
 }
-//alo
