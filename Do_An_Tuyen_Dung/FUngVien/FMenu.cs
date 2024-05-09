@@ -74,5 +74,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
             modify.OpenChildForm(currentFormChild, new FYeuThich(), pan_ThongTin);
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

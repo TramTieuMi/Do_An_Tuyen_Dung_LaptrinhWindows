@@ -38,6 +38,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMoTa_YeuCau_QuyenLoi));
             panel3 = new Panel();
             label13 = new Label();
@@ -70,7 +72,15 @@
             guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnXem = new Guna.UI2.WinForms.Guna2Button();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
             panel3.SuspendLayout();
+            guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // panel3
@@ -99,8 +109,9 @@
             // 
             // txtMoTa
             // 
+            txtMoTa.BackColor = Color.Transparent;
             txtMoTa.BorderColor = Color.White;
-            txtMoTa.BorderRadius = 10;
+            txtMoTa.BorderRadius = 35;
             txtMoTa.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtMoTa.CustomizableEdges = customizableEdges1;
             txtMoTa.DefaultText = "";
@@ -125,8 +136,9 @@
             // 
             // txtYeuCau
             // 
+            txtYeuCau.BackColor = Color.Transparent;
             txtYeuCau.BorderColor = Color.White;
-            txtYeuCau.BorderRadius = 10;
+            txtYeuCau.BorderRadius = 35;
             txtYeuCau.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtYeuCau.CustomizableEdges = customizableEdges3;
             txtYeuCau.DefaultText = "";
@@ -150,8 +162,9 @@
             // 
             // txtQuyenLoi
             // 
+            txtQuyenLoi.BackColor = Color.Transparent;
             txtQuyenLoi.BorderColor = Color.White;
-            txtQuyenLoi.BorderRadius = 10;
+            txtQuyenLoi.BorderRadius = 35;
             txtQuyenLoi.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtQuyenLoi.CustomizableEdges = customizableEdges5;
             txtQuyenLoi.DefaultText = "";
@@ -159,6 +172,7 @@
             txtQuyenLoi.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtQuyenLoi.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtQuyenLoi.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtQuyenLoi.FillColor = Color.WhiteSmoke;
             txtQuyenLoi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtQuyenLoi.Font = new Font("Segoe UI", 9F);
             txtQuyenLoi.ForeColor = Color.Black;
@@ -204,7 +218,7 @@
             txtCty.BackColor = Color.Transparent;
             txtCty.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtCty.ForeColor = Color.White;
-            txtCty.Location = new Point(963, 101);
+            txtCty.Location = new Point(1006, 101);
             txtCty.Name = "txtCty";
             txtCty.Size = new Size(70, 41);
             txtCty.TabIndex = 108;
@@ -219,7 +233,7 @@
             txtNganh.BackColor = Color.Transparent;
             txtNganh.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtNganh.ForeColor = Color.White;
-            txtNganh.Location = new Point(461, 101);
+            txtNganh.Location = new Point(514, 101);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(170, 50);
             txtNganh.TabIndex = 109;
@@ -230,8 +244,8 @@
             label15.AutoSize = true;
             label15.BackColor = Color.Transparent;
             label15.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label15.ForeColor = Color.White;
-            label15.Location = new Point(57, 584);
+            label15.ForeColor = Color.Black;
+            label15.Location = new Point(139, 19);
             label15.Name = "label15";
             label15.Size = new Size(62, 23);
             label15.TabIndex = 111;
@@ -242,8 +256,8 @@
             label16.AutoSize = true;
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(57, 632);
+            label16.ForeColor = Color.Black;
+            label16.Location = new Point(451, 19);
             label16.Name = "label16";
             label16.Size = new Size(115, 23);
             label16.TabIndex = 112;
@@ -254,8 +268,8 @@
             label17.AutoSize = true;
             label17.BackColor = Color.Transparent;
             label17.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(53, 679);
+            label17.ForeColor = Color.Black;
+            label17.Location = new Point(811, 19);
             label17.Name = "label17";
             label17.Size = new Size(160, 23);
             label17.TabIndex = 113;
@@ -266,8 +280,8 @@
             txtLuong.AutoSize = true;
             txtLuong.BackColor = Color.Transparent;
             txtLuong.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtLuong.ForeColor = Color.White;
-            txtLuong.Location = new Point(235, 584);
+            txtLuong.ForeColor = Color.Black;
+            txtLuong.Location = new Point(124, 54);
             txtLuong.Name = "txtLuong";
             txtLuong.Size = new Size(95, 23);
             txtLuong.TabIndex = 117;
@@ -278,8 +292,8 @@
             txtKinhNghiem.AutoSize = true;
             txtKinhNghiem.BackColor = Color.Transparent;
             txtKinhNghiem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtKinhNghiem.ForeColor = Color.White;
-            txtKinhNghiem.Location = new Point(235, 632);
+            txtKinhNghiem.ForeColor = Color.Black;
+            txtKinhNghiem.Location = new Point(467, 52);
             txtKinhNghiem.Name = "txtKinhNghiem";
             txtKinhNghiem.Size = new Size(77, 23);
             txtKinhNghiem.TabIndex = 118;
@@ -290,8 +304,8 @@
             txtHinhThuc.AutoSize = true;
             txtHinhThuc.BackColor = Color.Transparent;
             txtHinhThuc.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtHinhThuc.ForeColor = Color.White;
-            txtHinhThuc.Location = new Point(235, 679);
+            txtHinhThuc.ForeColor = Color.Black;
+            txtHinhThuc.Location = new Point(847, 53);
             txtHinhThuc.Name = "txtHinhThuc";
             txtHinhThuc.Size = new Size(83, 23);
             txtHinhThuc.TabIndex = 119;
@@ -359,7 +373,7 @@
             label19.BackColor = Color.Transparent;
             label19.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label19.ForeColor = Color.White;
-            label19.Location = new Point(871, 668);
+            label19.Location = new Point(884, 866);
             label19.Name = "label19";
             label19.Size = new Size(123, 23);
             label19.TabIndex = 121;
@@ -371,7 +385,7 @@
             label18.BackColor = Color.Transparent;
             label18.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             label18.ForeColor = Color.White;
-            label18.Location = new Point(827, 584);
+            label18.Location = new Point(840, 782);
             label18.Name = "label18";
             label18.Size = new Size(215, 23);
             label18.TabIndex = 120;
@@ -415,7 +429,7 @@
             txtNgayBD.BackColor = Color.Transparent;
             txtNgayBD.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             txtNgayBD.ForeColor = Color.White;
-            txtNgayBD.Location = new Point(881, 625);
+            txtNgayBD.Location = new Point(894, 823);
             txtNgayBD.Name = "txtNgayBD";
             txtNgayBD.Size = new Size(99, 25);
             txtNgayBD.TabIndex = 135;
@@ -426,7 +440,7 @@
             txtNgayKT.BackColor = Color.Transparent;
             txtNgayKT.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             txtNgayKT.ForeColor = Color.White;
-            txtNgayKT.Location = new Point(881, 721);
+            txtNgayKT.Location = new Point(894, 919);
             txtNgayKT.Name = "txtNgayKT";
             txtNgayKT.Size = new Size(99, 25);
             txtNgayKT.TabIndex = 136;
@@ -448,7 +462,7 @@
             guna2HtmlLabel11.BackColor = Color.Transparent;
             guna2HtmlLabel11.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             guna2HtmlLabel11.ForeColor = Color.White;
-            guna2HtmlLabel11.Location = new Point(138, 229);
+            guna2HtmlLabel11.Location = new Point(138, 247);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             guna2HtmlLabel11.Size = new Size(155, 30);
             guna2HtmlLabel11.TabIndex = 138;
@@ -459,7 +473,7 @@
             guna2HtmlLabel12.BackColor = Color.Transparent;
             guna2HtmlLabel12.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             guna2HtmlLabel12.ForeColor = Color.White;
-            guna2HtmlLabel12.Location = new Point(496, 243);
+            guna2HtmlLabel12.Location = new Point(496, 248);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             guna2HtmlLabel12.Size = new Size(246, 30);
             guna2HtmlLabel12.TabIndex = 139;
@@ -470,7 +484,7 @@
             guna2HtmlLabel13.BackColor = Color.Transparent;
             guna2HtmlLabel13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             guna2HtmlLabel13.ForeColor = Color.White;
-            guna2HtmlLabel13.Location = new Point(937, 243);
+            guna2HtmlLabel13.Location = new Point(937, 250);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             guna2HtmlLabel13.Size = new Size(95, 30);
             guna2HtmlLabel13.TabIndex = 140;
@@ -499,6 +513,58 @@
             btnXem.Text = "Chi Tiết Công Ty";
             btnXem.Click += btnXem_Click;
             // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.BorderRadius = 35;
+            guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            guna2Panel1.Controls.Add(pictureBox3);
+            guna2Panel1.Controls.Add(pictureBox2);
+            guna2Panel1.Controls.Add(pictureBox1);
+            guna2Panel1.Controls.Add(label15);
+            guna2Panel1.Controls.Add(txtLuong);
+            guna2Panel1.Controls.Add(label16);
+            guna2Panel1.Controls.Add(txtKinhNghiem);
+            guna2Panel1.Controls.Add(label17);
+            guna2Panel1.Controls.Add(txtHinhThuc);
+            guna2Panel1.CustomizableEdges = customizableEdges11;
+            guna2Panel1.FillColor = Color.White;
+            guna2Panel1.Location = new Point(76, 616);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2Panel1.Size = new Size(1066, 104);
+            guna2Panel1.TabIndex = 142;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(38, 23);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(69, 53);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 120;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(364, 23);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(69, 53);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 121;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(731, 23);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(69, 53);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 122;
+            pictureBox3.TabStop = false;
+            // 
             // FMoTa_YeuCau_QuyenLoi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -506,6 +572,7 @@
             AutoScroll = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1205, 701);
+            Controls.Add(guna2Panel1);
             Controls.Add(btnXem);
             Controls.Add(txtCty);
             Controls.Add(txtNganh);
@@ -525,12 +592,6 @@
             Controls.Add(label12);
             Controls.Add(label19);
             Controls.Add(label18);
-            Controls.Add(txtHinhThuc);
-            Controls.Add(txtKinhNghiem);
-            Controls.Add(txtLuong);
-            Controls.Add(label17);
-            Controls.Add(label16);
-            Controls.Add(label15);
             Controls.Add(btn_NopDon);
             Controls.Add(txtQuyenLoi);
             Controls.Add(txtYeuCau);
@@ -542,6 +603,11 @@
             Load += FMoTa_YeuCau_QuyenLoi_Load;
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            guna2Panel1.ResumeLayout(false);
+            guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -579,5 +645,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2Button btnXem;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
     }
 }

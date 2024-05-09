@@ -18,6 +18,7 @@ namespace Do_An_Tuyen_Dung
     {
         TinhTrang tinhTrang;
         SqlConnection connStr = Connection.GetSqlConnection();
+        string nganhdc = string.Empty;
         public UCTinhTrang()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace Do_An_Tuyen_Dung
             InitializeComponent();
             this.tinhTrang = tinhTrang;
             txtNganh.Text = "Ngành : " + tinhTrang.Nganh;
+            nganhdc = tinhTrang.Nganh;
             txtDiaDiem.Text = "Địa Điểm : " + tinhTrang.DiaDiem;
             txtCTy.Text = "Tên Công Ty : " + tinhTrang.Cty;
         }
@@ -37,7 +39,9 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button8_Click(object sender, EventArgs e)
         {
-
+            string nganhDuocChon = nganhdc;
+            FMoTa_YeuCau_QuyenLoi fMoTa_YeuCau_QuyenLoi = new FMoTa_YeuCau_QuyenLoi(nganhDuocChon);
+            fMoTa_YeuCau_QuyenLoi.Show();
         }
         public void Xoa()
         {
@@ -64,16 +68,16 @@ namespace Do_An_Tuyen_Dung
             Xoa();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.pictureBox1.Hide();
-            pictureBox2.Show();
-        }
+        //private void pictureBox1_Click(object sender, EventArgs e)
+        //{
+        //    this.pictureBox1.Hide();
+        //    pictureBox2.Show();
+        //}
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            this.pictureBox2.Hide();
-            pictureBox1.Show();
-        }
+        //private void pictureBox2_Click(object sender, EventArgs e)
+        //{
+        //    this.pictureBox2.Hide();
+        //    pictureBox1.Show();
+        //}
     }
 }

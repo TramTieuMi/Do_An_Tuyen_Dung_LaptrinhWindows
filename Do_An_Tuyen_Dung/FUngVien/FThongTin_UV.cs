@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using AxAcroPDFLib;
+using System.Net;
 
 namespace Do_An_Tuyen_Dung.FUngVien
 {
@@ -83,7 +84,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         txtTinh_TP.Text = row["Tinh_TP"].ToString();
                         txtQuan_Huyen.Text = row["Quan_Huyen"].ToString();
                         txtXa_Phuong.Text = row["Xa_Phuong"].ToString();
-                       // txtGioiTinh.Text = row["GioiTinh"].ToString();
+                        // txtGioiTinh.Text = row["GioiTinh"].ToString();
                         txtSoNha.Text = row["SoNha"].ToString();
                         txtlinkFileCV.Text = row["FileCV"].ToString();
                     }
@@ -121,6 +122,24 @@ namespace Do_An_Tuyen_Dung.FUngVien
             FCV cv = new FCV();
             cv.ShowDialog();
 
+            using (WebClient client = new WebClient())
+            {
+                try
+                {
+                    // Thay thế link dưới đây bằng đường dẫn tới file PDF bạn muốn download
+                    string pdfUrl = "https://tenten.vn/tin-tuc/wp-content/uploads/2022/02/anh-cv-2-4.jpg\r\n";
+
+                    // Thay đổi đường dẫn lưu file ở dưới đây
+                    string savePath = "C:\\Users\\TieuMi\\Downloads";
+
+                    client.DownloadFile(pdfUrl, savePath);
+                    MessageBox.Show("Download completed!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
         }
 
         private void txtNgayThangNamSinh_Click(object sender, EventArgs e)
@@ -130,13 +149,31 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-        
+            //// Create object of Open file dialog class  
+            //{
+            //    OpenFileDialog dlg = new OpenFileDialog();
+            //    // set file filter of dialog   
+            //    dlg.Filter = "pdf files (*.pdf) |*.pdf;";
+            //    dlg.ShowDialog();
+            //    if (dlg.FileName != null)
+            //    {
+            //        // use the LoadFile(ByVal fileName As String) function for open the pdf in control  
+            //        axAcropdf1.LoadFile(dlg.FileName);
+            //    }
+            //}
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "PDF |*.pdf";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 axAcropdf1.src = ofd.FileName;
             }
+
+
+        }
+
+        private void axAcropdf1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

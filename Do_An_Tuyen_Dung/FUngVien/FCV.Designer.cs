@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FCV";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCV));
+            axAcropdf1 = new AxAcroPDFLib.AxAcroPDF();
+            ((System.ComponentModel.ISupportInitialize)axAcropdf1).BeginInit();
+            SuspendLayout();
+            // 
+            // axAcropdf1
+            // 
+            axAcropdf1.Enabled = true;
+            axAcropdf1.Location = new Point(231, 42);
+            axAcropdf1.Name = "axAcropdf1";
+            axAcropdf1.OcxState = (AxHost.State)resources.GetObject("axAcropdf1.OcxState");
+            axAcropdf1.Size = new Size(319, 374);
+            axAcropdf1.TabIndex = 0;
+            // 
+            // FCV
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(axAcropdf1);
+            Name = "FCV";
+            Text = "FCV";
+            Load += FCV_Load;
+            ((System.ComponentModel.ISupportInitialize)axAcropdf1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private AxAcroPDFLib.AxAcroPDF axAcropdf1;
     }
 }
