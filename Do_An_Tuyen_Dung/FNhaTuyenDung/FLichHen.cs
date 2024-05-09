@@ -48,7 +48,7 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
                     if (reader["EmailHR"].ToString() == emHR && reader["EmailUV"].ToString() == em)
                     {
                         txtTenUV.Text = reader["TenUV"].ToString();
-                        txtCVvaVItri.Text = reader["TenCTy"].ToString() + " cho vị trí " + reader["TenCongViec"].ToString;
+                        txtCVvaVItri.Text = reader["TenCTy"].ToString() + " cho vị trí " + reader["TenCongViec"].ToString();
                         break;
                     }
                 }
@@ -68,6 +68,11 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
 
 
         private void btn_Luu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCVvaVItri_Click(object sender, EventArgs e)
         {
 
         }
