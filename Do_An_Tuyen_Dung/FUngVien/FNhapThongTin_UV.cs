@@ -44,7 +44,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
             string xa = this.Combobox_Xa_Phuong.Text;
             string soNha = this.txtSoNha.Text;
             string fileCV = this.txtFileCV.Text;
-            string Email = this.txtEmail.Text;
+            string email = this.txtEmail.Text;
 
             try
             {
@@ -64,7 +64,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         command.Parameters.AddWithValue("@Quan_Huyen", huyen);
                         command.Parameters.AddWithValue("@Xa_Phuong", xa);                 
                         command.Parameters.AddWithValue("@SoNha", soNha);
-                        command.Parameters.AddWithValue("@Emai;", Email);
+                        command.Parameters.AddWithValue("@Email", email);
                         // ... (add parameters for other fields)
 
                         connection.Open();
