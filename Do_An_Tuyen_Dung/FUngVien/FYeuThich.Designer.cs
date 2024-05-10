@@ -32,8 +32,10 @@
             label1 = new Label();
             fpnHT = new FlowLayoutPanel();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -41,59 +43,67 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(172, 24);
+            label1.Location = new Point(197, 32);
             label1.Name = "label1";
-            label1.Size = new Size(419, 32);
+            label1.Size = new Size(515, 41);
             label1.TabIndex = 1;
             label1.Text = "Những Công Việc Bạn Đã Yêu Thích";
             // 
             // fpnHT
             // 
             fpnHT.BackColor = Color.Transparent;
-            fpnHT.Location = new Point(0, 67);
-            fpnHT.Margin = new Padding(3, 2, 3, 2);
+            fpnHT.Location = new Point(0, 89);
             fpnHT.Name = "fpnHT";
-            fpnHT.Size = new Size(1033, 418);
+            fpnHT.Size = new Size(1181, 557);
             fpnHT.TabIndex = 2;
             // 
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(guna2HtmlLabel1);
-            panel1.Location = new Point(0, 2);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(0, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1032, 60);
+            panel1.Size = new Size(1179, 80);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1044, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(84, 74);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(50, 14);
-            guna2HtmlLabel1.Margin = new Padding(3, 2, 3, 2);
+            guna2HtmlLabel1.Location = new Point(57, 19);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(422, 34);
+            guna2HtmlLabel1.Size = new Size(518, 43);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Những Công Việc Yêu Thích Của Bạn";
             // 
             // FYeuThich
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1033, 488);
+            ClientSize = new Size(1181, 651);
             Controls.Add(panel1);
             Controls.Add(fpnHT);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FYeuThich";
             Text = "FYeuThich";
             Load += FYeuThich_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -104,5 +114,6 @@
         private FlowLayoutPanel fpnHT;
         private Panel panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private PictureBox pictureBox1;
     }
 }
