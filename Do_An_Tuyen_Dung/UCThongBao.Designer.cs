@@ -30,21 +30,16 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            panel1 = new Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCThongBao));
             btn_TB = new Guna.UI2.WinForms.Guna2Button();
             txtNganh = new Label();
             txtTenCTy = new Label();
             txtTB = new Label();
             panel2 = new Panel();
+            pictureBox3 = new PictureBox();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.Location = new Point(5, 5);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(93, 90);
-            panel1.TabIndex = 0;
             // 
             // btn_TB
             // 
@@ -103,9 +98,9 @@
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(pictureBox3);
             panel2.Controls.Add(btn_TB);
             panel2.Controls.Add(txtTB);
-            panel2.Controls.Add(panel1);
             panel2.Controls.Add(txtTenCTy);
             panel2.Controls.Add(txtNganh);
             panel2.Location = new Point(0, 0);
@@ -113,6 +108,17 @@
             panel2.Size = new Size(1006, 100);
             panel2.TabIndex = 71;
             panel2.Paint += panel2_Paint;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(22, 13);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(69, 68);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 77;
+            pictureBox3.TabStop = false;
             // 
             // UCThongBao
             // 
@@ -123,12 +129,11 @@
             Size = new Size(1006, 100);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -137,5 +142,6 @@
         private Label txtTenCTy;
         private Label txtTB;
         private Panel panel2;
+        private PictureBox pictureBox3;
     }
 }
