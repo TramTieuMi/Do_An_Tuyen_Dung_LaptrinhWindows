@@ -55,20 +55,20 @@
             txtSoNha = new Label();
             txtlinkFileCV = new LinkLabel();
             guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            panel2 = new Panel();
             panel1 = new Panel();
             axAcropdf1 = new AxAcroPDFLib.AxAcroPDF();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            panel2 = new Panel();
             guna2Panel2.SuspendLayout();
+            panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)axAcropdf1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             guna2GradientPanel1.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // btnTroLai
@@ -336,10 +336,19 @@
             guna2Panel2.TabIndex = 118;
             guna2Panel2.Paint += guna2Panel2_Paint;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(txtHoTen);
+            panel2.Location = new Point(348, 14);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(529, 110);
+            panel2.TabIndex = 125;
+            // 
             // panel1
             // 
             panel1.Controls.Add(axAcropdf1);
-            panel1.Location = new Point(371, 569);
+            panel1.Location = new Point(348, 566);
             panel1.Name = "panel1";
             panel1.Size = new Size(529, 560);
             panel1.TabIndex = 124;
@@ -425,15 +434,6 @@
             guna2Button1.Text = "Xem Chi Tiết CV";
             guna2Button1.Click += guna2Button1_Click;
             // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Transparent;
-            panel2.Controls.Add(txtHoTen);
-            panel2.Location = new Point(348, 14);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(529, 110);
-            panel2.TabIndex = 125;
-            // 
             // FThongTin_UV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -446,13 +446,13 @@
             Text = "FThongTin_UV";
             Load += FThongTin_UV_Load;
             guna2Panel2.ResumeLayout(false);
+            panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)axAcropdf1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             guna2GradientPanel1.ResumeLayout(false);
             guna2GradientPanel1.PerformLayout();
-            panel2.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
