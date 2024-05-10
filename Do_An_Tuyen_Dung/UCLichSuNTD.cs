@@ -39,20 +39,34 @@ namespace Do_An_Tuyen_Dung
         {
             try
             {
-                string query = string.Format("DELETE FROM DangBaiNTD WHERE TenCongViec = '{0}'", txtNganh1.Text);
-                SqlCommand command = new SqlCommand(query, connStr);
+                // Use parameterized query for security
+                string query = "DELETE FROM DangBaiNTD WHERE TenCongViec = @TenCongViec AND EmailHR = @EmailHR";
+                using (SqlConnection connection = Connection.GetSqlConnection())
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@TenCongViec", nganh);
+                        command.Parameters.AddWithValue("@EmailHR", KiemEmail());
 
-                connStr.Open();
-                if (command.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Xóa thành công");
+                        connection.Open();
+                        if (command.ExecuteNonQuery() > 0)
+                        {
+                            MessageBox.Show("Xóa thành công (Delete successful)");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy mục yêu thích (Favorite not found)");
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Yêu thích thất bại do lỗi SQL: " + ex.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Lỗi : " + ex.Message);
-            }
-            finally
-            {
-                connStr.Close();
+                MessageBox.Show("Yêu thích thất bại do lỗi không xác định: " + ex.Message);
             }
         }
 
@@ -78,6 +92,24 @@ namespace Do_An_Tuyen_Dung
         {
             FXemUV fXemUV = new FXemUV(tenCTy,nganh);
             fXemUV.ShowDialog();
+        }
+        public string KiemEmail()
+        {
+            string em = string.Empty;
+            string query = "SELECT TenTaiKhoan,Email FROM TaoTaiKhoan";
+            SqlCommand command = new SqlCommand(query, connStr);
+            connStr.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader["TenTaiKhoan"].ToString() == FLogin.TenTaiKhoan)
+                {
+                    em = reader["Email"].ToString();
+                    break;
+                }
+            }
+            connStr.Close();
+            return em;
         }
     }
 }

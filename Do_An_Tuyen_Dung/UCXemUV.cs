@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using System.Data.SqlClient;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace Do_An_Tuyen_Dung
 {
@@ -48,29 +50,35 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            FLichHen fLichHen = new FLichHen(emHR, em);
-            fLichHen.ShowDialog();
-            string TrangThai = "Được Chấp Nhận";
-
+           
 
             try
             {
                 // Use parameterized query for security and clarity
-                string query = "INSERT INTO TinhTrangCV (TrangThai) VALUES ('Được Chấp Nhận')";
+                string query1 = @"UPDATE TinhTrangCV
+                SET TrangThai = 'Được Chấp Nhận'
+                WHERE EmailHR = @EmailHR AND EmailUV = @EmailUV";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlCommand command = new SqlCommand(query1, connection))
                     {
                         // Add parameters for security
-                        command.Parameters.AddWithValue("@TrangThai", TrangThai);
-                        
+                     
+                        command.Parameters.AddWithValue("@EmailHR", emHR);
+                        command.Parameters.AddWithValue("@EmailUV", em);
 
                         connection.Open();
-                        command.ExecuteNonQuery(); // Use ExecuteNonQuery for INSERT
+                        int rowsAffected = command.ExecuteNonQuery(); // Use ExecuteNonQuery for UPDATE
 
-                        MessageBox.Show("Chấp nhận thành công!");
-                        
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Chấp nhận thành công!");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Chấp nhận thất bại: EmailHR và EmailUV đã tồn tại.");
+                        }
                     }
                 }
             }
@@ -82,6 +90,8 @@ namespace Do_An_Tuyen_Dung
             {
                 MessageBox.Show("Chấp nhận thất bại do lỗi không xác định: " + ex.Message);
             }
+            FLichHen fLichHen = new FLichHen(emHR, em);
+            fLichHen.ShowDialog();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -92,14 +102,18 @@ namespace Do_An_Tuyen_Dung
             try
             {
                 // Use parameterized query for security and clarity
-                string query = "INSERT INTO TinhTrangCV (TrangThai) VALUES ('Bị Loại')";
+                string query = @"UPDATE TinhTrangCV
+                SET TrangThai = 'Bị Loại'
+                WHERE EmailHR = @EmailHR AND EmailUV = @EmailUV";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         // Add parameters for security
-                        command.Parameters.AddWithValue("@TrangThai", TrangThai);
+                       
+                        command.Parameters.AddWithValue("@EmailHR", emHR);
+                        command.Parameters.AddWithValue("@EmailUV", em);
 
 
                         connection.Open();

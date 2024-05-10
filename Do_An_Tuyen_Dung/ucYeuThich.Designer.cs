@@ -37,14 +37,12 @@
             pictureBox5 = new PictureBox();
             txtcv = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtcty = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
@@ -55,7 +53,6 @@
             guna2ShadowPanel1.Controls.Add(pictureBox1);
             guna2ShadowPanel1.Controls.Add(guna2HtmlLabel3);
             guna2ShadowPanel1.Controls.Add(panel1);
-            guna2ShadowPanel1.Controls.Add(pictureBox3);
             guna2ShadowPanel1.Controls.Add(pictureBox4);
             guna2ShadowPanel1.FillColor = SystemColors.Control;
             guna2ShadowPanel1.Location = new Point(2, 1);
@@ -146,18 +143,6 @@
             txtcty.TextAlignment = ContentAlignment.BottomCenter;
             txtcty.Click += txtcty_Click;
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(155, 262);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(38, 31);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 74;
-            pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
-            // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
@@ -185,7 +170,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
@@ -199,7 +183,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
     }
