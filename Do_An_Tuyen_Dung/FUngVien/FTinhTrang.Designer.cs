@@ -204,6 +204,7 @@
             Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
             Combobox_TrangThai.Size = new Size(282, 36);
             Combobox_TrangThai.TabIndex = 84;
+            Combobox_TrangThai.SelectedIndexChanged += Combobox_TrangThai_SelectedIndexChanged;
             // 
             // Combobox_DiaDiem
             // 
