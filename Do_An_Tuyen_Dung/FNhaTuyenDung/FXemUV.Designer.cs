@@ -50,8 +50,6 @@
             panel14 = new Panel();
             panel13 = new Panel();
             label12 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
             label18 = new Label();
             label5 = new Label();
             Combobox_TrangThai = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -68,8 +66,6 @@
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             guna2Panel1.SuspendLayout();
             panel8.SuspendLayout();
             SuspendLayout();
@@ -215,28 +211,6 @@
             label12.TabIndex = 0;
             label12.Text = "Tên Công Ty";
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(1030, 86);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(44, 41);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 77;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1030, 84);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(44, 41);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 76;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // label18
             // 
             label18.AutoSize = true;
@@ -348,8 +322,6 @@
             panel8.Controls.Add(Combobox_TrangThai);
             panel8.Controls.Add(label5);
             panel8.Controls.Add(label18);
-            panel8.Controls.Add(pictureBox1);
-            panel8.Controls.Add(pictureBox2);
             panel8.Controls.Add(fpn_HienThi);
             panel8.Location = new Point(0, 0);
             panel8.Name = "panel8";
@@ -380,8 +352,6 @@
             panel1.PerformLayout();
             panel13.ResumeLayout(false);
             panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
             panel8.ResumeLayout(false);
@@ -405,8 +375,6 @@
         private Panel panel14;
         private Panel panel13;
         private Label label12;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private Label label18;
         private Label label5;
         private Guna.UI2.WinForms.Guna2ComboBox Combobox_TrangThai;
