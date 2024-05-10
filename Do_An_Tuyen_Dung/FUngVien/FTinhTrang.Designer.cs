@@ -197,6 +197,7 @@
             Combobox_TrangThai.Font = new Font("Segoe UI", 10F);
             Combobox_TrangThai.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_TrangThai.ItemHeight = 30;
+            Combobox_TrangThai.Items.AddRange(new object[] { "Được Chấp Nhận", "Bị Loại" });
             Combobox_TrangThai.Location = new Point(676, 79);
             Combobox_TrangThai.Margin = new Padding(3, 2, 3, 2);
             Combobox_TrangThai.Name = "Combobox_TrangThai";
