@@ -176,6 +176,7 @@
             // fpn_HienThi
             // 
             fpn_HienThi.AutoScroll = true;
+            fpn_HienThi.BackColor = Color.Transparent;
             fpn_HienThi.Location = new Point(46, 171);
             fpn_HienThi.Name = "fpn_HienThi";
             fpn_HienThi.Size = new Size(1125, 520);
