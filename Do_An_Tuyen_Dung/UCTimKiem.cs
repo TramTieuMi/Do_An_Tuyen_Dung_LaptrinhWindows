@@ -113,7 +113,8 @@ namespace Do_An_Tuyen_Dung
         private void pictureBox2_Click(object sender, EventArgs e) // huy yeu thich
         {
             // Hide unfavorite button and show favorite button
-            this.pictureBox2.Hide();
+            this.pictureBox1.Visible = true;
+            this.pictureBox2.Visible = false;
             pictureBox1.Show();
 
 
@@ -153,7 +154,8 @@ namespace Do_An_Tuyen_Dung
 
         private void pictureBox1_Click(object sender, EventArgs e) // thêm yêu thích
         {
-            this.pictureBox1.Hide();
+            this.pictureBox1.Visible = false;
+            this.pictureBox2.Visible = true;
             pictureBox2.Show();
             //code
         

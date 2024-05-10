@@ -59,20 +59,20 @@
             guna2ShadowPanel1.Controls.Add(pictureBox4);
             guna2ShadowPanel1.FillColor = SystemColors.Control;
             guna2ShadowPanel1.Location = new Point(2, 1);
+            guna2ShadowPanel1.Margin = new Padding(3, 2, 3, 2);
             guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             guna2ShadowPanel1.ShadowColor = Color.Transparent;
             guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            guna2ShadowPanel1.Size = new Size(258, 403);
+            guna2ShadowPanel1.Size = new Size(226, 302);
             guna2ShadowPanel1.TabIndex = 0;
             guna2ShadowPanel1.Paint += guna2ShadowPanel1_Paint;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(222, 432);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(194, 324);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(50, 55);
+            pictureBox2.Size = new Size(44, 41);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
@@ -81,10 +81,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(222, 432);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(194, 324);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 55);
+            pictureBox1.Size = new Size(44, 41);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -92,10 +91,9 @@
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(48, 441);
-            guna2HtmlLabel3.Margin = new Padding(3, 4, 3, 4);
+            guna2HtmlLabel3.Location = new Point(42, 331);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(146, 22);
+            guna2HtmlLabel3.Size = new Size(115, 17);
             guna2HtmlLabel3.TabIndex = 3;
             guna2HtmlLabel3.Text = "Thời Hạn: 20/12/2033";
             // 
@@ -104,17 +102,17 @@
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(txtcv);
             panel1.Controls.Add(txtcty);
-            panel1.Location = new Point(3, 7);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(3, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(252, 335);
+            panel1.Size = new Size(220, 251);
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(14, 55);
+            pictureBox5.Location = new Point(12, 41);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(225, 225);
             pictureBox5.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -126,10 +124,9 @@
             txtcv.BackColor = Color.Transparent;
             txtcv.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtcv.ForeColor = Color.Black;
-            txtcv.Location = new Point(100, 18);
-            txtcv.Margin = new Padding(3, 4, 3, 4);
+            txtcv.Location = new Point(88, 14);
             txtcv.Name = "txtcv";
-            txtcv.Size = new Size(32, 30);
+            txtcv.Size = new Size(26, 23);
             txtcv.TabIndex = 0;
             txtcv.Text = "DA";
             txtcv.TextAlignment = ContentAlignment.TopCenter;
@@ -140,9 +137,10 @@
             txtcty.BackColor = Color.Transparent;
             txtcty.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtcty.ForeColor = Color.Black;
-            txtcty.Location = new Point(98, 305);
+            txtcty.Location = new Point(86, 229);
+            txtcty.Margin = new Padding(3, 2, 3, 2);
             txtcty.Name = "txtcty";
-            txtcty.Size = new Size(34, 27);
+            txtcty.Size = new Size(25, 21);
             txtcty.TabIndex = 2;
             txtcty.Text = "TEE";
             txtcty.TextAlignment = ContentAlignment.BottomCenter;
@@ -151,9 +149,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(177, 349);
+            pictureBox3.Location = new Point(155, 262);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(44, 41);
+            pictureBox3.Size = new Size(38, 31);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 74;
             pictureBox3.TabStop = false;
@@ -162,9 +161,10 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(177, 349);
+            pictureBox4.Location = new Point(155, 262);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(44, 41);
+            pictureBox4.Size = new Size(38, 31);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 75;
             pictureBox4.TabStop = false;
@@ -172,11 +172,12 @@
             // 
             // ucYeuThich
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(guna2ShadowPanel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ucYeuThich";
-            Size = new Size(261, 407);
+            Size = new Size(228, 305);
             guna2ShadowPanel1.ResumeLayout(false);
             guna2ShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

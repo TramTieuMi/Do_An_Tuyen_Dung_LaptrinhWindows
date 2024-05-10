@@ -144,5 +144,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
+
+        private void Combobox_TrangThai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadDanhSach(Combobox_TrangThai.Text, KiemEmail());
+        }
     }
 }
