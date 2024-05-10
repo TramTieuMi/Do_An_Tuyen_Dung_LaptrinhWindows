@@ -32,8 +32,8 @@
             label1 = new Label();
             fpnHT = new FlowLayoutPanel();
             panel1 = new Panel();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             pictureBox1 = new PictureBox();
+            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -68,6 +68,16 @@
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1044, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(84, 74);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
@@ -78,16 +88,6 @@
             guna2HtmlLabel1.Size = new Size(518, 43);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Những Công Việc Yêu Thích Của Bạn";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1071, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(84, 74);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // FYeuThich
             // 

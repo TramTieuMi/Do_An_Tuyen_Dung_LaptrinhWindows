@@ -30,9 +30,9 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMenu));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(components);
             txtTenTK = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel9 = new Panel();
@@ -50,13 +50,13 @@
             panel1 = new Panel();
             panel10 = new Panel();
             btnYT = new Button();
-            btnDangXuat = new Button();
             panel5 = new Panel();
             btn_TB = new Button();
             panel4 = new Panel();
+            panel11 = new Panel();
+            btnDangXuat = new Button();
             panel2 = new Panel();
             pan_ThongTin = new Guna.UI2.WinForms.Guna2GradientPanel();
-            panel11 = new Panel();
             panel9.SuspendLayout();
             panel8.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -68,8 +68,8 @@
             panel10.SuspendLayout();
             panel5.SuspendLayout();
             panel4.SuspendLayout();
-            panel2.SuspendLayout();
             panel11.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // guna2ColorTransition1
@@ -95,7 +95,7 @@
             // panel9
             // 
             panel9.Controls.Add(txtTenTK);
-            panel9.Location = new Point(807, 3);
+            panel9.Location = new Point(873, 3);
             panel9.Name = "panel9";
             panel9.Size = new Size(339, 67);
             panel9.TabIndex = 2;
@@ -113,7 +113,7 @@
             guna2CircleButton1.ImageSize = new Size(66, 62);
             guna2CircleButton1.Location = new Point(0, 5);
             guna2CircleButton1.Name = "guna2CircleButton1";
-            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
             guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton1.Size = new Size(56, 55);
             guna2CircleButton1.TabIndex = 1;
@@ -121,7 +121,7 @@
             // panel8
             // 
             panel8.Controls.Add(guna2CircleButton1);
-            panel8.Location = new Point(1152, 3);
+            panel8.Location = new Point(1218, 3);
             panel8.Name = "panel8";
             panel8.Size = new Size(62, 60);
             panel8.TabIndex = 1;
@@ -135,7 +135,7 @@
             flowLayoutPanel1.FlowDirection = FlowDirection.RightToLeft;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1217, 69);
+            flowLayoutPanel1.Size = new Size(1283, 69);
             flowLayoutPanel1.TabIndex = 0;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
@@ -254,20 +254,6 @@
             btnYT.UseVisualStyleBackColor = true;
             btnYT.Click += btnYT_Click;
             // 
-            // btnDangXuat
-            // 
-            btnDangXuat.FlatStyle = FlatStyle.Flat;
-            btnDangXuat.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDangXuat.ForeColor = SystemColors.ButtonFace;
-            btnDangXuat.Location = new Point(3, 4);
-            btnDangXuat.Margin = new Padding(3, 4, 3, 4);
-            btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Size = new Size(168, 49);
-            btnDangXuat.TabIndex = 6;
-            btnDangXuat.Text = "Đăng Xuất";
-            btnDangXuat.UseVisualStyleBackColor = true;
-            btnDangXuat.Click += button1_Click;
-            // 
             // panel5
             // 
             panel5.Controls.Add(btn_TB);
@@ -299,28 +285,6 @@
             panel4.Size = new Size(174, 52);
             panel4.TabIndex = 1;
             // 
-            // panel2
-            // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel2.BackColor = Color.White;
-            panel2.Controls.Add(pan_ThongTin);
-            panel2.Controls.Add(flowLayoutPanel1);
-            panel2.Location = new Point(182, -3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1221, 815);
-            panel2.TabIndex = 3;
-            // 
-            // pan_ThongTin
-            // 
-            pan_ThongTin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pan_ThongTin.CustomizableEdges = customizableEdges5;
-            pan_ThongTin.Location = new Point(3, 69);
-            pan_ThongTin.Name = "pan_ThongTin";
-            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            pan_ThongTin.Size = new Size(1208, 743);
-            pan_ThongTin.TabIndex = 1;
-            pan_ThongTin.Paint += pan_ThongTin_Paint;
-            // 
             // panel11
             // 
             panel11.Controls.Add(btnDangXuat);
@@ -329,11 +293,47 @@
             panel11.Size = new Size(171, 55);
             panel11.TabIndex = 8;
             // 
+            // btnDangXuat
+            // 
+            btnDangXuat.FlatStyle = FlatStyle.Flat;
+            btnDangXuat.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDangXuat.ForeColor = SystemColors.ButtonFace;
+            btnDangXuat.Location = new Point(3, 4);
+            btnDangXuat.Margin = new Padding(3, 4, 3, 4);
+            btnDangXuat.Name = "btnDangXuat";
+            btnDangXuat.Size = new Size(168, 49);
+            btnDangXuat.TabIndex = 6;
+            btnDangXuat.Text = "Đăng Xuất";
+            btnDangXuat.UseVisualStyleBackColor = true;
+            btnDangXuat.Click += button1_Click;
+            // 
+            // panel2
+            // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(pan_ThongTin);
+            panel2.Controls.Add(flowLayoutPanel1);
+            panel2.Location = new Point(182, -3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1287, 815);
+            panel2.TabIndex = 3;
+            // 
+            // pan_ThongTin
+            // 
+            pan_ThongTin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pan_ThongTin.CustomizableEdges = customizableEdges2;
+            pan_ThongTin.Location = new Point(3, 69);
+            pan_ThongTin.Name = "pan_ThongTin";
+            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges3;
+            pan_ThongTin.Size = new Size(1274, 743);
+            pan_ThongTin.TabIndex = 1;
+            pan_ThongTin.Paint += pan_ThongTin_Paint;
+            // 
             // FMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1285, 701);
+            ClientSize = new Size(1351, 701);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "FMenu";
@@ -352,8 +352,8 @@
             panel10.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel4.ResumeLayout(false);
-            panel2.ResumeLayout(false);
             panel11.ResumeLayout(false);
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 

@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FThongBao));
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             label1 = new Label();
             fpnHT = new FlowLayoutPanel();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -47,6 +47,16 @@
             panel1.Size = new Size(1205, 93);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1059, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(98, 69);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -67,16 +77,6 @@
             fpnHT.Size = new Size(1223, 651);
             fpnHT.TabIndex = 1;
             fpnHT.Paint += fpnHT_Paint;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1078, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(98, 69);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // FThongBao
             // 
