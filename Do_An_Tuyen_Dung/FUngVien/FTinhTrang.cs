@@ -47,7 +47,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
             List<TinhTrang> list = new List<TinhTrang>();
             try
             {
-                string query = "SELECT TenCongViec,TenCTy,EmailUV,DiaDiem FROM TinhTrangCV";
+                string query = "SELECT TenCongViec,TenCTy,EmailUV,DiaDiem,TrangThai FROM TinhTrangCV";
                 SqlCommand command = new SqlCommand(query, connStr);
                 connStr.Open();
                 SqlDataReader reader = command.ExecuteReader();
@@ -63,7 +63,8 @@ namespace Do_An_Tuyen_Dung.FUngVien
                             string nganh = reader["TenCongViec"].ToString();
                             string diaDiem = reader["DiaDiem"].ToString();
                             string cty = reader["TenCTy"].ToString();
-                            TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty);
+                            string trangthai = reader["TrangThai"].ToString();
+                            TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty, trangthai);
                             list.Add(tinh);
                         }
                     }
@@ -72,14 +73,15 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 {
                     while (reader.Read())
                     {
-                        if (chuoi == reader["TenCongViec"].ToString() || chuoi == reader["DiaDiem"].ToString() || chuoi == reader["TenCTy"].ToString())
+                        if (chuoi == reader["TenCongViec"].ToString() || chuoi == reader["DiaDiem"].ToString() || chuoi == reader["TenCTy"].ToString() || chuoi == reader["TrangThai"].ToString())
                         {
                             if (email == reader["EmailUV"].ToString())
                             {
                                 string nganh = reader["TenCongViec"].ToString();
                                 string diaDiem = reader["DiaDiem"].ToString();
                                 string cty = reader["TenCTy"].ToString();
-                                TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty);
+                                string trangthai = reader["TrangThai"].ToString();
+                                TinhTrang tinh = new TinhTrang(nganh, diaDiem, cty, trangthai);
                                 list.Add(tinh);
                             }
                         }
