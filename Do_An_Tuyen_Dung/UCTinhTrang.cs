@@ -19,6 +19,7 @@ namespace Do_An_Tuyen_Dung
         TinhTrang tinhTrang;
         SqlConnection connStr = Connection.GetSqlConnection();
         string nganhdc = string.Empty;
+        string tencty = string.Empty;
         public UCTinhTrang()
         {
             InitializeComponent();
@@ -31,6 +32,12 @@ namespace Do_An_Tuyen_Dung
             nganhdc = tinhTrang.Nganh;
             txtDiaDiem.Text = "Địa Điểm : " + tinhTrang.DiaDiem;
             txtCTy.Text = "Tên Công Ty : " + tinhTrang.Cty;
+            tencty = tinhTrang.Cty;
+            if(tinhTrang.Trangthai == "Được Chấp Nhận" || tinhTrang.Trangthai == "Bị Loại ")
+            {
+                txtTrangThai.Text = tinhTrang.Trangthai;
+            }
+            
         }
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
         {
@@ -47,12 +54,25 @@ namespace Do_An_Tuyen_Dung
         {
             try
             {
-                string query = string.Format("DELETE FROM TinhTrangCV WHERE TenCongViec = '{0}' AND TenCTy = '{1}'", txtNganh.Text, txtCTy.Text);
-                SqlCommand command = new SqlCommand(query, connStr);
+                string query = "DELETE FROM TinhTrangCV WHERE TenCongViec = @TenCongViec AND TenCTy = @TenCTy";
+                using (SqlConnection connection = Connection.GetSqlConnection())
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@TenCongViec", nganhdc);
+                        command.Parameters.AddWithValue("@TenCTy", tencty);
 
-                connStr.Open();
-                if (command.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Xóa thành công");
+                        connection.Open();
+                        if (command.ExecuteNonQuery() > 0)
+                        {
+                            MessageBox.Show("Xóa thành công (Delete successful)");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy lịch sử ");
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -62,6 +82,7 @@ namespace Do_An_Tuyen_Dung
             {
                 connStr.Close();
             }
+            
         }
         private void guna2Button7_Click(object sender, EventArgs e)
         {
