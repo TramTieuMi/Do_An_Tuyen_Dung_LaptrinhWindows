@@ -105,16 +105,16 @@ namespace Do_An_Ung_Dung_Tim_Viec
         //like
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.pictureBox1.Hide();
-            pictureBox2.Show();
+            //this.pictureBox1.Hide();
+            //pictureBox2.Show();
 
         }
 
         //unlike
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            this.pictureBox2.Hide();
-            pictureBox1.Show();
+            //this.pictureBox2.Hide();
+            //pictureBox1.Show();
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)

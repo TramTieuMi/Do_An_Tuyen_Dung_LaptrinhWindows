@@ -61,8 +61,10 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDangViec));
             panel9 = new Panel();
-            Combobox_HinhThuc = new Guna.UI2.WinForms.Guna2ComboBox();
             txtGhiChu = new Guna.UI2.WinForms.Guna2TextBox();
+            panel1 = new Panel();
+            btn_Dang = new Guna.UI2.WinForms.Guna2Button();
+            Combobox_HinhThuc = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtSDTHR = new Guna.UI2.WinForms.Guna2TextBox();
             txtEmailHR = new Guna.UI2.WinForms.Guna2TextBox();
@@ -75,9 +77,6 @@ namespace Do_An_Ung_Dung_Tim_Viec
             checkBHYT = new CheckBox();
             label9 = new Label();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            label1 = new Label();
-            btn_Dang = new Guna.UI2.WinForms.Guna2Button();
             txtYeuCau = new Guna.UI2.WinForms.Guna2TextBox();
             checkBHXH = new CheckBox();
             txtQuyenLoiKhac = new Guna.UI2.WinForms.Guna2TextBox();
@@ -105,8 +104,11 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label3 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
+            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             pictureBox1 = new PictureBox();
+            label1 = new Label();
             panel9.SuspendLayout();
+            panel1.SuspendLayout();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -115,8 +117,9 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             panel9.AutoScroll = true;
             panel9.BackColor = Color.Transparent;
-            panel9.Controls.Add(Combobox_HinhThuc);
             panel9.Controls.Add(txtGhiChu);
+            panel9.Controls.Add(panel1);
+            panel9.Controls.Add(Combobox_HinhThuc);
             panel9.Controls.Add(guna2HtmlLabel5);
             panel9.Controls.Add(txtSDTHR);
             panel9.Controls.Add(txtEmailHR);
@@ -129,8 +132,6 @@ namespace Do_An_Ung_Dung_Tim_Viec
             panel9.Controls.Add(checkBHYT);
             panel9.Controls.Add(label9);
             panel9.Controls.Add(guna2HtmlLabel1);
-            panel9.Controls.Add(guna2Panel1);
-            panel9.Controls.Add(btn_Dang);
             panel9.Controls.Add(txtYeuCau);
             panel9.Controls.Add(checkBHXH);
             panel9.Controls.Add(txtQuyenLoiKhac);
@@ -158,39 +159,18 @@ namespace Do_An_Ung_Dung_Tim_Viec
             panel9.Controls.Add(label3);
             panel9.Controls.Add(textBox1);
             panel9.Controls.Add(label2);
-            panel9.Location = new Point(2, 3);
+            panel9.Location = new Point(2, 81);
             panel9.Name = "panel9";
-            panel9.Size = new Size(1182, 695);
+            panel9.Size = new Size(1283, 683);
             panel9.TabIndex = 2;
             panel9.Paint += panel9_Paint;
-            // 
-            // Combobox_HinhThuc
-            // 
-            Combobox_HinhThuc.BackColor = Color.Transparent;
-            Combobox_HinhThuc.BorderColor = Color.White;
-            Combobox_HinhThuc.BorderRadius = 15;
-            Combobox_HinhThuc.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            Combobox_HinhThuc.CustomizableEdges = customizableEdges1;
-            Combobox_HinhThuc.DrawMode = DrawMode.OwnerDrawFixed;
-            Combobox_HinhThuc.DropDownStyle = ComboBoxStyle.DropDownList;
-            Combobox_HinhThuc.FocusedColor = Color.FromArgb(94, 148, 255);
-            Combobox_HinhThuc.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            Combobox_HinhThuc.Font = new Font("Segoe UI", 10F);
-            Combobox_HinhThuc.ForeColor = Color.FromArgb(68, 88, 112);
-            Combobox_HinhThuc.ItemHeight = 30;
-            Combobox_HinhThuc.Items.AddRange(new object[] { "Remote", "Local", "Online" });
-            Combobox_HinhThuc.Location = new Point(103, 406);
-            Combobox_HinhThuc.Name = "Combobox_HinhThuc";
-            Combobox_HinhThuc.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            Combobox_HinhThuc.Size = new Size(394, 36);
-            Combobox_HinhThuc.TabIndex = 67;
             // 
             // txtGhiChu
             // 
             txtGhiChu.BorderColor = Color.WhiteSmoke;
-            txtGhiChu.BorderRadius = 10;
+            txtGhiChu.BorderRadius = 40;
             txtGhiChu.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            txtGhiChu.CustomizableEdges = customizableEdges3;
+            txtGhiChu.CustomizableEdges = customizableEdges1;
             txtGhiChu.DefaultText = "";
             txtGhiChu.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtGhiChu.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -205,9 +185,59 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtGhiChu.PasswordChar = '\0';
             txtGhiChu.PlaceholderText = "";
             txtGhiChu.SelectedText = "";
-            txtGhiChu.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtGhiChu.Size = new Size(834, 99);
+            txtGhiChu.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtGhiChu.Size = new Size(840, 99);
             txtGhiChu.TabIndex = 66;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(btn_Dang);
+            panel1.Location = new Point(963, 1559);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(268, 250);
+            panel1.TabIndex = 68;
+            // 
+            // btn_Dang
+            // 
+            btn_Dang.BorderColor = Color.Red;
+            btn_Dang.BorderRadius = 10;
+            btn_Dang.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            btn_Dang.CustomizableEdges = customizableEdges3;
+            btn_Dang.DisabledState.BorderColor = Color.DarkGray;
+            btn_Dang.DisabledState.CustomBorderColor = Color.DarkGray;
+            btn_Dang.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btn_Dang.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btn_Dang.FillColor = Color.FromArgb(42, 54, 78);
+            btn_Dang.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_Dang.ForeColor = Color.White;
+            btn_Dang.Location = new Point(3, 28);
+            btn_Dang.Name = "btn_Dang";
+            btn_Dang.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btn_Dang.Size = new Size(187, 46);
+            btn_Dang.TabIndex = 40;
+            btn_Dang.Text = "Đăng Công Việc";
+            btn_Dang.Click += btn_Dang_Click;
+            // 
+            // Combobox_HinhThuc
+            // 
+            Combobox_HinhThuc.BackColor = Color.Transparent;
+            Combobox_HinhThuc.BorderColor = Color.White;
+            Combobox_HinhThuc.BorderRadius = 15;
+            Combobox_HinhThuc.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            Combobox_HinhThuc.CustomizableEdges = customizableEdges5;
+            Combobox_HinhThuc.DrawMode = DrawMode.OwnerDrawFixed;
+            Combobox_HinhThuc.DropDownStyle = ComboBoxStyle.DropDownList;
+            Combobox_HinhThuc.FocusedColor = Color.FromArgb(94, 148, 255);
+            Combobox_HinhThuc.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            Combobox_HinhThuc.Font = new Font("Segoe UI", 10F);
+            Combobox_HinhThuc.ForeColor = Color.FromArgb(68, 88, 112);
+            Combobox_HinhThuc.ItemHeight = 30;
+            Combobox_HinhThuc.Items.AddRange(new object[] { "Remote", "Local", "Online" });
+            Combobox_HinhThuc.Location = new Point(103, 344);
+            Combobox_HinhThuc.Name = "Combobox_HinhThuc";
+            Combobox_HinhThuc.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            Combobox_HinhThuc.Size = new Size(394, 36);
+            Combobox_HinhThuc.TabIndex = 67;
             // 
             // guna2HtmlLabel5
             // 
@@ -225,7 +255,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtSDTHR.BorderColor = Color.WhiteSmoke;
             txtSDTHR.BorderRadius = 10;
             txtSDTHR.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            txtSDTHR.CustomizableEdges = customizableEdges5;
+            txtSDTHR.CustomizableEdges = customizableEdges7;
             txtSDTHR.DefaultText = "";
             txtSDTHR.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSDTHR.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -240,7 +270,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtSDTHR.PasswordChar = '\0';
             txtSDTHR.PlaceholderText = "";
             txtSDTHR.SelectedText = "";
-            txtSDTHR.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtSDTHR.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtSDTHR.Size = new Size(305, 36);
             txtSDTHR.TabIndex = 64;
             // 
@@ -249,7 +279,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtEmailHR.BorderColor = Color.WhiteSmoke;
             txtEmailHR.BorderRadius = 10;
             txtEmailHR.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            txtEmailHR.CustomizableEdges = customizableEdges7;
+            txtEmailHR.CustomizableEdges = customizableEdges9;
             txtEmailHR.DefaultText = "";
             txtEmailHR.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtEmailHR.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -264,7 +294,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtEmailHR.PasswordChar = '\0';
             txtEmailHR.PlaceholderText = "";
             txtEmailHR.SelectedText = "";
-            txtEmailHR.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtEmailHR.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtEmailHR.Size = new Size(305, 36);
             txtEmailHR.TabIndex = 63;
             // 
@@ -273,7 +303,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtTenHR.BorderColor = Color.WhiteSmoke;
             txtTenHR.BorderRadius = 10;
             txtTenHR.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            txtTenHR.CustomizableEdges = customizableEdges9;
+            txtTenHR.CustomizableEdges = customizableEdges11;
             txtTenHR.DefaultText = "";
             txtTenHR.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTenHR.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -288,7 +318,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtTenHR.PasswordChar = '\0';
             txtTenHR.PlaceholderText = "";
             txtTenHR.SelectedText = "";
-            txtTenHR.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtTenHR.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txtTenHR.Size = new Size(303, 36);
             txtTenHR.TabIndex = 62;
             // 
@@ -330,7 +360,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(70, 1274);
+            label12.Location = new Point(75, 1274);
             label12.Name = "label12";
             label12.Size = new Size(205, 28);
             label12.TabIndex = 58;
@@ -341,7 +371,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtMoTa.BorderColor = Color.White;
             txtMoTa.BorderRadius = 10;
             txtMoTa.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            txtMoTa.CustomizableEdges = customizableEdges11;
+            txtMoTa.CustomizableEdges = customizableEdges13;
             txtMoTa.DefaultText = "";
             txtMoTa.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtMoTa.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -350,20 +380,20 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtMoTa.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMoTa.Font = new Font("Segoe UI", 9F);
             txtMoTa.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMoTa.Location = new Point(70, 1035);
+            txtMoTa.Location = new Point(103, 1052);
             txtMoTa.Margin = new Padding(3, 5, 3, 5);
             txtMoTa.Name = "txtMoTa";
             txtMoTa.PasswordChar = '\0';
             txtMoTa.PlaceholderText = "";
             txtMoTa.SelectedText = "";
-            txtMoTa.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtMoTa.ShadowDecoration.CustomizableEdges = customizableEdges14;
             txtMoTa.Size = new Size(981, 205);
             txtMoTa.TabIndex = 57;
             // 
             // checkBHYT
             // 
             checkBHYT.AutoSize = true;
-            checkBHYT.Location = new Point(791, 533);
+            checkBHYT.Location = new Point(796, 495);
             checkBHYT.Name = "checkBHYT";
             checkBHYT.Size = new Size(18, 17);
             checkBHYT.TabIndex = 56;
@@ -374,7 +404,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(815, 531);
+            label9.Location = new Point(820, 493);
             label9.Name = "label9";
             label9.Size = new Size(123, 23);
             label9.TabIndex = 55;
@@ -385,62 +415,18 @@ namespace Do_An_Ung_Dung_Tim_Viec
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(70, 103);
+            guna2HtmlLabel1.Location = new Point(70, 41);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(226, 30);
             guna2HtmlLabel1.TabIndex = 52;
             guna2HtmlLabel1.Text = "THÔNG TIN CÔNG VIỆC ";
-            // 
-            // guna2Panel1
-            // 
-            guna2Panel1.BackColor = Color.Transparent;
-            guna2Panel1.Controls.Add(pictureBox1);
-            guna2Panel1.Controls.Add(label1);
-            guna2Panel1.CustomizableEdges = customizableEdges13;
-            guna2Panel1.Location = new Point(0, 3);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Panel1.Size = new Size(1179, 85);
-            guna2Panel1.TabIndex = 51;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(75, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(340, 41);
-            label1.TabIndex = 0;
-            label1.Text = "Đăng Tuyển Nhân Viên";
-            // 
-            // btn_Dang
-            // 
-            btn_Dang.BorderColor = Color.Red;
-            btn_Dang.BorderRadius = 10;
-            btn_Dang.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            btn_Dang.CustomizableEdges = customizableEdges15;
-            btn_Dang.DisabledState.BorderColor = Color.DarkGray;
-            btn_Dang.DisabledState.CustomBorderColor = Color.DarkGray;
-            btn_Dang.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            btn_Dang.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btn_Dang.FillColor = Color.FromArgb(42, 54, 78);
-            btn_Dang.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_Dang.ForeColor = Color.White;
-            btn_Dang.Location = new Point(967, 1648);
-            btn_Dang.Name = "btn_Dang";
-            btn_Dang.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btn_Dang.Size = new Size(187, 46);
-            btn_Dang.TabIndex = 40;
-            btn_Dang.Text = "Đăng Công Việc";
-            btn_Dang.Click += btn_Dang_Click;
             // 
             // txtYeuCau
             // 
             txtYeuCau.BorderColor = Color.White;
             txtYeuCau.BorderRadius = 10;
             txtYeuCau.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            txtYeuCau.CustomizableEdges = customizableEdges17;
+            txtYeuCau.CustomizableEdges = customizableEdges15;
             txtYeuCau.DefaultText = "";
             txtYeuCau.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtYeuCau.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -449,20 +435,20 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtYeuCau.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtYeuCau.Font = new Font("Segoe UI", 9F);
             txtYeuCau.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtYeuCau.Location = new Point(70, 744);
+            txtYeuCau.Location = new Point(103, 743);
             txtYeuCau.Margin = new Padding(3, 5, 3, 5);
             txtYeuCau.Name = "txtYeuCau";
             txtYeuCau.PasswordChar = '\0';
             txtYeuCau.PlaceholderText = "";
             txtYeuCau.SelectedText = "";
-            txtYeuCau.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtYeuCau.ShadowDecoration.CustomizableEdges = customizableEdges16;
             txtYeuCau.Size = new Size(976, 234);
             txtYeuCau.TabIndex = 39;
             // 
             // checkBHXH
             // 
             checkBHXH.AutoSize = true;
-            checkBHXH.Location = new Point(117, 533);
+            checkBHXH.Location = new Point(122, 495);
             checkBHXH.Name = "checkBHXH";
             checkBHXH.Size = new Size(18, 17);
             checkBHXH.TabIndex = 37;
@@ -473,7 +459,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtQuyenLoiKhac.BorderColor = Color.White;
             txtQuyenLoiKhac.BorderRadius = 10;
             txtQuyenLoiKhac.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            txtQuyenLoiKhac.CustomizableEdges = customizableEdges19;
+            txtQuyenLoiKhac.CustomizableEdges = customizableEdges17;
             txtQuyenLoiKhac.DefaultText = "";
             txtQuyenLoiKhac.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtQuyenLoiKhac.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -482,14 +468,14 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtQuyenLoiKhac.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtQuyenLoiKhac.Font = new Font("Segoe UI", 9F);
             txtQuyenLoiKhac.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtQuyenLoiKhac.Location = new Point(250, 591);
+            txtQuyenLoiKhac.Location = new Point(283, 543);
             txtQuyenLoiKhac.Margin = new Padding(3, 5, 3, 5);
             txtQuyenLoiKhac.Name = "txtQuyenLoiKhac";
             txtQuyenLoiKhac.PasswordChar = '\0';
             txtQuyenLoiKhac.PlaceholderText = "";
             txtQuyenLoiKhac.SelectedText = "";
-            txtQuyenLoiKhac.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            txtQuyenLoiKhac.Size = new Size(825, 82);
+            txtQuyenLoiKhac.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtQuyenLoiKhac.Size = new Size(801, 82);
             txtQuyenLoiKhac.TabIndex = 36;
             // 
             // dateNgayKT
@@ -498,7 +484,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             dateNgayKT.BorderRadius = 10;
             dateNgayKT.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             dateNgayKT.Checked = true;
-            dateNgayKT.CustomizableEdges = customizableEdges21;
+            dateNgayKT.CustomizableEdges = customizableEdges19;
             dateNgayKT.FillColor = Color.White;
             dateNgayKT.Font = new Font("Segoe UI", 9F);
             dateNgayKT.ForeColor = Color.Purple;
@@ -507,7 +493,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             dateNgayKT.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dateNgayKT.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dateNgayKT.Name = "dateNgayKT";
-            dateNgayKT.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            dateNgayKT.ShadowDecoration.CustomizableEdges = customizableEdges20;
             dateNgayKT.Size = new Size(219, 36);
             dateNgayKT.TabIndex = 35;
             dateNgayKT.Value = new DateTime(2024, 3, 14, 1, 43, 9, 252);
@@ -518,7 +504,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             dateNgayBD.BorderRadius = 10;
             dateNgayBD.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             dateNgayBD.Checked = true;
-            dateNgayBD.CustomizableEdges = customizableEdges23;
+            dateNgayBD.CustomizableEdges = customizableEdges21;
             dateNgayBD.FillColor = Color.White;
             dateNgayBD.Font = new Font("Segoe UI", 9F);
             dateNgayBD.ForeColor = Color.Purple;
@@ -527,7 +513,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             dateNgayBD.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dateNgayBD.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dateNgayBD.Name = "dateNgayBD";
-            dateNgayBD.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            dateNgayBD.ShadowDecoration.CustomizableEdges = customizableEdges22;
             dateNgayBD.Size = new Size(219, 36);
             dateNgayBD.TabIndex = 34;
             dateNgayBD.Value = new DateTime(2024, 3, 14, 1, 43, 9, 252);
@@ -538,7 +524,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Combobox_KinhNghiem.BorderColor = Color.White;
             Combobox_KinhNghiem.BorderRadius = 15;
             Combobox_KinhNghiem.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            Combobox_KinhNghiem.CustomizableEdges = customizableEdges25;
+            Combobox_KinhNghiem.CustomizableEdges = customizableEdges23;
             Combobox_KinhNghiem.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_KinhNghiem.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_KinhNghiem.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -547,9 +533,9 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Combobox_KinhNghiem.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_KinhNghiem.ItemHeight = 30;
             Combobox_KinhNghiem.Items.AddRange(new object[] { "1-3  năm", "3-5 năm", "5 năm trở lên" });
-            Combobox_KinhNghiem.Location = new Point(103, 332);
+            Combobox_KinhNghiem.Location = new Point(103, 270);
             Combobox_KinhNghiem.Name = "Combobox_KinhNghiem";
-            Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges24;
             Combobox_KinhNghiem.Size = new Size(394, 36);
             Combobox_KinhNghiem.TabIndex = 32;
             // 
@@ -559,7 +545,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Combobox_Luong.BorderColor = Color.White;
             Combobox_Luong.BorderRadius = 15;
             Combobox_Luong.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            Combobox_Luong.CustomizableEdges = customizableEdges27;
+            Combobox_Luong.CustomizableEdges = customizableEdges25;
             Combobox_Luong.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_Luong.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_Luong.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -568,9 +554,9 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Combobox_Luong.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Luong.ItemHeight = 30;
             Combobox_Luong.Items.AddRange(new object[] { "10 - 20 triệu VND/tháng", "20 - 25 triệu VND/tháng", "6 - 12 triệu VND/tháng" });
-            Combobox_Luong.Location = new Point(103, 257);
+            Combobox_Luong.Location = new Point(103, 195);
             Combobox_Luong.Name = "Combobox_Luong";
-            Combobox_Luong.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            Combobox_Luong.ShadowDecoration.CustomizableEdges = customizableEdges26;
             Combobox_Luong.Size = new Size(394, 36);
             Combobox_Luong.TabIndex = 31;
             // 
@@ -579,7 +565,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtTenCongViec.BorderColor = Color.White;
             txtTenCongViec.BorderRadius = 15;
             txtTenCongViec.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            txtTenCongViec.CustomizableEdges = customizableEdges29;
+            txtTenCongViec.CustomizableEdges = customizableEdges27;
             txtTenCongViec.DefaultText = "";
             txtTenCongViec.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTenCongViec.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -588,13 +574,13 @@ namespace Do_An_Ung_Dung_Tim_Viec
             txtTenCongViec.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenCongViec.Font = new Font("Segoe UI", 9F);
             txtTenCongViec.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenCongViec.Location = new Point(103, 180);
+            txtTenCongViec.Location = new Point(103, 118);
             txtTenCongViec.Margin = new Padding(3, 5, 3, 5);
             txtTenCongViec.Name = "txtTenCongViec";
             txtTenCongViec.PasswordChar = '\0';
             txtTenCongViec.PlaceholderText = "";
             txtTenCongViec.SelectedText = "";
-            txtTenCongViec.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            txtTenCongViec.ShadowDecoration.CustomizableEdges = customizableEdges28;
             txtTenCongViec.Size = new Size(394, 44);
             txtTenCongViec.TabIndex = 30;
             txtTenCongViec.TextChanged += txtTenCongViec_TextChanged;
@@ -627,7 +613,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label17.ForeColor = Color.White;
-            label17.Location = new Point(103, 381);
+            label17.Location = new Point(103, 319);
             label17.Name = "label17";
             label17.Size = new Size(155, 23);
             label17.TabIndex = 23;
@@ -639,7 +625,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(103, 305);
+            label16.Location = new Point(103, 243);
             label16.Name = "label16";
             label16.Size = new Size(110, 23);
             label16.TabIndex = 21;
@@ -650,7 +636,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label15.ForeColor = Color.White;
-            label15.Location = new Point(103, 228);
+            label15.Location = new Point(103, 166);
             label15.Name = "label15";
             label15.Size = new Size(59, 23);
             label15.TabIndex = 19;
@@ -662,7 +648,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(103, 150);
+            label14.Location = new Point(103, 88);
             label14.Name = "label14";
             label14.Size = new Size(114, 23);
             label14.TabIndex = 17;
@@ -673,7 +659,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(70, 714);
+            label13.Location = new Point(75, 699);
             label13.Name = "label13";
             label13.Size = new Size(189, 25);
             label13.TabIndex = 15;
@@ -684,7 +670,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(70, 1005);
+            label11.Location = new Point(75, 1009);
             label11.Name = "label11";
             label11.Size = new Size(173, 25);
             label11.TabIndex = 13;
@@ -712,7 +698,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(81, 591);
+            label7.Location = new Point(114, 543);
             label7.Name = "label7";
             label7.Size = new Size(146, 23);
             label7.TabIndex = 9;
@@ -721,7 +707,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // checkCoHoi
             // 
             checkCoHoi.AutoSize = true;
-            checkCoHoi.Location = new Point(330, 533);
+            checkCoHoi.Location = new Point(335, 495);
             checkCoHoi.Name = "checkCoHoi";
             checkCoHoi.Size = new Size(18, 17);
             checkCoHoi.TabIndex = 8;
@@ -732,7 +718,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(354, 531);
+            label6.Location = new Point(359, 493);
             label6.Name = "label6";
             label6.Size = new Size(153, 23);
             label6.TabIndex = 7;
@@ -741,7 +727,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // checkLuong13
             // 
             checkLuong13.AutoSize = true;
-            checkLuong13.Location = new Point(555, 533);
+            checkLuong13.Location = new Point(560, 495);
             checkLuong13.Name = "checkLuong13";
             checkLuong13.Size = new Size(18, 17);
             checkLuong13.TabIndex = 6;
@@ -752,7 +738,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(581, 531);
+            label5.Location = new Point(586, 493);
             label5.Name = "label5";
             label5.Size = new Size(133, 23);
             label5.TabIndex = 5;
@@ -763,7 +749,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(139, 531);
+            label4.Location = new Point(144, 493);
             label4.Name = "label4";
             label4.Size = new Size(142, 23);
             label4.TabIndex = 3;
@@ -774,7 +760,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(70, 479);
+            label3.Location = new Point(75, 441);
             label3.Name = "label3";
             label3.Size = new Size(237, 28);
             label3.TabIndex = 2;
@@ -797,29 +783,54 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label2.TabIndex = 0;
             label2.Text = "Tên công việc";
             // 
+            // guna2Panel1
+            // 
+            guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.Controls.Add(pictureBox1);
+            guna2Panel1.Controls.Add(label1);
+            guna2Panel1.CustomizableEdges = customizableEdges29;
+            guna2Panel1.Location = new Point(2, 3);
+            guna2Panel1.Name = "guna2Panel1";
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            guna2Panel1.Size = new Size(1283, 85);
+            guna2Panel1.TabIndex = 51;
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1036, 0);
+            pictureBox1.Location = new Point(1083, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(103, 82);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(75, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(340, 41);
+            label1.TabIndex = 0;
+            label1.Text = "Đăng Tuyển Nhân Viên";
+            // 
             // FDangViec
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1183, 701);
+            ClientSize = new Size(1286, 768);
             Controls.Add(panel9);
+            Controls.Add(guna2Panel1);
             Name = "FDangViec";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FDangViec";
             Load += FDangViec_Load;
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
+            panel1.ResumeLayout(false);
             guna2Panel1.ResumeLayout(false);
             guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -888,5 +899,6 @@ namespace Do_An_Ung_Dung_Tim_Viec
         private Guna.UI2.WinForms.Guna2TextBox txtTenHR;
         private Guna.UI2.WinForms.Guna2ComboBox Combobox_HinhThuc;
         private PictureBox pictureBox1;
+        private Panel panel1;
     }
 }
