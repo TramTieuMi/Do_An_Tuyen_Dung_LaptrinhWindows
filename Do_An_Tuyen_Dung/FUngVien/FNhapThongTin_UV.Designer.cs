@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FNhapThongTin_UV));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -87,6 +87,7 @@
             // 
             panel3.AllowDrop = true;
             panel3.BackColor = Color.Transparent;
+            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(label13);
             panel3.Controls.Add(btn_TroLai);
@@ -138,7 +139,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label2.ForeColor = Color.White;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(207, 205);
             label2.Name = "label2";
             label2.Size = new Size(89, 23);
@@ -152,7 +153,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label1.ForeColor = Color.White;
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(203, 275);
             label1.Name = "label1";
             label1.Size = new Size(92, 23);
@@ -166,7 +167,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label3.ForeColor = Color.White;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(671, 205);
             label3.Name = "label3";
             label3.Size = new Size(79, 23);
@@ -177,7 +178,7 @@
             // 
             Combobox_Quan_Huyen.AllowDrop = true;
             Combobox_Quan_Huyen.BackColor = Color.Transparent;
-            Combobox_Quan_Huyen.BorderColor = Color.White;
+            Combobox_Quan_Huyen.BorderColor = Color.Black;
             Combobox_Quan_Huyen.BorderRadius = 15;
             Combobox_Quan_Huyen.BorderThickness = 2;
             Combobox_Quan_Huyen.CustomizableEdges = customizableEdges3;
@@ -200,7 +201,7 @@
             // 
             Combobox_Xa_Phuong.AllowDrop = true;
             Combobox_Xa_Phuong.BackColor = Color.Transparent;
-            Combobox_Xa_Phuong.BorderColor = Color.White;
+            Combobox_Xa_Phuong.BorderColor = Color.Black;
             Combobox_Xa_Phuong.BorderRadius = 15;
             Combobox_Xa_Phuong.BorderThickness = 2;
             Combobox_Xa_Phuong.CustomizableEdges = customizableEdges5;
@@ -224,7 +225,7 @@
             Combobox_Tinh_TP.AutoCompleteCustomSource.AddRange(new string[] { "Ho Chi Minh", "Ha Noi" });
             Combobox_Tinh_TP.AutoCompleteSource = AutoCompleteSource.HistoryList;
             Combobox_Tinh_TP.BackColor = Color.Transparent;
-            Combobox_Tinh_TP.BorderColor = Color.White;
+            Combobox_Tinh_TP.BorderColor = Color.Black;
             Combobox_Tinh_TP.BorderRadius = 15;
             Combobox_Tinh_TP.BorderThickness = 2;
             Combobox_Tinh_TP.CustomizableEdges = customizableEdges7;
@@ -247,7 +248,7 @@
             // 
             txtSoNha.AllowDrop = true;
             txtSoNha.BackColor = Color.Transparent;
-            txtSoNha.BorderColor = Color.White;
+            txtSoNha.BorderColor = Color.Black;
             txtSoNha.BorderRadius = 15;
             txtSoNha.BorderThickness = 2;
             txtSoNha.CustomizableEdges = customizableEdges9;
@@ -277,7 +278,7 @@
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label6.ForeColor = Color.White;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(681, 412);
             label6.Name = "label6";
             label6.Size = new Size(69, 23);
@@ -291,7 +292,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label9.ForeColor = Color.White;
+            label9.ForeColor = Color.Black;
             label9.Location = new Point(158, 337);
             label9.Name = "label9";
             label9.Size = new Size(138, 23);
@@ -305,7 +306,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(195, 412);
             label5.Name = "label5";
             label5.Size = new Size(101, 23);
@@ -319,7 +320,7 @@
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label7.ForeColor = Color.White;
+            label7.ForeColor = Color.Black;
             label7.Location = new Point(639, 337);
             label7.Name = "label7";
             label7.Size = new Size(111, 23);
@@ -330,7 +331,7 @@
             // 
             txtHoTen.AllowDrop = true;
             txtHoTen.BackColor = Color.Transparent;
-            txtHoTen.BorderColor = Color.White;
+            txtHoTen.BorderColor = Color.Black;
             txtHoTen.BorderRadius = 15;
             txtHoTen.BorderThickness = 2;
             txtHoTen.CustomizableEdges = customizableEdges11;
@@ -358,7 +359,7 @@
             // 
             txtNoiSinh.AllowDrop = true;
             txtNoiSinh.BackColor = Color.Transparent;
-            txtNoiSinh.BorderColor = Color.White;
+            txtNoiSinh.BorderColor = Color.Black;
             txtNoiSinh.BorderRadius = 15;
             txtNoiSinh.BorderThickness = 2;
             txtNoiSinh.CustomizableEdges = customizableEdges13;
@@ -406,7 +407,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(685, 275);
             label4.Name = "label4";
             label4.Size = new Size(65, 23);
@@ -417,7 +418,7 @@
             // 
             txtFileCV.AllowDrop = true;
             txtFileCV.BackColor = Color.Transparent;
-            txtFileCV.BorderColor = Color.White;
+            txtFileCV.BorderColor = Color.Black;
             txtFileCV.BorderRadius = 15;
             txtFileCV.BorderThickness = 2;
             txtFileCV.CustomizableEdges = customizableEdges17;
@@ -514,7 +515,7 @@
             // 
             txtEmail.AllowDrop = true;
             txtEmail.BackColor = Color.Transparent;
-            txtEmail.BorderColor = Color.White;
+            txtEmail.BorderColor = Color.Black;
             txtEmail.BorderRadius = 15;
             txtEmail.BorderThickness = 2;
             txtEmail.CustomizableEdges = customizableEdges23;
@@ -544,7 +545,7 @@
             lbEmail.AutoSize = true;
             lbEmail.BackColor = Color.Transparent;
             lbEmail.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            lbEmail.ForeColor = Color.White;
+            lbEmail.ForeColor = Color.Black;
             lbEmail.Location = new Point(241, 475);
             lbEmail.Name = "lbEmail";
             lbEmail.Size = new Size(54, 23);
@@ -555,7 +556,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             ClientSize = new Size(1205, 701);
             Controls.Add(txtEmail);
             Controls.Add(lbEmail);

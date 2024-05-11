@@ -30,21 +30,21 @@
         {
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCLichSuNTD));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCLichSuNTD));
             panLS = new Guna.UI2.WinForms.Guna2Panel();
+            pictureBox3 = new PictureBox();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             txtSoNguoi1 = new Label();
             txtDiaDiem1 = new Label();
             txtNganh1 = new Label();
-            pictureBox3 = new PictureBox();
             panLS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -70,6 +70,17 @@
             panLS.Size = new Size(1042, 100);
             panLS.TabIndex = 68;
             panLS.Paint += guna2Panel3_Paint;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(22, 13);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(69, 68);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 77;
+            pictureBox3.TabStop = false;
             // 
             // guna2Button1
             // 
@@ -138,7 +149,7 @@
             // 
             txtSoNguoi1.AutoSize = true;
             txtSoNguoi1.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtSoNguoi1.ForeColor = Color.White;
+            txtSoNguoi1.ForeColor = Color.Black;
             txtSoNguoi1.Location = new Point(421, 38);
             txtSoNguoi1.Name = "txtSoNguoi1";
             txtSoNguoi1.Size = new Size(211, 23);
@@ -149,7 +160,7 @@
             // 
             txtDiaDiem1.AutoSize = true;
             txtDiaDiem1.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtDiaDiem1.ForeColor = Color.White;
+            txtDiaDiem1.ForeColor = Color.Black;
             txtDiaDiem1.Location = new Point(136, 54);
             txtDiaDiem1.Name = "txtDiaDiem1";
             txtDiaDiem1.Size = new Size(165, 23);
@@ -160,23 +171,12 @@
             // 
             txtNganh1.AutoSize = true;
             txtNganh1.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            txtNganh1.ForeColor = Color.White;
+            txtNganh1.ForeColor = Color.Black;
             txtNganh1.Location = new Point(136, 17);
             txtNganh1.Name = "txtNganh1";
             txtNganh1.Size = new Size(168, 23);
             txtNganh1.TabIndex = 44;
             txtNganh1.Text = "Ngành : Dev BackEnd";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(22, 13);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(69, 68);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 77;
-            pictureBox3.TabStop = false;
             // 
             // UCLichSuNTD
             // 

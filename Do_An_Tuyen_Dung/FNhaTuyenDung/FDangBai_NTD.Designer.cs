@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDangBai_NTD));
             panel1 = new Panel();
             btnDangXuatNTD = new Button();
@@ -80,7 +80,7 @@
             panel1.ForeColor = Color.FromArgb(0, 74, 173);
             panel1.Location = new Point(-5, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(190, 736);
+            panel1.Size = new Size(188, 815);
             panel1.TabIndex = 0;
             // 
             // btnDangXuatNTD
@@ -98,20 +98,20 @@
             // 
             // guna2Panel1
             // 
-            guna2Panel1.CustomizableEdges = customizableEdges5;
+            guna2Panel1.CustomizableEdges = customizableEdges1;
             guna2Panel1.Location = new Point(6, 639);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel1.Size = new Size(184, 57);
             guna2Panel1.TabIndex = 5;
             // 
             // pan_ThongTin
             // 
             pan_ThongTin.Anchor = AnchorStyles.None;
-            pan_ThongTin.CustomizableEdges = customizableEdges7;
-            pan_ThongTin.Location = new Point(187, 210);
+            pan_ThongTin.CustomizableEdges = customizableEdges3;
+            pan_ThongTin.Location = new Point(186, 249);
             pan_ThongTin.Name = "pan_ThongTin";
-            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges4;
             pan_ThongTin.Size = new Size(962, 500);
             pan_ThongTin.TabIndex = 1;
             pan_ThongTin.Paint += pan_ThongTin_Paint;
@@ -201,9 +201,9 @@
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BackColor = Color.White;
-            panel2.Location = new Point(183, 69);
+            panel2.Location = new Point(180, 69);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1249, 667);
+            panel2.Size = new Size(1252, 667);
             panel2.TabIndex = 1;
             panel2.Paint += panel2_Paint;
             // 
@@ -277,9 +277,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1383, 712);
+            Controls.Add(panel1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel2);
-            Controls.Add(panel1);
             Name = "FDangBai_NTD";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

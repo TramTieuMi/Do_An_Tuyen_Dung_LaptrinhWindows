@@ -60,6 +60,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(guna2HtmlLabel1);
             panel1.Location = new Point(0, 3);
@@ -93,7 +94,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             ClientSize = new Size(1181, 651);
             Controls.Add(panel1);
             Controls.Add(fpnHT);

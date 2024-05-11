@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMoTa_YeuCau_QuyenLoi));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -40,7 +41,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMoTa_YeuCau_QuyenLoi));
             panel3 = new Panel();
             label13 = new Label();
             txtMoTa = new Guna.UI2.WinForms.Guna2TextBox();
@@ -87,11 +87,12 @@
             // 
             panel3.AllowDrop = true;
             panel3.BackColor = Color.Transparent;
+            panel3.BackgroundImage = (Image)resources.GetObject("panel3.BackgroundImage");
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(label13);
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1191, 79);
+            panel3.Size = new Size(1206, 83);
             panel3.TabIndex = 85;
             panel3.Paint += panel3_Paint;
             // 
@@ -101,7 +102,7 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label13.ForeColor = Color.Transparent;
-            label13.Location = new Point(75, 21);
+            label13.Location = new Point(79, 21);
             label13.Name = "label13";
             label13.Size = new Size(311, 41);
             label13.TabIndex = 0;
@@ -110,7 +111,7 @@
             // txtMoTa
             // 
             txtMoTa.BackColor = Color.Transparent;
-            txtMoTa.BorderColor = Color.White;
+            txtMoTa.BorderColor = Color.Black;
             txtMoTa.BorderRadius = 35;
             txtMoTa.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtMoTa.CustomizableEdges = customizableEdges1;
@@ -137,7 +138,7 @@
             // txtYeuCau
             // 
             txtYeuCau.BackColor = Color.Transparent;
-            txtYeuCau.BorderColor = Color.White;
+            txtYeuCau.BorderColor = Color.Black;
             txtYeuCau.BorderRadius = 35;
             txtYeuCau.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtYeuCau.CustomizableEdges = customizableEdges3;
@@ -163,7 +164,7 @@
             // txtQuyenLoi
             // 
             txtQuyenLoi.BackColor = Color.Transparent;
-            txtQuyenLoi.BorderColor = Color.White;
+            txtQuyenLoi.BorderColor = Color.Black;
             txtQuyenLoi.BorderRadius = 35;
             txtQuyenLoi.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtQuyenLoi.CustomizableEdges = customizableEdges5;
@@ -172,7 +173,6 @@
             txtQuyenLoi.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
             txtQuyenLoi.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtQuyenLoi.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtQuyenLoi.FillColor = Color.WhiteSmoke;
             txtQuyenLoi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtQuyenLoi.Font = new Font("Segoe UI", 9F);
             txtQuyenLoi.ForeColor = Color.Black;
@@ -217,8 +217,8 @@
             txtCty.AutoSize = true;
             txtCty.BackColor = Color.Transparent;
             txtCty.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            txtCty.ForeColor = Color.White;
-            txtCty.Location = new Point(999, 101);
+            txtCty.ForeColor = Color.Black;
+            txtCty.Location = new Point(986, 101);
             txtCty.Name = "txtCty";
             txtCty.Size = new Size(70, 41);
             txtCty.TabIndex = 108;
@@ -232,8 +232,8 @@
             txtNganh.AutoSize = true;
             txtNganh.BackColor = Color.Transparent;
             txtNganh.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtNganh.ForeColor = Color.White;
-            txtNganh.Location = new Point(507, 101);
+            txtNganh.ForeColor = Color.Black;
+            txtNganh.Location = new Point(522, 110);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(170, 50);
             txtNganh.TabIndex = 109;
@@ -315,7 +315,7 @@
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            guna2HtmlLabel5.ForeColor = Color.White;
+            guna2HtmlLabel5.ForeColor = Color.Black;
             guna2HtmlLabel5.Location = new Point(57, 984);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(79, 25);
@@ -326,7 +326,7 @@
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            guna2HtmlLabel4.ForeColor = Color.White;
+            guna2HtmlLabel4.ForeColor = Color.Black;
             guna2HtmlLabel4.Location = new Point(57, 899);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(41, 25);
@@ -337,7 +337,7 @@
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            guna2HtmlLabel3.ForeColor = Color.White;
+            guna2HtmlLabel3.ForeColor = Color.Black;
             guna2HtmlLabel3.Location = new Point(57, 861);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(52, 25);
@@ -348,7 +348,7 @@
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            guna2HtmlLabel2.ForeColor = Color.White;
+            guna2HtmlLabel2.ForeColor = Color.Black;
             guna2HtmlLabel2.Location = new Point(57, 823);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(161, 25);
@@ -360,7 +360,7 @@
             label12.AutoSize = true;
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.White;
+            label12.ForeColor = Color.Black;
             label12.Location = new Point(57, 763);
             label12.Name = "label12";
             label12.Size = new Size(205, 28);
@@ -372,7 +372,7 @@
             label19.AutoSize = true;
             label19.BackColor = Color.Transparent;
             label19.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label19.ForeColor = Color.White;
+            label19.ForeColor = Color.Black;
             label19.Location = new Point(884, 866);
             label19.Name = "label19";
             label19.Size = new Size(123, 23);
@@ -384,7 +384,7 @@
             label18.AutoSize = true;
             label18.BackColor = Color.Transparent;
             label18.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label18.ForeColor = Color.White;
+            label18.ForeColor = Color.Black;
             label18.Location = new Point(840, 782);
             label18.Name = "label18";
             label18.Size = new Size(215, 23);
@@ -395,7 +395,7 @@
             // 
             txtTenHR.BackColor = Color.Transparent;
             txtTenHR.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtTenHR.ForeColor = Color.White;
+            txtTenHR.ForeColor = Color.Black;
             txtTenHR.Location = new Point(235, 823);
             txtTenHR.Name = "txtTenHR";
             txtTenHR.Size = new Size(91, 25);
@@ -406,7 +406,7 @@
             // 
             txtEmailHR.BackColor = Color.Transparent;
             txtEmailHR.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtEmailHR.ForeColor = Color.White;
+            txtEmailHR.ForeColor = Color.Black;
             txtEmailHR.Location = new Point(235, 861);
             txtEmailHR.Name = "txtEmailHR";
             txtEmailHR.Size = new Size(177, 25);
@@ -417,7 +417,7 @@
             // 
             txtSDTHR.BackColor = Color.Transparent;
             txtSDTHR.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtSDTHR.ForeColor = Color.White;
+            txtSDTHR.ForeColor = Color.Black;
             txtSDTHR.Location = new Point(235, 899);
             txtSDTHR.Name = "txtSDTHR";
             txtSDTHR.Size = new Size(103, 25);
@@ -428,7 +428,7 @@
             // 
             txtNgayBD.BackColor = Color.Transparent;
             txtNgayBD.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtNgayBD.ForeColor = Color.White;
+            txtNgayBD.ForeColor = Color.Black;
             txtNgayBD.Location = new Point(894, 823);
             txtNgayBD.Name = "txtNgayBD";
             txtNgayBD.Size = new Size(99, 25);
@@ -439,7 +439,7 @@
             // 
             txtNgayKT.BackColor = Color.Transparent;
             txtNgayKT.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtNgayKT.ForeColor = Color.White;
+            txtNgayKT.ForeColor = Color.Black;
             txtNgayKT.Location = new Point(894, 919);
             txtNgayKT.Name = "txtNgayKT";
             txtNgayKT.Size = new Size(99, 25);
@@ -450,7 +450,7 @@
             // 
             txtGhiChu.BackColor = Color.Transparent;
             txtGhiChu.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            txtGhiChu.ForeColor = Color.White;
+            txtGhiChu.ForeColor = Color.Black;
             txtGhiChu.Location = new Point(165, 984);
             txtGhiChu.Name = "txtGhiChu";
             txtGhiChu.Size = new Size(248, 25);
@@ -461,7 +461,7 @@
             // 
             guna2HtmlLabel11.BackColor = Color.Transparent;
             guna2HtmlLabel11.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            guna2HtmlLabel11.ForeColor = Color.White;
+            guna2HtmlLabel11.ForeColor = Color.Black;
             guna2HtmlLabel11.Location = new Point(138, 247);
             guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             guna2HtmlLabel11.Size = new Size(155, 30);
@@ -472,7 +472,7 @@
             // 
             guna2HtmlLabel12.BackColor = Color.Transparent;
             guna2HtmlLabel12.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            guna2HtmlLabel12.ForeColor = Color.White;
+            guna2HtmlLabel12.ForeColor = Color.Black;
             guna2HtmlLabel12.Location = new Point(496, 248);
             guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             guna2HtmlLabel12.Size = new Size(246, 30);
@@ -483,8 +483,8 @@
             // 
             guna2HtmlLabel13.BackColor = Color.Transparent;
             guna2HtmlLabel13.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            guna2HtmlLabel13.ForeColor = Color.White;
-            guna2HtmlLabel13.Location = new Point(937, 250);
+            guna2HtmlLabel13.ForeColor = Color.Black;
+            guna2HtmlLabel13.Location = new Point(944, 250);
             guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             guna2HtmlLabel13.Size = new Size(95, 30);
             guna2HtmlLabel13.TabIndex = 140;
@@ -516,6 +516,7 @@
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.BorderColor = Color.Black;
             guna2Panel1.BorderRadius = 35;
             guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             guna2Panel1.Controls.Add(pictureBox3);
@@ -570,7 +571,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             ClientSize = new Size(1205, 772);
             Controls.Add(guna2Panel1);
             Controls.Add(btnXem);
