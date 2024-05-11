@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDangBai_NTD));
             panel1 = new Panel();
             btnDangXuatNTD = new Button();
@@ -98,20 +98,20 @@
             // 
             // guna2Panel1
             // 
-            guna2Panel1.CustomizableEdges = customizableEdges1;
+            guna2Panel1.CustomizableEdges = customizableEdges5;
             guna2Panel1.Location = new Point(6, 639);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Panel1.Size = new Size(184, 57);
             guna2Panel1.TabIndex = 5;
             // 
             // pan_ThongTin
             // 
             pan_ThongTin.Anchor = AnchorStyles.None;
-            pan_ThongTin.CustomizableEdges = customizableEdges3;
+            pan_ThongTin.CustomizableEdges = customizableEdges7;
             pan_ThongTin.Location = new Point(187, 210);
             pan_ThongTin.Name = "pan_ThongTin";
-            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges8;
             pan_ThongTin.Size = new Size(962, 500);
             pan_ThongTin.TabIndex = 1;
             pan_ThongTin.Paint += pan_ThongTin_Paint;
