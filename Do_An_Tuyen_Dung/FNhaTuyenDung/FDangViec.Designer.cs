@@ -57,9 +57,9 @@ namespace Do_An_Ung_Dung_Tim_Viec
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDangViec));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDangViec));
             panel9 = new Panel();
             txtGhiChu = new Guna.UI2.WinForms.Guna2TextBox();
             panel1 = new Panel();
@@ -116,7 +116,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // panel9
             // 
             panel9.AutoScroll = true;
-            panel9.BackColor = Color.Transparent;
+            panel9.BackColor = Color.White;
             panel9.Controls.Add(txtGhiChu);
             panel9.Controls.Add(panel1);
             panel9.Controls.Add(Combobox_HinhThuc);
@@ -167,7 +167,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             // txtGhiChu
             // 
-            txtGhiChu.BorderColor = Color.WhiteSmoke;
+            txtGhiChu.BorderColor = Color.Black;
             txtGhiChu.BorderRadius = 40;
             txtGhiChu.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtGhiChu.CustomizableEdges = customizableEdges1;
@@ -221,7 +221,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // Combobox_HinhThuc
             // 
             Combobox_HinhThuc.BackColor = Color.Transparent;
-            Combobox_HinhThuc.BorderColor = Color.White;
+            Combobox_HinhThuc.BorderColor = Color.Black;
             Combobox_HinhThuc.BorderRadius = 15;
             Combobox_HinhThuc.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             Combobox_HinhThuc.CustomizableEdges = customizableEdges5;
@@ -243,7 +243,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            guna2HtmlLabel5.ForeColor = Color.White;
+            guna2HtmlLabel5.ForeColor = Color.Black;
             guna2HtmlLabel5.Location = new Point(115, 1526);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(65, 25);
@@ -252,7 +252,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             // txtSDTHR
             // 
-            txtSDTHR.BorderColor = Color.WhiteSmoke;
+            txtSDTHR.BorderColor = Color.Black;
             txtSDTHR.BorderRadius = 10;
             txtSDTHR.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtSDTHR.CustomizableEdges = customizableEdges7;
@@ -276,7 +276,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             // txtEmailHR
             // 
-            txtEmailHR.BorderColor = Color.WhiteSmoke;
+            txtEmailHR.BorderColor = Color.Black;
             txtEmailHR.BorderRadius = 10;
             txtEmailHR.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtEmailHR.CustomizableEdges = customizableEdges9;
@@ -300,7 +300,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             // txtTenHR
             // 
-            txtTenHR.BorderColor = Color.WhiteSmoke;
+            txtTenHR.BorderColor = Color.Black;
             txtTenHR.BorderRadius = 10;
             txtTenHR.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtTenHR.CustomizableEdges = customizableEdges11;
@@ -326,7 +326,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            guna2HtmlLabel4.ForeColor = Color.White;
+            guna2HtmlLabel4.ForeColor = Color.Black;
             guna2HtmlLabel4.Location = new Point(115, 1453);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(33, 25);
@@ -337,7 +337,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            guna2HtmlLabel3.ForeColor = Color.White;
+            guna2HtmlLabel3.ForeColor = Color.Black;
             guna2HtmlLabel3.Location = new Point(115, 1389);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(44, 25);
@@ -348,7 +348,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            guna2HtmlLabel2.ForeColor = Color.White;
+            guna2HtmlLabel2.ForeColor = Color.Black;
             guna2HtmlLabel2.Location = new Point(115, 1319);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(152, 25);
@@ -359,7 +359,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.White;
+            label12.ForeColor = Color.Black;
             label12.Location = new Point(75, 1274);
             label12.Name = "label12";
             label12.Size = new Size(205, 28);
@@ -368,7 +368,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             // txtMoTa
             // 
-            txtMoTa.BorderColor = Color.White;
+            txtMoTa.BorderColor = Color.Black;
             txtMoTa.BorderRadius = 10;
             txtMoTa.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtMoTa.CustomizableEdges = customizableEdges13;
@@ -403,7 +403,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label9.ForeColor = Color.White;
+            label9.ForeColor = Color.Black;
             label9.Location = new Point(820, 493);
             label9.Name = "label9";
             label9.Size = new Size(123, 23);
@@ -414,7 +414,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            guna2HtmlLabel1.ForeColor = Color.White;
+            guna2HtmlLabel1.ForeColor = Color.Black;
             guna2HtmlLabel1.Location = new Point(70, 41);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(226, 30);
@@ -423,7 +423,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             // txtYeuCau
             // 
-            txtYeuCau.BorderColor = Color.White;
+            txtYeuCau.BorderColor = Color.Black;
             txtYeuCau.BorderRadius = 10;
             txtYeuCau.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtYeuCau.CustomizableEdges = customizableEdges15;
@@ -456,7 +456,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             // txtQuyenLoiKhac
             // 
-            txtQuyenLoiKhac.BorderColor = Color.White;
+            txtQuyenLoiKhac.BorderColor = Color.Black;
             txtQuyenLoiKhac.BorderRadius = 10;
             txtQuyenLoiKhac.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtQuyenLoiKhac.CustomizableEdges = customizableEdges17;
@@ -521,7 +521,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // Combobox_KinhNghiem
             // 
             Combobox_KinhNghiem.BackColor = Color.Transparent;
-            Combobox_KinhNghiem.BorderColor = Color.White;
+            Combobox_KinhNghiem.BorderColor = Color.Black;
             Combobox_KinhNghiem.BorderRadius = 15;
             Combobox_KinhNghiem.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             Combobox_KinhNghiem.CustomizableEdges = customizableEdges23;
@@ -542,7 +542,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // Combobox_Luong
             // 
             Combobox_Luong.BackColor = Color.Transparent;
-            Combobox_Luong.BorderColor = Color.White;
+            Combobox_Luong.BorderColor = Color.Black;
             Combobox_Luong.BorderRadius = 15;
             Combobox_Luong.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             Combobox_Luong.CustomizableEdges = customizableEdges25;
@@ -562,7 +562,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             // txtTenCongViec
             // 
-            txtTenCongViec.BorderColor = Color.White;
+            txtTenCongViec.BorderColor = Color.Black;
             txtTenCongViec.BorderRadius = 15;
             txtTenCongViec.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtTenCongViec.CustomizableEdges = customizableEdges27;
@@ -589,7 +589,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label19.ForeColor = Color.White;
+            label19.ForeColor = Color.Black;
             label19.Location = new Point(777, 1438);
             label19.Name = "label19";
             label19.Size = new Size(118, 23);
@@ -601,7 +601,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label18.ForeColor = Color.White;
+            label18.ForeColor = Color.Black;
             label18.Location = new Point(731, 1351);
             label18.Name = "label18";
             label18.Size = new Size(207, 23);
@@ -612,7 +612,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label17.ForeColor = Color.White;
+            label17.ForeColor = Color.Black;
             label17.Location = new Point(103, 319);
             label17.Name = "label17";
             label17.Size = new Size(155, 23);
@@ -624,7 +624,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label16.AutoSize = true;
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label16.ForeColor = Color.White;
+            label16.ForeColor = Color.Black;
             label16.Location = new Point(103, 243);
             label16.Name = "label16";
             label16.Size = new Size(110, 23);
@@ -635,7 +635,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label15.ForeColor = Color.White;
+            label15.ForeColor = Color.Black;
             label15.Location = new Point(103, 166);
             label15.Name = "label15";
             label15.Size = new Size(59, 23);
@@ -647,7 +647,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label14.ForeColor = Color.White;
+            label14.ForeColor = Color.Black;
             label14.Location = new Point(103, 88);
             label14.Name = "label14";
             label14.Size = new Size(114, 23);
@@ -658,7 +658,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.White;
+            label13.ForeColor = Color.Black;
             label13.Location = new Point(75, 699);
             label13.Name = "label13";
             label13.Size = new Size(189, 25);
@@ -669,7 +669,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.White;
+            label11.ForeColor = Color.Black;
             label11.Location = new Point(75, 1009);
             label11.Name = "label11";
             label11.Size = new Size(173, 25);
@@ -697,7 +697,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
-            label7.ForeColor = Color.White;
+            label7.ForeColor = Color.Black;
             label7.Location = new Point(114, 543);
             label7.Name = "label7";
             label7.Size = new Size(146, 23);
@@ -717,7 +717,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label6.ForeColor = Color.White;
+            label6.ForeColor = Color.Black;
             label6.Location = new Point(359, 493);
             label6.Name = "label6";
             label6.Size = new Size(153, 23);
@@ -737,7 +737,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(586, 493);
             label5.Name = "label5";
             label5.Size = new Size(133, 23);
@@ -748,7 +748,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(144, 493);
             label4.Name = "label4";
             label4.Size = new Size(142, 23);
@@ -759,7 +759,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(75, 441);
             label3.Name = "label3";
             label3.Size = new Size(237, 28);
@@ -786,13 +786,14 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.BackgroundImage = (Image)resources.GetObject("guna2Panel1.BackgroundImage");
             guna2Panel1.Controls.Add(pictureBox1);
             guna2Panel1.Controls.Add(label1);
             guna2Panel1.CustomizableEdges = customizableEdges29;
-            guna2Panel1.Location = new Point(2, 3);
+            guna2Panel1.Location = new Point(-8, 0);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            guna2Panel1.Size = new Size(1283, 85);
+            guna2Panel1.Size = new Size(1293, 88);
             guna2Panel1.TabIndex = 51;
             // 
             // pictureBox1
@@ -820,7 +821,6 @@ namespace Do_An_Ung_Dung_Tim_Viec
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1286, 768);
             Controls.Add(panel9);
             Controls.Add(guna2Panel1);

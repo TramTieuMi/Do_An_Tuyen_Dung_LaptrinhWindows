@@ -36,9 +36,9 @@
             guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(components);
             txtTenTK = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel9 = new Panel();
-            guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            panel8 = new Panel();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            panel8 = new Panel();
+            guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
             openFileDialog1 = new OpenFileDialog();
@@ -58,8 +58,8 @@
             panel2 = new Panel();
             pan_ThongTin = new Guna.UI2.WinForms.Guna2GradientPanel();
             panel9.SuspendLayout();
-            panel8.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
+            panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             panel6.SuspendLayout();
@@ -86,7 +86,7 @@
             txtTenTK.BackColor = Color.Transparent;
             txtTenTK.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtTenTK.ForeColor = SystemColors.ButtonHighlight;
-            txtTenTK.Location = new Point(72, 18);
+            txtTenTK.Location = new Point(33, 18);
             txtTenTK.Name = "txtTenTK";
             txtTenTK.Size = new Size(161, 25);
             txtTenTK.TabIndex = 1;
@@ -95,10 +95,32 @@
             // panel9
             // 
             panel9.Controls.Add(txtTenTK);
-            panel9.Location = new Point(873, 3);
+            panel9.Location = new Point(883, 3);
             panel9.Name = "panel9";
-            panel9.Size = new Size(339, 67);
+            panel9.Size = new Size(214, 67);
             panel9.TabIndex = 2;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            flowLayoutPanel1.BackColor = Color.FromArgb(0, 74, 173);
+            flowLayoutPanel1.Controls.Add(panel8);
+            flowLayoutPanel1.Controls.Add(panel9);
+            flowLayoutPanel1.FlowDirection = FlowDirection.RightToLeft;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1168, 69);
+            flowLayoutPanel1.TabIndex = 0;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
+            // 
+            // panel8
+            // 
+            panel8.Anchor = AnchorStyles.Top;
+            panel8.Controls.Add(guna2CircleButton1);
+            panel8.Location = new Point(1103, 3);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(62, 60);
+            panel8.TabIndex = 1;
             // 
             // guna2CircleButton1
             // 
@@ -111,33 +133,13 @@
             guna2CircleButton1.ForeColor = Color.White;
             guna2CircleButton1.Image = (Image)resources.GetObject("guna2CircleButton1.Image");
             guna2CircleButton1.ImageSize = new Size(66, 62);
-            guna2CircleButton1.Location = new Point(0, 5);
+            guna2CircleButton1.Location = new Point(3, 5);
             guna2CircleButton1.Name = "guna2CircleButton1";
             guna2CircleButton1.ShadowDecoration.CustomizableEdges = customizableEdges1;
             guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2CircleButton1.Size = new Size(56, 55);
             guna2CircleButton1.TabIndex = 1;
-            // 
-            // panel8
-            // 
-            panel8.Controls.Add(guna2CircleButton1);
-            panel8.Location = new Point(1218, 3);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(62, 60);
-            panel8.TabIndex = 1;
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            flowLayoutPanel1.BackColor = Color.FromArgb(0, 74, 173);
-            flowLayoutPanel1.Controls.Add(panel8);
-            flowLayoutPanel1.Controls.Add(panel9);
-            flowLayoutPanel1.FlowDirection = FlowDirection.RightToLeft;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1283, 69);
-            flowLayoutPanel1.TabIndex = 0;
-            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
+            guna2CircleButton1.Click += guna2CircleButton1_Click;
             // 
             // pictureBox1
             // 
@@ -322,10 +324,10 @@
             // 
             pan_ThongTin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pan_ThongTin.CustomizableEdges = customizableEdges2;
-            pan_ThongTin.Location = new Point(3, 69);
+            pan_ThongTin.Location = new Point(-3, 69);
             pan_ThongTin.Name = "pan_ThongTin";
             pan_ThongTin.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            pan_ThongTin.Size = new Size(1274, 743);
+            pan_ThongTin.Size = new Size(1280, 743);
             pan_ThongTin.TabIndex = 1;
             pan_ThongTin.Paint += pan_ThongTin_Paint;
             // 
@@ -342,8 +344,8 @@
             Load += FMenu_Load;
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
-            panel8.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
+            panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel6.ResumeLayout(false);
@@ -362,8 +364,6 @@
         private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtTenTK;
         private Panel panel9;
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
-        private Panel panel8;
         private FlowLayoutPanel flowLayoutPanel1;
         private PictureBox pictureBox1;
         private Panel panel3;
@@ -383,5 +383,7 @@
         private Panel panel10;
         private Button btnYT;
         private Panel panel11;
+        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Panel panel8;
     }
 }

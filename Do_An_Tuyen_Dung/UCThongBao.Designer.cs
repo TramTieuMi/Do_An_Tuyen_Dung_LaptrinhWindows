@@ -66,7 +66,7 @@
             // 
             txtNganh.AutoSize = true;
             txtNganh.Font = new Font("Segoe UI", 10.2F);
-            txtNganh.ForeColor = Color.White;
+            txtNganh.ForeColor = Color.Black;
             txtNganh.Location = new Point(127, 60);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(179, 23);
@@ -77,7 +77,7 @@
             // 
             txtTenCTy.AutoSize = true;
             txtTenCTy.Font = new Font("Segoe UI", 10.2F);
-            txtTenCTy.ForeColor = Color.White;
+            txtTenCTy.ForeColor = Color.Black;
             txtTenCTy.Location = new Point(127, 15);
             txtTenCTy.Name = "txtTenCTy";
             txtTenCTy.Size = new Size(148, 23);
@@ -88,7 +88,7 @@
             // 
             txtTB.AutoSize = true;
             txtTB.Font = new Font("Segoe UI", 10.2F);
-            txtTB.ForeColor = Color.White;
+            txtTB.ForeColor = Color.Black;
             txtTB.Location = new Point(387, 38);
             txtTB.Name = "txtTB";
             txtTB.Size = new Size(337, 23);
@@ -105,7 +105,7 @@
             panel2.Controls.Add(txtNganh);
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1006, 100);
+            panel2.Size = new Size(1080, 100);
             panel2.TabIndex = 71;
             panel2.Paint += panel2_Paint;
             // 
@@ -126,7 +126,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel2);
             Name = "UCThongBao";
-            Size = new Size(1006, 100);
+            Size = new Size(1080, 100);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

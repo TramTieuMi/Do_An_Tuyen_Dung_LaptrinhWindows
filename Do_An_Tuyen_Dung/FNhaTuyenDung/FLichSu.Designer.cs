@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FLichSu));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -36,7 +37,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FLichSu));
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -54,7 +54,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(774, 114);
             label5.Name = "label5";
             label5.Size = new Size(90, 23);
@@ -66,7 +66,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(431, 113);
             label4.Name = "label4";
             label4.Size = new Size(80, 23);
@@ -78,7 +78,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label3.ForeColor = Color.White;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(84, 114);
             label3.Name = "label3";
             label3.Size = new Size(62, 23);
@@ -88,12 +88,14 @@
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.BackgroundImage = (Image)resources.GetObject("guna2Panel1.BackgroundImage");
             guna2Panel1.Controls.Add(label1);
             guna2Panel1.CustomizableEdges = customizableEdges1;
-            guna2Panel1.Location = new Point(-1, 1);
+            guna2Panel1.ImeMode = ImeMode.NoControl;
+            guna2Panel1.Location = new Point(-1, -2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel1.Size = new Size(1202, 80);
+            guna2Panel1.Size = new Size(1206, 83);
             guna2Panel1.TabIndex = 50;
             guna2Panel1.Paint += guna2Panel1_Paint;
             // 
@@ -111,7 +113,7 @@
             // Combobox_Nganh
             // 
             Combobox_Nganh.BackColor = Color.Transparent;
-            Combobox_Nganh.BorderColor = Color.White;
+            Combobox_Nganh.BorderColor = Color.Black;
             Combobox_Nganh.BorderRadius = 15;
             Combobox_Nganh.BorderThickness = 2;
             Combobox_Nganh.CustomizableEdges = customizableEdges3;
@@ -133,7 +135,7 @@
             // Combobox_DiaDiem
             // 
             Combobox_DiaDiem.BackColor = Color.Transparent;
-            Combobox_DiaDiem.BorderColor = Color.White;
+            Combobox_DiaDiem.BorderColor = Color.Black;
             Combobox_DiaDiem.BorderRadius = 15;
             Combobox_DiaDiem.BorderThickness = 2;
             Combobox_DiaDiem.CustomizableEdges = customizableEdges5;
@@ -155,7 +157,7 @@
             // Combobox_TrangThai
             // 
             Combobox_TrangThai.BackColor = Color.Transparent;
-            Combobox_TrangThai.BorderColor = Color.White;
+            Combobox_TrangThai.BorderColor = Color.Black;
             Combobox_TrangThai.BorderRadius = 15;
             Combobox_TrangThai.BorderThickness = 2;
             Combobox_TrangThai.CustomizableEdges = customizableEdges7;
@@ -188,8 +190,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackColor = SystemColors.Control;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             ClientSize = new Size(1205, 701);
             Controls.Add(fpn_HienThi);
             Controls.Add(Combobox_TrangThai);

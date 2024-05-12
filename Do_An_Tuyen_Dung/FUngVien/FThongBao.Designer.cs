@@ -40,18 +40,19 @@
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(0, -2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1205, 93);
+            panel1.Size = new Size(1204, 91);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1059, 12);
+            pictureBox1.Location = new Point(1056, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(98, 69);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -63,7 +64,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(79, 21);
+            label1.Location = new Point(75, 19);
             label1.Name = "label1";
             label1.Size = new Size(525, 41);
             label1.TabIndex = 0;
@@ -72,9 +73,9 @@
             // fpnHT
             // 
             fpnHT.BackColor = Color.Transparent;
-            fpnHT.Location = new Point(0, 99);
+            fpnHT.Location = new Point(42, 176);
             fpnHT.Name = "fpnHT";
-            fpnHT.Size = new Size(1223, 651);
+            fpnHT.Size = new Size(1108, 427);
             fpnHT.TabIndex = 1;
             fpnHT.Paint += fpnHT_Paint;
             // 
@@ -82,7 +83,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             ClientSize = new Size(1205, 701);
             Controls.Add(panel1);
             Controls.Add(fpnHT);
