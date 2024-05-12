@@ -252,26 +252,41 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
-            if(RS_danhgia.Value == 1)
+            float ratingValue = guna2RatingStar1.Value;
+
+            // Hiển thị giá trị rating lên label hoặc nơi bạn muốn
+            //lbSao.Text = $"Rating: {ratingValue} sao";
+            //lbSao.Text = {ratingValue};
+            if (ratingValue ==5)
             {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+                lbSao.Text = $"Tuyệt vời";
             }
-            if (RS_danhgia.Value == 2)
+            if (ratingValue >= 4 && ratingValue < 5)
             {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+                lbSao.Text = $"Tốt";
             }
-            if (RS_danhgia.Value == 3)
+            if (ratingValue >= 3 && ratingValue < 4)
             {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+                lbSao.Text = $"Bình Thường";
             }
-            if (RS_danhgia.Value == 4)
+            if (ratingValue >= 2 && ratingValue < 3)
             {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+                lbSao.Text = $"Tệ";
             }
-            if (RS_danhgia.Value == 5)
+            if (ratingValue >= 1 && ratingValue < 2)
             {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+                lbSao.Text = $"Rất tệ";
             }
+        }
+
+        private void guna2HtmlLabel10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
