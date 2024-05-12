@@ -1,4 +1,6 @@
-﻿namespace Do_An_Tuyen_Dung.FUngVien
+﻿using Guna.UI2.WinForms;
+
+namespace Do_An_Tuyen_Dung.FUngVien
 {
     partial class FMoTa_YeuCau_QuyenLoi
     {
@@ -612,7 +614,12 @@
             // 
             // RS_danhgia
             // 
-            
+            //RS_danhgia.BorderColor = Color.SteelBlue;
+            //RS_danhgia.Location = new Point(431, 24);
+            //RS_danhgia.Name = "RS_danhgia";
+            //RS_danhgia.Size = new Size(223, 35);
+            //RS_danhgia.TabIndex = 145;
+            //RS_danhgia.ValueChanged += guna2RatingStar1_ValueChanged;
             // 
             // guna2Button1
             // 
@@ -850,6 +857,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Panel panel1;
+        private Guna2RatingStar guna2RatingStar1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private FlowLayoutPanel flowLayoutPanel1;

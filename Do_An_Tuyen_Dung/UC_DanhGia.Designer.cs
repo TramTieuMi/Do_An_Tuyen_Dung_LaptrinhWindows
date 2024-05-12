@@ -60,13 +60,19 @@
             txtTenUV.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             txtTenUV.Location = new Point(63, 17);
             txtTenUV.Name = "txtTenUV";
-            txtTenUV.Size = new Size(231, 27);
+            txtTenUV.Size = new Size(219, 25);
             txtTenUV.TabIndex = 5;
             txtTenUV.Text = "truyền tên người đánh giá:";
             // 
             // RS_danhgia
             // 
-          
+            //txtSoSao.BackColor = Color.Transparent;
+            //txtSoSao.Font = new Font("Segoe UI", 10.2F);
+            //txtSoSao.Location = new Point(813, 34);
+            //txtSoSao.Name = "txtSoSao";
+            //txtSoSao.Size = new Size(177, 25);
+            //txtSoSao.TabIndex = 8;
+            //txtSoSao.Text = "hiện mấy cái sao ở đây";
             // 
             // UC_DanhGia
             // 
