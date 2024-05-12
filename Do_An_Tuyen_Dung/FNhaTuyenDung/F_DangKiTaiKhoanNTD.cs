@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,7 @@ namespace Do_An_Tuyen_Dung
 {
     public partial class F_DangKiTaiKhoanNTD : Form
     {
-        private string connectionString = @"Data Source=DESKTOP-UR1R776\SQLEXPRESS;Initial Catalog=DoAnNhom264;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        SqlConnection connStr = Connection.GetSqlConnection();
         public F_DangKiTaiKhoanNTD()
         {
             InitializeComponent();
@@ -46,9 +47,13 @@ namespace Do_An_Tuyen_Dung
                 dangbai.ShowDialog();
                 this.Close();
             }
-            catch
+            catch (SqlException ex)
             {
-                MessageBox.Show("Đăng kí thất bại!");
+                MessageBox.Show("Đăng kí thất bại do lỗi SQL: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đăng kí thất bại do lỗi không xác định: " + ex.Message);
             }
         }
         private void guna2Button1_Click(object sender, EventArgs e)

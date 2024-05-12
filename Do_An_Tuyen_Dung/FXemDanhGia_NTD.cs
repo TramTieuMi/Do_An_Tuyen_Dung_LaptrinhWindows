@@ -39,14 +39,13 @@ namespace Do_An_Tuyen_Dung
             List<DanhGia> list = new List<DanhGia>();
             try
             {
-                string tenCTy;
                 FYeuThich fYeuThich = new FYeuThich();
                 string em = fYeuThich.Email(FLogin.TenTaiKhoan);
                 string query = "SELECT * FROM TinhTrangCV";
                 SqlCommand command = new SqlCommand(query, connStr);
                 connStr.Open();
                 SqlDataReader reader = command.ExecuteReader();
-                fpnHT.Controls.Clear(); 
+                fpnHT.Controls.Clear();
                 while (reader.Read())
                 {
                     if (reader["EmailUV"].ToString() == em && reader["TenCongViec"].ToString() == tencv)
@@ -80,5 +79,9 @@ namespace Do_An_Tuyen_Dung
             }
         }
 
+        private void fpnHT_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

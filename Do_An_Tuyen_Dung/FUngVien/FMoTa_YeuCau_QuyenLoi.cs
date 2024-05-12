@@ -21,7 +21,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FMoTa_YeuCau_QuyenLoi : Form
     {
-        //private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (2)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        
         SqlConnection connStr = Connection.GetSqlConnection();
         Modify modify = new Modify();
         string tenCV;

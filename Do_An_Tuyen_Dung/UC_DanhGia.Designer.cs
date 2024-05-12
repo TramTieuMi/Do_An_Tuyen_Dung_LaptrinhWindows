@@ -31,7 +31,7 @@
             txtThoiGian = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtNoiDung = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtTenUV = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtSoSao = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            RS_danhgia = new Guna.UI2.WinForms.Guna2RatingStar();
             SuspendLayout();
             // 
             // txtThoiGian
@@ -64,7 +64,7 @@
             txtTenUV.TabIndex = 5;
             txtTenUV.Text = "truyền tên người đánh giá:";
             // 
-            // txtSoSao
+            // RS_danhgia
             // 
             txtSoSao.BackColor = Color.Transparent;
             txtSoSao.Font = new Font("Segoe UI", 10.2F);
@@ -79,7 +79,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(txtSoSao);
+            Controls.Add(RS_danhgia);
             Controls.Add(txtThoiGian);
             Controls.Add(txtNoiDung);
             Controls.Add(txtTenUV);
@@ -95,6 +95,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel txtThoiGian;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtNoiDung;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtTenUV;
-        private Guna.UI2.WinForms.Guna2HtmlLabel txtSoSao;
+        private Guna.UI2.WinForms.Guna2RatingStar RS_danhgia;
     }
 }

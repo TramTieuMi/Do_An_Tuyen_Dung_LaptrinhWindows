@@ -615,6 +615,15 @@
             guna2RatingStar1.ValueChanged += guna2RatingStar1_ValueChanged;
             guna2RatingStar1.Click += guna2RatingStar1_ValueChanged;
             // 
+            // RS_danhgia
+            // 
+            RS_danhgia.BorderColor = Color.SteelBlue;
+            RS_danhgia.Location = new Point(431, 24);
+            RS_danhgia.Name = "RS_danhgia";
+            RS_danhgia.Size = new Size(223, 35);
+            RS_danhgia.TabIndex = 145;
+            RS_danhgia.ValueChanged += guna2RatingStar1_ValueChanged;
+            // 
             // guna2Button1
             // 
             guna2Button1.CustomizableEdges = customizableEdges13;
@@ -860,7 +869,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2Button btnDanhGia;
-        private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
+        private Guna.UI2.WinForms.Guna2RatingStar RS_danhgia;
         private Panel panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbSao;
