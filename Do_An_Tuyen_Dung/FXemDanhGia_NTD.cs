@@ -39,7 +39,6 @@ namespace Do_An_Tuyen_Dung
             List<DanhGia> list = new List<DanhGia>();
             try
             {
-                string tenCTy;
                 FYeuThich fYeuThich = new FYeuThich();
                 string em = fYeuThich.Email(FLogin.TenTaiKhoan);
                 string query = "SELECT * FROM TinhTrangCV";
@@ -80,7 +79,7 @@ namespace Do_An_Tuyen_Dung
             }
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void fpnHT_Paint(object sender, PaintEventArgs e)
         {
 
         }

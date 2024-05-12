@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FXemDanhGia_NTD));
             fpnHT = new FlowLayoutPanel();
             txtTenCVvaCTy = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            panel1 = new Panel();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // fpnHT
@@ -42,6 +39,7 @@
             fpnHT.Name = "fpnHT";
             fpnHT.Size = new Size(897, 300);
             fpnHT.TabIndex = 0;
+            fpnHT.Paint += fpnHT_Paint;
             // 
             // txtTenCVvaCTy
             // 
@@ -78,15 +76,13 @@
             Name = "FXemDanhGia_NTD";
             Text = "FXemDanhGia_NTD";
             Load += FXemDanhGia_NTD_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private FlowLayoutPanel fpnHT;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtTenCVvaCTy;
-        private Panel panel1;
     }
 }
