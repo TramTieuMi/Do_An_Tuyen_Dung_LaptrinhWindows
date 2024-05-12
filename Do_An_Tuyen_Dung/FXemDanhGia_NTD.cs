@@ -46,7 +46,7 @@ namespace Do_An_Tuyen_Dung
                 SqlCommand command = new SqlCommand(query, connStr);
                 connStr.Open();
                 SqlDataReader reader = command.ExecuteReader();
-                fpnHT.Controls.Clear(); 
+                fpnHT.Controls.Clear();
                 while (reader.Read())
                 {
                     if (reader["EmailUV"].ToString() == em && reader["TenCongViec"].ToString() == tencv)
@@ -80,5 +80,9 @@ namespace Do_An_Tuyen_Dung
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

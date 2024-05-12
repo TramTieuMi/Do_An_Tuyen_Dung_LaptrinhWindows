@@ -84,5 +84,10 @@ namespace Do_An_Tuyen_Dung
             FLogin login = new FLogin();
             login.ShowDialog();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

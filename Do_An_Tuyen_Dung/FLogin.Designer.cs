@@ -112,7 +112,7 @@
             txtBoxPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtBoxPassword.Location = new Point(108, 296);
             txtBoxPassword.Name = "txtBoxPassword";
-            txtBoxPassword.PasswordChar = '*';
+            txtBoxPassword.PasswordChar = '\0';
             txtBoxPassword.PlaceholderText = "";
             txtBoxPassword.SelectedText = "";
             txtBoxPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -153,6 +153,7 @@
             label1.Size = new Size(94, 13);
             label1.TabIndex = 10;
             label1.Text = "Forgot Password";
+            label1.Click += label1_Click;
             // 
             // guna2BorderlessForm1
             // 
@@ -191,7 +192,7 @@
             guna2CheckBox1.CheckedState.BorderThickness = 0;
             guna2CheckBox1.CheckedState.FillColor = Color.FromArgb(94, 148, 255);
             guna2CheckBox1.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2CheckBox1.Location = new Point(147, 352);
+            guna2CheckBox1.Location = new Point(175, 352);
             guna2CheckBox1.Margin = new Padding(3, 2, 3, 2);
             guna2CheckBox1.Name = "guna2CheckBox1";
             guna2CheckBox1.Size = new Size(107, 17);
@@ -202,6 +203,7 @@
             guna2CheckBox1.UncheckedState.BorderThickness = 0;
             guna2CheckBox1.UncheckedState.FillColor = Color.FromArgb(125, 137, 149);
             guna2CheckBox1.UseVisualStyleBackColor = false;
+            guna2CheckBox1.CheckedChanged += guna2CheckBox1_CheckedChanged;
             // 
             // FLogin
             // 

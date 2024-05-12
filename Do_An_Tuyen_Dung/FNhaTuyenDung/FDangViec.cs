@@ -18,7 +18,8 @@ namespace Do_An_Ung_Dung_Tim_Viec
 {
     public partial class FDangViec : Form
     {
-        private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (3)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+        SqlConnection stringConnection = Connection.GetSqlConnection();
         public FDangViec()
         {
             InitializeComponent();
@@ -111,6 +112,11 @@ namespace Do_An_Ung_Dung_Tim_Viec
         }
 
         private void FDangViec_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
