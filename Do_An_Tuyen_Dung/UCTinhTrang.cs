@@ -33,11 +33,11 @@ namespace Do_An_Tuyen_Dung
             txtDiaDiem.Text = "Địa Điểm : " + tinhTrang.DiaDiem;
             txtCTy.Text = "Tên Công Ty : " + tinhTrang.Cty;
             tencty = tinhTrang.Cty;
-            if(tinhTrang.Trangthai == "Được Chấp Nhận" || tinhTrang.Trangthai == "Bị Loại ")
+            if (tinhTrang.Trangthai == "Được Chấp Nhận" || tinhTrang.Trangthai == "Bị Loại ")
             {
                 txtTrangThai.Text = tinhTrang.Trangthai;
             }
-            
+
         }
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
         {
@@ -82,11 +82,17 @@ namespace Do_An_Tuyen_Dung
             {
                 connStr.Close();
             }
-            
+
         }
         private void guna2Button7_Click(object sender, EventArgs e)
         {
             Xoa();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            FXemDanhGia_NTD fXemDanhGia_NTD = new FXemDanhGia_NTD(nganhdc, tencty);
+            fXemDanhGia_NTD.ShowDialog();
         }
 
         //private void pictureBox1_Click(object sender, EventArgs e)

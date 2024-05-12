@@ -28,32 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            fpnHT = new FlowLayoutPanel();
+            txtTenCVvaCTy = new Guna.UI2.WinForms.Guna2HtmlLabel();
             SuspendLayout();
             // 
-            // guna2HtmlLabel1
+            // fpnHT
             // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Location = new Point(292, 39);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(84, 22);
-            guna2HtmlLabel1.TabIndex = 0;
-            guna2HtmlLabel1.Text = "bỏ form này";
+            fpnHT.Location = new Point(21, 97);
+            fpnHT.Name = "fpnHT";
+            fpnHT.Size = new Size(1025, 400);
+            fpnHT.TabIndex = 0;
+            // 
+            // txtTenCVvaCTy
+            // 
+            txtTenCVvaCTy.BackColor = Color.Transparent;
+            txtTenCVvaCTy.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            txtTenCVvaCTy.ForeColor = Color.White;
+            txtTenCVvaCTy.Location = new Point(242, 26);
+            txtTenCVvaCTy.Name = "txtTenCVvaCTy";
+            txtTenCVvaCTy.Size = new Size(545, 43);
+            txtTenCVvaCTy.TabIndex = 1;
+            txtTenCVvaCTy.Text = "Những Đánh Giá Của Ngành ở CôngTy \r\n";
             // 
             // FXemDanhGia_NTD
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(guna2HtmlLabel1);
+            ClientSize = new Size(1066, 509);
+            Controls.Add(txtTenCVvaCTy);
+            Controls.Add(fpnHT);
             Name = "FXemDanhGia_NTD";
             Text = "FXemDanhGia_NTD";
+            Load += FXemDanhGia_NTD_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private FlowLayoutPanel fpnHT;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtTenCVvaCTy;
     }
 }
