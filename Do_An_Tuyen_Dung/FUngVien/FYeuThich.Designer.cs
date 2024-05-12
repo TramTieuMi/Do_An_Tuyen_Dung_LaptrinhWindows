@@ -65,7 +65,7 @@
             panel1.Controls.Add(guna2HtmlLabel1);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1179, 83);
+            panel1.Size = new Size(1179, 87);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint_1;
             // 
