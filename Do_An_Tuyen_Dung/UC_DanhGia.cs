@@ -32,9 +32,14 @@ namespace Do_An_Tuyen_Dung
             InitializeComponent();
             this.danhGia = danhGia;
             txtTenUV.Text = danhGia.Tenuv;
-            txtSoSao.Text = Convert.ToString(danhGia.Sosao);
+            RS_danhgia.Value = Convert.ToInt32(danhGia.Sosao);
             txtThoiGian.Text = danhGia.Thoigian;
             txtNoiDung.Text = danhGia.Noidung;
+        }
+
+        private void RS_danhgia_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

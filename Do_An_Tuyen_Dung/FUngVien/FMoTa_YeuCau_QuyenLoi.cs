@@ -252,7 +252,26 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
-
+            if(RS_danhgia.Value == 1)
+            {
+                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+            }
+            if (RS_danhgia.Value == 2)
+            {
+                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+            }
+            if (RS_danhgia.Value == 3)
+            {
+                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+            }
+            if (RS_danhgia.Value == 4)
+            {
+                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+            }
+            if (RS_danhgia.Value == 5)
+            {
+                txtTest.Text = Convert.ToString(RS_danhgia.Value);
+            }
         }
     }
 }
