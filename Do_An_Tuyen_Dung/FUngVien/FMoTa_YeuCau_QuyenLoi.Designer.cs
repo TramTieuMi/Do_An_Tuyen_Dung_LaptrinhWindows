@@ -83,7 +83,7 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
-            guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
+           
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -592,7 +592,7 @@
             // panel1
             // 
             panel1.Controls.Add(lbSao);
-            panel1.Controls.Add(guna2RatingStar1);
+            
             panel1.Controls.Add(guna2Button1);
             panel1.Controls.Add(guna2TextBox1);
             panel1.Controls.Add(guna2HtmlLabel8);
@@ -608,21 +608,11 @@
             // 
             // guna2RatingStar1
             // 
-            guna2RatingStar1.Location = new Point(416, 50);
-            guna2RatingStar1.Name = "guna2RatingStar1";
-            guna2RatingStar1.Size = new Size(223, 35);
-            guna2RatingStar1.TabIndex = 145;
-            guna2RatingStar1.ValueChanged += guna2RatingStar1_ValueChanged;
-            guna2RatingStar1.Click += guna2RatingStar1_ValueChanged;
+            
             // 
             // RS_danhgia
             // 
-            RS_danhgia.BorderColor = Color.SteelBlue;
-            RS_danhgia.Location = new Point(431, 24);
-            RS_danhgia.Name = "RS_danhgia";
-            RS_danhgia.Size = new Size(223, 35);
-            RS_danhgia.TabIndex = 145;
-            RS_danhgia.ValueChanged += guna2RatingStar1_ValueChanged;
+            
             // 
             // guna2Button1
             // 

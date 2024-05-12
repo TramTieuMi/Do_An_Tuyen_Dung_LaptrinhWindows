@@ -18,23 +18,24 @@ namespace Do_An_Tuyen_Dung
 {
     public partial class UCXemUV : UserControl
     {
-        private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (3)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        
         Modify modify = new Modify();
         SqlConnection connStr = Connection.GetSqlConnection();
         XemUV xemUV = new XemUV();
-        string em;
-        string emHR;
+        string EmailHR = string.Empty;
+        string EmailUV = string.Empty;
         public UCXemUV()
         {
             InitializeComponent();
+            
         }
         public UCXemUV(XemUV xemUV)
         {
             InitializeComponent();
             this.xemUV = xemUV;
             txtTen.Text = "Họ và Tên : " + xemUV.Ten;
-            em = xemUV.Email;
-            emHR = xemUV.EmailHR;
+            EmailUV = xemUV.Email;
+            EmailHR = xemUV.EmailHR;
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
@@ -44,31 +45,31 @@ namespace Do_An_Tuyen_Dung
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            FThongTin_UV fThongTin_UV = new FThongTin_UV(txtTen.Text, em);
+            FThongTin_UV fThongTin_UV = new FThongTin_UV(txtTen.Text, EmailUV);
             fThongTin_UV.ShowDialog();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
            
-
             try
             {
                 // Use parameterized query for security and clarity
-                string query1 = @"UPDATE TinhTrangCV
-                SET TrangThai = 'Được Chấp Nhận'
-                WHERE EmailHR = @EmailHR AND EmailUV = @EmailUV";
+       
+                string query1 = "UPDATE TinhTrangCV " +
+                                "SET TrangThai = 'Được Chấp Nhận' " +
+                                "WHERE EmailHR = @EmailHR AND EmailUV = @EmailUV";
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+               
                 {
-                    using (SqlCommand command = new SqlCommand(query1, connection))
+                    using (SqlCommand command = new SqlCommand(query1, connStr))
                     {
                         // Add parameters for security
                      
-                        command.Parameters.AddWithValue("@EmailHR", emHR);
-                        command.Parameters.AddWithValue("@EmailUV", em);
+                        command.Parameters.AddWithValue("@EmailHR", EmailHR);
+                        command.Parameters.AddWithValue("@EmailUV", EmailUV);
 
-                        connection.Open();
+                        connStr.Open();
                         int rowsAffected = command.ExecuteNonQuery(); // Use ExecuteNonQuery for UPDATE
 
                         if (rowsAffected > 0)
@@ -90,7 +91,7 @@ namespace Do_An_Tuyen_Dung
             {
                 MessageBox.Show("Chấp nhận thất bại do lỗi không xác định: " + ex.Message);
             }
-            FLichHen fLichHen = new FLichHen(emHR, em);
+            FLichHen fLichHen = new FLichHen(EmailHR, EmailUV);
             fLichHen.ShowDialog();
         }
 
@@ -106,17 +107,17 @@ namespace Do_An_Tuyen_Dung
                 SET TrangThai = 'Bị Loại'
                 WHERE EmailHR = @EmailHR AND EmailUV = @EmailUV";
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                
                 {
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlCommand command = new SqlCommand(query, connStr))
                     {
                         // Add parameters for security
                        
-                        command.Parameters.AddWithValue("@EmailHR", emHR);
-                        command.Parameters.AddWithValue("@EmailUV", em);
+                        command.Parameters.AddWithValue("@EmailHR", EmailHR);
+                        command.Parameters.AddWithValue("@EmailUV", EmailUV);
 
 
-                        connection.Open();
+                        connStr.Open();
                         command.ExecuteNonQuery(); // Use ExecuteNonQuery for INSERT
 
                         MessageBox.Show("Loại thành công!");

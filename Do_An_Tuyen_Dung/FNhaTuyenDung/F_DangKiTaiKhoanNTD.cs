@@ -16,7 +16,7 @@ namespace Do_An_Tuyen_Dung
 {
     public partial class F_DangKiTaiKhoanNTD : Form
     {
-        SqlConnection connStr = Connection.GetSqlConnection();
+        SqlConnection stringConnection = Connection.GetSqlConnection();
         public F_DangKiTaiKhoanNTD()
         {
             InitializeComponent();
@@ -41,6 +41,7 @@ namespace Do_An_Tuyen_Dung
             {
                 string query = "Insert into TaoTaiKhoanNTD values ('" + TenCongTy + "','" + QuocGia + "','" + DanhMucKinhDoanh + "','" + MaBuuChinh + "','" + URL + "','" + MaSoThue + "','" + DiaChiVanPhong + "')";
                 modify.Command(query);
+                SqlConnection connection = (stringConnection);
                 MessageBox.Show("Đăng kí thành công!");
                 this.Hide();
                 FDangBai_NTD dangbai = new FDangBai_NTD();

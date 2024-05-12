@@ -46,10 +46,17 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         string nganh = reader["TenCongViec"].ToString();
                         string tencty = reader["TenCTy"].ToString();
                         string trangthai;
-                        if (reader["TrangThai"].ToString() == "Được Chấp Nhận" || reader["TrangThai"].ToString() == "Bị Loại")
+                        if (reader["TrangThai"].ToString() == "Ðu?c Ch?p Nh?n" || reader["TrangThai"].ToString() == "B? Lo?i")
                         {
-                            trangthai = reader["TrangThai"].ToString();
+                           if (reader["TrangThai"].ToString() == "Ðu?c Ch?p Nh?n")
+                            {
+                                trangthai = "Được Chấp Nhận";
+                            }
+                            else
+                            {
+                                trangthai = "Bị Loại";
 
+                            }
                         }
                         else
                         {

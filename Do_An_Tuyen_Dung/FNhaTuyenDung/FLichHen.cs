@@ -20,16 +20,20 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
     {
         Modify modify = new Modify();
         SqlConnection connStr = Connection.GetSqlConnection();
+        string EmailHR = string.Empty;
+        string EmailUV = string.Empty;
 
         public FLichHen()
         {
             InitializeComponent();
-
+            
         }
         public FLichHen(string emHR, string em)
         {
             InitializeComponent();
             LoadData(emHR, em);
+            EmailHR = emHR;
+            EmailUV = em;
         }
         private void FLichHen_Load_1(object sender, EventArgs e)
         {
@@ -69,10 +73,52 @@ namespace Do_An_Tuyen_Dung.FNhaTuyenDung
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            // Hide unfavorite button and show favorite button
+            DateTime ThoiGian = this.dtpThoiGian.Value;
+            string DiaDiemGap = this.txtDiaDiemGap.Text;
 
+
+            try
+            {
+                // Use parameterized query for security
+                string query = "UPDATE TinhTrangCV SET ThoiGian = @ThoiGian, DiaDiemGap = @DiaDiemGap WHERE EmailHR = @EmailHR AND EmailUV = @EmailUV";
+                {
+                    using (SqlCommand command = new SqlCommand(query, connStr))
+                    {
+                        command.Parameters.AddWithValue("@ThoiGian", ThoiGian);
+                        command.Parameters.AddWithValue("@DiaDiemGap", DiaDiemGap);
+                        command.Parameters.AddWithValue("@EmailHR", EmailHR);
+                        command.Parameters.AddWithValue("@EmailUV", EmailUV);
+
+                        connStr.Open();
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Lưu thành công!");
+                        this.Close();
+
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Lưu thích thất bại do lỗi SQL: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lưu thất bại do lỗi không xác định: " + ex.Message);
+            }
         }
 
         private void txtCVvaVItri_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpThoiGian_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDiaDiemGap_TextChanged(object sender, EventArgs e)
         {
 
         }

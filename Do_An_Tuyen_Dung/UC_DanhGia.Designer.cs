@@ -66,13 +66,7 @@
             // 
             // RS_danhgia
             // 
-            txtSoSao.BackColor = Color.Transparent;
-            txtSoSao.Font = new Font("Segoe UI", 10.2F);
-            txtSoSao.Location = new Point(813, 34);
-            txtSoSao.Name = "txtSoSao";
-            txtSoSao.Size = new Size(177, 25);
-            txtSoSao.TabIndex = 8;
-            txtSoSao.Text = "hiện mấy cái sao ở đây";
+          
             // 
             // UC_DanhGia
             // 
