@@ -16,5 +16,10 @@ namespace Do_An_Tuyen_Dung
         {
             InitializeComponent();
         }
+
+        private void FDanh_Gia_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
