@@ -30,6 +30,7 @@ namespace Do_An_Tuyen_Dung
             txtTB.Text = "Đơn Xin Việc Của Bạn " + thongBao.TrangThai;
             if (thongBao.TrangThai != "Được Chấp Nhận")
             {
+
                 btn_TB.Visible = false;
             }         
             emHR1 = thongBao.EmHR;

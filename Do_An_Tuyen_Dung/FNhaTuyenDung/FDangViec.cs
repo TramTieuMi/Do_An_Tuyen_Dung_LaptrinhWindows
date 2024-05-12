@@ -13,6 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Data.SqlClient;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Do_An_Tuyen_Dung.FUngVien;
 
 namespace Do_An_Ung_Dung_Tim_Viec
 {
@@ -23,7 +24,30 @@ namespace Do_An_Ung_Dung_Tim_Viec
         public FDangViec()
         {
             InitializeComponent();
+            Loaddata();
         }
+        public void Loaddata()
+        {
+            FYeuThich fYeuThich = new FYeuThich();
+            string em = fYeuThich.Email(FLogin.TenTaiKhoan);
+            string query = "SELECT * FROM ThongTinCTy_Chinh";
+            SqlCommand command = new SqlCommand(query, stringConnection);
+            stringConnection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader["EmailHR"].ToString() == em)
+                {
+                    txtEmailHR.Text = em;
+                    txtSDTHR.Text = reader["SDTHR"].ToString();
+                    txtTenHR.Text = reader["TenHR"].ToString();
+                    break;
+                }
+
+            }
+            stringConnection.Close();
+        }
+
 
         private void label19_Click(object sender, EventArgs e)
         {

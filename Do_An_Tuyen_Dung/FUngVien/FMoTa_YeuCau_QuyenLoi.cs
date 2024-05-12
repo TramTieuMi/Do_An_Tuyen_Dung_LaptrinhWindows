@@ -21,7 +21,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FMoTa_YeuCau_QuyenLoi : Form
     {
-        //private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (2)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        
         SqlConnection connStr = Connection.GetSqlConnection();
         Modify modify = new Modify();
         string tenCV;
@@ -252,26 +252,22 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
-            if(RS_danhgia.Value == 1)
-            {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
-            }
-            if (RS_danhgia.Value == 2)
-            {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
-            }
-            if (RS_danhgia.Value == 3)
-            {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
-            }
-            if (RS_danhgia.Value == 4)
-            {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
-            }
-            if (RS_danhgia.Value == 5)
-            {
-                txtTest.Text = Convert.ToString(RS_danhgia.Value);
-            }
+            
+
+            // Hiển thị giá trị rating lên label hoặc nơi bạn muốn
+            //lbSao.Text = $"Rating: {ratingValue} sao";
+            //lbSao.Text = {ratingValue};
+            
+        }
+
+        private void guna2HtmlLabel10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

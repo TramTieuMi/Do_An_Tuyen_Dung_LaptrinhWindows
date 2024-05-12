@@ -51,7 +51,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 // Use parameterized query for security and clarity
                 string query = "INSERT INTO NhapThongTinUV (HoTenUV, NgayThangNamSinh, NoiSinh, FileCV, Tinh_TP, Quan_Huyen, Xa_Phuong, SoNha, Email) VALUES (@HoTenUV, @NgayThangNamSinh, @NoiSinh, @FileCV, @Tinh_TP, @Quan_Huyen, @Xa_Phuong, @SoNha, @Email)";
 
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = connectionString)
                 {
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {

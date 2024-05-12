@@ -55,14 +55,7 @@
             // 
             // panel1
             // 
-            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
-            panel1.Controls.Add(txtTenCVvaCTy);
-            panel1.Location = new Point(1, 1);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(934, 68);
-            panel1.TabIndex = 2;
-            panel1.Paint += panel1_Paint;
+        
             // 
             // FXemDanhGia_NTD
             // 
@@ -71,7 +64,7 @@
             BackColor = Color.White;
             ClientSize = new Size(933, 382);
             Controls.Add(fpnHT);
-            Controls.Add(panel1);
+           
             Margin = new Padding(3, 2, 3, 2);
             Name = "FXemDanhGia_NTD";
             Text = "FXemDanhGia_NTD";

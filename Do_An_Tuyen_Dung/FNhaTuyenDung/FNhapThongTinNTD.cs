@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
 {
     public partial class FNhapThongTinNTD : Form
     {
-        private string connectionString = @"Data Source=DESKTOP-UR1R776\SQLEXPRESS;Initial Catalog=backUp6;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        SqlConnection stringConnection = Connection.GetSqlConnection();
         public FNhapThongTinNTD()
         {
             InitializeComponent();
