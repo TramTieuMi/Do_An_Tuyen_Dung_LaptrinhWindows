@@ -249,5 +249,10 @@ namespace Do_An_Tuyen_Dung.FUngVien
             FXemDanhGia_NTD fXemDanhGia_NTD = new FXemDanhGia_NTD(tenCV, tencty);
             fXemDanhGia_NTD.ShowDialog();
         }
+
+        private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

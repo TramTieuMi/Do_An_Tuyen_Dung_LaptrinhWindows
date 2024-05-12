@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FXemDanhGia_NTD));
             fpnHT = new FlowLayoutPanel();
             txtTenCVvaCTy = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // fpnHT
@@ -44,29 +47,41 @@
             txtTenCVvaCTy.BackColor = Color.Transparent;
             txtTenCVvaCTy.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtTenCVvaCTy.ForeColor = Color.White;
-            txtTenCVvaCTy.Location = new Point(242, 26);
+            txtTenCVvaCTy.Location = new Point(80, 22);
             txtTenCVvaCTy.Name = "txtTenCVvaCTy";
             txtTenCVvaCTy.Size = new Size(545, 43);
             txtTenCVvaCTy.TabIndex = 1;
             txtTenCVvaCTy.Text = "Những Đánh Giá Của Ngành ở CôngTy \r\n";
             // 
+            // panel1
+            // 
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Controls.Add(txtTenCVvaCTy);
+            panel1.Location = new Point(1, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1067, 90);
+            panel1.TabIndex = 2;
+            // 
             // FXemDanhGia_NTD
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(1066, 509);
-            Controls.Add(txtTenCVvaCTy);
             Controls.Add(fpnHT);
+            Controls.Add(panel1);
             Name = "FXemDanhGia_NTD";
             Text = "FXemDanhGia_NTD";
             Load += FXemDanhGia_NTD_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private FlowLayoutPanel fpnHT;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtTenCVvaCTy;
+        private Panel panel1;
     }
 }

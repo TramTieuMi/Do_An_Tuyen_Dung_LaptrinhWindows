@@ -84,7 +84,6 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -93,6 +92,9 @@
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnDanhGia = new Guna.UI2.WinForms.Guna2Button();
+            guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
+            panel2 = new Panel();
+            guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel3.SuspendLayout();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -100,6 +102,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel3
@@ -237,7 +240,7 @@
             txtCty.BackColor = Color.Transparent;
             txtCty.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtCty.ForeColor = Color.Black;
-            txtCty.Location = new Point(989, 101);
+            txtCty.Location = new Point(990, 101);
             txtCty.Name = "txtCty";
             txtCty.Size = new Size(70, 41);
             txtCty.TabIndex = 108;
@@ -252,7 +255,7 @@
             txtNganh.BackColor = Color.Transparent;
             txtNganh.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtNganh.ForeColor = Color.Black;
-            txtNganh.Location = new Point(525, 110);
+            txtNganh.Location = new Point(526, 110);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(170, 50);
             txtNganh.TabIndex = 109;
@@ -587,17 +590,17 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(guna2RatingStar1);
             panel1.Controls.Add(guna2Button1);
-            panel1.Controls.Add(guna2HtmlLabel10);
             panel1.Controls.Add(guna2TextBox1);
             panel1.Controls.Add(guna2HtmlLabel8);
             panel1.Controls.Add(guna2HtmlLabel9);
             panel1.Controls.Add(flowLayoutPanel1);
             panel1.Controls.Add(guna2HtmlLabel6);
             panel1.Controls.Add(guna2HtmlLabel1);
-            panel1.Location = new Point(29, 1048);
+            panel1.Location = new Point(29, 1117);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1146, 435);
+            panel1.Size = new Size(1146, 363);
             panel1.TabIndex = 143;
             // 
             // guna2Button1
@@ -607,23 +610,15 @@
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.Font = new Font("Segoe UI", 9F);
+            guna2Button1.FillColor = Color.FromArgb(42, 54, 78);
+            guna2Button1.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(994, 71);
+            guna2Button1.Location = new Point(994, 108);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Button1.Size = new Size(131, 56);
+            guna2Button1.Size = new Size(131, 60);
             guna2Button1.TabIndex = 145;
-            guna2Button1.Text = "đăng đánh giá";
-            // 
-            // guna2HtmlLabel10
-            // 
-            guna2HtmlLabel10.BackColor = Color.Transparent;
-            guna2HtmlLabel10.Location = new Point(488, 37);
-            guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            guna2HtmlLabel10.Size = new Size(169, 22);
-            guna2HtmlLabel10.TabIndex = 144;
-            guna2HtmlLabel10.Text = "chỗ này để làm sao riêng";
+            guna2Button1.Text = "Đăng Đánh Giá";
             // 
             // guna2TextBox1
             // 
@@ -636,7 +631,7 @@
             guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Font = new Font("Segoe UI", 9F);
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(71, 66);
+            guna2TextBox1.Location = new Point(71, 108);
             guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
             guna2TextBox1.Name = "guna2TextBox1";
             guna2TextBox1.PasswordChar = '\0';
@@ -651,14 +646,14 @@
             guna2HtmlLabel8.BackColor = Color.Transparent;
             guna2HtmlLabel8.Location = new Point(69, 79);
             guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            guna2HtmlLabel8.Size = new Size(0, 0);
+            guna2HtmlLabel8.Size = new Size(3, 2);
             guna2HtmlLabel8.TabIndex = 4;
             guna2HtmlLabel8.Text = null;
             // 
             // guna2HtmlLabel9
             // 
             guna2HtmlLabel9.BackColor = Color.Transparent;
-            guna2HtmlLabel9.Location = new Point(71, 37);
+            guna2HtmlLabel9.Location = new Point(71, 79);
             guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             guna2HtmlLabel9.Size = new Size(177, 22);
             guna2HtmlLabel9.TabIndex = 3;
@@ -669,7 +664,7 @@
             flowLayoutPanel1.Controls.Add(guna2HtmlLabel7);
             flowLayoutPanel1.Location = new Point(66, 250);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(911, 79);
+            flowLayoutPanel1.Size = new Size(922, 79);
             flowLayoutPanel1.TabIndex = 2;
             // 
             // guna2HtmlLabel7
@@ -684,7 +679,7 @@
             // guna2HtmlLabel6
             // 
             guna2HtmlLabel6.BackColor = Color.Transparent;
-            guna2HtmlLabel6.Location = new Point(66, 205);
+            guna2HtmlLabel6.Location = new Point(66, 214);
             guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             guna2HtmlLabel6.Size = new Size(305, 22);
             guna2HtmlLabel6.TabIndex = 1;
@@ -693,11 +688,12 @@
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Location = new Point(70, 177);
+            guna2HtmlLabel1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            guna2HtmlLabel1.Location = new Point(66, 191);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(92, 22);
+            guna2HtmlLabel1.Size = new Size(153, 25);
             guna2HtmlLabel1.TabIndex = 0;
-            guna2HtmlLabel1.Text = "Các Đánh Giá";
+            guna2HtmlLabel1.Text = "Các đánh giá khác: ";
             // 
             // btnDanhGia
             // 
@@ -722,6 +718,32 @@
             btnDanhGia.Text = "Các Đánh Giá Khác";
             btnDanhGia.Click += btnDanhGia_Click;
             // 
+            // guna2RatingStar1
+            // 
+            guna2RatingStar1.Location = new Point(416, 50);
+            guna2RatingStar1.Name = "guna2RatingStar1";
+            guna2RatingStar1.Size = new Size(223, 35);
+            guna2RatingStar1.TabIndex = 145;
+            guna2RatingStar1.ValueChanged += guna2RatingStar1_ValueChanged;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(guna2HtmlLabel10);
+            panel2.Location = new Point(57, 1036);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(250, 75);
+            panel2.TabIndex = 145;
+            // 
+            // guna2HtmlLabel10
+            // 
+            guna2HtmlLabel10.BackColor = Color.Transparent;
+            guna2HtmlLabel10.Font = new Font("Segoe UI", 12F, FontStyle.Bold | FontStyle.Underline);
+            guna2HtmlLabel10.Location = new Point(0, 30);
+            guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            guna2HtmlLabel10.Size = new Size(103, 30);
+            guna2HtmlLabel10.TabIndex = 0;
+            guna2HtmlLabel10.Text = "ĐÁNH GIÁ ";
+            // 
             // FMoTa_YeuCau_QuyenLoi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -729,6 +751,7 @@
             AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(1205, 772);
+            Controls.Add(panel2);
             Controls.Add(btnDanhGia);
             Controls.Add(panel1);
             Controls.Add(guna2Panel1);
@@ -771,6 +794,8 @@
             panel1.PerformLayout();
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -818,10 +843,12 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2Button btnDanhGia;
+        private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
+        private Panel panel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
     }
 }
