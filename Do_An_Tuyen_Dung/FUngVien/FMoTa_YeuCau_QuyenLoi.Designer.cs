@@ -1,4 +1,6 @@
-﻿namespace Do_An_Tuyen_Dung.FUngVien
+﻿using Guna.UI2.WinForms;
+
+namespace Do_An_Tuyen_Dung.FUngVien
 {
     partial class FMoTa_YeuCau_QuyenLoi
     {
@@ -83,7 +85,7 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
-            RS_danhgia = new Guna.UI2.WinForms.Guna2RatingStar();
+            guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -95,7 +97,7 @@
             btnDanhGia = new Guna.UI2.WinForms.Guna2Button();
             panel2 = new Panel();
             guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtTest = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            lbSao = new Guna.UI2.WinForms.Guna2HtmlLabel();
             panel3.SuspendLayout();
             guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -241,7 +243,7 @@
             txtCty.BackColor = Color.Transparent;
             txtCty.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtCty.ForeColor = Color.Black;
-            txtCty.Location = new Point(992, 101);
+            txtCty.Location = new Point(995, 101);
             txtCty.Name = "txtCty";
             txtCty.Size = new Size(70, 41);
             txtCty.TabIndex = 108;
@@ -256,7 +258,7 @@
             txtNganh.BackColor = Color.Transparent;
             txtNganh.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtNganh.ForeColor = Color.Black;
-            txtNganh.Location = new Point(528, 110);
+            txtNganh.Location = new Point(531, 110);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(170, 50);
             txtNganh.TabIndex = 109;
@@ -591,8 +593,8 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(txtTest);
-            panel1.Controls.Add(RS_danhgia);
+            panel1.Controls.Add(lbSao);
+            panel1.Controls.Add(guna2RatingStar1);
             panel1.Controls.Add(guna2Button1);
             panel1.Controls.Add(guna2TextBox1);
             panel1.Controls.Add(guna2HtmlLabel8);
@@ -604,15 +606,25 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1146, 363);
             panel1.TabIndex = 143;
+            panel1.Paint += panel1_Paint;
+            // 
+            // guna2RatingStar1
+            // 
+            guna2RatingStar1.Location = new Point(416, 50);
+            guna2RatingStar1.Name = "guna2RatingStar1";
+            guna2RatingStar1.Size = new Size(223, 35);
+            guna2RatingStar1.TabIndex = 145;
+            guna2RatingStar1.ValueChanged += guna2RatingStar1_ValueChanged;
+            guna2RatingStar1.Click += guna2RatingStar1_ValueChanged;
             // 
             // RS_danhgia
             // 
-            RS_danhgia.BorderColor = Color.SteelBlue;
-            RS_danhgia.Location = new Point(431, 24);
-            RS_danhgia.Name = "RS_danhgia";
-            RS_danhgia.Size = new Size(223, 35);
-            RS_danhgia.TabIndex = 145;
-            RS_danhgia.ValueChanged += guna2RatingStar1_ValueChanged;
+            //RS_danhgia.BorderColor = Color.SteelBlue;
+            //RS_danhgia.Location = new Point(431, 24);
+            //RS_danhgia.Name = "RS_danhgia";
+            //RS_danhgia.Size = new Size(223, 35);
+            //RS_danhgia.TabIndex = 145;
+            //RS_danhgia.ValueChanged += guna2RatingStar1_ValueChanged;
             // 
             // guna2Button1
             // 
@@ -747,14 +759,14 @@
             guna2HtmlLabel10.TabIndex = 0;
             guna2HtmlLabel10.Text = "ĐÁNH GIÁ ";
             // 
-            // txtTest
+            // lbSao
             // 
-            txtTest.BackColor = Color.Transparent;
-            txtTest.Location = new Point(736, 29);
-            txtTest.Name = "txtTest";
-            txtTest.Size = new Size(129, 22);
-            txtTest.TabIndex = 146;
-            txtTest.Text = "guna2HtmlLabel14";
+            lbSao.BackColor = Color.Transparent;
+            lbSao.Location = new Point(711, 59);
+            lbSao.Name = "lbSao";
+            lbSao.Size = new Size(28, 22);
+            lbSao.TabIndex = 146;
+            lbSao.Text = "Sao";
             // 
             // FMoTa_YeuCau_QuyenLoi
             // 
@@ -850,6 +862,7 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Panel panel1;
+        private Guna2RatingStar guna2RatingStar1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private FlowLayoutPanel flowLayoutPanel1;
@@ -862,6 +875,6 @@
         private Guna.UI2.WinForms.Guna2RatingStar RS_danhgia;
         private Panel panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2HtmlLabel txtTest;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbSao;
     }
 }

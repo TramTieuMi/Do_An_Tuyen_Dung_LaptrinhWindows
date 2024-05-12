@@ -60,7 +60,7 @@
             txtTenUV.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             txtTenUV.Location = new Point(63, 17);
             txtTenUV.Name = "txtTenUV";
-            txtTenUV.Size = new Size(231, 27);
+            txtTenUV.Size = new Size(219, 25);
             txtTenUV.TabIndex = 5;
             txtTenUV.Text = "truyền tên người đánh giá:";
             // 
