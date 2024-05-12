@@ -31,7 +31,7 @@
             txtThoiGian = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtNoiDung = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtTenUV = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtSoSao = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            RS_danhgia = new Guna.UI2.WinForms.Guna2RatingStar();
             SuspendLayout();
             // 
             // txtThoiGian
@@ -62,21 +62,21 @@
             txtTenUV.TabIndex = 5;
             txtTenUV.Text = "truyền tên người đánh giá:";
             // 
-            // txtSoSao
+            // RS_danhgia
             // 
-            txtSoSao.BackColor = Color.Transparent;
-            txtSoSao.Location = new Point(813, 34);
-            txtSoSao.Name = "txtSoSao";
-            txtSoSao.Size = new Size(154, 22);
-            txtSoSao.TabIndex = 8;
-            txtSoSao.Text = "hiện mấy cái sao ở đây";
+            RS_danhgia.BorderColor = Color.SteelBlue;
+            RS_danhgia.Location = new Point(782, 34);
+            RS_danhgia.Name = "RS_danhgia";
+            RS_danhgia.Size = new Size(223, 35);
+            RS_danhgia.TabIndex = 146;
+            RS_danhgia.ValueChanged += RS_danhgia_ValueChanged;
             // 
             // UC_DanhGia
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            Controls.Add(txtSoSao);
+            Controls.Add(RS_danhgia);
             Controls.Add(txtThoiGian);
             Controls.Add(txtNoiDung);
             Controls.Add(txtTenUV);
@@ -92,6 +92,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel txtThoiGian;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtNoiDung;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtTenUV;
-        private Guna.UI2.WinForms.Guna2HtmlLabel txtSoSao;
+        private Guna.UI2.WinForms.Guna2RatingStar RS_danhgia;
     }
 }

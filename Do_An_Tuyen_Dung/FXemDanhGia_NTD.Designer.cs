@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FXemDanhGia_NTD));
             fpnHT = new FlowLayoutPanel();
             txtTenCVvaCTy = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            panel1 = new Panel();
-            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // fpnHT
             // 
-            fpnHT.Location = new Point(21, 97);
+            fpnHT.Location = new Point(18, 73);
+            fpnHT.Margin = new Padding(3, 2, 3, 2);
             fpnHT.Name = "fpnHT";
-            fpnHT.Size = new Size(1025, 400);
+            fpnHT.Size = new Size(897, 300);
             fpnHT.TabIndex = 0;
+            fpnHT.Paint += fpnHT_Paint;
             // 
             // txtTenCVvaCTy
             // 
             txtTenCVvaCTy.BackColor = Color.Transparent;
             txtTenCVvaCTy.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             txtTenCVvaCTy.ForeColor = Color.White;
-            txtTenCVvaCTy.Location = new Point(80, 22);
+            txtTenCVvaCTy.Location = new Point(70, 16);
+            txtTenCVvaCTy.Margin = new Padding(3, 2, 3, 2);
             txtTenCVvaCTy.Name = "txtTenCVvaCTy";
-            txtTenCVvaCTy.Size = new Size(545, 43);
+            txtTenCVvaCTy.Size = new Size(442, 34);
             txtTenCVvaCTy.TabIndex = 1;
             txtTenCVvaCTy.Text = "Những Đánh Giá Của Ngành ở CôngTy \r\n";
             // 
@@ -58,30 +58,31 @@
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.Controls.Add(txtTenCVvaCTy);
             panel1.Location = new Point(1, 1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1067, 90);
+            panel1.Size = new Size(934, 68);
             panel1.TabIndex = 2;
+            panel1.Paint += panel1_Paint;
             // 
             // FXemDanhGia_NTD
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1066, 509);
+            ClientSize = new Size(933, 382);
             Controls.Add(fpnHT);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FXemDanhGia_NTD";
             Text = "FXemDanhGia_NTD";
             Load += FXemDanhGia_NTD_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private FlowLayoutPanel fpnHT;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtTenCVvaCTy;
-        private Panel panel1;
     }
 }

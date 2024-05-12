@@ -25,7 +25,7 @@ namespace Do_An_Tuyen_Dung
             if (email.Trim() == "") { MessageBox.Show("Vui lòng nhập chính xác email đã đăng kí!"); }
             else
             {
-                string query = "SELECT * FROM DangNhap WHERE Email = '" + email + "'";
+                string query = "SELECT * FROM TaoTaiKhoan WHERE Email = '" + email + "'";
                 if (modify.taiKhoans(query).Count != 0)
                 {
                     txtBoxResult.ForeColor = Color.Black;
