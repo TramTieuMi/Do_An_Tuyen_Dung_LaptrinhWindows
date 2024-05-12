@@ -17,7 +17,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FNhapThongTin_UV : Form
     {
-        private string connectionString = @"Data Source=DESKTOP-UR1R776\SQLEXPRESS;Initial Catalog=DoAnNhom264;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = @"Data Source=KHANG\TEST1;Initial Catalog=backUp61;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         public FNhapThongTin_UV()
         {
             InitializeComponent();
