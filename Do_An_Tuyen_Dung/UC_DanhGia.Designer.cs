@@ -37,39 +37,42 @@
             // txtThoiGian
             // 
             txtThoiGian.BackColor = Color.Transparent;
+            txtThoiGian.Font = new Font("Segoe UI", 10.2F);
             txtThoiGian.Location = new Point(62, 55);
             txtThoiGian.Name = "txtThoiGian";
-            txtThoiGian.Size = new Size(239, 22);
+            txtThoiGian.Size = new Size(274, 25);
             txtThoiGian.TabIndex = 7;
             txtThoiGian.Text = "Thời gian đã đánh giá: 20/022/2022";
             // 
             // txtNoiDung
             // 
             txtNoiDung.BackColor = Color.Transparent;
+            txtNoiDung.Font = new Font("Segoe UI", 10.2F);
             txtNoiDung.Location = new Point(431, 34);
             txtNoiDung.Name = "txtNoiDung";
-            txtNoiDung.Size = new Size(217, 22);
+            txtNoiDung.Size = new Size(253, 25);
             txtNoiDung.TabIndex = 6;
             txtNoiDung.Text = "nội dung đánh giá truyền vô đây";
             // 
             // txtTenUV
             // 
             txtTenUV.BackColor = Color.Transparent;
-            txtTenUV.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtTenUV.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
             txtTenUV.Location = new Point(63, 17);
             txtTenUV.Name = "txtTenUV";
-            txtTenUV.Size = new Size(219, 25);
+            txtTenUV.Size = new Size(231, 27);
             txtTenUV.TabIndex = 5;
             txtTenUV.Text = "truyền tên người đánh giá:";
             // 
             // RS_danhgia
             // 
-            RS_danhgia.BorderColor = Color.SteelBlue;
-            RS_danhgia.Location = new Point(782, 34);
-            RS_danhgia.Name = "RS_danhgia";
-            RS_danhgia.Size = new Size(223, 35);
-            RS_danhgia.TabIndex = 146;
-            RS_danhgia.ValueChanged += RS_danhgia_ValueChanged;
+            //txtSoSao.BackColor = Color.Transparent;
+            //txtSoSao.Font = new Font("Segoe UI", 10.2F);
+            //txtSoSao.Location = new Point(813, 34);
+            //txtSoSao.Name = "txtSoSao";
+            //txtSoSao.Size = new Size(177, 25);
+            //txtSoSao.TabIndex = 8;
+            //txtSoSao.Text = "hiện mấy cái sao ở đây";
             // 
             // UC_DanhGia
             // 
