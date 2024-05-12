@@ -58,7 +58,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         public void LoadDuLieu(string chuoi)
         {
-            txtNganh.Text =  chuoi;
+            txtNganh.Text = chuoi;
             MoTaYeuCau moTaYeuCau = new MoTaYeuCau();
             try
             {
@@ -97,7 +97,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
                 DataTable dataTable1 = new DataTable();
                 string query1 = "SELECT TenCTy,EmailHR,Tinh_TP FROM ThongTinCTy_Chinh WHERE EmailHR =@EmailHR";
-                
+
                 modify.TaiDuLieu(dataTable1, query1, "@EmailHR", em1);
                 if (dataTable1.Rows.Count > 0)
                 {
@@ -109,7 +109,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                             txtCty.Text = row1["TenCTy"].ToString();
                             tencty = txtCty.Text;
                             DiaDiem = row1["Tinh_TP"].ToString();
-                            
+
                         }
                     }
                 }
@@ -164,7 +164,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
             DataTable dataTable1 = new DataTable();
             string query1 = "SELECT TenTaiKhoan,Email FROM TaoTaiKhoan Where TenTaiKhoan = @TenTaiKhoan";
             modify.TaiDuLieu(dataTable1, query1, "@TenTaiKhoan", FLogin.TenTaiKhoan);
-            
+
             if (dataTable1.Rows.Count > 0)
             {
                 foreach (DataRow row in dataTable1.Rows)
@@ -188,7 +188,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                     if (em1 == EmailUV)
                     {
                         TenUV = row["HoTenUV"].ToString();
-                       
+
                     };
                 }
             }
@@ -225,9 +225,9 @@ namespace Do_An_Tuyen_Dung.FUngVien
             {
                 MessageBox.Show("Nộp đơn thất bại do lỗi không xác định: " + ex.Message);
             }
-            
+
         }
-    
+
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
@@ -240,6 +240,17 @@ namespace Do_An_Tuyen_Dung.FUngVien
         }
 
         private void txtMoTa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDanhGia_Click(object sender, EventArgs e)
+        {
+            FXemDanhGia_NTD fXemDanhGia_NTD = new FXemDanhGia_NTD(tenCV, tencty);
+            fXemDanhGia_NTD.ShowDialog();
+        }
+
+        private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
 
         }

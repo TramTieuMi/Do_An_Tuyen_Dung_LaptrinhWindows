@@ -216,8 +216,8 @@
             label18.AutoSize = true;
             label18.BackColor = Color.Transparent;
             label18.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(115, 91);
+            label18.ForeColor = Color.Black;
+            label18.Location = new Point(130, 99);
             label18.Name = "label18";
             label18.Size = new Size(90, 23);
             label18.TabIndex = 69;
@@ -229,8 +229,8 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(612, 91);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(628, 99);
             label5.Name = "label5";
             label5.Size = new Size(110, 23);
             label5.TabIndex = 70;
@@ -239,7 +239,7 @@
             // Combobox_TrangThai
             // 
             Combobox_TrangThai.BackColor = Color.Transparent;
-            Combobox_TrangThai.BorderColor = Color.White;
+            Combobox_TrangThai.BorderColor = Color.Black;
             Combobox_TrangThai.BorderRadius = 10;
             Combobox_TrangThai.BorderThickness = 2;
             Combobox_TrangThai.CustomizableEdges = customizableEdges1;
@@ -251,7 +251,7 @@
             Combobox_TrangThai.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_TrangThai.ItemHeight = 30;
             Combobox_TrangThai.Items.AddRange(new object[] { "Đã Xem", "Chưa Xem" });
-            Combobox_TrangThai.Location = new Point(215, 84);
+            Combobox_TrangThai.Location = new Point(230, 92);
             Combobox_TrangThai.Name = "Combobox_TrangThai";
             Combobox_TrangThai.ShadowDecoration.CustomizableEdges = customizableEdges2;
             Combobox_TrangThai.Size = new Size(269, 36);
@@ -261,7 +261,7 @@
             // Combobox_KinhNghiem
             // 
             Combobox_KinhNghiem.BackColor = Color.Transparent;
-            Combobox_KinhNghiem.BorderColor = Color.White;
+            Combobox_KinhNghiem.BorderColor = Color.Black;
             Combobox_KinhNghiem.BorderRadius = 10;
             Combobox_KinhNghiem.BorderThickness = 2;
             Combobox_KinhNghiem.CustomizableEdges = customizableEdges3;
@@ -273,7 +273,7 @@
             Combobox_KinhNghiem.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_KinhNghiem.ItemHeight = 30;
             Combobox_KinhNghiem.Items.AddRange(new object[] { "1 năm", "2 năm", "3 năm", "4 năm", "5 năm", "6 năm" });
-            Combobox_KinhNghiem.Location = new Point(727, 84);
+            Combobox_KinhNghiem.Location = new Point(751, 92);
             Combobox_KinhNghiem.Name = "Combobox_KinhNghiem";
             Combobox_KinhNghiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
             Combobox_KinhNghiem.Size = new Size(269, 36);
@@ -282,6 +282,7 @@
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.BackgroundImage = (Image)resources.GetObject("guna2Panel1.BackgroundImage");
             guna2Panel1.Controls.Add(txtNganh);
             guna2Panel1.CustomizableEdges = customizableEdges5;
             guna2Panel1.Location = new Point(-2, 0);
@@ -296,7 +297,7 @@
             txtNganh.AutoSize = true;
             txtNganh.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtNganh.ForeColor = Color.White;
-            txtNganh.Location = new Point(519, 24);
+            txtNganh.Location = new Point(519, 20);
             txtNganh.Name = "txtNganh";
             txtNganh.Size = new Size(128, 38);
             txtNganh.TabIndex = 0;
@@ -333,7 +334,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             ClientSize = new Size(1183, 635);
             Controls.Add(panel8);
             Controls.Add(panel2);

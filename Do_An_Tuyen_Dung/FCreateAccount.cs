@@ -18,7 +18,7 @@ namespace Do_An_Tuyen_Dung
 {
     public partial class FCreateAccount : Form
     {
-        private string connectionString = @"Data Source=KHANG\TEST1;Initial Catalog=""DoAnNhom (1)"";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"; // Replace with your actual connection string
+        private string connectionString = @"Data Source=DESKTOP-UR1R776\SQLEXPRESS;Initial Catalog=backUp6;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public FCreateAccount()
         {

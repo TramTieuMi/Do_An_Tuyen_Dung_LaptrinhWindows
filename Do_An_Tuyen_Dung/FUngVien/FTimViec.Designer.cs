@@ -63,7 +63,7 @@
             txtTimCongViec.AutoCompleteCustomSource.AddRange(new string[] { "Dev OP", "xem", "BackEnd" });
             txtTimCongViec.AutoCompleteMode = AutoCompleteMode.Append;
             txtTimCongViec.BackColor = Color.Transparent;
-            txtTimCongViec.BorderColor = Color.White;
+            txtTimCongViec.BorderColor = Color.Black;
             txtTimCongViec.BorderRadius = 15;
             txtTimCongViec.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             txtTimCongViec.CustomizableEdges = customizableEdges1;
@@ -76,7 +76,7 @@
             txtTimCongViec.Font = new Font("Segoe UI", 9F);
             txtTimCongViec.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTimCongViec.IconRight = (Image)resources.GetObject("txtTimCongViec.IconRight");
-            txtTimCongViec.Location = new Point(187, 97);
+            txtTimCongViec.Location = new Point(192, 106);
             txtTimCongViec.Margin = new Padding(3, 5, 3, 5);
             txtTimCongViec.Name = "txtTimCongViec";
             txtTimCongViec.PasswordChar = '\0';
@@ -92,8 +92,8 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(58, 104);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(57, 111);
             label1.Name = "label1";
             label1.Size = new Size(121, 23);
             label1.TabIndex = 32;
@@ -114,7 +114,7 @@
             btn_TimKiem.FillColor = Color.FromArgb(42, 54, 78);
             btn_TimKiem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_TimKiem.ForeColor = Color.White;
-            btn_TimKiem.Location = new Point(927, 96);
+            btn_TimKiem.Location = new Point(927, 105);
             btn_TimKiem.Name = "btn_TimKiem";
             btn_TimKiem.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btn_TimKiem.Size = new Size(129, 36);
@@ -125,7 +125,7 @@
             // Combobox_KinhNghiem
             // 
             Combobox_KinhNghiem.BackColor = Color.Transparent;
-            Combobox_KinhNghiem.BorderColor = Color.White;
+            Combobox_KinhNghiem.BorderColor = Color.Black;
             Combobox_KinhNghiem.BorderRadius = 15;
             Combobox_KinhNghiem.BorderThickness = 2;
             Combobox_KinhNghiem.CustomizableEdges = customizableEdges5;
@@ -147,7 +147,7 @@
             // Combobox_Luong
             // 
             Combobox_Luong.BackColor = Color.Transparent;
-            Combobox_Luong.BorderColor = Color.White;
+            Combobox_Luong.BorderColor = Color.Black;
             Combobox_Luong.BorderRadius = 15;
             Combobox_Luong.BorderThickness = 2;
             Combobox_Luong.CustomizableEdges = customizableEdges7;
@@ -169,7 +169,7 @@
             // Combobox_DiaDiem
             // 
             Combobox_DiaDiem.BackColor = Color.Transparent;
-            Combobox_DiaDiem.BorderColor = Color.White;
+            Combobox_DiaDiem.BorderColor = Color.Black;
             Combobox_DiaDiem.BorderRadius = 15;
             Combobox_DiaDiem.BorderThickness = 2;
             Combobox_DiaDiem.CustomizableEdges = customizableEdges9;
@@ -193,7 +193,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label5.ForeColor = Color.White;
+            label5.ForeColor = Color.Black;
             label5.Location = new Point(731, 173);
             label5.Name = "label5";
             label5.Size = new Size(110, 23);
@@ -205,7 +205,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
+            label4.ForeColor = Color.Black;
             label4.Location = new Point(407, 171);
             label4.Name = "label4";
             label4.Size = new Size(59, 23);
@@ -217,7 +217,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
-            label3.ForeColor = Color.White;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(58, 171);
             label3.Name = "label3";
             label3.Size = new Size(80, 23);
@@ -227,13 +227,14 @@
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.BackgroundImage = (Image)resources.GetObject("guna2Panel1.BackgroundImage");
             guna2Panel1.Controls.Add(pictureBox1);
             guna2Panel1.Controls.Add(label2);
             guna2Panel1.CustomizableEdges = customizableEdges11;
-            guna2Panel1.Location = new Point(5, 4);
+            guna2Panel1.Location = new Point(0, -2);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel1.Size = new Size(1179, 85);
+            guna2Panel1.Size = new Size(1184, 91);
             guna2Panel1.TabIndex = 82;
             guna2Panel1.Paint += guna2Panel1_Paint;
             // 
@@ -272,7 +273,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             ClientSize = new Size(1187, 636);
             Controls.Add(fpnHT);
             Controls.Add(guna2Panel1);
