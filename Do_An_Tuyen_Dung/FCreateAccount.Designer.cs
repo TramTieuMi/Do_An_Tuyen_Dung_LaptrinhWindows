@@ -204,7 +204,7 @@
             ComboBox_Role.Font = new Font("Segoe UI", 10F);
             ComboBox_Role.ForeColor = Color.FromArgb(68, 88, 112);
             ComboBox_Role.ItemHeight = 30;
-            ComboBox_Role.Items.AddRange(new object[] { "Nhà Tuyển Dụng", "Ứng Viên" });
+            ComboBox_Role.Items.AddRange(new object[] { "Nha Tuyen Dung", "Ung Vien" });
             ComboBox_Role.Location = new Point(102, 394);
             ComboBox_Role.Margin = new Padding(3, 2, 3, 2);
             ComboBox_Role.Name = "ComboBox_Role";

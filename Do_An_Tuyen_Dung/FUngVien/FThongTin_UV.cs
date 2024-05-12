@@ -119,26 +119,31 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void txtlinkFileCV_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FCV cv = new FCV();
-            cv.ShowDialog();
-
-            using (WebClient client = new WebClient())
+           
             {
-                try
-                {
-                    // Thay thế link dưới đây bằng đường dẫn tới file PDF bạn muốn download
-                    string pdfUrl = "https://tenten.vn/tin-tuc/wp-content/uploads/2022/02/anh-cv-2-4.jpg\r\n";
+                // 1. Choose the picture file
+                string picturePath = "C:\\Users\\nguye\\Source\\Repos\\Do_An_Tuyen_Dung_44\\Do_An_Tuyen_Dung\\Resources\\cv tim .jpg"; // Replace with the actual path to your picture
 
-                    // Thay đổi đường dẫn lưu file ở dưới đây
-                    string savePath = "C:\\Users\\TieuMi\\Downloads";
-
-                    client.DownloadFile(pdfUrl, savePath);
-                    MessageBox.Show("Download completed!");
-                }
-                catch (Exception ex)
+                // 2. Check if the file exists
+                if (!File.Exists(picturePath))
                 {
-                    MessageBox.Show("An error occurred: " + ex.Message);
+                    MessageBox.Show("Error: The picture file does not exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
+
+                // 3. Create a new Form to display the picture
+                Form pictureForm = new Form();
+                pictureForm.Text = "Picture";
+                pictureForm.Size = new Size(927, 1200); // Adjust the size as needed
+
+                // 4. Add a PictureBox to the Form
+                PictureBox pictureBox = new PictureBox();
+                pictureBox.Dock = DockStyle.Fill;
+                pictureBox.Image = Image.FromFile(picturePath);
+                pictureForm.Controls.Add(pictureBox);
+
+                // 5. Show the Form
+                pictureForm.ShowDialog();
             }
         }
 

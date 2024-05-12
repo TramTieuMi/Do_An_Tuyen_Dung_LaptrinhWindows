@@ -68,7 +68,7 @@ namespace Do_An_Tuyen_Dung
                         {
 
                             string role = row["role"].ToString();
-                            if (role == "Nhà Tuyển Dụng")
+                            if (role == "Nha Tuyen Dung")
                             {
                                 FLogin flogin = new FLogin();
                                 FDangBai_NTD dangbai = new FDangBai_NTD();

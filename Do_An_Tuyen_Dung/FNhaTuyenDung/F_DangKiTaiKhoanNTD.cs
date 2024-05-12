@@ -44,7 +44,7 @@ namespace Do_An_Tuyen_Dung
                 SqlConnection connection = (stringConnection);
                 MessageBox.Show("Đăng kí thành công!");
                 this.Hide();
-                FDangBai_NTD dangbai = new FDangBai_NTD();
+                FNhapThongTinNTD dangbai = new FNhapThongTinNTD();
                 dangbai.ShowDialog();
                 this.Close();
             }
@@ -62,7 +62,7 @@ namespace Do_An_Tuyen_Dung
             try
             {
                 this.Hide();
-                FDangBai_NTD dangbai = new FDangBai_NTD();
+                FNhapThongTinNTD dangbai = new FNhapThongTinNTD();
                 dangbai.ShowDialog();
                 this.Close();
             }

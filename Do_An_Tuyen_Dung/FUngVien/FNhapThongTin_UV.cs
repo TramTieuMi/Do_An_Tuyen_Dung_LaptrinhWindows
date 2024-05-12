@@ -17,7 +17,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FNhapThongTin_UV : Form
     {
-        private string connectionString = @"Data Source=KHANG\TEST1;Initial Catalog=backUp61;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        SqlConnection stringConnection = Connection.GetSqlConnection();
         public FNhapThongTin_UV()
         {
             InitializeComponent();
@@ -51,7 +51,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                 // Use parameterized query for security and clarity
                 string query = "INSERT INTO NhapThongTinUV (HoTenUV, NgayThangNamSinh, NoiSinh, FileCV, Tinh_TP, Quan_Huyen, Xa_Phuong, SoNha, Email) VALUES (@HoTenUV, @NgayThangNamSinh, @NoiSinh, @FileCV, @Tinh_TP, @Quan_Huyen, @Xa_Phuong, @SoNha, @Email)";
 
-                using (SqlConnection connection = connectionString)
+                using (SqlConnection connection = stringConnection)
                 {
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {

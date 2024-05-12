@@ -38,9 +38,10 @@
             // 
             txtThoiGian.BackColor = Color.Transparent;
             txtThoiGian.Font = new Font("Segoe UI", 10.2F);
-            txtThoiGian.Location = new Point(62, 55);
+            txtThoiGian.Location = new Point(54, 41);
+            txtThoiGian.Margin = new Padding(3, 2, 3, 2);
             txtThoiGian.Name = "txtThoiGian";
-            txtThoiGian.Size = new Size(274, 25);
+            txtThoiGian.Size = new Size(224, 21);
             txtThoiGian.TabIndex = 7;
             txtThoiGian.Text = "Thời gian đã đánh giá: 20/022/2022";
             // 
@@ -48,9 +49,10 @@
             // 
             txtNoiDung.BackColor = Color.Transparent;
             txtNoiDung.Font = new Font("Segoe UI", 10.2F);
-            txtNoiDung.Location = new Point(431, 34);
+            txtNoiDung.Location = new Point(377, 26);
+            txtNoiDung.Margin = new Padding(3, 2, 3, 2);
             txtNoiDung.Name = "txtNoiDung";
-            txtNoiDung.Size = new Size(253, 25);
+            txtNoiDung.Size = new Size(204, 21);
             txtNoiDung.TabIndex = 6;
             txtNoiDung.Text = "nội dung đánh giá truyền vô đây";
             // 
@@ -58,33 +60,36 @@
             // 
             txtTenUV.BackColor = Color.Transparent;
             txtTenUV.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            txtTenUV.Location = new Point(63, 17);
+            txtTenUV.Location = new Point(55, 13);
+            txtTenUV.Margin = new Padding(3, 2, 3, 2);
             txtTenUV.Name = "txtTenUV";
-            txtTenUV.Size = new Size(219, 25);
+            txtTenUV.Size = new Size(180, 21);
             txtTenUV.TabIndex = 5;
             txtTenUV.Text = "truyền tên người đánh giá:";
             // 
             // RS_danhgia
             // 
-            //txtSoSao.BackColor = Color.Transparent;
-            //txtSoSao.Font = new Font("Segoe UI", 10.2F);
-            //txtSoSao.Location = new Point(813, 34);
-            //txtSoSao.Name = "txtSoSao";
-            //txtSoSao.Size = new Size(177, 25);
-            //txtSoSao.TabIndex = 8;
-            //txtSoSao.Text = "hiện mấy cái sao ở đây";
+            RS_danhgia.FillColor = Color.FromArgb(113, 208, 255);
+            RS_danhgia.FocusedColor = Color.FromArgb(113, 208, 255);
+            RS_danhgia.Location = new Point(768, 26);
+            RS_danhgia.Margin = new Padding(3, 2, 3, 2);
+            RS_danhgia.Name = "RS_danhgia";
+            RS_danhgia.Size = new Size(105, 21);
+            RS_danhgia.TabIndex = 0;
+            RS_danhgia.ValueChanged += RS_danhgia_ValueChanged_1;
             // 
             // UC_DanhGia
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             Controls.Add(RS_danhgia);
             Controls.Add(txtThoiGian);
             Controls.Add(txtNoiDung);
             Controls.Add(txtTenUV);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UC_DanhGia";
-            Size = new Size(1042, 100);
+            Size = new Size(912, 75);
             Load += UC_DanhGia_Load;
             ResumeLayout(false);
             PerformLayout();

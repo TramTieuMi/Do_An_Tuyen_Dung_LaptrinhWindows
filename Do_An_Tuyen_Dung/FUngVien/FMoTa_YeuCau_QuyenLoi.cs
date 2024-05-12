@@ -21,10 +21,12 @@ namespace Do_An_Tuyen_Dung.FUngVien
 {
     public partial class FMoTa_YeuCau_QuyenLoi : Form
     {
-        
+        string EmailHR = string.Empty;
+        string EmailUV = string.Empty;
+
         SqlConnection connStr = Connection.GetSqlConnection();
         Modify modify = new Modify();
-        string tenCV;
+        string TenCongViec = string.Empty;
         string tencty;
         string DiaDiem = string.Empty;
         public FMoTa_YeuCau_QuyenLoi()
@@ -35,9 +37,9 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
             InitializeComponent();
-            tenCV = nganhDuocChon;
-            LoadDuLieu(tenCV);
-            AnNutNopDon(tenCV);
+            TenCongViec = nganhDuocChon;
+            LoadDuLieu(TenCongViec);
+            AnNutNopDon(TenCongViec);
         }
 
         public void AnNutNopDon(string chuoi)
@@ -246,18 +248,18 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void btnDanhGia_Click(object sender, EventArgs e)
         {
-            FXemDanhGia_NTD fXemDanhGia_NTD = new FXemDanhGia_NTD(tenCV, tencty);
+            FXemDanhGia_NTD fXemDanhGia_NTD = new FXemDanhGia_NTD(TenCongViec, tencty);
             fXemDanhGia_NTD.ShowDialog();
         }
 
         private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
-            
+
 
             // Hiển thị giá trị rating lên label hoặc nơi bạn muốn
             //lbSao.Text = $"Rating: {ratingValue} sao";
             //lbSao.Text = {ratingValue};
-            
+
         }
 
         private void guna2HtmlLabel10_Click(object sender, EventArgs e)
@@ -269,5 +271,92 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
         }
+
+        private void RS_danhgia_ValueChanged(object sender, EventArgs e)
+        {
+            float ratingValue = RS_danhgia.Value;
+
+            // Hiển thị giá trị rating lên label hoặc nơi bạn muốn
+            //lbSao.Text = $"Rating: {ratingValue} sao";
+            //lbSao.Text = {ratingValue};
+            if (ratingValue == 5)
+            {
+                lbSao.Text = $"Tuyệt vời";
+            }
+            if (ratingValue >= 4 && ratingValue < 5)
+            {
+                lbSao.Text = $"Tốt";
+            }
+            if (ratingValue >= 3 && ratingValue < 4)
+            {
+                lbSao.Text = $"Bình Thường";
+            }
+            if (ratingValue >= 2 && ratingValue < 3)
+            {
+                lbSao.Text = $"Tệ";
+            }
+            if (ratingValue >= 1 && ratingValue < 2)
+            {
+                lbSao.Text = $"Rất tệ";
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string SoSao = Convert.ToString(this.RS_danhgia.Value);
+            string NoiDungDanhGia = this.NoiDungDanhGia.Text;
+            string ThoiGianDanhGia = Convert.ToString(DateTime.Now);
+
+            try
+            {
+
+
+                // Use parameterized query for security and prevent truncation errors
+                string query = "UPDATE TinhTrangCV SET SoSao = @SoSao, NoiDungDanhGia = @NoiDungDanhGia, ThoiGianDanhGia = @ThoiGianDanhGia " +
+                    "WHERE EmailHR = @EmailHR AND EmailUV = @EmailUV  AND TenCongViec = @TenCongViec";
+
+                using (SqlConnection connStr = Connection.GetSqlConnection())
+                {
+                    connStr.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connStr))
+                    {
+                        command.Parameters.AddWithValue("@SoSao", SoSao);
+                        command.Parameters.AddWithValue("@NoiDungDanhGia", NoiDungDanhGia);
+                        command.Parameters.AddWithValue("@ThoiGianDanhGia", ThoiGianDanhGia);
+                        command.Parameters.AddWithValue("@TenCongViec", TenCongViec);
+                        command.Parameters.AddWithValue("@EmailHR", txtEmailHR.Text);
+                        FYeuThich fYeuThich = new FYeuThich();
+                        command.Parameters.AddWithValue("@EmailUV", fYeuThich.Email(FLogin.TenTaiKhoan));
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Cập nhật thành công!");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy bản ghi nào để cập nhật.");
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Cập nhật thất bại do lỗi SQL: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Cập nhật thất bại do lỗi không xác định: " + ex.Message);
+            }
+        }
+
+        private void NoiDungDanhGia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
