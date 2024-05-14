@@ -69,8 +69,8 @@
             // 
             // RS_danhgia
             // 
-            RS_danhgia.FillColor = Color.FromArgb(113, 208, 255);
-            RS_danhgia.FocusedColor = Color.FromArgb(113, 208, 255);
+            RS_danhgia.FillColor = Color.DarkGray;
+            RS_danhgia.FocusedColor = Color.DarkGray;
             RS_danhgia.Location = new Point(768, 26);
             RS_danhgia.Margin = new Padding(3, 2, 3, 2);
             RS_danhgia.Name = "RS_danhgia";
