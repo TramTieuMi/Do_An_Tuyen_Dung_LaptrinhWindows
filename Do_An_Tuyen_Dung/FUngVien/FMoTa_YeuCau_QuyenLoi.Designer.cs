@@ -1,6 +1,4 @@
-﻿using Guna.UI2.WinForms;
-
-namespace Do_An_Tuyen_Dung.FUngVien
+﻿namespace Do_An_Tuyen_Dung.FUngVien
 {
     partial class FMoTa_YeuCau_QuyenLoi
     {
@@ -707,6 +705,26 @@ namespace Do_An_Tuyen_Dung.FUngVien
             guna2Button1.Text = "Đăng Đánh Giá";
             guna2Button1.Click += guna2Button1_Click;
             // 
+            // guna2TextBox1
+            // 
+            guna2TextBox1.CustomizableEdges = customizableEdges15;
+            guna2TextBox1.DefaultText = "";
+            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Font = new Font("Segoe UI", 9F);
+            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            guna2TextBox1.Location = new Point(62, 81);
+            guna2TextBox1.Name = "guna2TextBox1";
+            guna2TextBox1.PasswordChar = '\0';
+            guna2TextBox1.PlaceholderText = "";
+            guna2TextBox1.SelectedText = "";
+            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2TextBox1.Size = new Size(802, 45);
+            guna2TextBox1.TabIndex = 5;
+            // 
             // guna2HtmlLabel8
             // 
             guna2HtmlLabel8.BackColor = Color.Transparent;
@@ -860,13 +878,12 @@ namespace Do_An_Tuyen_Dung.FUngVien
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Panel panel1;
-        private Guna2RatingStar guna2RatingStar1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2Button btnDanhGia;
-        private Guna.UI2.WinForms.Guna2RatingStar RS_danhgia;
+        private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
         private Panel panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbSao;
