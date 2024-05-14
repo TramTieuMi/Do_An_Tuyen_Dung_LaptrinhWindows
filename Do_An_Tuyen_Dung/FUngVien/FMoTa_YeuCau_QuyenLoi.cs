@@ -294,7 +294,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
                         }
                         else
                         {
-                            MessageBox.Show("Không tìm thấy bản ghi nào để cập nhật.");
+                            MessageBox.Show("Không tìm thấy công việc để cập nhật.");
                         }
                     }
                 }
