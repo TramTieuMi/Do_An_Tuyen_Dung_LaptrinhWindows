@@ -16,13 +16,13 @@ namespace Do_An_Tuyen_Dung
         private string fileGiayPhep;
         private string tenHR;
         private string emailHR;
-        private string sDTHR;
+        private int sDTHR;
 
         public NhapThongTinNTD()
         {
         }
 
-        public NhapThongTinNTD(string tenCty, string tinh_TP, string quan_Huyen, string xa_Phuong, string sonha, string fileGiayPhep, string tenHR, string emailHR, string sDTHR)
+        public NhapThongTinNTD(string tenCty, string tinh_TP, string quan_Huyen, string xa_Phuong, string sonha, string fileGiayPhep, string tenHR, string emailHR, int sDTHR)
         {
             this.tenCty = tenCty;
             this.tinh_TP = tinh_TP;
@@ -43,6 +43,6 @@ namespace Do_An_Tuyen_Dung
         public string FileGiayPhep { get => fileGiayPhep; set => fileGiayPhep = value; }
         public string TenHR { get => tenHR; set => tenHR = value; }
         public string EmailHR { get => emailHR; set => emailHR = value; }
-        public string SDTHR { get => sDTHR; set => sDTHR = value; }
+        public int SDTHR { get => sDTHR; set => sDTHR = value; }
     }
 }

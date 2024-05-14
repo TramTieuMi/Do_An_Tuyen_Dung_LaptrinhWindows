@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
 {
@@ -42,33 +43,64 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
             string quan_Huyen = Combobox_Quan_Huyen.Text;
             string xa_Phuong = Combobox_Xa_Phuong.Text;
             string sonha = txtSoNha.Text;
-            string fileGiayPhep = txtFileCV.Text;
+            string fileGiayPhep = txtFileCV.Text; // Assuming fileGiayPhep stores the file path
             string tenHR = txtTenHR.Text;
             string emailHR = txtEmailHR.Text;
-            string sDTHR = txtSDTHR.Text;
-            string query = "INSERT INTO ThongTinCTy_Chinh VALUES (N'" + tenCty + "', N'" + tinh_TP + "', N'" + quan_Huyen + "', N'" + xa_Phuong + "', N'" + sonha + "', N'" + fileGiayPhep + "', N'" + tenHR + "', N'" + emailHR + "', N'" + sDTHR + "' )";
+            int sDTHR = Convert.ToInt32(txtSDTHR.Text);
+
+            // Validate input data (optional)
+            // Add checks for empty fields, invalid formats, etc.
+
             try
             {
+                using (SqlConnection connection = Connection.GetSqlConnection()) // Use connection pooling
+                {
+                    connection.Open();
 
-                MessageBox.Show("Nhập Thành Công");
-                modify.Command(query);
+                    string query = "INSERT INTO ThongTinCTy_Chinh VALUES (N'" + tenCty + "', N'" + tinh_TP + "', N'" + quan_Huyen + "', N'" + xa_Phuong + "', N'" + sonha + "', N'" + fileGiayPhep + "', N'" + tenHR + "', N'" + emailHR + "', N'" + sDTHR + "' )";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@tenCty", tenCty);
+                        command.Parameters.AddWithValue("@tinh_TP", tinh_TP);
+                        command.Parameters.AddWithValue("@quan_Huyen", quan_Huyen);
+                        command.Parameters.AddWithValue("@xa_Phuong", xa_Phuong);
+                        command.Parameters.AddWithValue("@sonha", sonha);
+                        command.Parameters.AddWithValue("@fileGiayPhep", fileGiayPhep);
+                        command.Parameters.AddWithValue("@tenHR", tenHR);
+                        command.Parameters.AddWithValue("@emailHR", emailHR);
+                        command.Parameters.AddWithValue("@sDTHR", sDTHR);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Nhập Thành Công");
+                            // Clear input fields (optional)
+                            txtTenCTy.Text = "";
+                            // ...
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không có bản ghi nào được tạo.");
+                        }
+                    }
+                }
             }
-            catch
+            catch (SqlException ex)
             {
-                MessageBox.Show("Lỗi Khi Nhập");
+                MessageBox.Show("Lỗi khi thêm dữ liệu: " + ex.Message);
             }
-            nhapThongTin = new NhapThongTinNTD(tenCty, tinh_TP, quan_Huyen, xa_Phuong, sonha, fileGiayPhep, tenHR, emailHR, sDTHR);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi không xác định: " + ex.Message);
+            }
+
+            // Consider creating a separate method for opening/closing connection for better separation of concerns
+
+            nhapThongTin = new NhapThongTinNTD(tenCty, tinh_TP, quan_Huyen, xa_Phuong, sonha, fileGiayPhep, tenHR, emailHR, sDTHR); // Assuming this is for another purpose
         }
-        public string TenCTY()
-        {
-            return txtTenCTy.Text;
-        }
-        private void btn_Luu_Click(object sender, EventArgs e)
-        {
-            Hide();
-            FDangBai_NTD fDangBai_NTD = new FDangBai_NTD();
-            fDangBai_NTD.ShowDialog();
-        }
+
 
         private void FNhapThongTinNTD_Load(object sender, EventArgs e)
         {
@@ -80,6 +112,74 @@ namespace Do_An_Ung_Dung_Tim_Viec.FORM_NTD
             Hide();
             FCreateAccount fCreateAccount = new FCreateAccount();
             fCreateAccount.ShowDialog();
+        }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+            string tenCty = txtTenCTy.Text;
+            string tinh_TP = Combobox_Tinh_TP.Text;
+            string quan_Huyen = Combobox_Quan_Huyen.Text;
+            string xa_Phuong = Combobox_Xa_Phuong.Text;
+            string sonha = txtSoNha.Text;
+            string fileGiayPhep = txtFileCV.Text; // Assuming fileGiayPhep stores the file path
+            string tenHR = txtTenHR.Text;
+            string emailHR = txtEmailHR.Text;
+            int sDTHR = Convert.ToInt32(txtSDTHR.Text);
+
+            // Validate input data (optional)
+            // Add checks for empty fields, invalid formats, etc.
+
+            try
+            {
+                using (SqlConnection connection = Connection.GetSqlConnection()) // Use connection pooling
+                {
+                    connection.Open();
+
+                    string query = "INSERT INTO ThongTinCTy_Chinh VALUES (N'" + tenCty + "', N'" + tinh_TP + "', N'" + quan_Huyen + "', N'" + xa_Phuong + "', N'" + sonha + "', N'" + fileGiayPhep + "', N'" + tenHR + "', N'" + emailHR + "', N'" + sDTHR + "' )";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@tenCty", tenCty);
+                        command.Parameters.AddWithValue("@tinh_TP", tinh_TP);
+                        command.Parameters.AddWithValue("@quan_Huyen", quan_Huyen);
+                        command.Parameters.AddWithValue("@xa_Phuong", xa_Phuong);
+                        command.Parameters.AddWithValue("@sonha", sonha);
+                        command.Parameters.AddWithValue("@fileGiayPhep", fileGiayPhep);
+                        command.Parameters.AddWithValue("@tenHR", tenHR);
+                        command.Parameters.AddWithValue("@emailHR", emailHR);
+                        command.Parameters.AddWithValue("@sDTHR", sDTHR);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Nhập Thành Công");
+                            // Clear input fields (optional)
+                          
+                            // ...
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không có bản ghi nào được tạo.");
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Lỗi khi thêm dữ liệu: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi không xác định: " + ex.Message);
+            }
+
+            // Consider creating a separate method for opening/closing connection for better separation of concerns
+
+            nhapThongTin = new NhapThongTinNTD(tenCty, tinh_TP, quan_Huyen, xa_Phuong, sonha, fileGiayPhep, tenHR, emailHR, sDTHR); // Assuming this is for another purpose
+            Hide();
+            FLogin fDangBai_NTD = new FLogin();
+            fDangBai_NTD.ShowDialog();
         }
     }
 }

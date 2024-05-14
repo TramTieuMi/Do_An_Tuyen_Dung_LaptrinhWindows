@@ -31,13 +31,35 @@ namespace Do_An_Tuyen_Dung
         {
             InitializeComponent();
             this.danhGia = danhGia;
-            txtTenUV.Text = danhGia.Tenuv;
-            RS_danhgia.Value = Convert.ToInt32(danhGia.Sosao);
-            txtThoiGian.Text = danhGia.Thoigian;
-            txtNoiDung.Text = danhGia.Noidung;
+
+            // Validate data before assigning to UI elements
+            if (danhGia != null)
+            {
+                txtTenUV.Text = danhGia.Tenuv;
+
+                // Convert Sosao to integer safely using TryParse
+                float sosaoInt;
+                if (float.TryParse(danhGia.Sosao, out sosaoInt))
+                {
+                    RS_danhgia.Value = sosaoInt;
+                }
+
+                txtThoiGian.Text = danhGia.Thoigian;
+
+                // Ensure NoiDung is not null before assigning
+                if (danhGia.Noidung != null)
+                {
+                    txtNoiDung.Text = danhGia.Noidung;
+                }
+            }
         }
 
         private void RS_danhgia_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RS_danhgia_ValueChanged_1(object sender, EventArgs e)
         {
 
         }

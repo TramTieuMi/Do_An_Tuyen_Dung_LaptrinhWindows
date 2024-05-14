@@ -77,7 +77,7 @@ namespace Do_An_Ung_Dung_Tim_Viec
                 // Use parameterized query for security and clarity
                 string query = "INSERT INTO DangBaiNTD (TenCongViec, Luong, KinhNghiem, HinhThuc, BHXH, BHYT, CoHoiThangTien, Luong13, MoTa, YeuCau, TenHR, EmailHR, SDTHR, ThoiGianBD, ThoiGianKT, GhiChu, QuyenLoiKhac) VALUES (@tenCongViec, @luong,@KinhNghiem, @HinhThuc, @BHXH, @BHYT, @CoHoiThangTien, @Luong13, @MoTa, @YeuCau, @TenHR, @EmailHR, @SDTHR, @ThoiGianBD, @ThoiGianKT, @GhiChu, @QuyenLoiKhac)";
 
-                SqlConnection connection = (stringConnection);
+                using (SqlConnection connection = Connection.GetSqlConnection())
                 {
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {

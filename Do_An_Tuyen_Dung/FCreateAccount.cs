@@ -75,7 +75,7 @@ namespace Do_An_Tuyen_Dung
                     this.Close();
                 }*/
                 Hide();
-                if (role == "Nhà Tuyển Dụng")
+                if (role == "Nha Tuyen Dung")
                 {
                     F_DangKiTaiKhoanNTD f_DangKiTaiKhoanNTD = new F_DangKiTaiKhoanNTD();
                     f_DangKiTaiKhoanNTD.ShowDialog();

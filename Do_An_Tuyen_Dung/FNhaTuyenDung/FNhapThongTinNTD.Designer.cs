@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FNhapThongTinNTD));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             label2 = new Label();
             label5 = new Label();
@@ -91,9 +91,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Italic);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(979, 396);
+            label1.Location = new Point(857, 297);
             label1.Name = "label1";
-            label1.Size = new Size(104, 23);
+            label1.Size = new Size(89, 19);
             label1.TabIndex = 18;
             label1.Text = "Logo công ty";
             // 
@@ -104,9 +104,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(92, 149);
+            label2.Location = new Point(80, 97);
             label2.Name = "label2";
-            label2.Size = new Size(104, 23);
+            label2.Size = new Size(86, 19);
             label2.TabIndex = 19;
             label2.Text = "Tên Công Ty";
             // 
@@ -117,9 +117,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Black;
-            label5.Location = new Point(50, 97);
+            label5.Location = new Point(44, 58);
             label5.Name = "label5";
-            label5.Size = new Size(215, 31);
+            label5.Size = new Size(181, 25);
             label5.TabIndex = 24;
             label5.Text = "Thông Tin Công Ty";
             // 
@@ -130,9 +130,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label7.ForeColor = Color.Black;
-            label7.Location = new Point(491, 221);
+            label7.Location = new Point(430, 163);
             label7.Name = "label7";
-            label7.Size = new Size(110, 23);
+            label7.Size = new Size(89, 19);
             label7.TabIndex = 29;
             label7.Text = "Quận/Huyện";
             // 
@@ -143,9 +143,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label3.ForeColor = Color.Black;
-            label3.Location = new Point(95, 291);
+            label3.Location = new Point(85, 216);
             label3.Name = "label3";
-            label3.Size = new Size(98, 23);
+            label3.Size = new Size(81, 19);
             label3.TabIndex = 35;
             label3.Text = "Xã/Phường";
             // 
@@ -156,9 +156,9 @@
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label9.ForeColor = Color.Black;
-            label9.Location = new Point(95, 221);
+            label9.Location = new Point(83, 162);
             label9.Name = "label9";
-            label9.Size = new Size(133, 23);
+            label9.Size = new Size(110, 19);
             label9.TabIndex = 39;
             label9.Text = "Tỉnh/Thành phố";
             // 
@@ -169,9 +169,9 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label10.ForeColor = Color.Black;
-            label10.Location = new Point(89, 360);
+            label10.Location = new Point(78, 255);
             label10.Name = "label10";
-            label10.Size = new Size(214, 23);
+            label10.Size = new Size(176, 19);
             label10.TabIndex = 42;
             label10.Text = "File Giấy Phép Kinh Doanh";
             // 
@@ -184,9 +184,10 @@
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(label13);
             panel3.Controls.Add(btn_TroLai);
-            panel3.Location = new Point(3, 0);
+            panel3.Location = new Point(3, -15);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1180, 75);
+            panel3.Size = new Size(1033, 57);
             panel3.TabIndex = 44;
             // 
             // label13
@@ -195,9 +196,9 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(48, 19);
+            label13.Location = new Point(42, 14);
             label13.Name = "label13";
-            label13.Size = new Size(555, 41);
+            label13.Size = new Size(449, 32);
             label13.TabIndex = 0;
             label13.Text = "Nhập Thông Tin Cho Công Ty Của Bạn";
             // 
@@ -207,7 +208,7 @@
             btn_TroLai.BorderColor = Color.Transparent;
             btn_TroLai.BorderRadius = 10;
             btn_TroLai.BorderThickness = 2;
-            btn_TroLai.CustomizableEdges = customizableEdges25;
+            btn_TroLai.CustomizableEdges = customizableEdges1;
             btn_TroLai.DisabledState.BorderColor = Color.DarkGray;
             btn_TroLai.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_TroLai.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -216,10 +217,11 @@
             btn_TroLai.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_TroLai.ForeColor = Color.White;
             btn_TroLai.Image = (Image)resources.GetObject("btn_TroLai.Image");
-            btn_TroLai.Location = new Point(-22, 19);
+            btn_TroLai.Location = new Point(-19, 14);
+            btn_TroLai.Margin = new Padding(3, 2, 3, 2);
             btn_TroLai.Name = "btn_TroLai";
-            btn_TroLai.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            btn_TroLai.Size = new Size(97, 40);
+            btn_TroLai.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btn_TroLai.Size = new Size(85, 30);
             btn_TroLai.TabIndex = 65;
             btn_TroLai.Click += btn_TroLai_Click;
             // 
@@ -230,9 +232,9 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label8.ForeColor = Color.Black;
-            label8.Location = new Point(93, 564);
+            label8.Location = new Point(80, 399);
             label8.Name = "label8";
-            label8.Size = new Size(51, 23);
+            label8.Size = new Size(43, 19);
             label8.TabIndex = 45;
             label8.Text = "Email";
             // 
@@ -243,9 +245,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(94, 632);
+            label4.Location = new Point(80, 453);
             label4.Name = "label4";
-            label4.Size = new Size(179, 23);
+            label4.Size = new Size(148, 19);
             label4.TabIndex = 47;
             label4.Text = "Số Điện Thoại Liên Hệ";
             // 
@@ -256,9 +258,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label6.ForeColor = Color.Black;
-            label6.Location = new Point(491, 291);
+            label6.Location = new Point(430, 232);
             label6.Name = "label6";
-            label6.Size = new Size(63, 23);
+            label6.Size = new Size(52, 19);
             label6.TabIndex = 49;
             label6.Text = "Số nhà";
             // 
@@ -269,9 +271,9 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.Black;
-            label11.Location = new Point(50, 447);
+            label11.Location = new Point(44, 320);
             label11.Name = "label11";
-            label11.Size = new Size(210, 31);
+            label11.Size = new Size(175, 25);
             label11.TabIndex = 51;
             label11.Text = "Thông Tin Liên Hệ";
             // 
@@ -282,9 +284,9 @@
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold);
             label12.ForeColor = Color.Black;
-            label12.Location = new Point(92, 495);
+            label12.Location = new Point(78, 345);
             label12.Name = "label12";
-            label12.Size = new Size(87, 23);
+            label12.Size = new Size(71, 19);
             label12.TabIndex = 52;
             label12.Text = "Họ và Tên";
             // 
@@ -294,7 +296,7 @@
             txtTenCTy.BorderColor = Color.Black;
             txtTenCTy.BorderRadius = 10;
             txtTenCTy.BorderThickness = 2;
-            txtTenCTy.CustomizableEdges = customizableEdges27;
+            txtTenCTy.CustomizableEdges = customizableEdges3;
             txtTenCTy.DefaultText = "";
             txtTenCTy.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTenCTy.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -303,14 +305,14 @@
             txtTenCTy.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenCTy.Font = new Font("Segoe UI", 9F);
             txtTenCTy.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenCTy.Location = new Point(95, 175);
-            txtTenCTy.Margin = new Padding(3, 5, 3, 5);
+            txtTenCTy.Location = new Point(83, 131);
+            txtTenCTy.Margin = new Padding(3, 4, 3, 4);
             txtTenCTy.Name = "txtTenCTy";
             txtTenCTy.PasswordChar = '\0';
             txtTenCTy.PlaceholderText = "";
             txtTenCTy.SelectedText = "";
-            txtTenCTy.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            txtTenCTy.Size = new Size(736, 36);
+            txtTenCTy.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtTenCTy.Size = new Size(644, 27);
             txtTenCTy.TabIndex = 55;
             // 
             // txtSoNha
@@ -319,7 +321,7 @@
             txtSoNha.BorderColor = Color.Black;
             txtSoNha.BorderRadius = 10;
             txtSoNha.BorderThickness = 2;
-            txtSoNha.CustomizableEdges = customizableEdges29;
+            txtSoNha.CustomizableEdges = customizableEdges5;
             txtSoNha.DefaultText = "";
             txtSoNha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSoNha.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -328,14 +330,14 @@
             txtSoNha.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSoNha.Font = new Font("Segoe UI", 9F);
             txtSoNha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSoNha.Location = new Point(491, 316);
-            txtSoNha.Margin = new Padding(3, 5, 3, 5);
+            txtSoNha.Location = new Point(430, 255);
+            txtSoNha.Margin = new Padding(3, 4, 3, 4);
             txtSoNha.Name = "txtSoNha";
             txtSoNha.PasswordChar = '\0';
             txtSoNha.PlaceholderText = "";
             txtSoNha.SelectedText = "";
-            txtSoNha.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            txtSoNha.Size = new Size(270, 36);
+            txtSoNha.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtSoNha.Size = new Size(236, 27);
             txtSoNha.TabIndex = 56;
             // 
             // txtFileCV
@@ -344,7 +346,7 @@
             txtFileCV.BorderColor = Color.Black;
             txtFileCV.BorderRadius = 10;
             txtFileCV.BorderThickness = 2;
-            txtFileCV.CustomizableEdges = customizableEdges31;
+            txtFileCV.CustomizableEdges = customizableEdges7;
             txtFileCV.DefaultText = "";
             txtFileCV.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtFileCV.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -353,14 +355,14 @@
             txtFileCV.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtFileCV.Font = new Font("Segoe UI", 9F);
             txtFileCV.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtFileCV.Location = new Point(92, 387);
-            txtFileCV.Margin = new Padding(3, 5, 3, 5);
+            txtFileCV.Location = new Point(80, 290);
+            txtFileCV.Margin = new Padding(3, 4, 3, 4);
             txtFileCV.Name = "txtFileCV";
             txtFileCV.PasswordChar = '\0';
             txtFileCV.PlaceholderText = "";
             txtFileCV.SelectedText = "";
-            txtFileCV.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            txtFileCV.Size = new Size(739, 36);
+            txtFileCV.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtFileCV.Size = new Size(647, 27);
             txtFileCV.TabIndex = 57;
             // 
             // txtTenHR
@@ -369,7 +371,7 @@
             txtTenHR.BorderColor = Color.Black;
             txtTenHR.BorderRadius = 10;
             txtTenHR.BorderThickness = 2;
-            txtTenHR.CustomizableEdges = customizableEdges33;
+            txtTenHR.CustomizableEdges = customizableEdges9;
             txtTenHR.DefaultText = "";
             txtTenHR.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTenHR.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -378,14 +380,14 @@
             txtTenHR.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenHR.Font = new Font("Segoe UI", 9F);
             txtTenHR.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenHR.Location = new Point(92, 658);
-            txtTenHR.Margin = new Padding(3, 5, 3, 5);
+            txtTenHR.Location = new Point(78, 368);
+            txtTenHR.Margin = new Padding(3, 4, 3, 4);
             txtTenHR.Name = "txtTenHR";
             txtTenHR.PasswordChar = '\0';
             txtTenHR.PlaceholderText = "";
             txtTenHR.SelectedText = "";
-            txtTenHR.ShadowDecoration.CustomizableEdges = customizableEdges34;
-            txtTenHR.Size = new Size(417, 36);
+            txtTenHR.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtTenHR.Size = new Size(365, 27);
             txtTenHR.TabIndex = 58;
             // 
             // txtSDTHR
@@ -394,7 +396,7 @@
             txtSDTHR.BorderColor = Color.Black;
             txtSDTHR.BorderRadius = 10;
             txtSDTHR.BorderThickness = 2;
-            txtSDTHR.CustomizableEdges = customizableEdges35;
+            txtSDTHR.CustomizableEdges = customizableEdges11;
             txtSDTHR.DefaultText = "";
             txtSDTHR.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSDTHR.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -403,14 +405,14 @@
             txtSDTHR.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSDTHR.Font = new Font("Segoe UI", 9F);
             txtSDTHR.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSDTHR.Location = new Point(92, 590);
-            txtSDTHR.Margin = new Padding(3, 5, 3, 5);
+            txtSDTHR.Location = new Point(78, 486);
+            txtSDTHR.Margin = new Padding(3, 4, 3, 4);
             txtSDTHR.Name = "txtSDTHR";
             txtSDTHR.PasswordChar = '\0';
             txtSDTHR.PlaceholderText = "";
             txtSDTHR.SelectedText = "";
-            txtSDTHR.ShadowDecoration.CustomizableEdges = customizableEdges36;
-            txtSDTHR.Size = new Size(417, 36);
+            txtSDTHR.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtSDTHR.Size = new Size(365, 27);
             txtSDTHR.TabIndex = 59;
             // 
             // txtEmailHR
@@ -419,7 +421,7 @@
             txtEmailHR.BorderColor = Color.Black;
             txtEmailHR.BorderRadius = 10;
             txtEmailHR.BorderThickness = 2;
-            txtEmailHR.CustomizableEdges = customizableEdges37;
+            txtEmailHR.CustomizableEdges = customizableEdges13;
             txtEmailHR.DefaultText = "";
             txtEmailHR.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtEmailHR.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -428,14 +430,14 @@
             txtEmailHR.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEmailHR.Font = new Font("Segoe UI", 9F);
             txtEmailHR.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmailHR.Location = new Point(92, 522);
-            txtEmailHR.Margin = new Padding(3, 5, 3, 5);
+            txtEmailHR.Location = new Point(78, 422);
+            txtEmailHR.Margin = new Padding(3, 4, 3, 4);
             txtEmailHR.Name = "txtEmailHR";
             txtEmailHR.PasswordChar = '\0';
             txtEmailHR.PlaceholderText = "";
             txtEmailHR.SelectedText = "";
-            txtEmailHR.ShadowDecoration.CustomizableEdges = customizableEdges38;
-            txtEmailHR.Size = new Size(417, 36);
+            txtEmailHR.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtEmailHR.Size = new Size(365, 27);
             txtEmailHR.TabIndex = 60;
             // 
             // Combobox_Tinh_TP
@@ -445,7 +447,7 @@
             Combobox_Tinh_TP.BorderColor = Color.Black;
             Combobox_Tinh_TP.BorderRadius = 10;
             Combobox_Tinh_TP.BorderThickness = 2;
-            Combobox_Tinh_TP.CustomizableEdges = customizableEdges39;
+            Combobox_Tinh_TP.CustomizableEdges = customizableEdges15;
             Combobox_Tinh_TP.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_Tinh_TP.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_Tinh_TP.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -454,10 +456,11 @@
             Combobox_Tinh_TP.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Tinh_TP.ItemHeight = 30;
             Combobox_Tinh_TP.Items.AddRange(new object[] { "TP HCM" });
-            Combobox_Tinh_TP.Location = new Point(95, 246);
+            Combobox_Tinh_TP.Location = new Point(83, 184);
+            Combobox_Tinh_TP.Margin = new Padding(3, 2, 3, 2);
             Combobox_Tinh_TP.Name = "Combobox_Tinh_TP";
-            Combobox_Tinh_TP.ShadowDecoration.CustomizableEdges = customizableEdges40;
-            Combobox_Tinh_TP.Size = new Size(270, 36);
+            Combobox_Tinh_TP.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            Combobox_Tinh_TP.Size = new Size(237, 36);
             Combobox_Tinh_TP.TabIndex = 61;
             // 
             // Combobox_Xa_Phuong
@@ -467,7 +470,7 @@
             Combobox_Xa_Phuong.BorderColor = Color.Black;
             Combobox_Xa_Phuong.BorderRadius = 10;
             Combobox_Xa_Phuong.BorderThickness = 2;
-            Combobox_Xa_Phuong.CustomizableEdges = customizableEdges41;
+            Combobox_Xa_Phuong.CustomizableEdges = customizableEdges17;
             Combobox_Xa_Phuong.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_Xa_Phuong.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_Xa_Phuong.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -476,10 +479,11 @@
             Combobox_Xa_Phuong.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Xa_Phuong.ItemHeight = 30;
             Combobox_Xa_Phuong.Items.AddRange(new object[] { "Phường 3" });
-            Combobox_Xa_Phuong.Location = new Point(92, 316);
+            Combobox_Xa_Phuong.Location = new Point(80, 237);
+            Combobox_Xa_Phuong.Margin = new Padding(3, 2, 3, 2);
             Combobox_Xa_Phuong.Name = "Combobox_Xa_Phuong";
-            Combobox_Xa_Phuong.ShadowDecoration.CustomizableEdges = customizableEdges42;
-            Combobox_Xa_Phuong.Size = new Size(270, 36);
+            Combobox_Xa_Phuong.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            Combobox_Xa_Phuong.Size = new Size(237, 36);
             Combobox_Xa_Phuong.TabIndex = 62;
             Combobox_Xa_Phuong.SelectedIndexChanged += guna2ComboBox1_SelectedIndexChanged;
             // 
@@ -490,7 +494,7 @@
             Combobox_Quan_Huyen.BorderColor = Color.Black;
             Combobox_Quan_Huyen.BorderRadius = 10;
             Combobox_Quan_Huyen.BorderThickness = 2;
-            Combobox_Quan_Huyen.CustomizableEdges = customizableEdges43;
+            Combobox_Quan_Huyen.CustomizableEdges = customizableEdges19;
             Combobox_Quan_Huyen.DrawMode = DrawMode.OwnerDrawFixed;
             Combobox_Quan_Huyen.DropDownStyle = ComboBoxStyle.DropDownList;
             Combobox_Quan_Huyen.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -499,10 +503,11 @@
             Combobox_Quan_Huyen.ForeColor = Color.FromArgb(68, 88, 112);
             Combobox_Quan_Huyen.ItemHeight = 30;
             Combobox_Quan_Huyen.Items.AddRange(new object[] { "Thủ Đức" });
-            Combobox_Quan_Huyen.Location = new Point(491, 246);
+            Combobox_Quan_Huyen.Location = new Point(430, 184);
+            Combobox_Quan_Huyen.Margin = new Padding(3, 2, 3, 2);
             Combobox_Quan_Huyen.Name = "Combobox_Quan_Huyen";
-            Combobox_Quan_Huyen.ShadowDecoration.CustomizableEdges = customizableEdges44;
-            Combobox_Quan_Huyen.Size = new Size(270, 36);
+            Combobox_Quan_Huyen.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            Combobox_Quan_Huyen.Size = new Size(237, 36);
             Combobox_Quan_Huyen.TabIndex = 63;
             // 
             // btn_Luu
@@ -511,7 +516,7 @@
             btn_Luu.BorderColor = Color.Transparent;
             btn_Luu.BorderRadius = 10;
             btn_Luu.BorderThickness = 2;
-            btn_Luu.CustomizableEdges = customizableEdges45;
+            btn_Luu.CustomizableEdges = customizableEdges21;
             btn_Luu.DisabledState.BorderColor = Color.DarkGray;
             btn_Luu.DisabledState.CustomBorderColor = Color.DarkGray;
             btn_Luu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -519,10 +524,11 @@
             btn_Luu.FillColor = Color.FromArgb(42, 54, 78);
             btn_Luu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_Luu.ForeColor = Color.White;
-            btn_Luu.Location = new Point(1015, 607);
+            btn_Luu.Location = new Point(888, 455);
+            btn_Luu.Margin = new Padding(3, 2, 3, 2);
             btn_Luu.Name = "btn_Luu";
-            btn_Luu.ShadowDecoration.CustomizableEdges = customizableEdges46;
-            btn_Luu.Size = new Size(130, 40);
+            btn_Luu.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btn_Luu.Size = new Size(114, 30);
             btn_Luu.TabIndex = 64;
             btn_Luu.Text = "Lưu";
             btn_Luu.Click += btn_Luu_Click;
@@ -534,11 +540,12 @@
             guna2Panel1.BorderRadius = 10;
             guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             guna2Panel1.BorderThickness = 3;
-            guna2Panel1.CustomizableEdges = customizableEdges47;
-            guna2Panel1.Location = new Point(904, 123);
+            guna2Panel1.CustomizableEdges = customizableEdges23;
+            guna2Panel1.Location = new Point(791, 92);
+            guna2Panel1.Margin = new Padding(3, 2, 3, 2);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges48;
-            guna2Panel1.Size = new Size(250, 271);
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            guna2Panel1.Size = new Size(219, 203);
             guna2Panel1.TabIndex = 66;
             // 
             // panel1
@@ -571,18 +578,20 @@
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1183, 742);
+            panel1.Size = new Size(1035, 526);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
             // FNhapThongTinNTD
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1183, 742);
+            ClientSize = new Size(1035, 526);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FNhapThongTinNTD";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "NhapThongTinNTD";
