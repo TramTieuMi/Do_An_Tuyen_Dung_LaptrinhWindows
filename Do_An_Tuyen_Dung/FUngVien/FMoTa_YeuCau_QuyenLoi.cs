@@ -27,6 +27,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
         string tenCV;
         string tencty;
         string DiaDiem = string.Empty;
+       
         public FMoTa_YeuCau_QuyenLoi()
         {
             InitializeComponent();
@@ -253,6 +254,59 @@ namespace Do_An_Tuyen_Dung.FUngVien
         private void guna2RatingStar1_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            string SoSao = Convert.ToString(this.RS_danhgia.Value);
+            string NoiDungDanhGia = this.NoiDungDanhGia.Text;
+            string ThoiGianDanhGia = Convert.ToString(DateTime.Now);
+            string TenCongViec = txtNganh.Text;
+
+            try
+            {
+
+
+                // Use parameterized query for security and prevent truncation errors
+                string query = "UPDATE TinhTrangCV SET SoSao = @SoSao, NoiDungDanhGia = @NoiDungDanhGia, ThoiGianDanhGia = @ThoiGianDanhGia " +
+                    "WHERE EmailHR = @EmailHR AND EmailUV = @EmailUV  AND TenCongViec = @TenCongViec";
+
+                using (SqlConnection connStr = Connection.GetSqlConnection())
+                {
+                    connStr.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connStr))
+                    {
+                        command.Parameters.AddWithValue("@SoSao", SoSao);
+                        command.Parameters.AddWithValue("@NoiDungDanhGia", NoiDungDanhGia);
+                        command.Parameters.AddWithValue("@ThoiGianDanhGia", ThoiGianDanhGia);
+                        command.Parameters.AddWithValue("@TenCongViec", TenCongViec);
+                        command.Parameters.AddWithValue("@EmailHR", txtEmailHR.Text);
+                        FYeuThich fYeuThich = new FYeuThich();
+                        command.Parameters.AddWithValue("@EmailUV", fYeuThich.Email(FLogin.TenTaiKhoan));
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Cập nhật thành công!");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy bản ghi nào để cập nhật.");
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Cập nhật thất bại do lỗi SQL: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Cập nhật thất bại do lỗi không xác định: " + ex.Message);
+            }
         }
     }
 }
