@@ -24,7 +24,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
         //private string connectionString = "Data Source=KHANG\\TEST1;Initial Catalog=\"DoAnNhom (2)\";Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         SqlConnection connStr = Connection.GetSqlConnection();
         Modify modify = new Modify();
-        string tenCV;
+        string TenCongViec = string.Empty;
         string tencty;
         string DiaDiem = string.Empty;
        
@@ -36,9 +36,9 @@ namespace Do_An_Tuyen_Dung.FUngVien
         {
 
             InitializeComponent();
-            tenCV = nganhDuocChon;
-            LoadDuLieu(tenCV);
-            AnNutNopDon(tenCV);
+            TenCongViec = nganhDuocChon;
+            LoadDuLieu(TenCongViec);
+            AnNutNopDon(TenCongViec);
         }
 
         public void AnNutNopDon(string chuoi)
@@ -247,7 +247,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
 
         private void btnDanhGia_Click(object sender, EventArgs e)
         {
-            FXemDanhGia_NTD fXemDanhGia_NTD = new FXemDanhGia_NTD(tenCV, tencty);
+            FXemDanhGia_NTD fXemDanhGia_NTD = new FXemDanhGia_NTD(TenCongViec, tencty);
             fXemDanhGia_NTD.ShowDialog();
         }
 
@@ -261,7 +261,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
             string SoSao = Convert.ToString(this.RS_danhgia.Value);
             string NoiDungDanhGia = this.NoiDungDanhGia.Text;
             string ThoiGianDanhGia = Convert.ToString(DateTime.Now);
-            string TenCongViec = txtNganh.Text;
+            
 
             try
             {

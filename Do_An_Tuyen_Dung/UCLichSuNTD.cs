@@ -53,20 +53,17 @@ namespace Do_An_Tuyen_Dung
                         {
                             MessageBox.Show("Xóa thành công (Delete successful)");
                         }
-                        else
-                        {
-                            MessageBox.Show("Không tìm thấy mục yêu thích (Favorite not found)");
-                        }
+                       
                     }
                 }
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Yêu thích thất bại do lỗi SQL: " + ex.Message);
+                MessageBox.Show("Xóa thất bại thất bại do lỗi SQL: " + ex.Message);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Yêu thích thất bại do lỗi không xác định: " + ex.Message);
+                MessageBox.Show("Xóa thất bại thất bại do lỗi không xác định: " + ex.Message);
             }
         }
 
