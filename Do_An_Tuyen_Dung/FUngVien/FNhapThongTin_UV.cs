@@ -36,7 +36,7 @@ namespace Do_An_Tuyen_Dung.FUngVien
         private void btn_Luu_Click(object sender, EventArgs e)
         {
 
-            string tenUV = this.txtHoTen.Text;
+            string tenUV = this.txtHoTen1.Text;
             string noiSinh = this.txtNoiSinh.Text;
             DateTime ngayThang = this.dateNgayThangNamSinh.Value;
             string thanhPho = this.Combobox_Tinh_TP.Text;
